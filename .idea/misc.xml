@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="AjcSettings">
-    <option name="ajcPath" value="$MAVEN_REPOSITORY$/org/aspectj/aspectjtools/1.8.10/aspectjtools-1.8.10.jar" />
-    <option name="aptOptionsEnabled" value="true" />
+  <component name="EntryPointsManager">
+    <entry_points version="2.0" />
   </component>
   <component name="KiteWelcome">
     <option name="showWelcome" value="false" />
