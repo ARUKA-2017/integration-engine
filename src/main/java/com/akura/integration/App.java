@@ -1,6 +1,6 @@
 package com.akura.integration;
 
-import com.akura.integration.utility.FileManager;
+import com.akura.integration.utility.FileResourceManager;
 import org.apache.jena.ontology.OntModel;
 import org.apache.jena.rdf.model.ModelFactory;
 
@@ -16,10 +16,10 @@ public class App
         OntModel model = ModelFactory.createOntologyModel();
 
         // Insatantiate custom file manager
-        FileManager fileManager = new FileManager();
+        FileResourceManager fileResourceManager = new FileResourceManager();
 
         // read   ontology
-        readOntology(fileManager.getFilePath("ontology/pizza.owl"), model);
+        readOntology(fileResourceManager.getFilePath("ontology/pizza.owl"), model);
 
         // start traverse
         traverseStart( model, null );

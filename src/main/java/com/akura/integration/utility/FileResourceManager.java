@@ -3,7 +3,7 @@ package com.akura.integration.utility;
 /**
  * Class that represents a File manager.
  */
-public class FileManager {
+public class FileResourceManager {
 
 
     // TODO: 4/26/17 Add any other file related function under this class.
