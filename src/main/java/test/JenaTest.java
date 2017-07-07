@@ -2,6 +2,8 @@ package test;
 
 
 import integration.HashGeneratorClass;
+import integration.UtilitiesClass;
+import integration.models.Entity;
 import org.apache.jena.ontology.*;
 import org.apache.jena.rdf.model.*;
 import org.apache.jena.util.iterator.ExtendedIterator;
@@ -11,10 +13,10 @@ public class JenaTest {
 
     public static void main(String[] args) {
 
-        System.out.println(HashGeneratorClass.generateHashForString("iphone 7"));
+//        System.out.println(HashGeneratorClass.generateHashForString("iphone 7"));
 
         OntModel m = ModelFactory.createOntologyModel();
-        m.read("file:/Applications/MAMP/htdocs/CDAP/Jena/src/main/resources/rev_engine_base_ontology.owl");
+        m.read("file:"+ UtilitiesClass.fileName);
 
 //        StmtIterator iter = m.listStatements();
 //
@@ -54,16 +56,19 @@ public class JenaTest {
 //        }
 
 //        // get instances in a class
-//        OntClass myClass = m.getOntClass("http://www.akura.com#Entity");
-//        ExtendedIterator instances = myClass.listInstances();
-//        while (instances.hasNext())
-//        {
-////            Individual thisInstance = (Individual) instances.next();
-////            System.out.println("  Found instance: " + thisInstance.toString());
-//
-//            OntResource c = (OntResource) instances.next();
-//            System.out.println(c.getLocalName());
-//        }
+
+        Entity ent = new Entity(m);
+//        ent.save();
+
+        OntClass myClass = ent.entityClass;
+        ExtendedIterator instances = myClass.listInstances();
+        while (instances.hasNext())
+        {
+            OntResource c = (OntResource) instances.next();
+            System.out.println(c.getLocalName());
+        }
+
+
     }
 }
 

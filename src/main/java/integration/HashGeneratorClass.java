@@ -3,13 +3,12 @@ package integration;
 
 public class HashGeneratorClass {
 
-    public static Integer generateHashForString(String value){
+    public static String generateHashForString(String value){
 
-       return value
+       return  "HASH" + value
                .toUpperCase()
                .replaceAll("[^a-zA-Z0-9]+", "")
                .trim()
                .hashCode();
-
     }
 }
