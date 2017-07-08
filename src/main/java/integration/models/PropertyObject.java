@@ -34,7 +34,7 @@ public class PropertyObject {
         this.entityClass = (OntClass) this.model.getOntClass(OntologyClass.PROPERTY);
         this.initProperties();
 
-        this.hash = parentHash + HashGeneratorClass.generateHashForString(name, this.prefix);
+        this.hash = parentHash + "-" + HashGeneratorClass.generateHashForString(name, this.prefix);
 
         Individual ind = this.search(this.hash);
         if (ind == null) {
@@ -61,7 +61,7 @@ public class PropertyObject {
         this.instance.addProperty(this.value, value);
     }
 
-    // search property
+
     public Individual search(String hash) {
         Individual ind = this.model.getIndividual(OntologyClass.URI_NAMESPACE + hash);
         return ind;

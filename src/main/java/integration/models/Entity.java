@@ -9,6 +9,8 @@ import org.apache.jena.ontology.Individual;
 import org.apache.jena.ontology.OntClass;
 import org.apache.jena.rdf.model.Property;
 
+import java.util.Map;
+
 
 public class Entity {
 
@@ -18,8 +20,12 @@ public class Entity {
     public OntClass entityClass;
 
     private OntModel model;
+
+
     private Property name;
     private Property hashID;
+    private ObjectProperty containProperty;
+    private ObjectProperty feature;
 
     private String hash;
 
@@ -40,7 +46,9 @@ public class Entity {
             this.instance = ind;
         }
 
-        this.setLiteralProperties(name);
+        this.setEntityName(name);
+        this.setHashID(this.hash);
+
     }
 
 
@@ -50,16 +58,13 @@ public class Entity {
         this.initProperties();
     }
 
+
     private void initProperties() {
         name = model.getProperty(OntologyClass.URI_NAMESPACE + "EntityName");
         hashID = model.getProperty(OntologyClass.URI_NAMESPACE + "HashID");
-    }
 
-    private void setLiteralProperties(String entityName) {
-
-        this.setEntityName(entityName);
-        this.setHashID(this.hash);
-
+        containProperty = model.getObjectProperty(OntologyClass.URI_NAMESPACE + "ContainProperty");
+        feature = model.getObjectProperty(OntologyClass.URI_NAMESPACE + "SubEntity");
     }
 
 
@@ -88,12 +93,23 @@ public class Entity {
             prop.setValue(value);
         }
 
-        // TODO: check whether the relationship already exists between the 2 instances
-        RelationshipGenerator.setRelationship(this.model, "ContainProperty", this.instance, prop.instance);
+        if (!this.model.listStatements(this.instance, this.containProperty, prop.instance).hasNext()) {
+            RelationshipGenerator.setRelationship(this.containProperty, this.instance, prop.instance);
+        }
+
+
     }
 
-    public void setSubEntity(Individual range) {
-        RelationshipGenerator.setRelationship(this.model, "SubEntity", this.instance, range);
+    public void setFeature(String name, Map<String, String> map) {
+
+        Feature f = new Feature(this.model, name, this.hash);
+        f.setName(name);
+
+        for (Map.Entry<String, String> m : map.entrySet()) {
+            f.setProperty(m.getKey(), m.getValue());
+        }
+
+        RelationshipGenerator.setRelationship(this.feature, this.instance, f.instance);
     }
 
     public void save() {

@@ -10,5 +10,6 @@ public class OntologyClass {
     public static String PROPERTY = URI_NAMESPACE + "Property";
     public static String COMPARISON = URI_NAMESPACE + "Comparison";
     public static String BASESCORE = URI_NAMESPACE + "BaseScore";
+    public static String FEATURE = URI_NAMESPACE + "Feature";
 
 }
