@@ -57,10 +57,13 @@ public class JenaTest {
 
 //        // get instances in a class
 
-        Entity ent = new Entity(m);
+        Entity ent = new Entity(m, "Iphone 7");
+
 //        ent.save();
 
+
         OntClass myClass = ent.entityClass;
+
         ExtendedIterator instances = myClass.listInstances();
         while (instances.hasNext())
         {
