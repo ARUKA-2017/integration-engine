@@ -18,6 +18,7 @@ public class Entity {
 
     public Individual instance;
     public OntClass entityClass;
+    public String hash;
 
     private OntModel model;
 
@@ -27,8 +28,6 @@ public class Entity {
     private ObjectProperty containProperty;
     private ObjectProperty feature;
     private ObjectProperty evaluatedBy;
-
-    private String hash;
 
     public Entity(OntModel m, String name) {
         this.model = m;

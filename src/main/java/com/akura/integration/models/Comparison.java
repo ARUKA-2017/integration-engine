@@ -1,6 +1,5 @@
 package com.akura.integration.models;
 
-
 import com.akura.config.Config;
 import org.apache.jena.ontology.Individual;
 import org.apache.jena.ontology.ObjectProperty;
@@ -44,18 +43,19 @@ public class Comparison {
                     + this.hash);
 
             this.setCount(1);
-            this.setComparisonRelationship(goodInstance,badInstance);
+            this.setComparisonRelationship(goodInstance, badInstance);
 
             this.status = false;
         } else {
             this.status = true;
             this.instance = ind;
+            this.incrementCount();
         }
     }
 
 
     private void initProperties() {
-        count = model.getProperty(Config.URI_NAMESPACE + "Count"); //TODO set this
+        count = model.getProperty(Config.URI_NAMESPACE + "Count");
 
         goodProperty = model.getObjectProperty(Config.URI_NAMESPACE + "Good");
         badProperty = model.getObjectProperty(Config.URI_NAMESPACE + "Bad");
@@ -63,14 +63,18 @@ public class Comparison {
     }
 
     public void setCount(Integer count) {
-        this.instance.addLiteral(this.count, count);
+        if (this.instance.getProperty(this.count) == null) {
+            this.instance.addLiteral(this.count,count);
+        } else {
+            this.instance.getProperty(this.count).changeLiteralObject(count);
+        }
     }
 
-    public Integer getCount(){
+    public Integer getCount() {
         return this.instance.getProperty(this.count).getLiteral().getInt(); //TODO test this
     }
 
-    public void incrementCount(){
+    public void incrementCount() {
         this.setCount(this.getCount() + 1);
     }
 

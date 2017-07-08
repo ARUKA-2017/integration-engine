@@ -14,12 +14,12 @@ public class Feature {
 
     public Individual instance;
     public OntClass entityClass;
+    public String hash;
 
     private Property name;
     private ObjectProperty featureProperty;
     private ObjectProperty evaluatedBy;
 
-    private String hash;
     private OntModel model;
 
     public Boolean status;
