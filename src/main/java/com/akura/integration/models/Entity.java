@@ -26,6 +26,7 @@ public class Entity {
     private Property hashID;
     private ObjectProperty containProperty;
     private ObjectProperty feature;
+    private ObjectProperty evaluatedBy;
 
     private String hash;
 
@@ -42,6 +43,9 @@ public class Entity {
         if (ind == null) {
             this.instance = entityClass.createIndividual(OntologyClass.URI_NAMESPACE
                     + this.hash);
+            this.setEntityName(name);
+            this.setHashID(this.hash);
+
         } else {
             this.instance = ind;
         }
@@ -65,6 +69,7 @@ public class Entity {
 
         containProperty = model.getObjectProperty(OntologyClass.URI_NAMESPACE + "ContainProperty");
         feature = model.getObjectProperty(OntologyClass.URI_NAMESPACE + "SubEntity");
+        evaluatedBy = model.getObjectProperty(OntologyClass.URI_NAMESPACE + "EvaluatedBy");
     }
 
 
@@ -100,18 +105,31 @@ public class Entity {
 
     }
 
-    public void setFeature(String name, Map<String, String> map) {
+    public Feature setFeature(String name, Map<String, String> map) {
 
         Feature f = new Feature(this.model, name, this.hash);
-        f.setName(name);
+
 
         for (Map.Entry<String, String> m : map.entrySet()) {
             f.setProperty(m.getKey(), m.getValue());
         }
+        if (!this.model.listStatements(this.instance, this.feature, f.instance).hasNext()) {
+            RelationshipGenerator.setRelationship(this.feature, this.instance, f.instance);
+        }
 
-        RelationshipGenerator.setRelationship(this.feature, this.instance, f.instance);
+        return f;
     }
 
+    public void setBaseScore(Individual baseScore){
+        if (!this.model.listStatements(this.instance, this.evaluatedBy, baseScore).hasNext()) {
+            RelationshipGenerator.setRelationship(this.evaluatedBy, this.instance, baseScore);
+        }
+    }
+
+
+    public void makeThisMainEntityForCurrentReview(Review review){
+        review.setMainEnity(this.instance);
+    }
     public void save() {
         OntologyWriter.writeOntology(this.model);
     }

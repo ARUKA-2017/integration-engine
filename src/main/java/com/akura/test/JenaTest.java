@@ -1,9 +1,10 @@
 package com.akura.test;
 
 
-import com.akura.integration.models.Entity;
+import com.akura.integration.models.*;
 import com.akura.utility.OntologyReader;
 
+import com.akura.utility.OntologyWriter;
 import org.apache.jena.ontology.*;
 import org.apache.jena.rdf.model.Property;
 import org.apache.jena.util.iterator.ExtendedIterator;
@@ -61,7 +62,7 @@ public class JenaTest {
 //
 //        Entity ent = new Entity(m);
 
-  //        ent.save();
+        //        ent.save();
 //
 //
 //        OntClass myClass = ent.entityClass;
@@ -96,6 +97,50 @@ public class JenaTest {
 //
 //        ent.setFeature("Camera", map);
 //        ent.save();
+
+
+        // step 1 : create reviewer - PASS
+
+        Reviewer reviewer = new Reviewer(m, "nilesh.jayanandana@yahoo.com", "nilesh93");
+
+        // step 2: create review - PASS
+        Review review = reviewer.createReviewAndGetInstance("iPhone 7 is bloody bad. It's the worst phone there is");
+
+
+        // step 4: create main entity
+        Entity mainEntity = new Entity(m, "iPhone 7");
+
+        // step 5: set properties and features for main entity
+        mainEntity.setProperty("price", "$112");
+        mainEntity.setProperty("weight", "200g");
+
+        Map<String, String> map = new HashMap<String, String>();
+
+        map.put("FrontCam", "12MPX");
+        map.put("RearCam", "20MPX");
+        map.put("Optical Zoom", "Yes");
+
+        Feature feature_camera = mainEntity.setFeature("Camera", map);
+
+        // step 6: Connect main enity with review
+        mainEntity.makeThisMainEntityForCurrentReview(review);
+
+        // step 7: Set overall basescore for main Entity
+        BaseScore baseScore = new BaseScore(m, review);
+        baseScore.setScore((float) 0.9);
+
+
+        // step 9 create new basescore for camera
+        BaseScore camScore = new BaseScore(m, review);
+        camScore.setScore((float) 0.5);
+
+        feature_camera.setBaseScore(camScore.instance);
+
+
+        // step 10 set comparisons
+
+        // save ontology
+        OntologyWriter.writeOntology(m);
 
 
     }

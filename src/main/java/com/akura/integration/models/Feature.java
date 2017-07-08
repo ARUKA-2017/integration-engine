@@ -17,6 +17,7 @@ public class Feature {
 
     private Property name;
     private ObjectProperty featureProperty;
+    private ObjectProperty evaluatedBy;
 
     private String hash;
     private OntModel model;
@@ -40,6 +41,7 @@ public class Feature {
         if (ind == null) {
             this.instance = entityClass.createIndividual(OntologyClass.URI_NAMESPACE
                     + this.hash);
+            this.setName(name);
             this.status = false;
         } else {
             this.status = true;
@@ -51,6 +53,7 @@ public class Feature {
     private void initProperties() {
         name = model.getProperty(OntologyClass.URI_NAMESPACE + "FeatureName");
         featureProperty = model.getObjectProperty(OntologyClass.URI_NAMESPACE + "FeatureProperty");
+        evaluatedBy = model.getObjectProperty(OntologyClass.URI_NAMESPACE + "EvaluatedBy");
 
     }
 
@@ -73,6 +76,13 @@ public class Feature {
         }
 
     }
+
+    public void setBaseScore(Individual baseScore){
+        if (!this.model.listStatements(this.instance, this.evaluatedBy, baseScore).hasNext()) {
+            RelationshipGenerator.setRelationship(this.evaluatedBy, this.instance, baseScore);
+        }
+    }
+
 
     public Individual search(String hash) {
         Individual ind = this.model.getIndividual(OntologyClass.URI_NAMESPACE + hash);

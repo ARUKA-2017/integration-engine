@@ -31,7 +31,7 @@ public class Reviewer {
         this.initProperties();
     }
 
-    public Reviewer(OntModel m, String email) {
+    public Reviewer(OntModel m, String email, String username) {
         this.model = m;
         this.entityClass = (OntClass) this.model.getOntClass(OntologyClass.REVIEWER);
         this.initProperties();
@@ -42,6 +42,10 @@ public class Reviewer {
         if (ind == null) {
             this.instance = entityClass.createIndividual(OntologyClass.URI_NAMESPACE
                     + this.hash);
+
+            this.setEmail(email);
+            this.setUsername(username);
+
             this.status = false;
         } else {
             this.status = true;
@@ -51,7 +55,7 @@ public class Reviewer {
 
 
     private void initProperties() {
-        username = model.getProperty(OntologyClass.URI_NAMESPACE + "Username");
+        username = model.getProperty(OntologyClass.URI_NAMESPACE + "UserName");
         email = model.getProperty(OntologyClass.URI_NAMESPACE + "Email");
 
         providesProperty = model.getObjectProperty(OntologyClass.URI_NAMESPACE + "Provides");
@@ -66,14 +70,19 @@ public class Reviewer {
         this.instance.addProperty(this.email, email);
     }
 
-
-    // you need a review Object for this
-    public void setReview(Individual review){
+    public void setReview(Individual review) {
 
         if (!this.model.listStatements(this.instance, this.providesProperty, review).hasNext()) {
             RelationshipGenerator.setRelationship(this.providesProperty, this.instance, review);
         }
 
+    }
+
+
+    public Review createReviewAndGetInstance(String comment){
+        Review review = new Review(this.model, comment);
+        this.setReview(review.instance);
+        return review;
     }
 
     public Individual search(String hash) {

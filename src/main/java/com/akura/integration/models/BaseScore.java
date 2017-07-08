@@ -24,7 +24,7 @@ public class BaseScore {
 
     private String hash;
 
-    public BaseScore(OntModel m) {
+    public BaseScore(OntModel m, Review review) {
         this.model = m;
 
         this.baseScoreClass = (OntClass) this.model.getOntClass(OntologyClass.BASESCORE);
@@ -32,6 +32,8 @@ public class BaseScore {
 
         this.instance = baseScoreClass.createIndividual(OntologyClass.URI_NAMESPACE
                 + this.hash);
+
+        review.setBaseScore(this.instance);
 
         this.initProperties();
     }
@@ -44,7 +46,4 @@ public class BaseScore {
         instance.addLiteral(this.score, score);
     }
 
-    public Individual getInstance() {
-        return  this.instance;
-    }
 }
