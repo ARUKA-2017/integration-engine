@@ -142,6 +142,11 @@ public class JenaTest {
 
         mainEntity2.makeThisMainEntityForCurrentReview(review2);
 
+        BaseScore baseScore3 = new BaseScore(m, review);
+        baseScore3.setScore((float) 0.9);
+
+        mainEntity.setBaseScore(baseScore3.instance);
+
         // step 7: Set overall basescore for main Entity
         BaseScore baseScore = new BaseScore(m, review);
         baseScore.setScore((float) 0.9);

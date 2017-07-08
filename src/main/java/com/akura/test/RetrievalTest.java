@@ -3,6 +3,7 @@ package com.akura.test;
 
 import com.akura.config.Config;
 import com.akura.retrieval.models.Entity;
+import com.akura.retrieval.models.response.SingleResponse;
 import com.akura.utility.HashGeneratorClass;
 import com.akura.utility.OntologyReader;
 import org.apache.jena.ontology.OntModel;
@@ -16,10 +17,17 @@ public class RetrievalTest {
         entity.getEntityByHash(HashGeneratorClass.generateHashForString("iphone 7", "ENTITY"));
 
         if (entity.instance != null) {
+            // create response class instance
+
+            SingleResponse resp = new SingleResponse();
+
+            resp.name = entity.getName();
+            resp.id = entity.getHash();
+            resp.avg_baseScore = entity.getAvgBaseScore();
+
+            entity.getAvgBaseScore();
 
 
-
-            System.out.println(entity.instance);
 
         }
     }

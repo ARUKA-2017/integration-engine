@@ -5,6 +5,7 @@ import org.apache.jena.ontology.Individual;
 import org.apache.jena.ontology.ObjectProperty;
 import org.apache.jena.ontology.OntModel;
 import org.apache.jena.rdf.model.Property;
+import org.apache.jena.rdf.model.StmtIterator;
 
 public class Entity {
 
@@ -19,6 +20,7 @@ public class Entity {
 
     public Entity(OntModel m) {
         this.model = m;
+        this.initProperties();
     }
 
     public Individual getEntityByHash(String hash) {
@@ -47,5 +49,25 @@ public class Entity {
 
     public String getHash() {
         return this.instance.getProperty(this.hashID).getLiteral().toString();
+    }
+
+    public double getAvgBaseScore() {
+        int count = 0;
+        double total = 0.0;
+        StmtIterator iter = this.instance.listProperties(this.evaluatedBy);
+        while (iter.hasNext()) {
+
+            total += iter.next()
+                    .getResource()
+                    .getProperty(model.getProperty(Config.URI_NAMESPACE + "Score"))
+                    .getLiteral()
+                    .getDouble();
+
+            count++;
+        }
+
+        return (total / count);
+
+
     }
 }
