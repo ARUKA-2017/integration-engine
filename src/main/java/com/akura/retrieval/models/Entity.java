@@ -1,11 +1,15 @@
 package com.akura.retrieval.models;
 
 import com.akura.config.Config;
+import com.akura.retrieval.models.response.FeatureResponse;
 import org.apache.jena.ontology.Individual;
 import org.apache.jena.ontology.ObjectProperty;
 import org.apache.jena.ontology.OntModel;
 import org.apache.jena.rdf.model.Property;
+import org.apache.jena.rdf.model.Resource;
 import org.apache.jena.rdf.model.StmtIterator;
+
+import java.util.ArrayList;
 
 public class Entity {
 
@@ -70,4 +74,31 @@ public class Entity {
 
 
     }
+
+    public FeatureResponse[] getFeatures() {
+        ArrayList<FeatureResponse> featureList = new ArrayList<FeatureResponse>();
+
+        StmtIterator iter = this.instance.listProperties(this.feature);
+        while (iter.hasNext()) {
+
+            Individual featureInstance = this.model
+                    .getIndividual(iter.next().getResource().toString());
+
+
+            Feature f = new Feature(this.model, featureInstance);
+            FeatureResponse fres = new FeatureResponse();
+            fres.name = f.getName();
+            fres.avg_baseScore = f.getAvgBaseScore();
+
+            // TODO set comparisons and properties in fres object
+//            fres.comparisons = ?
+//            fres.properties = ?
+
+            featureList.add(fres);
+        }
+
+        return featureList.toArray(new FeatureResponse[featureList.size()]);
+    }
+
+
 }

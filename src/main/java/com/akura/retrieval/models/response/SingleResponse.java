@@ -7,6 +7,7 @@ public class SingleResponse {
     public Double avg_baseScore;
     public ComparisonResponse comparisons;
     public PropertyResponse[] properties;
+    public FeatureResponse[] features;
 
 
 

@@ -3,10 +3,13 @@ package com.akura.test;
 
 import com.akura.config.Config;
 import com.akura.retrieval.models.Entity;
+import com.akura.retrieval.models.response.FeatureResponse;
 import com.akura.retrieval.models.response.SingleResponse;
 import com.akura.utility.HashGeneratorClass;
 import com.akura.utility.OntologyReader;
 import org.apache.jena.ontology.OntModel;
+
+import java.util.ArrayList;
 
 public class RetrievalTest {
     public static void main(String[] args) {
@@ -24,9 +27,7 @@ public class RetrievalTest {
             resp.name = entity.getName();
             resp.id = entity.getHash();
             resp.avg_baseScore = entity.getAvgBaseScore();
-
-            entity.getAvgBaseScore();
-
+            resp.features =   entity.getFeatures();
 
 
         }
