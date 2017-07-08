@@ -1,0 +1,99 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:www="http://www.akura.com#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+  <owl:Ontology rdf:about="http://www.akura.com"/>
+  <owl:Class rdf:about="http://www.akura.com#Property"/>
+  <owl:Class rdf:about="http://www.akura.com#Feature"/>
+  <owl:Class rdf:about="http://www.akura.com#Review"/>
+  <owl:Class rdf:about="http://www.akura.com#Comparison"/>
+  <owl:Class rdf:about="http://www.akura.com#Reviewer"/>
+  <owl:Class rdf:about="http://www.akura.com#BaseScore"/>
+  <owl:Class rdf:about="http://www.akura.com#Entity"/>
+  <owl:ObjectProperty rdf:about="http://www.akura.com#SubEntity">
+    <rdfs:range rdf:resource="http://www.akura.com#Feature"/>
+    <rdfs:domain rdf:resource="http://www.akura.com#Entity"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.akura.com#Good">
+    <rdfs:range rdf:resource="http://www.akura.com#Feature"/>
+    <rdfs:range rdf:resource="http://www.akura.com#Entity"/>
+    <rdfs:domain rdf:resource="http://www.akura.com#Comparison"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.akura.com#FeatureProperty">
+    <rdfs:range rdf:resource="http://www.akura.com#Property"/>
+    <rdfs:domain rdf:resource="http://www.akura.com#Feature"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.akura.com#Evaluates">
+    <rdfs:range rdf:resource="http://www.akura.com#Entity"/>
+    <rdfs:domain rdf:resource="http://www.akura.com#BaseScore"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.akura.com#Bad">
+    <rdfs:range rdf:resource="http://www.akura.com#Feature"/>
+    <rdfs:range rdf:resource="http://www.akura.com#Entity"/>
+    <rdfs:domain rdf:resource="http://www.akura.com#Comparison"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.akura.com#ContainProperty">
+    <rdfs:range rdf:resource="http://www.akura.com#Property"/>
+    <rdfs:domain rdf:resource="http://www.akura.com#Entity"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.akura.com#MainEntity">
+    <rdfs:range rdf:resource="http://www.akura.com#Entity"/>
+    <rdfs:domain rdf:resource="http://www.akura.com#Review"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.akura.com#MeasuredBy">
+    <rdfs:range rdf:resource="http://www.akura.com#BaseScore"/>
+    <rdfs:domain rdf:resource="http://www.akura.com#Review"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.akura.com#ReviewedBy">
+    <rdfs:range rdf:resource="http://www.akura.com#Reviewer"/>
+    <rdfs:domain rdf:resource="http://www.akura.com#Review"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.akura.com#BetterThan">
+    <rdfs:range rdf:resource="http://www.akura.com#Comparison"/>
+    <rdfs:domain rdf:resource="http://www.akura.com#Review"/>
+  </owl:ObjectProperty>
+  <owl:DatatypeProperty rdf:about="http://www.akura.com#Value">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://www.akura.com#Property"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.akura.com#Key">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://www.akura.com#Property"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.akura.com#Score">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdfs:domain rdf:resource="http://www.akura.com#BaseScore"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.akura.com#UserName">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://www.akura.com#Reviewer"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.akura.com#email">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://www.akura.com#Reviewer"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.akura.com#HashID">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://www.akura.com#Review"/>
+    <rdfs:domain rdf:resource="http://www.akura.com#Property"/>
+    <rdfs:domain rdf:resource="http://www.akura.com#Entity"/>
+    <rdfs:domain rdf:resource="http://www.akura.com#Comparison"/>
+    <rdfs:domain rdf:resource="http://www.akura.com#BaseScore"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.akura.com#EntityName">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://www.akura.com#Entity"/>
+  </owl:DatatypeProperty>
+  <www:Entity rdf:about="http://www.akura.com#ENTITY-1572451790">
+    <www:ContainProperty>
+      <www:Property rdf:about="http://www.akura.com#ENTITY-1572451790-PROPERTY76396841">
+        <www:Value>$112</www:Value>
+        <www:Key>price</www:Key>
+      </www:Property>
+    </www:ContainProperty>
+    <www:HashID>ENTITY-1572451790</www:HashID>
+    <www:EntityName>Iphone 7</www:EntityName>
+  </www:Entity>
+</rdf:RDF>

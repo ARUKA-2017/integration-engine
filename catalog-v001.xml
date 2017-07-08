@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1499497380634" name="http://www.akura.com" uri="src/main/resources/rev_engine_base_ontology.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1499497380634" name="shadowed:http://www.akura.com" uri="target/classes/rev_engine_base_ontology.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1499498116834" name="http://www.akura.com" uri="rev_engine_base_ontology.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1499498116834" name="shadowed:http://www.akura.com" uri="src/main/resources/rev_engine_base_ontology.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1499498116834" name="shadowed:http://www.akura.com" uri="target/classes/rev_engine_base_ontology.owl"/>
     </group>
 </catalog>

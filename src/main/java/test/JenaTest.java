@@ -87,15 +87,15 @@ public class JenaTest {
         Entity ent = new Entity(m, "Iphone 7");
 
         ent.setProperty("price", "$112");
-        ent.setProperty("weight", "200g");
-
-        Map<String, String> map = new HashMap<String, String>();
-
-        map.put("FrontCam", "12MPX");
-        map.put("RearCam", "20MPX");
-        map.put("Optical Zoom", "Yes");
-
-        ent.setFeature("Camera", map);
+//        ent.setProperty("weight", "200g");
+//
+//        Map<String, String> map = new HashMap<String, String>();
+//
+//        map.put("FrontCam", "12MPX");
+//        map.put("RearCam", "20MPX");
+//        map.put("Optical Zoom", "Yes");
+//
+//        ent.setFeature("Camera", map);
         ent.save();
 
     }

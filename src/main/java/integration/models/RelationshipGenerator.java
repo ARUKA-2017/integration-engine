@@ -22,8 +22,7 @@ public class RelationshipGenerator {
 
 //        ObjectProperty prop = model.getObjectProperty(OntologyClass.URI_NAMESPACE + relationship);
 
-        relationship.addDomain(domain);
-        relationship.addRange(range);
+        domain.addProperty(relationship,range);
 
 
     }
