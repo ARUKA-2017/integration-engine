@@ -50,11 +50,12 @@
     
 
 
-    <!-- http://www.akura.com#Evaluates -->
+    <!-- http://www.akura.com#EvaluatedBy -->
 
-    <owl:ObjectProperty rdf:about="http://www.akura.com#Evaluates">
-        <rdfs:domain rdf:resource="http://www.akura.com#BaseScore"/>
-        <rdfs:range rdf:resource="http://www.akura.com#Entity"/>
+    <owl:ObjectProperty rdf:about="http://www.akura.com#EvaluatedBy">
+        <rdfs:domain rdf:resource="http://www.akura.com#Entity"/>
+        <rdfs:domain rdf:resource="http://www.akura.com#Feature"/>
+        <rdfs:range rdf:resource="http://www.akura.com#BaseScore"/>
     </owl:ObjectProperty>
     
 
@@ -96,11 +97,11 @@
     
 
 
-    <!-- http://www.akura.com#ReviewedBy -->
+    <!-- http://www.akura.com#Provides -->
 
-    <owl:ObjectProperty rdf:about="http://www.akura.com#ReviewedBy">
-        <rdfs:domain rdf:resource="http://www.akura.com#Review"/>
-        <rdfs:range rdf:resource="http://www.akura.com#Reviewer"/>
+    <owl:ObjectProperty rdf:about="http://www.akura.com#Provides">
+        <rdfs:domain rdf:resource="http://www.akura.com#Reviewer"/>
+        <rdfs:range rdf:resource="http://www.akura.com#Review"/>
     </owl:ObjectProperty>
     
 
@@ -122,6 +123,24 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://www.akura.com#Count -->
+
+    <owl:DatatypeProperty rdf:about="http://www.akura.com#Count">
+        <rdfs:domain rdf:resource="http://www.akura.com#Comparison"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.akura.com#Email -->
+
+    <owl:DatatypeProperty rdf:about="http://www.akura.com#Email">
+        <rdfs:domain rdf:resource="http://www.akura.com#Reviewer"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
     
 
 
@@ -187,15 +206,6 @@
 
     <owl:DatatypeProperty rdf:about="http://www.akura.com#Value">
         <rdfs:domain rdf:resource="http://www.akura.com#Property"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://www.akura.com#email -->
-
-    <owl:DatatypeProperty rdf:about="http://www.akura.com#email">
-        <rdfs:domain rdf:resource="http://www.akura.com#Reviewer"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
