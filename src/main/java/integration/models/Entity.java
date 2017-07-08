@@ -23,17 +23,17 @@ public class Entity {
     private Property hashID;
 
     private String hash;
-    /**
-     * Create new Instance from class
-     */
+
     public Entity(OntModel m, String name) {
         this.model = m;
 
         this.entityClass = (OntClass) this.model.getOntClass(OntologyClass.ENTITY);
         this.hash = HashGeneratorClass.generateHashForString(name,this.prefix);
+        // 111111
 
         this.initProperties();
-        Individual ind = this.search();
+
+        Individual ind = this.search(this.hash);
 
         if (ind == null) {
             this.instance = entityClass.createIndividual(OntologyClass.URI_NAMESPACE
@@ -42,14 +42,10 @@ public class Entity {
             this.instance = ind;
         }
 
-        this.setLiteralProperties(name, this.hash);
+        this.setLiteralProperties(name);
     }
 
-    /**
-     * Initialize class with Ontology Model
-     *
-     * @param m
-     */
+
     public Entity(OntModel m) {
         this.model = m;
         this.entityClass = (OntClass) this.model.getOntClass(OntologyClass.ENTITY);
@@ -61,12 +57,13 @@ public class Entity {
         hashID = model.getProperty(OntologyClass.URI_NAMESPACE + "HashID");
     }
 
-    private void setLiteralProperties(String entityName, String hash) {
+    private void setLiteralProperties(String entityName) {
 
-        instance.addProperty(this.name, entityName);
-        instance.addProperty(this.hashID, hash);
+        this.setEntityName(entityName);
+        this.setHashID(this.hash);
 
     }
+
 
 
     public void save() {
@@ -74,8 +71,29 @@ public class Entity {
     }
 
 
-    public Individual search() {
-        Individual ind = this.model.getIndividual(OntologyClass.URI_NAMESPACE + this.hash);
+    public Individual search(String hash) {
+        Individual ind = this.model.getIndividual(OntologyClass.URI_NAMESPACE + hash);
         return ind;
     }
+
+
+    public void setEntityName(String entityName){
+        instance.addProperty(this.name, entityName);
+    }
+
+
+    public void setHashID(String hashID){
+        instance.addProperty(this.hashID, hashID);
+    }
+
+
+    public void setProperty(Individual range){
+        RelationshipGenerator.setRelationship(this.model,"ContainProperty",this.instance, range);
+    }
+
+    public void setSubEntity(Individual range){
+        RelationshipGenerator.setRelationship(this.model,"SubEntity",this.instance, range);
+    }
+
+
 }

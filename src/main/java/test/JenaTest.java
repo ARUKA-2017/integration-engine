@@ -16,7 +16,7 @@ public class JenaTest {
 //        System.out.println(HashGeneratorClass.generateHashForString("iphone 7"));
 
         OntModel m = ModelFactory.createOntologyModel();
-        m.read("file:"+ UtilitiesClass.fileName);
+        m.read("file:" + UtilitiesClass.fileName);
 
 //        StmtIterator iter = m.listStatements();
 //
@@ -64,12 +64,19 @@ public class JenaTest {
 
         OntClass myClass = ent.entityClass;
 
-        ExtendedIterator instances = myClass.listInstances();
-        while (instances.hasNext())
-        {
-            OntResource c = (OntResource) instances.next();
-            System.out.println(c.getLocalName());
+        ExtendedIterator prop = myClass.listDeclaredProperties();
+        while (prop.hasNext()) {
+            Property p =  (Property) prop.next();
+            System.out.println(p.getLocalName());
         }
+
+
+//        ExtendedIterator instances = myClass.listInstances();
+//        while (instances.hasNext())
+//        {
+//            OntResource c = (OntResource) instances.next();
+//            System.out.println(c.getLocalName());
+//        }
 
 
     }
