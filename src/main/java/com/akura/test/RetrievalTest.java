@@ -17,8 +17,9 @@ public class RetrievalTest {
         OntModel m = OntologyReader.getOntologyModel(Config.OWL_FILENAME);
 
         Entity entity = new Entity(m);
-        entity.getEntityByHash(HashGeneratorClass.generateHashForString("iphone 7", "ENTITY"));
+        entity.getEntityByHash(HashGeneratorClass.generateHashForString("Samsung Galaxy S5", "ENTITY"));
 
+            System.out.println(entity.instance );
         if (entity.instance != null) {
             // create response class instance
 
@@ -29,6 +30,7 @@ public class RetrievalTest {
             resp.avg_baseScore = entity.getAvgBaseScore();
             resp.features =   entity.getFeatures();
 
+            System.out.println(resp.avg_baseScore );
 
         }
     }
