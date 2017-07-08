@@ -15,24 +15,7 @@ public class ProductService {
 
     public SingleResponse searchProduct(String search, Response res) {
 
-        Entity entity = new Entity(m);
-        entity.getEntityByHash(HashGeneratorClass.generateHashForString(search, "ENTITY"));
-        System.out.println(entity.instance);
-
-        SingleResponse resp = new SingleResponse();
-
-        if (entity.instance != null) {
-
-            resp.name = entity.getName();
-            resp.id = entity.getHash();
-            resp.avg_baseScore = entity.getAvgBaseScore();
-            resp.features = entity.getFeatures();
-            resp.properties = entity.getProperties();
-
-        } else {
-            // TODO: Search from name string
-        }
-
+        SingleResponse resp = new SingleResponse(m, search);
         res.type("Application/JSON");
         return resp;
     }

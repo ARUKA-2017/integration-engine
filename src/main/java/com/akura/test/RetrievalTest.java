@@ -16,22 +16,9 @@ public class RetrievalTest {
 
         OntModel m = OntologyReader.getOntologyModel(Config.OWL_FILENAME);
 
-        Entity entity = new Entity(m);
-        entity.getEntityByHash(HashGeneratorClass.generateHashForString("Samsung Galaxy S5", "ENTITY"));
+        SingleResponse resp = new SingleResponse(m,"Samsung Galaxy S5");
 
-            System.out.println(entity.instance );
-        if (entity.instance != null) {
-            // create response class instance
 
-            SingleResponse resp = new SingleResponse();
 
-            resp.name = entity.getName();
-            resp.id = entity.getHash();
-            resp.avg_baseScore = entity.getAvgBaseScore();
-            resp.features =   entity.getFeatures();
-
-            System.out.println(resp.avg_baseScore );
-
-        }
     }
 }

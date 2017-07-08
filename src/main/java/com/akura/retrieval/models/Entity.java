@@ -106,16 +106,7 @@ public class Entity {
             Individual featureInstance = this.model
                     .getIndividual(iter.next().getResource().toString());
 
-
-            Feature f = new Feature(this.model, featureInstance);
-            FeatureResponse fres = new FeatureResponse();
-            fres.name = f.getName();
-            fres.avg_baseScore = f.getAvgBaseScore();
-            fres.properties = f.getProperties();
-
-            // TODO set comparisons and properties in fres object
-//            fres.comparisons = ?
-//            fres.properties = ?
+            FeatureResponse fres = new FeatureResponse(this.model,featureInstance);
 
             featureList.add(fres);
         }
