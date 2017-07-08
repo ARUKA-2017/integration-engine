@@ -1,4 +1,4 @@
-package integration;
+package com.akura.utility;
 
 
 public class HashGeneratorClass {

@@ -1,4 +1,4 @@
-package integration;
+package com.akura.integration;
 
 public class OntologyClass {
 

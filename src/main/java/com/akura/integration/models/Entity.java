@@ -1,10 +1,10 @@
-package integration.models;
+package com.akura.integration.models;
 
 
-import integration.HashGeneratorClass;
-import integration.UtilitiesClass;
+import com.akura.utility.HashGeneratorClass;
+import com.akura.utility.OntologyWriter;
 import org.apache.jena.ontology.*;
-import integration.OntologyClass;
+import com.akura.integration.OntologyClass;
 import org.apache.jena.ontology.Individual;
 import org.apache.jena.ontology.OntClass;
 import org.apache.jena.rdf.model.Property;
@@ -113,7 +113,7 @@ public class Entity {
     }
 
     public void save() {
-        UtilitiesClass.writeOntology(this.model);
+        OntologyWriter.writeOntology(this.model);
     }
 
 }

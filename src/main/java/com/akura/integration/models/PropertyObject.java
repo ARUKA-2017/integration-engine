@@ -1,7 +1,7 @@
-package integration.models;
+package com.akura.integration.models;
 
-import integration.HashGeneratorClass;
-import integration.OntologyClass;
+import com.akura.utility.HashGeneratorClass;
+import com.akura.integration.OntologyClass;
 import org.apache.jena.ontology.Individual;
 import org.apache.jena.ontology.OntClass;
 import org.apache.jena.ontology.OntModel;
