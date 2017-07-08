@@ -1,5 +1,6 @@
 package integration.models;
 
+import integration.HashGeneratorClass;
 import integration.OntologyClass;
 import org.apache.jena.ontology.Individual;
 import org.apache.jena.ontology.OntClass;
@@ -16,13 +17,34 @@ public class PropertyObject {
 
     private Property key;
     private Property value;
-
+    private String hash;
     private OntModel model;
 
-    public PropertyObject(OntModel m){
+    // if true --> saved. if not --> not saved
+    public Boolean status;
+
+    public PropertyObject(OntModel m) {
         this.model = m;
-        this.entityClass = (OntClass) this.model.getOntClass(OntologyClass.ENTITY);
+        this.entityClass = (OntClass) this.model.getOntClass(OntologyClass.PROPERTY);
         this.initProperties();
+    }
+
+    public PropertyObject(OntModel m, String name, String parentHash) {
+        this.model = m;
+        this.entityClass = (OntClass) this.model.getOntClass(OntologyClass.PROPERTY);
+        this.initProperties();
+
+        this.hash = parentHash + HashGeneratorClass.generateHashForString(name, this.prefix);
+
+        Individual ind = this.search(this.hash);
+        if (ind == null) {
+            this.instance = entityClass.createIndividual(OntologyClass.URI_NAMESPACE
+                    + this.hash);
+            this.status = false;
+        } else {
+            this.status = true;
+            this.instance = ind;
+        }
     }
 
 
@@ -31,6 +53,15 @@ public class PropertyObject {
         value = model.getProperty(OntologyClass.URI_NAMESPACE + "Value");
     }
 
+    public void setKey(String key) {
+        this.instance.addProperty(this.key, key);
+    }
+
+    public void setValue(String value) {
+        this.instance.addProperty(this.value, value);
+    }
+
+    // search property
     public Individual search(String hash) {
         Individual ind = this.model.getIndividual(OntologyClass.URI_NAMESPACE + hash);
         return ind;

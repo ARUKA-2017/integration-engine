@@ -10,7 +10,6 @@ import org.apache.jena.ontology.OntClass;
 import org.apache.jena.rdf.model.Property;
 
 
-
 public class Entity {
 
     public static String prefix = "ENTITY";
@@ -28,8 +27,7 @@ public class Entity {
         this.model = m;
 
         this.entityClass = (OntClass) this.model.getOntClass(OntologyClass.ENTITY);
-        this.hash = HashGeneratorClass.generateHashForString(name,this.prefix);
-        // 111111
+        this.hash = HashGeneratorClass.generateHashForString(name, this.prefix);
 
         this.initProperties();
 
@@ -65,35 +63,41 @@ public class Entity {
     }
 
 
-
-    public void save() {
-        UtilitiesClass.writeOntology(this.model);
-    }
-
-
     public Individual search(String hash) {
         Individual ind = this.model.getIndividual(OntologyClass.URI_NAMESPACE + hash);
         return ind;
     }
 
 
-    public void setEntityName(String entityName){
+    public void setEntityName(String entityName) {
         instance.addProperty(this.name, entityName);
     }
 
 
-    public void setHashID(String hashID){
+    public void setHashID(String hashID) {
         instance.addProperty(this.hashID, hashID);
     }
 
 
-    public void setProperty(Individual range){
-        RelationshipGenerator.setRelationship(this.model,"ContainProperty",this.instance, range);
+    public void setProperty(String key, String value) {
+
+        PropertyObject prop = new PropertyObject(this.model, key, this.hash);
+
+        if (!prop.status) {
+            prop.setKey(key);
+            prop.setValue(value);
+        }
+
+        // TODO: check whether the relationship already exists between the 2 instances
+        RelationshipGenerator.setRelationship(this.model, "ContainProperty", this.instance, prop.instance);
     }
 
-    public void setSubEntity(Individual range){
-        RelationshipGenerator.setRelationship(this.model,"SubEntity",this.instance, range);
+    public void setSubEntity(Individual range) {
+        RelationshipGenerator.setRelationship(this.model, "SubEntity", this.instance, range);
     }
 
+    public void save() {
+        UtilitiesClass.writeOntology(this.model);
+    }
 
 }
