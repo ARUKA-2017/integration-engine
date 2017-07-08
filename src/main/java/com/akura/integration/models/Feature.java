@@ -77,7 +77,7 @@ public class Feature {
 
     }
 
-    public void setBaseScore(Individual baseScore){
+    public void setBaseScore(Individual baseScore) {
         if (!this.model.listStatements(this.instance, this.evaluatedBy, baseScore).hasNext()) {
             RelationshipGenerator.setRelationship(this.evaluatedBy, this.instance, baseScore);
         }

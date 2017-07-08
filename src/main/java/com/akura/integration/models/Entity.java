@@ -50,8 +50,6 @@ public class Entity {
             this.instance = ind;
         }
 
-        this.setEntityName(name);
-        this.setHashID(this.hash);
 
     }
 
