@@ -18,15 +18,16 @@ public class ProductService {
         Entity entity = new Entity(m);
         entity.getEntityByHash(HashGeneratorClass.generateHashForString(search, "ENTITY"));
         System.out.println(entity.instance);
-        SingleResponse resp = new SingleResponse();
-        if (entity.instance != null) {
-            // create response class instance
 
+        SingleResponse resp = new SingleResponse();
+
+        if (entity.instance != null) {
 
             resp.name = entity.getName();
             resp.id = entity.getHash();
             resp.avg_baseScore = entity.getAvgBaseScore();
             resp.features = entity.getFeatures();
+            resp.properties = entity.getProperties();
 
         } else {
             // TODO: Search from name string

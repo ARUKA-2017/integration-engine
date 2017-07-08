@@ -2,6 +2,7 @@ package com.akura.retrieval.models;
 
 import com.akura.config.Config;
 import com.akura.retrieval.models.response.FeatureResponse;
+import com.akura.retrieval.models.response.PropertyResponse;
 import org.apache.jena.ontology.Individual;
 import org.apache.jena.ontology.ObjectProperty;
 import org.apache.jena.ontology.OntModel;
@@ -69,7 +70,7 @@ public class Entity {
 
             count++;
         }
-        if(count == 0){
+        if (count == 0) {
             return 0;
         }
         return (total / count);
@@ -77,8 +78,27 @@ public class Entity {
 
     }
 
+    public PropertyResponse[] getProperties() {
+        ArrayList<PropertyResponse> propList = new ArrayList<>();
+
+        StmtIterator iter = this.instance.listProperties(this.containProperty);
+        while (iter.hasNext()) {
+
+            Individual propInstance = this.model
+                    .getIndividual(iter.next().getResource().toString());
+
+            PropertyObject p = new PropertyObject(this.model, propInstance);
+            PropertyResponse pres = new PropertyResponse();
+            pres.key = p.getKey();
+            pres.value = p.getValue();
+
+            propList.add(pres);
+        }
+        return propList.toArray(new PropertyResponse[propList.size()]);
+    }
+
     public FeatureResponse[] getFeatures() {
-        ArrayList<FeatureResponse> featureList = new ArrayList<FeatureResponse>();
+        ArrayList<FeatureResponse> featureList = new ArrayList<>();
 
         StmtIterator iter = this.instance.listProperties(this.feature);
         while (iter.hasNext()) {
@@ -91,6 +111,7 @@ public class Entity {
             FeatureResponse fres = new FeatureResponse();
             fres.name = f.getName();
             fres.avg_baseScore = f.getAvgBaseScore();
+            fres.properties = f.getProperties();
 
             // TODO set comparisons and properties in fres object
 //            fres.comparisons = ?
