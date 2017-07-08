@@ -1,7 +1,7 @@
 package com.akura.integration.models;
 
+import com.akura.config.Config;
 import com.akura.utility.HashGeneratorClass;
-import com.akura.integration.OntologyClass;
 import org.apache.jena.ontology.Individual;
 import org.apache.jena.ontology.ObjectProperty;
 import org.apache.jena.ontology.OntClass;
@@ -26,20 +26,20 @@ public class Feature {
 
     public Feature(OntModel m) {
         this.model = m;
-        this.entityClass = (OntClass) this.model.getOntClass(OntologyClass.FEATURE);
+        this.entityClass = (OntClass) this.model.getOntClass(Config.FEATURE);
         this.initProperties();
     }
 
     public Feature(OntModel m, String name, String parentHash) {
         this.model = m;
-        this.entityClass = (OntClass) this.model.getOntClass(OntologyClass.FEATURE);
+        this.entityClass = (OntClass) this.model.getOntClass(Config.FEATURE);
         this.initProperties();
 
         this.hash = parentHash + "-" + HashGeneratorClass.generateHashForString(name, this.prefix);
 
         Individual ind = this.search(this.hash);
         if (ind == null) {
-            this.instance = entityClass.createIndividual(OntologyClass.URI_NAMESPACE
+            this.instance = entityClass.createIndividual(Config.URI_NAMESPACE
                     + this.hash);
             this.setName(name);
             this.status = false;
@@ -51,9 +51,9 @@ public class Feature {
 
 
     private void initProperties() {
-        name = model.getProperty(OntologyClass.URI_NAMESPACE + "FeatureName");
-        featureProperty = model.getObjectProperty(OntologyClass.URI_NAMESPACE + "FeatureProperty");
-        evaluatedBy = model.getObjectProperty(OntologyClass.URI_NAMESPACE + "EvaluatedBy");
+        name = model.getProperty(Config.URI_NAMESPACE + "FeatureName");
+        featureProperty = model.getObjectProperty(Config.URI_NAMESPACE + "FeatureProperty");
+        evaluatedBy = model.getObjectProperty(Config.URI_NAMESPACE + "EvaluatedBy");
 
     }
 
@@ -85,7 +85,7 @@ public class Feature {
 
 
     public Individual search(String hash) {
-        Individual ind = this.model.getIndividual(OntologyClass.URI_NAMESPACE + hash);
+        Individual ind = this.model.getIndividual(Config.URI_NAMESPACE + hash);
         return ind;
     }
 }

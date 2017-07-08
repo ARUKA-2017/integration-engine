@@ -1,6 +1,7 @@
 package com.akura.test;
 
 
+import com.akura.config.Config;
 import com.akura.integration.models.*;
 import com.akura.utility.OntologyReader;
 
@@ -19,7 +20,7 @@ public class JenaTest {
 
 //        System.out.println(HashGeneratorClass.generateHashForString("iphone 7"));
 
-        OntModel m = OntologyReader.getOntologyModel("ontology/rev_engine_base_ontology.owl");
+        OntModel m = OntologyReader.getOntologyModel(Config.OWL_FILENAME);
 
 //        StmtIterator iter = m.listStatements();
 //

@@ -1,10 +1,10 @@
 package com.akura.integration.models;
 
 
+import com.akura.config.Config;
 import com.akura.utility.HashGeneratorClass;
 import com.akura.utility.OntologyWriter;
 import org.apache.jena.ontology.*;
-import com.akura.integration.OntologyClass;
 import org.apache.jena.ontology.Individual;
 import org.apache.jena.ontology.OntClass;
 import org.apache.jena.rdf.model.Property;
@@ -33,7 +33,7 @@ public class Entity {
     public Entity(OntModel m, String name) {
         this.model = m;
 
-        this.entityClass = (OntClass) this.model.getOntClass(OntologyClass.ENTITY);
+        this.entityClass = (OntClass) this.model.getOntClass(Config.ENTITY);
         this.hash = HashGeneratorClass.generateHashForString(name, this.prefix);
 
         this.initProperties();
@@ -41,7 +41,7 @@ public class Entity {
         Individual ind = this.search(this.hash);
 
         if (ind == null) {
-            this.instance = entityClass.createIndividual(OntologyClass.URI_NAMESPACE
+            this.instance = entityClass.createIndividual(Config.URI_NAMESPACE
                     + this.hash);
             this.setEntityName(name);
             this.setHashID(this.hash);
@@ -56,23 +56,23 @@ public class Entity {
 
     public Entity(OntModel m) {
         this.model = m;
-        this.entityClass = (OntClass) this.model.getOntClass(OntologyClass.ENTITY);
+        this.entityClass = (OntClass) this.model.getOntClass(Config.ENTITY);
         this.initProperties();
     }
 
 
     private void initProperties() {
-        name = model.getProperty(OntologyClass.URI_NAMESPACE + "EntityName");
-        hashID = model.getProperty(OntologyClass.URI_NAMESPACE + "HashID");
+        name = model.getProperty(Config.URI_NAMESPACE + "EntityName");
+        hashID = model.getProperty(Config.URI_NAMESPACE + "HashID");
 
-        containProperty = model.getObjectProperty(OntologyClass.URI_NAMESPACE + "ContainProperty");
-        feature = model.getObjectProperty(OntologyClass.URI_NAMESPACE + "SubEntity");
-        evaluatedBy = model.getObjectProperty(OntologyClass.URI_NAMESPACE + "EvaluatedBy");
+        containProperty = model.getObjectProperty(Config.URI_NAMESPACE + "ContainProperty");
+        feature = model.getObjectProperty(Config.URI_NAMESPACE + "SubEntity");
+        evaluatedBy = model.getObjectProperty(Config.URI_NAMESPACE + "EvaluatedBy");
     }
 
 
     public Individual search(String hash) {
-        Individual ind = this.model.getIndividual(OntologyClass.URI_NAMESPACE + hash);
+        Individual ind = this.model.getIndividual(Config.URI_NAMESPACE + hash);
         return ind;
     }
 

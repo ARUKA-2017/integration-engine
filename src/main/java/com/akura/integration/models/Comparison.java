@@ -1,8 +1,7 @@
 package com.akura.integration.models;
 
 
-import com.akura.integration.OntologyClass;
-import com.akura.utility.HashGeneratorClass;
+import com.akura.config.Config;
 import org.apache.jena.ontology.Individual;
 import org.apache.jena.ontology.ObjectProperty;
 import org.apache.jena.ontology.OntClass;
@@ -34,14 +33,14 @@ public class Comparison {
                       Individual goodInstance,
                       Individual badInstance) {
         this.model = m;
-        this.entityClass = (OntClass) this.model.getOntClass(OntologyClass.COMPARISON);
+        this.entityClass = (OntClass) this.model.getOntClass(Config.COMPARISON);
         this.initProperties();
 
         this.hash = this.prefix + "-" + goodInstanceHash + "-" + badInstanceHash;
 
         Individual ind = this.search(this.hash);
         if (ind == null) {
-            this.instance = entityClass.createIndividual(OntologyClass.URI_NAMESPACE
+            this.instance = entityClass.createIndividual(Config.URI_NAMESPACE
                     + this.hash);
 
             this.setCount(1);
@@ -56,10 +55,10 @@ public class Comparison {
 
 
     private void initProperties() {
-        count = model.getProperty(OntologyClass.URI_NAMESPACE + "Count"); //TODO set this
+        count = model.getProperty(Config.URI_NAMESPACE + "Count"); //TODO set this
 
-        goodProperty = model.getObjectProperty(OntologyClass.URI_NAMESPACE + "Good");
-        badProperty = model.getObjectProperty(OntologyClass.URI_NAMESPACE + "Bad");
+        goodProperty = model.getObjectProperty(Config.URI_NAMESPACE + "Good");
+        badProperty = model.getObjectProperty(Config.URI_NAMESPACE + "Bad");
 
     }
 
@@ -88,7 +87,7 @@ public class Comparison {
     }
 
     public Individual search(String hash) {
-        Individual ind = this.model.getIndividual(OntologyClass.URI_NAMESPACE + hash);
+        Individual ind = this.model.getIndividual(Config.URI_NAMESPACE + hash);
         return ind;
     }
 }

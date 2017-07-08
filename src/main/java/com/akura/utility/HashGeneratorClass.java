@@ -6,11 +6,6 @@ import java.util.Date;
 
 public class HashGeneratorClass {
 
-    public static void main(String args[])
-    {
-        generateFromTimeStamp("score");
-    }
-
     public static String generateHashForString(String value, String prefix) {
 
         return prefix + value

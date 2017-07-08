@@ -1,7 +1,5 @@
 package com.akura.integration.models;
 
-
-
 import org.apache.jena.ontology.Individual;
 import org.apache.jena.ontology.ObjectProperty;
 

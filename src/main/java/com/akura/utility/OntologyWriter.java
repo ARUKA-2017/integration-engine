@@ -1,6 +1,7 @@
 package com.akura.utility;
 
 
+import com.akura.config.Config;
 import org.apache.jena.ontology.OntModel;
 
 import java.io.FileNotFoundException;
@@ -11,7 +12,7 @@ public class OntologyWriter {
     // File manager
     public static FileResourceManager fileResourceManager = new FileResourceManager();
 
-    public static String fileName = fileResourceManager.getFilePath("ontology/rev_engine_base_ontology.owl");
+    public static String fileName = fileResourceManager.getFilePath(Config.OWL_FILENAME);
     public static String fileType = "RDF/XML-ABBREV";
 
     public static void writeOntology(OntModel m){

@@ -15,7 +15,6 @@ import static org.apache.jena.ontology.OntModelSpec.OWL_MEM;
  */
 public class OntologyReader {
 
-    public static String fileName = "ontology/rev_engine_base_ontology.owl";
     public static String fileType = "RDF/XML-ABBREV";
 
     // File manager
@@ -29,7 +28,7 @@ public class OntologyReader {
         try
         {
             in = new FileInputStream(fileResourceManager.getFilePath(file));
-            model.read(in, fileType);
+            model.read(in, "RDF/XML");
             in.close();
         } catch (IOException e)
         {

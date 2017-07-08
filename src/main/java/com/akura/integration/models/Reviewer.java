@@ -1,7 +1,7 @@
 package com.akura.integration.models;
 
 
-import com.akura.integration.OntologyClass;
+import com.akura.config.Config;
 import com.akura.utility.HashGeneratorClass;
 import org.apache.jena.ontology.Individual;
 import org.apache.jena.ontology.ObjectProperty;
@@ -27,20 +27,20 @@ public class Reviewer {
 
     public Reviewer(OntModel m) {
         this.model = m;
-        this.entityClass = (OntClass) this.model.getOntClass(OntologyClass.REVIEWER);
+        this.entityClass = (OntClass) this.model.getOntClass(Config.REVIEWER);
         this.initProperties();
     }
 
     public Reviewer(OntModel m, String email, String username) {
         this.model = m;
-        this.entityClass = (OntClass) this.model.getOntClass(OntologyClass.REVIEWER);
+        this.entityClass = (OntClass) this.model.getOntClass(Config.REVIEWER);
         this.initProperties();
 
         this.hash = HashGeneratorClass.generateHashForString(email, this.prefix);
 
         Individual ind = this.search(this.hash);
         if (ind == null) {
-            this.instance = entityClass.createIndividual(OntologyClass.URI_NAMESPACE
+            this.instance = entityClass.createIndividual(Config.URI_NAMESPACE
                     + this.hash);
 
             this.setEmail(email);
@@ -55,10 +55,10 @@ public class Reviewer {
 
 
     private void initProperties() {
-        username = model.getProperty(OntologyClass.URI_NAMESPACE + "UserName");
-        email = model.getProperty(OntologyClass.URI_NAMESPACE + "Email");
+        username = model.getProperty(Config.URI_NAMESPACE + "UserName");
+        email = model.getProperty(Config.URI_NAMESPACE + "Email");
 
-        providesProperty = model.getObjectProperty(OntologyClass.URI_NAMESPACE + "Provides");
+        providesProperty = model.getObjectProperty(Config.URI_NAMESPACE + "Provides");
 
     }
 
@@ -86,7 +86,7 @@ public class Reviewer {
     }
 
     public Individual search(String hash) {
-        Individual ind = this.model.getIndividual(OntologyClass.URI_NAMESPACE + hash);
+        Individual ind = this.model.getIndividual(Config.URI_NAMESPACE + hash);
         return ind;
     }
 }

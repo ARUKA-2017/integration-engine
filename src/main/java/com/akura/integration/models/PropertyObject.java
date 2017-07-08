@@ -1,7 +1,7 @@
 package com.akura.integration.models;
 
+import com.akura.config.Config;
 import com.akura.utility.HashGeneratorClass;
-import com.akura.integration.OntologyClass;
 import org.apache.jena.ontology.Individual;
 import org.apache.jena.ontology.OntClass;
 import org.apache.jena.ontology.OntModel;
@@ -25,20 +25,20 @@ public class PropertyObject {
 
     public PropertyObject(OntModel m) {
         this.model = m;
-        this.entityClass = (OntClass) this.model.getOntClass(OntologyClass.PROPERTY);
+        this.entityClass = (OntClass) this.model.getOntClass(Config.PROPERTY);
         this.initProperties();
     }
 
     public PropertyObject(OntModel m, String name, String parentHash) {
         this.model = m;
-        this.entityClass = (OntClass) this.model.getOntClass(OntologyClass.PROPERTY);
+        this.entityClass = (OntClass) this.model.getOntClass(Config.PROPERTY);
         this.initProperties();
 
         this.hash = parentHash + "-" + HashGeneratorClass.generateHashForString(name, this.prefix);
 
         Individual ind = this.search(this.hash);
         if (ind == null) {
-            this.instance = entityClass.createIndividual(OntologyClass.URI_NAMESPACE
+            this.instance = entityClass.createIndividual(Config.URI_NAMESPACE
                     + this.hash);
             this.status = false;
         } else {
@@ -49,8 +49,8 @@ public class PropertyObject {
 
 
     private void initProperties() {
-        key = model.getProperty(OntologyClass.URI_NAMESPACE + "Key");
-        value = model.getProperty(OntologyClass.URI_NAMESPACE + "Value");
+        key = model.getProperty(Config.URI_NAMESPACE + "Key");
+        value = model.getProperty(Config.URI_NAMESPACE + "Value");
     }
 
     public void setKey(String key) {
@@ -63,7 +63,7 @@ public class PropertyObject {
 
 
     public Individual search(String hash) {
-        Individual ind = this.model.getIndividual(OntologyClass.URI_NAMESPACE + hash);
+        Individual ind = this.model.getIndividual(Config.URI_NAMESPACE + hash);
         return ind;
     }
 }
