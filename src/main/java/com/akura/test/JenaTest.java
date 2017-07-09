@@ -172,8 +172,6 @@ public class JenaTest {
 
         Comparison comparison2 = new Comparison(m, feature_camera.hash, feature_camera2.hash, feature_camera.instance, feature_camera2.instance);
 
-
-
         // save ontology
         OntologyWriter.writeOntology(m);
 

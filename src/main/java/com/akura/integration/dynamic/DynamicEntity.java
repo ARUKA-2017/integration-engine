@@ -1,14 +1,10 @@
 package com.akura.integration.dynamic;
-
-
 import com.akura.integration.models.*;
 import org.apache.jena.ontology.Individual;
-import org.apache.jena.ontology.ObjectProperty;
 import org.apache.jena.ontology.OntClass;
 import org.apache.jena.ontology.OntModel;
 import org.apache.jena.query.*;
 import org.apache.jena.rdf.model.Property;
-import org.apache.jena.rdf.model.StmtIterator;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -17,8 +13,7 @@ import java.util.Map;
 
 public class DynamicEntity {
 
-    // dynamic model
-    private OntModel model;
+    private OntModel dynamic;
     public static OntModel stat;
     public OntClass entityClass;
     public Individual instance;
@@ -26,13 +21,13 @@ public class DynamicEntity {
     public Boolean isEntity;
     public Review review;
 
-    //TODO right now this implementation is in TEST class
+    //TODO  refactor this entire class
     public Entity staticEntity;
     public Feature staticFeature;
 
 
     public DynamicEntity(OntModel dynamic, OntModel stat, Individual instance, Review review) {
-        this.model = dynamic;
+        this.dynamic = dynamic;
         this.stat = stat;
         this.instance = instance;
         this.getProperties();
@@ -59,7 +54,7 @@ public class DynamicEntity {
                 "prefix owl: <http://www.w3.org/2002/07/owl#> " +
                         "SELECT ?subject " +
                         "WHERE { " +
-                        "?subject <" + IntegrationHelper.getPropertyURI(this.model, "SubEntity") + ">" +
+                        "?subject <" + IntegrationHelper.getPropertyURI(this.dynamic, "SubEntity") + ">" +
                         "<" + this.instance.getURI().toString() + ">" +
                         "}"
         );
@@ -68,7 +63,7 @@ public class DynamicEntity {
         ps.setLiteral("identifier", this.instance.getURI().toString());
 
         Query query = QueryFactory.create(ps.toString());
-        QueryExecution queryExecution = QueryExecutionFactory.create(query, this.model);
+        QueryExecution queryExecution = QueryExecutionFactory.create(query, this.dynamic);
 
         try {
 
@@ -76,7 +71,7 @@ public class DynamicEntity {
             if (resultSet.hasNext()) {
 
                 this.isEntity = false;
-                Individual instance = this.model.getIndividual(resultSet.next().get("subject").toString());
+                Individual instance = this.dynamic.getIndividual(resultSet.next().get("subject").toString());
                 ArrayList<Property> indProperties = IntegrationHelper.listPropertiesToArrayList(instance);
                 String name = IntegrationHelper.getLiteralPropertyValue(indProperties, "Name", instance);
                 this.staticEntity = new Entity(this.stat, name);
@@ -130,7 +125,7 @@ public class DynamicEntity {
     public void setFeaturesFromEntity(Entity ent) throws Exception {
 
         ArrayList<Individual> featureEntites = IntegrationHelper
-                .getObjectPropertyList(this.model, this.properties, "SubEntity", this.instance);
+                .getObjectPropertyList(this.dynamic, this.properties, "SubEntity", this.instance);
 
 
         Iterator<Individual> iterator = featureEntites.iterator();
@@ -138,14 +133,13 @@ public class DynamicEntity {
         while (iterator.hasNext()) {
 
             Individual ind = iterator.next();
-            DynamicEntity featureEntity = new DynamicEntity(this.model, this.stat, ind, this.review);
+            DynamicEntity featureEntity = new DynamicEntity(this.dynamic, this.stat, ind, this.review);
             Map<String, String> map = featureEntity.getStaticOntoProperties();
 
             String name = IntegrationHelper.getLiteralPropertyValue(featureEntity.properties,
                     "Name",
                     featureEntity.instance);
 
-            //TODO think whether you should put an empty array here
             Feature f = ent.setFeature(name, map);
 
 
@@ -168,7 +162,7 @@ public class DynamicEntity {
         Map<String, String> map = new HashMap<String, String>();
 
         ArrayList<Individual> propertyInstaces = IntegrationHelper
-                .getObjectPropertyList(this.model, this.properties, "HasProperty", this.instance);
+                .getObjectPropertyList(this.dynamic, this.properties, "HasProperty", this.instance);
 
         Iterator<Individual> iterator = propertyInstaces.iterator();
         while (iterator.hasNext()) {
@@ -186,7 +180,7 @@ public class DynamicEntity {
 
     public ArrayList<Individual> setComparisonsForEntity(Entity ent) throws Exception {
         ArrayList<Individual> propertyInstaces = IntegrationHelper
-                .getObjectPropertyList(this.model, this.properties, "BetterThan", this.instance);
+                .getObjectPropertyList(this.dynamic, this.properties, "BetterThan", this.instance);
 
         Iterator<Individual> iterator = propertyInstaces.iterator();
         while (iterator.hasNext()) {
@@ -214,7 +208,7 @@ public class DynamicEntity {
 
     public ArrayList<Individual> setComparisonsForFeature(Feature f) throws Exception {
         ArrayList<Individual> propertyInstaces = IntegrationHelper
-                .getObjectPropertyList(this.model, this.properties, "BetterThan", this.instance);
+                .getObjectPropertyList(this.dynamic, this.properties, "BetterThan", this.instance);
 
         Iterator<Individual> iterator = propertyInstaces.iterator();
         while (iterator.hasNext()) {
@@ -226,7 +220,7 @@ public class DynamicEntity {
             // TODO make it generic
 
             String name = IntegrationHelper.getLiteralPropertyValue(indProperties, "Name", ind);
-            DynamicEntity dn = new DynamicEntity(this.model, this.stat, ind, this.review);
+            DynamicEntity dn = new DynamicEntity(this.dynamic, this.stat, ind, this.review);
 
             Feature comparisonFeature = new Feature(stat, name, dn.staticEntity.hash);
             new Comparison(stat,

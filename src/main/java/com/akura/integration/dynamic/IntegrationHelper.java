@@ -1,9 +1,4 @@
 package com.akura.integration.dynamic;
-
-
-import com.akura.config.Config;
-import com.akura.retrieval.models.PropertyObject;
-import com.akura.retrieval.response.PropertyResponse;
 import org.apache.jena.ontology.Individual;
 import org.apache.jena.ontology.ObjectProperty;
 import org.apache.jena.ontology.OntModel;
@@ -87,7 +82,6 @@ public class IntegrationHelper {
             throw new Exception("Object Property Null " + name);
         }
 
-        //TODO Not sure
         ObjectProperty objProp = dynamic.getObjectProperty(prop.toString());
         StmtIterator iter = instance.listProperties(objProp);
         if (iter.hasNext()) {
@@ -112,7 +106,7 @@ public class IntegrationHelper {
             return indList;
         }
 
-        //TODO Not sure
+
         ObjectProperty objProp = dynamic.getObjectProperty(prop.toString());
         StmtIterator iter = instance.listProperties(objProp);
         while (iter.hasNext()) {

@@ -37,7 +37,6 @@ public class IntegrateService {
         // second get entity class instances
         this.processEntityClassInstances();
 
-
         // save after everything
         this.saveModifiedOntology();
 
@@ -102,6 +101,7 @@ public class IntegrateService {
         }
     }
 
+    // TODO Write an algortithm to save ontology model concurrently
     public void saveModifiedOntology() {
 
         if (!review.status) {

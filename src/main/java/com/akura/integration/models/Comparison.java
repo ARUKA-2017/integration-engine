@@ -71,7 +71,7 @@ public class Comparison {
     }
 
     public Integer getCount() {
-        return this.instance.getProperty(this.count).getLiteral().getInt(); //TODO test this
+        return this.instance.getProperty(this.count).getLiteral().getInt();
     }
 
     public void incrementCount() {

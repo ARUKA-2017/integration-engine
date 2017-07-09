@@ -4,30 +4,26 @@ package com.akura.integration.dynamic;
 import com.akura.integration.models.Entity;
 import com.akura.integration.models.Review;
 import com.akura.integration.models.Reviewer;
-import com.oracle.webservices.internal.api.message.PropertySet;
 import org.apache.jena.ontology.Individual;
 import org.apache.jena.ontology.OntClass;
 import org.apache.jena.ontology.OntModel;
 import org.apache.jena.rdf.model.Property;
-import org.apache.jena.rdf.model.StmtIterator;
-import org.apache.jena.rdf.model.impl.StatementImpl;
 
 import java.util.ArrayList;
 
 public class ReviewInfo {
 
-    private OntModel model;
+    private OntModel dynamic;
     public OntClass entityClass;
     public Individual instance;
     public ArrayList<Property> properties;
 
 
     public ReviewInfo(OntModel m, Individual instance) {
-        this.model = m;
+        this.dynamic = m;
         this.instance = instance;
         this.getProperties();
     }
-
 
     public ArrayList<Property> getProperties() {
 
@@ -59,14 +55,13 @@ public class ReviewInfo {
         return r.createReviewAndGetInstance(comment);
     }
 
-
     public Entity createMainEntity(OntModel stat, Review review) throws Exception {
-        Individual DynamicEntityInstance = IntegrationHelper.getObjectPropertyValue(this.model,
+        Individual DynamicEntityInstance = IntegrationHelper.getObjectPropertyValue(this.dynamic,
                 this.properties,
                 "MainEntity",
                 this.instance);
 
-        DynamicEntity entity = new DynamicEntity(this.model, stat, DynamicEntityInstance, review);
+        DynamicEntity entity = new DynamicEntity(this.dynamic, stat, DynamicEntityInstance, review);
         Entity ent = entity.getEntityObject(stat);
 
 
