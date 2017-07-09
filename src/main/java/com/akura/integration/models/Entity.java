@@ -20,7 +20,7 @@ public class Entity {
     public OntClass entityClass;
     public String hash;
 
-    private OntModel model;
+    public OntModel model;
 
 
     private Property name;

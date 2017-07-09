@@ -7,6 +7,9 @@ public class Config {
 
     public static final String OWL_FILENAME = "ontology/rev_engine_base_ontology.owl";
 
+    //TODO: rmeove this later. For testing purposes only
+    public static final String DYNAMIC_FILENAME = "ontology/rev_engine_dynamic_ontology.owl";
+
     public static final String URI_NAMESPACE = "http://www.akura.com#";
 
     public static final String ENTITY = URI_NAMESPACE + "Entity";
