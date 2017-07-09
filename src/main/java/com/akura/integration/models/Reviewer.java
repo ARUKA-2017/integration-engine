@@ -53,7 +53,6 @@ public class Reviewer {
         }
     }
 
-
     private void initProperties() {
         username = model.getProperty(Config.URI_NAMESPACE + "UserName");
         email = model.getProperty(Config.URI_NAMESPACE + "Email");
@@ -77,7 +76,6 @@ public class Reviewer {
         }
 
     }
-
 
     public Review createReviewAndGetInstance(String comment){
         Review review = new Review(this.model, comment);
