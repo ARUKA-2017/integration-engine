@@ -25,6 +25,7 @@ public class OntologyWriter {
         }
     }
 
+    // TODO save these files in a seperate folder organized by date
     public static void writeOntology(OntModel m, String fileName){
 
         try{
