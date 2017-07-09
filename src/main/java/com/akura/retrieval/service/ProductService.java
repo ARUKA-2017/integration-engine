@@ -11,6 +11,7 @@ import spark.Response;
 
 public class ProductService {
 
+    //TODO Implement a singleton for Ontology Model
     OntModel m = OntologyReader.getOntologyModel(Config.OWL_FILENAME);
 
     public SingleResponse searchProduct(String search, Response res) {
