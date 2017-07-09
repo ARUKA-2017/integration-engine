@@ -24,4 +24,14 @@ public class OntologyWriter {
             e.printStackTrace();
         }
     }
+
+    public static void writeOntology(OntModel m, String fileName){
+
+        try{
+            PrintStream p = new PrintStream(fileName);
+            m.write(p, fileType);
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+    }
 }

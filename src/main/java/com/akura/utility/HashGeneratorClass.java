@@ -6,6 +6,7 @@ import java.util.Date;
 
 public class HashGeneratorClass {
 
+    //TODO introduce SHA1 or something else
     public static String generateHashForString(String value, String prefix) {
 
         return prefix +"-" +value

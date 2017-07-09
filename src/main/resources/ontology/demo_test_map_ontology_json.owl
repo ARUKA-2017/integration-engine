@@ -1,0 +1,167 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="urn:absolute:www.akura.com#"
+     xml:base="urn:absolute:www.akura.com"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:www="urn:absolute:www.akura.com#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="urn:absolute:www.akura.com"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- urn:absolute:www.akura.com#BetterThan -->
+
+    <owl:ObjectProperty rdf:about="urn:absolute:www.akura.com#BetterThan">
+        <rdfs:domain rdf:resource="urn:absolute:www.akura.com#Entity"/>
+        <rdfs:range rdf:resource="urn:absolute:www.akura.com#Entity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- urn:absolute:www.akura.com#HasProperty -->
+
+    <owl:ObjectProperty rdf:about="urn:absolute:www.akura.com#HasProperty">
+        <rdfs:domain rdf:resource="urn:absolute:www.akura.com#Entity"/>
+        <rdfs:domain rdf:resource="urn:absolute:www.akura.com#ReviewInfo"/>
+        <rdfs:range rdf:resource="urn:absolute:www.akura.com#Property"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- urn:absolute:www.akura.com#MainEntity -->
+
+    <owl:ObjectProperty rdf:about="urn:absolute:www.akura.com#MainEntity">
+        <rdfs:domain rdf:resource="urn:absolute:www.akura.com#ReviewInfo"/>
+        <rdfs:range rdf:resource="urn:absolute:www.akura.com#Entity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- urn:absolute:www.akura.com#SubEntity -->
+
+    <owl:ObjectProperty rdf:about="urn:absolute:www.akura.com#SubEntity">
+        <rdfs:domain rdf:resource="urn:absolute:www.akura.com#Entity"/>
+        <rdfs:range rdf:resource="urn:absolute:www.akura.com#Entity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- urn:absolute:www.akura.com#BaseScore -->
+
+    <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com#BaseScore">
+        <rdfs:domain rdf:resource="urn:absolute:www.akura.com#Entity"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- urn:absolute:www.akura.com#Comment -->
+
+    <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com#Comment">
+        <rdfs:domain rdf:resource="urn:absolute:www.akura.com#ReviewInfo"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- urn:absolute:www.akura.com#Email -->
+
+    <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com#Email">
+        <rdfs:domain rdf:resource="urn:absolute:www.akura.com#ReviewInfo"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- urn:absolute:www.akura.com#Key -->
+
+    <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com#Key">
+        <rdfs:domain rdf:resource="urn:absolute:www.akura.com#Property"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- urn:absolute:www.akura.com#Name -->
+
+    <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com#Name">
+        <rdfs:domain rdf:resource="urn:absolute:www.akura.com#Entity"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- urn:absolute:www.akura.com#UserName -->
+
+    <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com#UserName">
+        <rdfs:domain rdf:resource="urn:absolute:www.akura.com#ReviewInfo"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- urn:absolute:www.akura.com#Value -->
+
+    <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com#Value">
+        <rdfs:domain rdf:resource="urn:absolute:www.akura.com#Property"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- urn:absolute:www.akura.com#Entity -->
+
+    <owl:Class rdf:about="urn:absolute:www.akura.com#Entity"/>
+    
+
+
+    <!-- urn:absolute:www.akura.com#Property -->
+
+    <owl:Class rdf:about="urn:absolute:www.akura.com#Property"/>
+    
+
+
+    <!-- urn:absolute:www.akura.com#ReviewInfo -->
+
+    <owl:Class rdf:about="urn:absolute:www.akura.com#ReviewInfo"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi -->
+

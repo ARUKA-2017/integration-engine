@@ -6,6 +6,7 @@ package com.akura.config;
 public class Config {
 
     public static final String OWL_FILENAME = "ontology/rev_engine_base_ontology.owl";
+    public static final String OWL_DYNAMIC_EMPTY_FILENAME = "ontology/rev_engine_dynamic_empty_ontology.owl";
 
     //TODO: rmeove this later. For testing purposes only
     public static final String DYNAMIC_FILENAME = "ontology/rev_engine_dynamic_ontology.owl";
@@ -21,4 +22,8 @@ public class Config {
     public static final String FEATURE = URI_NAMESPACE + "Feature";
 
     public static final double STRING_SIMILARITY_THRESHOLD = 0.5;
+
+
+
+    public static final String DYNAMIC_ONTOLOGY_URI = "urn:absolute:www.akura.com#";
 }
