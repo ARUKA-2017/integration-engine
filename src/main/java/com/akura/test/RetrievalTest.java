@@ -40,6 +40,6 @@ public class RetrievalTest {
 
 
         Comparison comparison = new Comparison(m);
-        System.out.println(comparison.getWorseThan("ENTITY-2014703404"));
+        System.out.println(comparison.getWorseThanForEntity("ENTITY-2014703404"));
     }
 }

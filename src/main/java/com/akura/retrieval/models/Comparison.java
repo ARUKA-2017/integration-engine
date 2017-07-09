@@ -1,11 +1,9 @@
 package com.akura.retrieval.models;
 
-
-import com.akura.config.Config;
 import com.akura.retrieval.response.ComparisonEntityInstance;
 import org.apache.jena.ontology.OntModel;
 import org.apache.jena.query.*;
-import org.apache.jena.rdf.model.Property;
+
 
 import java.util.ArrayList;
 
@@ -18,7 +16,7 @@ public class Comparison {
     }
 
 
-    public ArrayList<ComparisonEntityInstance> getBetterThanForEntity(String hash) {
+    public ComparisonEntityInstance[] getBetterThanForEntity(String hash) {
 
         ArrayList<ComparisonEntityInstance> comparisonList = new ArrayList<>();
 
@@ -28,7 +26,7 @@ public class Comparison {
                         "SELECT ?comparison ?count ?bad ?name ?hashId \n" +
                         "WHERE { " +
                         "?bad akura:HashID  ?hashId ."+
-                        "?bad akura:EntityName  ?name ."+
+                        "?bad akura:Name  ?name ."+
                         "?comparison akura:Bad  ?bad ."+
                         "?comparison akura:Count ?count ." +
                         "?comparison akura:Good ?y ." +
@@ -39,11 +37,11 @@ public class Comparison {
 
         comparisonList = getResult(ps, comparisonList);
 
-        return comparisonList;
+        return comparisonList.toArray(new ComparisonEntityInstance[comparisonList.size()]);
 
     }
 
-    public ArrayList<ComparisonEntityInstance> getWorseThanForEntity(String hash) {
+    public ComparisonEntityInstance[] getWorseThanForEntity(String hash) {
 
         ArrayList<ComparisonEntityInstance> comparisonList = new ArrayList<>();
 
@@ -53,7 +51,7 @@ public class Comparison {
                         "SELECT ?comparison ?count ?good ?name ?hashId \n" +
                         "WHERE { " +
                         "?good akura:HashID  ?hashId ."+
-                        "?good akura:EntityName  ?name ."+
+                        "?good akura:Name  ?name ."+
                         "?comparison akura:Good  ?good ."+
                         "?comparison akura:Count ?count ." +
                         "?comparison akura:Bad ?y ." +
@@ -64,11 +62,59 @@ public class Comparison {
 
         comparisonList = getResult(ps, comparisonList);
 
-        return comparisonList;
+        return comparisonList.toArray(new ComparisonEntityInstance[comparisonList.size()]);
 
     }
 
+    public ComparisonEntityInstance[] getBetterThanForFeature(String hash) {
 
+        ArrayList<ComparisonEntityInstance> comparisonList = new ArrayList<>();
+
+        ParameterizedSparqlString ps = new ParameterizedSparqlString();
+        ps.setCommandText(
+                "PREFIX akura: <http://www.akura.com#>\n" +
+                        "SELECT ?comparison ?count ?bad ?name ?hashId \n" +
+                        "WHERE { " +
+                        "?entity akura:HashID ?hashId ."+
+                        "?entity akura:Name ?name ."+
+                        "?entity akura:SubEntity ?bad ."+
+                        "?comparison akura:Bad  ?bad ."+
+                        "?comparison akura:Count ?count ." +
+                        "?comparison akura:Good ?y ." +
+                        "?y  akura:HashID  ?hash ." +
+                        "}"
+        );
+        ps.setLiteral("hash", hash);
+
+        comparisonList = getResult(ps, comparisonList);
+
+        return comparisonList.toArray(new ComparisonEntityInstance[comparisonList.size()]);
+    }
+
+    public ComparisonEntityInstance[] getWorseThanForFeature(String hash) {
+
+        ArrayList<ComparisonEntityInstance> comparisonList = new ArrayList<>();
+
+        ParameterizedSparqlString ps = new ParameterizedSparqlString();
+        ps.setCommandText(
+                "PREFIX akura: <http://www.akura.com#>\n" +
+                        "SELECT ?comparison ?count ?good ?name ?hashId \n" +
+                        "WHERE { " +
+                        "?entity akura:HashID ?hashId ."+
+                        "?entity akura:Name ?name ."+
+                        "?entity akura:SubEntity ?good ."+
+                        "?comparison akura:Good  ?good ."+
+                        "?comparison akura:Count ?count ." +
+                        "?comparison akura:Bad ?y ." +
+                        "?y  akura:HashID  ?hash ." +
+                        "}"
+        );
+        ps.setLiteral("hash", hash);
+
+        comparisonList = getResult(ps, comparisonList);
+
+        return comparisonList.toArray(new ComparisonEntityInstance[comparisonList.size()]);
+    }
 
 
     private ArrayList<ComparisonEntityInstance> getResult(ParameterizedSparqlString ps, ArrayList<ComparisonEntityInstance> comparisonList)

@@ -61,7 +61,7 @@ public class Entity {
 
 
     private void initProperties() {
-        name = model.getProperty(Config.URI_NAMESPACE + "EntityName");
+        name = model.getProperty(Config.URI_NAMESPACE + "Name");
         hashID = model.getProperty(Config.URI_NAMESPACE + "HashID");
 
         containProperty = model.getObjectProperty(Config.URI_NAMESPACE + "ContainProperty");

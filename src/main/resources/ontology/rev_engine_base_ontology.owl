@@ -144,30 +144,13 @@
     
 
 
-    <!-- http://www.akura.com#EntityName -->
-
-    <owl:DatatypeProperty rdf:about="http://www.akura.com#EntityName">
-        <rdfs:domain rdf:resource="http://www.akura.com#Entity"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://www.akura.com#FeatureName -->
-
-    <owl:DatatypeProperty rdf:about="http://www.akura.com#FeatureName">
-        <rdfs:domain rdf:resource="http://www.akura.com#Feature"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    </owl:DatatypeProperty>
-    
-
-
     <!-- http://www.akura.com#HashID -->
 
     <owl:DatatypeProperty rdf:about="http://www.akura.com#HashID">
         <rdfs:domain rdf:resource="http://www.akura.com#BaseScore"/>
         <rdfs:domain rdf:resource="http://www.akura.com#Comparison"/>
         <rdfs:domain rdf:resource="http://www.akura.com#Entity"/>
+        <rdfs:domain rdf:resource="http://www.akura.com#Feature"/>
         <rdfs:domain rdf:resource="http://www.akura.com#Property"/>
         <rdfs:domain rdf:resource="http://www.akura.com#Review"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
@@ -179,6 +162,16 @@
 
     <owl:DatatypeProperty rdf:about="http://www.akura.com#Key">
         <rdfs:domain rdf:resource="http://www.akura.com#Property"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.akura.com#Name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.akura.com#Name">
+        <rdfs:domain rdf:resource="http://www.akura.com#Entity"/>
+        <rdfs:domain rdf:resource="http://www.akura.com#Feature"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     

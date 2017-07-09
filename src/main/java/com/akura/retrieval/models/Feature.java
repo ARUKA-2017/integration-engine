@@ -1,7 +1,7 @@
 package com.akura.retrieval.models;
 
 import com.akura.config.Config;
-import com.akura.retrieval.models.response.PropertyResponse;
+import com.akura.retrieval.response.PropertyResponse;
 import org.apache.jena.ontology.Individual;
 import org.apache.jena.ontology.ObjectProperty;
 import org.apache.jena.ontology.OntModel;

@@ -19,6 +19,7 @@ public class Feature {
     private Property name;
     private ObjectProperty featureProperty;
     private ObjectProperty evaluatedBy;
+    private Property hashID;
 
     private OntModel model;
 
@@ -42,6 +43,7 @@ public class Feature {
             this.instance = entityClass.createIndividual(Config.URI_NAMESPACE
                     + this.hash);
             this.setName(name);
+            this.setHashID(this.hash);
             this.status = false;
         } else {
             this.status = true;
@@ -51,9 +53,10 @@ public class Feature {
 
 
     private void initProperties() {
-        name = model.getProperty(Config.URI_NAMESPACE + "FeatureName");
+        name = model.getProperty(Config.URI_NAMESPACE + "Name");
         featureProperty = model.getObjectProperty(Config.URI_NAMESPACE + "FeatureProperty");
         evaluatedBy = model.getObjectProperty(Config.URI_NAMESPACE + "EvaluatedBy");
+        hashID = model.getProperty(Config.URI_NAMESPACE + "HashID");
 
     }
 
@@ -83,6 +86,9 @@ public class Feature {
         }
     }
 
+    public void setHashID(String hashID) {
+        instance.addProperty(this.hashID, hashID);
+    }
 
     public Individual search(String hash) {
         Individual ind = this.model.getIndividual(Config.URI_NAMESPACE + hash);
