@@ -16,4 +16,6 @@ public class Config {
     public static final String COMPARISON = URI_NAMESPACE + "Comparison";
     public static final String BASESCORE = URI_NAMESPACE + "BaseScore";
     public static final String FEATURE = URI_NAMESPACE + "Feature";
+
+    public static final double STRING_SIMILARITY_THRESHOLD = 0.5;
 }
