@@ -14,5 +14,7 @@ public class App {
         get("/search", (req, res) -> gson.toJson(ps.searchProduct(req.queryParams("search"), res)));
 
         //TODO Get suggestions upon keystroke type endpoint
+
+        // TODO get Product from HashID
     }
 }
