@@ -1,4 +1,4 @@
-package com.akura.retrieval.models.response;
+package com.akura.retrieval.response;
 
 
 import com.akura.retrieval.models.Feature;

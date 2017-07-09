@@ -3,7 +3,7 @@ package com.akura.retrieval.service;
 
 import com.akura.config.Config;
 import com.akura.retrieval.models.Entity;
-import com.akura.retrieval.models.response.SingleResponse;
+import com.akura.retrieval.response.SingleResponse;
 import com.akura.utility.HashGeneratorClass;
 import com.akura.utility.OntologyReader;
 import org.apache.jena.ontology.OntModel;
