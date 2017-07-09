@@ -23,13 +23,12 @@ public class SingleResponse {
 
     public void InitFromEntity(Entity entity) {
         if (entity.instance != null) {
-
             this.name = entity.getName();
             this.id = entity.getHash();
             this.avg_baseScore = entity.getAvgBaseScore();
             this.features = entity.getFeatures();
             this.properties = entity.getProperties();
-            // TODO: Comparisons
+            this.comparisons = entity.getComparisons();
 
         } else {
             // TODO: Search from name string

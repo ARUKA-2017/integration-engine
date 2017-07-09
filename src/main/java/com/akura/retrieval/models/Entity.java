@@ -1,11 +1,14 @@
 package com.akura.retrieval.models;
 
 import com.akura.config.Config;
+import com.akura.retrieval.response.ComparisonEntityInstance;
+import com.akura.retrieval.response.ComparisonResponse;
 import com.akura.retrieval.response.FeatureResponse;
 import com.akura.retrieval.response.PropertyResponse;
 import org.apache.jena.ontology.Individual;
 import org.apache.jena.ontology.ObjectProperty;
 import org.apache.jena.ontology.OntModel;
+import org.apache.jena.query.*;
 import org.apache.jena.rdf.model.Property;
 import org.apache.jena.rdf.model.Resource;
 import org.apache.jena.rdf.model.StmtIterator;
@@ -28,6 +31,12 @@ public class Entity {
         this.initProperties();
     }
 
+    public Entity(OntModel m, Individual instance) {
+        this.model = m;
+        this.instance = instance;
+        this.initProperties();
+    }
+
     public Individual getEntityByHash(String hash) {
         Individual ind = this.model.getIndividual(Config.URI_NAMESPACE + hash);
         this.instance = ind;
@@ -41,7 +50,7 @@ public class Entity {
     }
 
     private void initProperties() {
-        name = model.getProperty(Config.URI_NAMESPACE + "EntityName");
+        name = model.getProperty(Config.URI_NAMESPACE + "Name");
         hashID = model.getProperty(Config.URI_NAMESPACE + "HashID");
         containProperty = model.getObjectProperty(Config.URI_NAMESPACE + "ContainProperty");
         feature = model.getObjectProperty(Config.URI_NAMESPACE + "SubEntity");
@@ -89,12 +98,18 @@ public class Entity {
             Individual featureInstance = this.model
                     .getIndividual(iter.next().getResource().toString());
 
-            FeatureResponse fres = new FeatureResponse(this.model,featureInstance);
+            FeatureResponse fres = new FeatureResponse(this.model, featureInstance);
 
             featureList.add(fres);
         }
 
         return featureList.toArray(new FeatureResponse[featureList.size()]);
+    }
+
+    public ComparisonResponse getComparisons() {
+
+        ComparisonResponse comp = new ComparisonResponse(this.model,this.getHash());
+        return comp;
     }
 
 

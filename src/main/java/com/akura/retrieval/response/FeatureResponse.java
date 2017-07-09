@@ -19,10 +19,7 @@ public class FeatureResponse {
         this.name = f.getName();
         this.avg_baseScore = f.getAvgBaseScore();
         this.properties = f.getProperties();
-
-        // TODO set comparisons and properties in fres object
-//            this.comparisons = ?
-//            this.properties = ?
+        this.comparisons = f.getComparisons();
 
     }
 

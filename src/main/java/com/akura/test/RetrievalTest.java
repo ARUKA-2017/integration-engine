@@ -39,7 +39,15 @@ public class RetrievalTest {
 
 
 
-        Comparison comparison = new Comparison(m);
-        System.out.println(comparison.getWorseThanForEntity("ENTITY-2014703404"));
+//        Comparison comparison = new Comparison(m);
+//        System.out.println(comparison.getBetterThanForEntity("ENTITY--1572451790"));
+
+
+        SingleResponse resp = new SingleResponse(m, "iphone7");
+        System.out.println(resp);
+
+        System.out.println(resp.toString());
+        System.out.println(resp.features[0].comparisons.betterThan[0].id);
+        System.out.println(resp.features[0].comparisons.betterThan[0].count);
     }
 }
