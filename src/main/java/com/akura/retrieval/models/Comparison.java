@@ -18,7 +18,7 @@ public class Comparison {
     }
 
 
-    public ArrayList<ComparisonEntityInstance> getBetterThan(String hash) {
+    public ArrayList<ComparisonEntityInstance> getBetterThanForEntity(String hash) {
 
         ArrayList<ComparisonEntityInstance> comparisonList = new ArrayList<>();
 
@@ -43,7 +43,7 @@ public class Comparison {
 
     }
 
-    public ArrayList<ComparisonEntityInstance> getWorseThan(String hash) {
+    public ArrayList<ComparisonEntityInstance> getWorseThanForEntity(String hash) {
 
         ArrayList<ComparisonEntityInstance> comparisonList = new ArrayList<>();
 
@@ -67,6 +67,9 @@ public class Comparison {
         return comparisonList;
 
     }
+
+
+
 
     private ArrayList<ComparisonEntityInstance> getResult(ParameterizedSparqlString ps, ArrayList<ComparisonEntityInstance> comparisonList)
     {
