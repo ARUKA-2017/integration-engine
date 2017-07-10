@@ -3,6 +3,8 @@ package com.akura.mapping.service;
 import com.akura.config.Config;
 import com.akura.integration.service.IntegrateService;
 import com.akura.mapping.models.JsonResponse;
+import com.akura.mapping.models.ServiceResponse;
+import com.akura.utility.Log;
 import com.akura.utility.OntologyReader;
 import com.akura.utility.OntologyWriter;
 import com.google.gson.Gson;
@@ -12,14 +14,25 @@ import spark.Response;
 import static com.akura.utility.OntologyWriter.fileResourceManager;
 
 public class MappingService {
+    Log log = new Log();
 
-    public String map(String body, Response res) {
-        JsonResponse jsonResponse = new Gson().fromJson(body, JsonResponse.class);
+    public ServiceResponse map(String body, Response res) {
+
+        log.write("Mapping Request from HTTP");
+
+        res.type("Application/JSON");
         OntModel m = OntologyReader.getOntologyModel(Config.OWL_DYNAMIC_EMPTY_FILENAME);
-        jsonResponse.setAll(m);
+        try {
+            JsonResponse jsonResponse = new Gson().fromJson(body, JsonResponse.class);
+            jsonResponse.setAll(m);
+        } catch (Exception e) {
+            log.write("Invalid JSON. There was a parse error. Please check the format again");
+            return new ServiceResponse("error", "Invalid JSON. There was a parse error. Please check the format again");
+        }
 
 
-        System.out.println("Mapping Completed");
+        log.write("Data : " + body);
+        log.write("Mapping Completed");
 
         //merge ontology
         IntegrateService integrateService = new IntegrateService(m);
@@ -30,10 +43,10 @@ public class MappingService {
             OntologyWriter.writeOntology(m, fileResourceManager.getFilePath("ontology/demo_test_map_ontology_json.owl"));
 
             res.status(200);
-            return "{ status: 'success', message : 'Successfully mapped and merged'}";
+            return new ServiceResponse("success", "Successfully mapped and merged");
         } else {
             res.status(500);
-            return "{ status: 'error', message : 'Ontology was already merged. Duplicate Data Instance'}";
+            return new ServiceResponse("error", "Ontology was already merged. Duplicate Data Instance");
         }
 
 

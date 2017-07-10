@@ -6,6 +6,7 @@ import com.akura.integration.dynamic.DynamicEntity;
 import com.akura.integration.dynamic.ReviewInfo;
 import com.akura.integration.models.Entity;
 import com.akura.integration.models.Review;
+import com.akura.utility.Log;
 import com.akura.utility.OntologyReader;
 import com.akura.utility.OntologyWriter;
 import org.apache.jena.ontology.Individual;
@@ -24,13 +25,14 @@ public class IntegrateService {
     public static OntModel stat = OntologyReader.getOntologyModel(Config.OWL_FILENAME);
     public OntModel dynamic;
     Review review;
+    Log log = new Log();
 
     public IntegrateService(OntModel dynamic) {
         this.dynamic = dynamic;
     }
 
     public Boolean integrate() {
-        System.out.println("Merging Ontology....");
+        log.write("Merging Ontology....");
         // first get review class instances
         this.processReviewClassInstances();
 
@@ -105,12 +107,12 @@ public class IntegrateService {
     public Boolean saveModifiedOntology() {
 
         if (!review.status) {
-            System.out.println("Merge Successful. Saving Changes....");
+            log.write("Merge Successful. Saving Changes...");
             OntologyWriter.writeOntology(stat);
-            System.out.println("Changes Saved");
+            log.write("Changes Saved");
             return true;
         } else {
-            System.out.println("Ontology already merged. Aborted without saving");
+            log.write("Ontology already merged. Aborted without saving");
             return false;
         }
     }
