@@ -27,7 +27,7 @@ public class OntologyReader {
 
         try
         {
-            in = new FileInputStream(fileResourceManager.getFilePath(file));
+            in = new FileInputStream(file);
             model.read(in, "RDF/XML");
             in.close();
         } catch (IOException e)

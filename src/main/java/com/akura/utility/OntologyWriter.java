@@ -12,7 +12,7 @@ public class OntologyWriter {
     // File manager
     public static FileResourceManager fileResourceManager = new FileResourceManager();
 
-    public static String fileName = fileResourceManager.getFilePath(Config.OWL_FILENAME);
+    public static String fileName = Config.OWL_FILENAME;
     public static String fileType = "RDF/XML-ABBREV";
 
     public static void writeOntology(OntModel m){

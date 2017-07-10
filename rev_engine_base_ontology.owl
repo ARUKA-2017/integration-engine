@@ -1,0 +1,191 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:www="http://www.akura.com#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+  <owl:Ontology rdf:about="http://www.akura.com"/>
+  <owl:Class rdf:about="http://www.akura.com#Property"/>
+  <owl:Class rdf:about="http://www.akura.com#Feature"/>
+  <owl:Class rdf:about="http://www.akura.com#Review"/>
+  <owl:Class rdf:about="http://www.akura.com#Comparison"/>
+  <owl:Class rdf:about="http://www.akura.com#Reviewer"/>
+  <owl:Class rdf:about="http://www.akura.com#BaseScore"/>
+  <owl:Class rdf:about="http://www.akura.com#Entity"/>
+  <owl:ObjectProperty rdf:about="http://www.akura.com#SubEntity">
+    <rdfs:range rdf:resource="http://www.akura.com#Feature"/>
+    <rdfs:domain rdf:resource="http://www.akura.com#Entity"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.akura.com#Provides">
+    <rdfs:range rdf:resource="http://www.akura.com#Review"/>
+    <rdfs:domain rdf:resource="http://www.akura.com#Reviewer"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.akura.com#Good">
+    <rdfs:range rdf:resource="http://www.akura.com#Feature"/>
+    <rdfs:range rdf:resource="http://www.akura.com#Entity"/>
+    <rdfs:domain rdf:resource="http://www.akura.com#Comparison"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.akura.com#FeatureProperty">
+    <rdfs:range rdf:resource="http://www.akura.com#Property"/>
+    <rdfs:domain rdf:resource="http://www.akura.com#Feature"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.akura.com#Bad">
+    <rdfs:range rdf:resource="http://www.akura.com#Feature"/>
+    <rdfs:range rdf:resource="http://www.akura.com#Entity"/>
+    <rdfs:domain rdf:resource="http://www.akura.com#Comparison"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.akura.com#ContainProperty">
+    <rdfs:range rdf:resource="http://www.akura.com#Property"/>
+    <rdfs:domain rdf:resource="http://www.akura.com#Entity"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.akura.com#EvaluatedBy">
+    <rdfs:range rdf:resource="http://www.akura.com#BaseScore"/>
+    <rdfs:domain rdf:resource="http://www.akura.com#Feature"/>
+    <rdfs:domain rdf:resource="http://www.akura.com#Entity"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.akura.com#MainEntity">
+    <rdfs:range rdf:resource="http://www.akura.com#Entity"/>
+    <rdfs:domain rdf:resource="http://www.akura.com#Review"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.akura.com#MeasuredBy">
+    <rdfs:range rdf:resource="http://www.akura.com#BaseScore"/>
+    <rdfs:domain rdf:resource="http://www.akura.com#Review"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.akura.com#BetterThan">
+    <rdfs:range rdf:resource="http://www.akura.com#Comparison"/>
+    <rdfs:domain rdf:resource="http://www.akura.com#Review"/>
+  </owl:ObjectProperty>
+  <owl:DatatypeProperty rdf:about="http://www.akura.com#Value">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://www.akura.com#Property"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.akura.com#Key">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://www.akura.com#Property"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.akura.com#Score">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdfs:domain rdf:resource="http://www.akura.com#BaseScore"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.akura.com#UserName">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://www.akura.com#Reviewer"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.akura.com#Count">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    <rdfs:domain rdf:resource="http://www.akura.com#Comparison"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.akura.com#Name">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://www.akura.com#Feature"/>
+    <rdfs:domain rdf:resource="http://www.akura.com#Entity"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.akura.com#Email">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://www.akura.com#Reviewer"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.akura.com#HashID">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://www.akura.com#Review"/>
+    <rdfs:domain rdf:resource="http://www.akura.com#Property"/>
+    <rdfs:domain rdf:resource="http://www.akura.com#Feature"/>
+    <rdfs:domain rdf:resource="http://www.akura.com#Entity"/>
+    <rdfs:domain rdf:resource="http://www.akura.com#Comparison"/>
+    <rdfs:domain rdf:resource="http://www.akura.com#BaseScore"/>
+  </owl:DatatypeProperty>
+  <www:Comparison rdf:about="http://www.akura.com#COMPARISON-ENTITY--1572451790-FEATURE-1980544805-ENTITY-2014703404-FEATURE-1980544805">
+    <www:Bad>
+      <www:Feature rdf:about="http://www.akura.com#ENTITY-2014703404-FEATURE-1980544805">
+        <www:EvaluatedBy>
+          <www:BaseScore rdf:about="http://www.akura.com#BASESCORE-14996559612252">
+            <www:Score rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+            >0.9</www:Score>
+          </www:BaseScore>
+        </www:EvaluatedBy>
+        <www:FeatureProperty>
+          <www:Property rdf:about="http://www.akura.com#ENTITY-2014703404-FEATURE-1980544805-PROPERTY--977392948">
+            <www:Value>13MPX</www:Value>
+            <www:Key>back camera</www:Key>
+          </www:Property>
+        </www:FeatureProperty>
+        <www:HashID>ENTITY-2014703404-FEATURE-1980544805</www:HashID>
+        <www:Name>Camera</www:Name>
+      </www:Feature>
+    </www:Bad>
+    <www:Good>
+      <www:Feature rdf:about="http://www.akura.com#ENTITY--1572451790-FEATURE-1980544805">
+        <www:EvaluatedBy>
+          <www:BaseScore rdf:about="http://www.akura.com#BASESCORE-14996559612107">
+            <www:Score rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+            >0.6</www:Score>
+          </www:BaseScore>
+        </www:EvaluatedBy>
+        <www:FeatureProperty>
+          <www:Property rdf:about="http://www.akura.com#ENTITY--1572451790-FEATURE-1980544805-PROPERTY-794899054">
+            <www:Value>13MPX</www:Value>
+            <www:Key>front camera</www:Key>
+          </www:Property>
+        </www:FeatureProperty>
+        <www:HashID>ENTITY--1572451790-FEATURE-1980544805</www:HashID>
+        <www:Name>Camera</www:Name>
+      </www:Feature>
+    </www:Good>
+    <www:Count rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+    >1</www:Count>
+  </www:Comparison>
+  <www:Reviewer rdf:about="http://www.akura.com#REVIEWER--1492706173">
+    <www:Provides>
+      <www:Review rdf:about="http://www.akura.com#REVIEWER--1061735043">
+        <www:MeasuredBy>
+          <www:BaseScore rdf:about="http://www.akura.com#BASESCORE-14996559612257">
+            <www:Score rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+            >0.7</www:Score>
+          </www:BaseScore>
+        </www:MeasuredBy>
+        <www:MeasuredBy rdf:resource="http://www.akura.com#BASESCORE-14996559612252"/>
+        <www:MeasuredBy>
+          <www:BaseScore rdf:about="http://www.akura.com#BASESCORE-14996559612167">
+            <www:Score rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+            >0.8</www:Score>
+          </www:BaseScore>
+        </www:MeasuredBy>
+        <www:MeasuredBy rdf:resource="http://www.akura.com#BASESCORE-14996559612107"/>
+        <www:MainEntity>
+          <www:Entity rdf:about="http://www.akura.com#ENTITY--1572451790">
+            <www:EvaluatedBy rdf:resource="http://www.akura.com#BASESCORE-14996559612167"/>
+            <www:SubEntity rdf:resource="http://www.akura.com#ENTITY--1572451790-FEATURE-1980544805"/>
+            <www:ContainProperty>
+              <www:Property rdf:about="http://www.akura.com#ENTITY--1572451790-PROPERTY--1738262920">
+                <www:Value>20g</www:Value>
+                <www:Key>weight</www:Key>
+              </www:Property>
+            </www:ContainProperty>
+            <www:HashID>ENTITY--1572451790</www:HashID>
+            <www:Name>iPhone7</www:Name>
+          </www:Entity>
+        </www:MainEntity>
+      </www:Review>
+    </www:Provides>
+    <www:UserName>rishanthan</www:UserName>
+    <www:Email>rishanthakumar@gmail.com</www:Email>
+  </www:Reviewer>
+  <www:Comparison rdf:about="http://www.akura.com#COMPARISON-ENTITY--1572451790-ENTITY-2014703404">
+    <www:Bad>
+      <www:Entity rdf:about="http://www.akura.com#ENTITY-2014703404">
+        <www:EvaluatedBy rdf:resource="http://www.akura.com#BASESCORE-14996559612257"/>
+        <www:SubEntity rdf:resource="http://www.akura.com#ENTITY-2014703404-FEATURE-1980544805"/>
+        <www:ContainProperty>
+          <www:Property rdf:about="http://www.akura.com#ENTITY-2014703404-PROPERTY--1738262920">
+            <www:Value>10g</www:Value>
+            <www:Key>weight</www:Key>
+          </www:Property>
+        </www:ContainProperty>
+        <www:HashID>ENTITY-2014703404</www:HashID>
+        <www:Name>Samsung Galaxy S5</www:Name>
+      </www:Entity>
+    </www:Bad>
+    <www:Good rdf:resource="http://www.akura.com#ENTITY--1572451790"/>
+    <www:Count rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+    >1</www:Count>
+  </www:Comparison>
+</rdf:RDF>

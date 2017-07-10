@@ -5,11 +5,11 @@ package com.akura.config;
  */
 public class Config {
 
-    public static final String OWL_FILENAME = "ontology/rev_engine_base_ontology.owl";
-    public static final String OWL_DYNAMIC_EMPTY_FILENAME = "ontology/rev_engine_dynamic_empty_ontology.owl";
+    public static final String OWL_FILENAME = "rev_engine_base_ontology.owl";
+    public static final String OWL_DYNAMIC_EMPTY_FILENAME = "rev_engine_dynamic_empty_ontology.owl";
 
     //TODO: rmeove this later. For testing purposes only
-    public static final String DYNAMIC_FILENAME = "ontology/rev_engine_dynamic_ontology.owl";
+    public static final String DYNAMIC_FILENAME = "rev_engine_dynamic_ontology.owl";
 
     public static final String URI_NAMESPACE = "http://www.akura.com#";
 
