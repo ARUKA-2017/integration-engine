@@ -29,7 +29,7 @@ public class IntegrateService {
         this.dynamic = dynamic;
     }
 
-    public void integrate() {
+    public Boolean integrate() {
         System.out.println("Merging Ontology....");
         // first get review class instances
         this.processReviewClassInstances();
@@ -38,7 +38,7 @@ public class IntegrateService {
         this.processEntityClassInstances();
 
         // save after everything
-        this.saveModifiedOntology();
+        return this.saveModifiedOntology();
 
     }
 
@@ -102,14 +102,16 @@ public class IntegrateService {
     }
 
     // TODO Write an algortithm to save ontology model concurrently
-    public void saveModifiedOntology() {
+    public Boolean saveModifiedOntology() {
 
         if (!review.status) {
             System.out.println("Merge Successful. Saving Changes....");
             OntologyWriter.writeOntology(stat);
             System.out.println("Changes Saved");
+            return true;
         } else {
             System.out.println("Ontology already merged. Aborted without saving");
+            return false;
         }
     }
 }
