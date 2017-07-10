@@ -9,6 +9,6 @@ public class Log {
     public void write(String message) {
         PropertyConfigurator.configure("src/main/java/com/akura/config/log4j.properties");
         logger.info(message);
-        System.out.println(message);
+        // System.out.println(message);
     }
 }
