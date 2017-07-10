@@ -34,8 +34,11 @@ public class IntegrateService {
     public Boolean integrate() {
         log.write("Merging Ontology....");
         // first get review class instances
-        this.processReviewClassInstances();
-
+        Boolean bool = this.processReviewClassInstances();
+        if (!bool) {
+            log.write("Ontology already merged. Aborted at processReviewClassInstances without saving");
+            return false;
+        }
         // second get entity class instances
         this.processEntityClassInstances();
 
@@ -65,7 +68,7 @@ public class IntegrateService {
 
     }
 
-    public void processReviewClassInstances() {
+    public Boolean processReviewClassInstances() {
         for (Individual instance : this.classIndividualFilter("ReviewInfo")) {
 
             ReviewInfo rf = new ReviewInfo(dynamic, instance);
@@ -73,20 +76,18 @@ public class IntegrateService {
                 // step 2 : create reviewer and then review
                 review = rf.createReview(rf.createReviewer(stat));
                 if (review.status) {
-                    break;
+                    return false;
+                } else {
+                    rf.createMainEntity(stat, review);
                 }
 
             } catch (Exception e) {
                 e.printStackTrace();
-            }
-
-            try {
-                rf.createMainEntity(stat, review);
-            } catch (Exception e) {
-                e.printStackTrace();
+                return false;
             }
 
         }
+        return !review.status;
     }
 
     public void processEntityClassInstances() {

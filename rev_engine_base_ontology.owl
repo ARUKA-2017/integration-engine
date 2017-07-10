@@ -1,8 +1,8 @@
 <rdf:RDF
     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
     xmlns:owl="http://www.w3.org/2002/07/owl#"
-    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
     xmlns:www="http://www.akura.com#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
     xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
   <owl:Ontology rdf:about="http://www.akura.com"/>
   <owl:Class rdf:about="http://www.akura.com#Property"/>
@@ -10,8 +10,8 @@
   <owl:Class rdf:about="http://www.akura.com#Review"/>
   <owl:Class rdf:about="http://www.akura.com#Comparison"/>
   <owl:Class rdf:about="http://www.akura.com#Reviewer"/>
-  <owl:Class rdf:about="http://www.akura.com#BaseScore"/>
   <owl:Class rdf:about="http://www.akura.com#Entity"/>
+  <owl:Class rdf:about="http://www.akura.com#BaseScore"/>
   <owl:ObjectProperty rdf:about="http://www.akura.com#SubEntity">
     <rdfs:range rdf:resource="http://www.akura.com#Feature"/>
     <rdfs:domain rdf:resource="http://www.akura.com#Entity"/>
@@ -95,73 +95,96 @@
   </owl:DatatypeProperty>
   <www:Comparison rdf:about="http://www.akura.com#COMPARISON-ENTITY--1572451790-ENTITY-2014703404">
     <www:Count rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-    >1</www:Count>
+    >2</www:Count>
     <www:Good>
-      <www:Entity rdf:about="http://www.akura.com#ENTITY--1572451790">
+      <owl:NamedIndividual rdf:about="http://www.akura.com#ENTITY--1572451790">
         <www:EvaluatedBy>
           <www:BaseScore rdf:about="http://www.akura.com#BASESCORE-14996665960787">
             <www:Score rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
             >0.9</www:Score>
+            <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
           </www:BaseScore>
         </www:EvaluatedBy>
         <www:SubEntity>
-          <www:Feature rdf:about="http://www.akura.com#ENTITY--1572451790-FEATURE-1980544805">
-            <www:EvaluatedBy>
-              <www:BaseScore rdf:about="http://www.akura.com#BASESCORE-14996670806686">
-                <www:Score rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
-                >0.9</www:Score>
-              </www:BaseScore>
-            </www:EvaluatedBy>
+          <owl:NamedIndividual rdf:about="http://www.akura.com#ENTITY--1572451790-FEATURE-1980544805">
             <www:EvaluatedBy>
               <www:BaseScore rdf:about="http://www.akura.com#BASESCORE-14996664445842">
                 <www:Score rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
                 >0.9</www:Score>
+                <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
               </www:BaseScore>
             </www:EvaluatedBy>
-            <www:HashID>ENTITY--1572451790-FEATURE-1980544805</www:HashID>
-            <www:Name>Camera</www:Name>
+            <www:EvaluatedBy>
+              <www:BaseScore rdf:about="http://www.akura.com#BASESCORE-14996684534617">
+                <www:Score rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                >0.6</www:Score>
+              </www:BaseScore>
+            </www:EvaluatedBy>
             <www:FeatureProperty>
               <www:Property rdf:about="http://www.akura.com#ENTITY--1572451790-FEATURE-1980544805-PROPERTY--460163834">
-                <www:Key>FrontCam</www:Key>
                 <www:Value>10MPX</www:Value>
-              </www:Property>
-            </www:FeatureProperty>
-            <www:FeatureProperty>
-              <www:Property rdf:about="http://www.akura.com#ENTITY--1572451790-FEATURE-1980544805-PROPERTY--625585237">
-                <www:Key>Optical Zoom</www:Key>
-                <www:Value>Yes</www:Value>
-              </www:Property>
-            </www:FeatureProperty>
-            <www:FeatureProperty>
-              <www:Property rdf:about="http://www.akura.com#ENTITY--1572451790-FEATURE-1980544805-PROPERTY-1798807435">
-                <www:Key>RearCam</www:Key>
-                <www:Value>15MPX</www:Value>
+                <www:Key>FrontCam</www:Key>
+                <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
               </www:Property>
             </www:FeatureProperty>
             <www:EvaluatedBy>
               <www:BaseScore rdf:about="http://www.akura.com#BASESCORE-14996665960802">
                 <www:Score rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
                 >0.5</www:Score>
+                <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
               </www:BaseScore>
             </www:EvaluatedBy>
-          </www:Feature>
+            <www:FeatureProperty>
+              <www:Property rdf:about="http://www.akura.com#ENTITY--1572451790-FEATURE-1980544805-PROPERTY-1798807435">
+                <www:Value>15MPX</www:Value>
+                <www:Key>RearCam</www:Key>
+                <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+              </www:Property>
+            </www:FeatureProperty>
+            <www:HashID>ENTITY--1572451790-FEATURE-1980544805</www:HashID>
+            <www:FeatureProperty>
+              <www:Property rdf:about="http://www.akura.com#ENTITY--1572451790-FEATURE-1980544805-PROPERTY--625585237">
+                <www:Value>Yes</www:Value>
+                <www:Key>Optical Zoom</www:Key>
+                <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+              </www:Property>
+            </www:FeatureProperty>
+            <www:FeatureProperty>
+              <www:Property rdf:about="http://www.akura.com#ENTITY--1572451790-FEATURE-1980544805-PROPERTY-794899054">
+                <www:Value>13MPX</www:Value>
+                <www:Key>front camera</www:Key>
+              </www:Property>
+            </www:FeatureProperty>
+            <rdf:type rdf:resource="http://www.akura.com#Feature"/>
+            <www:Name>Camera</www:Name>
+            <www:EvaluatedBy>
+              <www:BaseScore rdf:about="http://www.akura.com#BASESCORE-14996670806686">
+                <www:Score rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                >0.9</www:Score>
+                <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+              </www:BaseScore>
+            </www:EvaluatedBy>
+          </owl:NamedIndividual>
         </www:SubEntity>
         <www:ContainProperty>
           <www:Property rdf:about="http://www.akura.com#ENTITY--1572451790-PROPERTY--1738262920">
-            <www:Key>weight</www:Key>
             <www:Value>200g</www:Value>
+            <www:Key>weight</www:Key>
+            <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
           </www:Property>
         </www:ContainProperty>
         <www:EvaluatedBy>
           <www:BaseScore rdf:about="http://www.akura.com#BASESCORE-14996664445923">
             <www:Score rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
             >0.8</www:Score>
+            <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
           </www:BaseScore>
         </www:EvaluatedBy>
         <www:EvaluatedBy>
           <www:BaseScore rdf:about="http://www.akura.com#BASESCORE-14996666861426">
             <www:Score rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
             >0.6</www:Score>
+            <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
           </www:BaseScore>
         </www:EvaluatedBy>
         <www:HashID>ENTITY--1572451790</www:HashID>
@@ -169,128 +192,242 @@
           <www:BaseScore rdf:about="http://www.akura.com#BASESCORE-14996670806833">
             <www:Score rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
             >0.8</www:Score>
+            <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
           </www:BaseScore>
         </www:EvaluatedBy>
-        <www:Name>iPhone7</www:Name>
         <www:EvaluatedBy>
           <www:BaseScore rdf:about="http://www.akura.com#BASESCORE-14996667321982">
             <www:Score rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
             >0.1</www:Score>
+            <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
           </www:BaseScore>
         </www:EvaluatedBy>
-        <www:EvaluatedBy>
-          <www:BaseScore rdf:about="http://www.akura.com#BASESCORE-14996667669004">
-            <www:Score rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
-            >0.1</www:Score>
-          </www:BaseScore>
-        </www:EvaluatedBy>
-        <www:ContainProperty>
-          <www:Property rdf:about="http://www.akura.com#ENTITY--1572451790-PROPERTY-76396841">
-            <www:Key>price</www:Key>
-            <www:Value>$112</www:Value>
-          </www:Property>
-        </www:ContainProperty>
         <www:SubEntity>
           <www:Feature rdf:about="http://www.akura.com#ENTITY--1572451790-FEATURE-386742765">
+            <www:Name>Battery</www:Name>
+            <www:HashID>ENTITY--1572451790-FEATURE-386742765</www:HashID>
             <www:EvaluatedBy>
               <www:BaseScore rdf:about="http://www.akura.com#BASESCORE-14996667669008">
                 <www:Score rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
                 >0.2</www:Score>
+                <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
               </www:BaseScore>
             </www:EvaluatedBy>
             <www:EvaluatedBy>
               <www:BaseScore rdf:about="http://www.akura.com#BASESCORE-14996667321981">
                 <www:Score rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
                 >0.2</www:Score>
+                <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
               </www:BaseScore>
             </www:EvaluatedBy>
-            <www:HashID>ENTITY--1572451790-FEATURE-386742765</www:HashID>
-            <www:Name>Battery</www:Name>
+            <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
           </www:Feature>
         </www:SubEntity>
         <www:EvaluatedBy>
-          <www:BaseScore rdf:about="http://www.akura.com#BASESCORE-14996673225525">
+          <www:BaseScore rdf:about="http://www.akura.com#BASESCORE-14996667669004">
+            <www:Score rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+            >0.1</www:Score>
+            <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+          </www:BaseScore>
+        </www:EvaluatedBy>
+        <www:ContainProperty>
+          <www:Property rdf:about="http://www.akura.com#ENTITY--1572451790-PROPERTY-76396841">
+            <www:Value>$112</www:Value>
+            <www:Key>price</www:Key>
+            <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+          </www:Property>
+        </www:ContainProperty>
+        <rdf:type rdf:resource="http://www.akura.com#Entity"/>
+        <www:EvaluatedBy>
+          <www:BaseScore rdf:about="http://www.akura.com#BASESCORE-14996684534647">
             <www:Score rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
             >0.8</www:Score>
           </www:BaseScore>
         </www:EvaluatedBy>
-      </www:Entity>
+        <www:EvaluatedBy>
+          <www:BaseScore rdf:about="http://www.akura.com#BASESCORE-14996673225525">
+            <www:Score rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+            >0.8</www:Score>
+            <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+          </www:BaseScore>
+        </www:EvaluatedBy>
+        <www:Name>iPhone 7</www:Name>
+      </owl:NamedIndividual>
     </www:Good>
     <www:Bad>
       <www:Entity rdf:about="http://www.akura.com#ENTITY-2014703404">
+        <www:EvaluatedBy>
+          <www:BaseScore rdf:about="http://www.akura.com#BASESCORE-149966845348010">
+            <www:Score rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+            >0.7</www:Score>
+          </www:BaseScore>
+        </www:EvaluatedBy>
+        <www:ContainProperty>
+          <www:Property rdf:about="http://www.akura.com#ENTITY-2014703404-PROPERTY--1738262920">
+            <www:Value>10g</www:Value>
+            <www:Key>weight</www:Key>
+          </www:Property>
+        </www:ContainProperty>
         <www:Name>Samsung Galaxy S5</www:Name>
         <www:HashID>ENTITY-2014703404</www:HashID>
         <www:SubEntity>
           <www:Feature rdf:about="http://www.akura.com#ENTITY-2014703404-FEATURE-1980544805">
+            <www:EvaluatedBy>
+              <www:BaseScore rdf:about="http://www.akura.com#BASESCORE-14996684534806">
+                <www:Score rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                >0.9</www:Score>
+              </www:BaseScore>
+            </www:EvaluatedBy>
+            <www:FeatureProperty>
+              <www:Property rdf:about="http://www.akura.com#ENTITY-2014703404-FEATURE-1980544805-PROPERTY--977392948">
+                <www:Value>13MPX</www:Value>
+                <www:Key>back camera</www:Key>
+              </www:Property>
+            </www:FeatureProperty>
             <www:Name>Camera</www:Name>
             <www:HashID>ENTITY-2014703404-FEATURE-1980544805</www:HashID>
             <www:EvaluatedBy>
               <www:BaseScore rdf:about="http://www.akura.com#BASESCORE-14996665960801">
                 <www:Score rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
                 >0.4</www:Score>
+                <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
               </www:BaseScore>
             </www:EvaluatedBy>
+            <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
           </www:Feature>
         </www:SubEntity>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
       </www:Entity>
     </www:Bad>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   </www:Comparison>
-  <www:Entity rdf:about="http://www.akura.com#ENTITY--1501365182">
-    <www:EvaluatedBy>
-      <www:BaseScore rdf:about="http://www.akura.com#BASESCORE-14996670806616">
-        <www:Score rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
-        >0.5</www:Score>
-      </www:BaseScore>
-    </www:EvaluatedBy>
-    <www:EvaluatedBy>
-      <www:BaseScore rdf:about="http://www.akura.com#BASESCORE-14996664445725">
-        <www:Score rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
-        >0.5</www:Score>
-      </www:BaseScore>
-    </www:EvaluatedBy>
+  <www:Entity rdf:about="http://www.akura.com#ENTITY--1572451791">
+    <www:Name>iPhone6</www:Name>
+    <www:HashID>ENTITY--1572451791</www:HashID>
     <www:SubEntity>
-      <www:Feature rdf:about="http://www.akura.com#ENTITY--1501365182-FEATURE-1980544805">
-        <www:EvaluatedBy>
-          <www:BaseScore rdf:about="http://www.akura.com#BASESCORE-14996670806615">
-            <www:Score rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
-            >0.4</www:Score>
-          </www:BaseScore>
-        </www:EvaluatedBy>
-        <www:EvaluatedBy>
-          <www:BaseScore rdf:about="http://www.akura.com#BASESCORE-149966644457110">
-            <www:Score rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
-            >0.4</www:Score>
-          </www:BaseScore>
-        </www:EvaluatedBy>
-        <www:HashID>ENTITY--1501365182-FEATURE-1980544805</www:HashID>
-        <www:Name>Camera</www:Name>
-      </www:Feature>
-    </www:SubEntity>
-    <www:HashID>ENTITY--1501365182</www:HashID>
-    <www:Name>iPhone6s</www:Name>
-  </www:Entity>
-  <www:Comparison rdf:about="http://www.akura.com#COMPARISON-ENTITY--1572451790-FEATURE-1980544805-ENTITY--1572451791-FEATURE-1980544805">
-    <www:Count rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-    >2</www:Count>
-    <www:Good rdf:resource="http://www.akura.com#ENTITY--1572451790-FEATURE-1980544805"/>
-    <www:Bad>
       <www:Feature rdf:about="http://www.akura.com#ENTITY--1572451791-FEATURE-1980544805">
+        <www:Name>Camera</www:Name>
+        <www:HashID>ENTITY--1572451791-FEATURE-1980544805</www:HashID>
         <www:EvaluatedBy>
           <www:BaseScore rdf:about="http://www.akura.com#BASESCORE-14996670806911">
             <www:Score rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
             >0.4</www:Score>
+            <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
           </www:BaseScore>
         </www:EvaluatedBy>
         <www:EvaluatedBy>
           <www:BaseScore rdf:about="http://www.akura.com#BASESCORE-14996664446047">
             <www:Score rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
             >0.4</www:Score>
+            <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
           </www:BaseScore>
         </www:EvaluatedBy>
-        <www:HashID>ENTITY--1572451791-FEATURE-1980544805</www:HashID>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+      </www:Feature>
+    </www:SubEntity>
+    <www:EvaluatedBy>
+      <www:BaseScore rdf:about="http://www.akura.com#BASESCORE-149966708069110">
+        <www:Score rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+        >0.5</www:Score>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+      </www:BaseScore>
+    </www:EvaluatedBy>
+    <www:EvaluatedBy>
+      <www:BaseScore rdf:about="http://www.akura.com#BASESCORE-14996664446043">
+        <www:Score rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+        >0.5</www:Score>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+      </www:BaseScore>
+    </www:EvaluatedBy>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </www:Entity>
+  <www:Comparison rdf:about="http://www.akura.com#COMPARISON-ENTITY--1572451790-FEATURE-1980544805-ENTITY-2014703404-FEATURE-1980544805">
+    <www:Count rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+    >2</www:Count>
+    <www:Good rdf:resource="http://www.akura.com#ENTITY--1572451790-FEATURE-1980544805"/>
+    <www:Bad rdf:resource="http://www.akura.com#ENTITY-2014703404-FEATURE-1980544805"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </www:Comparison>
+  <www:Comparison rdf:about="http://www.akura.com#COMPARISON-ENTITY--1572451790-FEATURE-1980544805-ENTITY--1501365182-FEATURE-1980544805">
+    <www:Count rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+    >2</www:Count>
+    <www:Good rdf:resource="http://www.akura.com#ENTITY--1572451790-FEATURE-1980544805"/>
+    <www:Bad>
+      <www:Feature rdf:about="http://www.akura.com#ENTITY--1501365182-FEATURE-1980544805">
         <www:Name>Camera</www:Name>
+        <www:HashID>ENTITY--1501365182-FEATURE-1980544805</www:HashID>
+        <www:EvaluatedBy>
+          <www:BaseScore rdf:about="http://www.akura.com#BASESCORE-14996670806615">
+            <www:Score rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+            >0.4</www:Score>
+            <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+          </www:BaseScore>
+        </www:EvaluatedBy>
+        <www:EvaluatedBy>
+          <www:BaseScore rdf:about="http://www.akura.com#BASESCORE-149966644457110">
+            <www:Score rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+            >0.4</www:Score>
+            <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+          </www:BaseScore>
+        </www:EvaluatedBy>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
       </www:Feature>
     </www:Bad>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </www:Comparison>
+  <www:Reviewer rdf:about="http://www.akura.com#REVIEWER--1492706173">
+    <www:Provides>
+      <www:Review rdf:about="http://www.akura.com#REVIEWER--2067735567">
+        <www:MeasuredBy rdf:resource="http://www.akura.com#BASESCORE-149966845348010"/>
+        <www:MeasuredBy rdf:resource="http://www.akura.com#BASESCORE-14996684534806"/>
+        <www:MeasuredBy rdf:resource="http://www.akura.com#BASESCORE-14996684534647"/>
+        <www:MeasuredBy rdf:resource="http://www.akura.com#BASESCORE-14996684534617"/>
+        <www:MainEntity rdf:resource="http://www.akura.com#ENTITY--1572451790"/>
+      </www:Review>
+    </www:Provides>
+    <www:UserName>rish</www:UserName>
+    <www:Email>rishanthakumar@gmail.com</www:Email>
+    <www:Provides>
+      <www:Review rdf:about="http://www.akura.com#REVIEWER-254995487">
+        <www:MeasuredBy>
+          <www:BaseScore rdf:about="http://www.akura.com#BASESCORE-14996665960803">
+            <www:Score rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+            >0.7</www:Score>
+            <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+          </www:BaseScore>
+        </www:MeasuredBy>
+        <www:MainEntity rdf:resource="http://www.akura.com#ENTITY-2014703404"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+      </www:Review>
+    </www:Provides>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </www:Reviewer>
+  <www:Entity rdf:about="http://www.akura.com#ENTITY--1501365182">
+    <www:Name>iPhone 6S</www:Name>
+    <www:HashID>ENTITY--1501365182</www:HashID>
+    <www:SubEntity rdf:resource="http://www.akura.com#ENTITY--1501365182-FEATURE-1980544805"/>
+    <www:EvaluatedBy>
+      <www:BaseScore rdf:about="http://www.akura.com#BASESCORE-14996670806616">
+        <www:Score rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+        >0.5</www:Score>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+      </www:BaseScore>
+    </www:EvaluatedBy>
+    <www:EvaluatedBy>
+      <www:BaseScore rdf:about="http://www.akura.com#BASESCORE-14996664445725">
+        <www:Score rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+        >0.5</www:Score>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+      </www:BaseScore>
+    </www:EvaluatedBy>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </www:Entity>
+  <www:Comparison rdf:about="http://www.akura.com#COMPARISON-ENTITY--1572451790-FEATURE-1980544805-ENTITY--1572451791-FEATURE-1980544805">
+    <www:Count rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+    >2</www:Count>
+    <www:Good rdf:resource="http://www.akura.com#ENTITY--1572451790-FEATURE-1980544805"/>
+    <www:Bad rdf:resource="http://www.akura.com#ENTITY--1572451791-FEATURE-1980544805"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   </www:Comparison>
   <www:Reviewer rdf:about="http://www.akura.com#REVIEWER-0">
     <www:Provides>
@@ -299,38 +436,44 @@
           <www:BaseScore rdf:about="http://www.akura.com#BASESCORE-14996672678452">
             <www:Score rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
             >0.4</www:Score>
+            <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
           </www:BaseScore>
         </www:MeasuredBy>
         <www:MainEntity>
-          <www:Entity rdf:about="http://www.akura.com#ENTITY--1875964437">
+          <owl:NamedIndividual rdf:about="http://www.akura.com#ENTITY--1875964437">
             <www:SubEntity>
               <www:Feature rdf:about="http://www.akura.com#ENTITY--1875964437-FEATURE-62628790">
+                <www:Name>Audio</www:Name>
+                <www:HashID>ENTITY--1875964437-FEATURE-62628790</www:HashID>
                 <www:EvaluatedBy>
                   <www:BaseScore rdf:about="http://www.akura.com#BASESCORE-14996671874028">
                     <www:Score rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
                     >0.7</www:Score>
+                    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
                   </www:BaseScore>
                 </www:EvaluatedBy>
-                <www:HashID>ENTITY--1875964437-FEATURE-62628790</www:HashID>
-                <www:Name>Audio</www:Name>
+                <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
               </www:Feature>
             </www:SubEntity>
             <www:EvaluatedBy>
               <www:BaseScore rdf:about="http://www.akura.com#BASESCORE-14996672101451">
                 <www:Score rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
                 >0.4</www:Score>
+                <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
               </www:BaseScore>
             </www:EvaluatedBy>
             <www:SubEntity>
               <www:Feature rdf:about="http://www.akura.com#ENTITY--1875964437-FEATURE-386742765">
+                <www:Name>Battery</www:Name>
+                <www:HashID>ENTITY--1875964437-FEATURE-386742765</www:HashID>
                 <www:EvaluatedBy>
                   <www:BaseScore rdf:about="http://www.akura.com#BASESCORE-14996671874055">
                     <www:Score rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
                     >0.8</www:Score>
+                    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
                   </www:BaseScore>
                 </www:EvaluatedBy>
-                <www:HashID>ENTITY--1875964437-FEATURE-386742765</www:HashID>
-                <www:Name>Battery</www:Name>
+                <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
               </www:Feature>
             </www:SubEntity>
             <www:HashID>ENTITY--1875964437</www:HashID>
@@ -338,33 +481,39 @@
               <www:BaseScore rdf:about="http://www.akura.com#BASESCORE-14996672969073">
                 <www:Score rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
                 >0.3</www:Score>
+                <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
               </www:BaseScore>
             </www:EvaluatedBy>
             <www:EvaluatedBy>
               <www:BaseScore rdf:about="http://www.akura.com#BASESCORE-14996671874066">
                 <www:Score rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
                 >0.9</www:Score>
+                <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
               </www:BaseScore>
             </www:EvaluatedBy>
+            <rdf:type rdf:resource="http://www.akura.com#Entity"/>
             <www:EvaluatedBy rdf:resource="http://www.akura.com#BASESCORE-14996672678452"/>
             <www:EvaluatedBy>
               <www:BaseScore rdf:about="http://www.akura.com#BASESCORE-14996672186164">
                 <www:Score rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
                 >0.4</www:Score>
+                <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
               </www:BaseScore>
             </www:EvaluatedBy>
             <www:Name>Samsung Galaxy S7 Edge</www:Name>
-          </www:Entity>
+          </owl:NamedIndividual>
         </www:MainEntity>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
       </www:Review>
     </www:Provides>
     <www:Provides>
       <www:Review rdf:about="http://www.akura.com#REVIEWER--64271331">
-        <www:MeasuredBy rdf:resource="http://www.akura.com#BASESCORE-14996667669004"/>
         <www:MeasuredBy rdf:resource="http://www.akura.com#BASESCORE-14996667669008"/>
+        <www:MeasuredBy rdf:resource="http://www.akura.com#BASESCORE-14996667669004"/>
         <www:MeasuredBy rdf:resource="http://www.akura.com#BASESCORE-14996667321982"/>
         <www:MeasuredBy rdf:resource="http://www.akura.com#BASESCORE-14996667321981"/>
         <www:MainEntity rdf:resource="http://www.akura.com#ENTITY--1572451790"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
       </www:Review>
     </www:Provides>
     <www:Provides>
@@ -373,12 +522,14 @@
         <www:MeasuredBy rdf:resource="http://www.akura.com#BASESCORE-14996671874055"/>
         <www:MeasuredBy rdf:resource="http://www.akura.com#BASESCORE-14996671874028"/>
         <www:MainEntity rdf:resource="http://www.akura.com#ENTITY--1875964437"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
       </www:Review>
     </www:Provides>
     <www:Provides>
       <www:Review rdf:about="http://www.akura.com#REVIEWER--453389515">
         <www:MeasuredBy rdf:resource="http://www.akura.com#BASESCORE-14996666861426"/>
         <www:MainEntity rdf:resource="http://www.akura.com#ENTITY--1572451790"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
       </www:Review>
     </www:Provides>
     <www:Email></www:Email>
@@ -386,6 +537,7 @@
       <www:Review rdf:about="http://www.akura.com#REVIEWER-756512465">
         <www:MeasuredBy rdf:resource="http://www.akura.com#BASESCORE-14996673225525"/>
         <www:MainEntity rdf:resource="http://www.akura.com#ENTITY--1572451790"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
       </www:Review>
     </www:Provides>
     <www:UserName></www:UserName>
@@ -393,6 +545,7 @@
       <www:Review rdf:about="http://www.akura.com#REVIEWER-1838570912">
         <www:MeasuredBy rdf:resource="http://www.akura.com#BASESCORE-14996672969073"/>
         <www:MainEntity rdf:resource="http://www.akura.com#ENTITY--1875964437"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
       </www:Review>
     </www:Provides>
     <www:Provides>
@@ -400,86 +553,48 @@
         <www:MeasuredBy rdf:resource="http://www.akura.com#BASESCORE-14996672186164"/>
         <www:MeasuredBy rdf:resource="http://www.akura.com#BASESCORE-14996672101451"/>
         <www:MainEntity rdf:resource="http://www.akura.com#ENTITY--1875964437"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
       </www:Review>
     </www:Provides>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
     <www:Provides>
-      <www:Review rdf:about="http://www.akura.com#REVIEWER--1039450154">
+      <owl:NamedIndividual rdf:about="http://www.akura.com#REVIEWER--1039450154">
         <www:MeasuredBy rdf:resource="http://www.akura.com#BASESCORE-14996664445725"/>
+        <rdf:type rdf:resource="http://www.akura.com#Review"/>
         <www:MeasuredBy rdf:resource="http://www.akura.com#BASESCORE-14996670806833"/>
         <www:MeasuredBy rdf:resource="http://www.akura.com#BASESCORE-14996670806615"/>
-        <www:MeasuredBy rdf:resource="http://www.akura.com#BASESCORE-14996664446047"/>
         <www:MeasuredBy rdf:resource="http://www.akura.com#BASESCORE-14996670806616"/>
+        <www:MeasuredBy rdf:resource="http://www.akura.com#BASESCORE-14996664446047"/>
         <www:MeasuredBy rdf:resource="http://www.akura.com#BASESCORE-14996670806911"/>
         <www:MeasuredBy rdf:resource="http://www.akura.com#BASESCORE-14996670806686"/>
-        <www:MeasuredBy>
-          <www:BaseScore rdf:about="http://www.akura.com#BASESCORE-149966708069110">
-            <www:Score rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
-            >0.5</www:Score>
-          </www:BaseScore>
-        </www:MeasuredBy>
+        <www:MeasuredBy rdf:resource="http://www.akura.com#BASESCORE-149966708069110"/>
         <www:MainEntity rdf:resource="http://www.akura.com#ENTITY--1572451790"/>
         <www:MeasuredBy rdf:resource="http://www.akura.com#BASESCORE-149966644457110"/>
-        <www:MeasuredBy>
-          <www:BaseScore rdf:about="http://www.akura.com#BASESCORE-14996664446043">
-            <www:Score rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
-            >0.5</www:Score>
-          </www:BaseScore>
-        </www:MeasuredBy>
+        <www:MeasuredBy rdf:resource="http://www.akura.com#BASESCORE-14996664446043"/>
         <www:MeasuredBy rdf:resource="http://www.akura.com#BASESCORE-14996664445923"/>
         <www:MeasuredBy rdf:resource="http://www.akura.com#BASESCORE-14996664445842"/>
-      </www:Review>
+      </owl:NamedIndividual>
     </www:Provides>
   </www:Reviewer>
   <www:Reviewer rdf:about="http://www.akura.com#REVIEWER--1298311196">
-    <www:Email>nilesh.jayanandana@yahoo.com</www:Email>
     <www:UserName>nilesh93</www:UserName>
+    <www:Email>nilesh.jayanandana@yahoo.com</www:Email>
     <www:Provides>
       <www:Review rdf:about="http://www.akura.com#REVIEWER--491271192">
-        <www:MainEntity rdf:resource="http://www.akura.com#ENTITY--1572451790"/>
-        <www:MeasuredBy rdf:resource="http://www.akura.com#BASESCORE-14996665960787"/>
+        <www:MeasuredBy rdf:resource="http://www.akura.com#BASESCORE-14996665960802"/>
+        <www:MeasuredBy rdf:resource="http://www.akura.com#BASESCORE-14996665960801"/>
         <www:MeasuredBy>
           <www:BaseScore rdf:about="http://www.akura.com#BASESCORE-14996665960793">
             <www:Score rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
             >0.9</www:Score>
+            <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
           </www:BaseScore>
         </www:MeasuredBy>
-        <www:MeasuredBy rdf:resource="http://www.akura.com#BASESCORE-14996665960802"/>
-        <www:MeasuredBy rdf:resource="http://www.akura.com#BASESCORE-14996665960801"/>
+        <www:MeasuredBy rdf:resource="http://www.akura.com#BASESCORE-14996665960787"/>
+        <www:MainEntity rdf:resource="http://www.akura.com#ENTITY--1572451790"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
       </www:Review>
     </www:Provides>
-  </www:Reviewer>
-  <www:Entity rdf:about="http://www.akura.com#ENTITY--1572451791">
-    <www:EvaluatedBy rdf:resource="http://www.akura.com#BASESCORE-149966708069110"/>
-    <www:EvaluatedBy rdf:resource="http://www.akura.com#BASESCORE-14996664446043"/>
-    <www:SubEntity rdf:resource="http://www.akura.com#ENTITY--1572451791-FEATURE-1980544805"/>
-    <www:HashID>ENTITY--1572451791</www:HashID>
-    <www:Name>iPhone6</www:Name>
-  </www:Entity>
-  <www:Comparison rdf:about="http://www.akura.com#COMPARISON-ENTITY--1572451790-FEATURE-1980544805-ENTITY-2014703404-FEATURE-1980544805">
-    <www:Count rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-    >1</www:Count>
-    <www:Good rdf:resource="http://www.akura.com#ENTITY--1572451790-FEATURE-1980544805"/>
-    <www:Bad rdf:resource="http://www.akura.com#ENTITY-2014703404-FEATURE-1980544805"/>
-  </www:Comparison>
-  <www:Comparison rdf:about="http://www.akura.com#COMPARISON-ENTITY--1572451790-FEATURE-1980544805-ENTITY--1501365182-FEATURE-1980544805">
-    <www:Count rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-    >2</www:Count>
-    <www:Good rdf:resource="http://www.akura.com#ENTITY--1572451790-FEATURE-1980544805"/>
-    <www:Bad rdf:resource="http://www.akura.com#ENTITY--1501365182-FEATURE-1980544805"/>
-  </www:Comparison>
-  <www:Reviewer rdf:about="http://www.akura.com#REVIEWER--1492706173">
-    <www:Email>rishanthakumar@gmail.com</www:Email>
-    <www:UserName>rish</www:UserName>
-    <www:Provides>
-      <www:Review rdf:about="http://www.akura.com#REVIEWER-254995487">
-        <www:MainEntity rdf:resource="http://www.akura.com#ENTITY-2014703404"/>
-        <www:MeasuredBy>
-          <www:BaseScore rdf:about="http://www.akura.com#BASESCORE-14996665960803">
-            <www:Score rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
-            >0.7</www:Score>
-          </www:BaseScore>
-        </www:MeasuredBy>
-      </www:Review>
-    </www:Provides>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   </www:Reviewer>
 </rdf:RDF>
