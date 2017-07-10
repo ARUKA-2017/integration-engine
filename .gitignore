@@ -16,3 +16,6 @@ buildNumber.properties
 
 ### Mac
 .DS_Store
+
+###
+syslog.log
