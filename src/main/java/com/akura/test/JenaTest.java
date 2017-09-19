@@ -61,7 +61,7 @@ public class JenaTest {
 
         // get instances in a class
 //
-//        Entity ent = new Entity(m);
+//        EntityService ent = new EntityService(m);
 
         //        ent.save();
 //
@@ -85,7 +85,7 @@ public class JenaTest {
 
         // test entity
 
-//        Entity ent = new Entity(m, "Iphone 7");
+//        EntityService ent = new EntityService(m, "Iphone 7");
 //
 //        ent.setProperty("price", "$112");
 //        ent.setProperty("weight", "200g");
@@ -147,7 +147,7 @@ public class JenaTest {
 
         mainEntity.setBaseScore(baseScore3.instance);
 
-        // step 7: Set overall basescore for main Entity
+        // step 7: Set overall basescore for main EntityService
         BaseScore baseScore = new BaseScore(m, review);
         baseScore.setScore((float) 0.9);
 

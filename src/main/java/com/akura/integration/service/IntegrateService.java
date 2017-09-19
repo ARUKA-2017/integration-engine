@@ -91,7 +91,7 @@ public class IntegrateService {
     }
 
     public void processEntityClassInstances() {
-        for (Individual instance : this.classIndividualFilter("Entity")) {
+        for (Individual instance : this.classIndividualFilter("EntityService")) {
             DynamicEntity entity = new DynamicEntity(dynamic, stat, instance, review);
 
             if (entity.isEntity) {

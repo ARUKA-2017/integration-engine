@@ -10,7 +10,7 @@ public class RetrievalTest {
     public static void main(String[] args) {
 
         OntModel m = OntologyReader.getOntologyModel(Config.OWL_FILENAME);
-        SingleResponse resp = new SingleResponse(m, "iphone7", false);
+        SingleResponse resp = new SingleResponse(m, "Samsung Galaxy S5", false);
 
     }
 }

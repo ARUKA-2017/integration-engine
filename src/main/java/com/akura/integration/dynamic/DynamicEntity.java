@@ -110,7 +110,7 @@ public class DynamicEntity {
             return ent;
 
         } else {
-            throw new Exception("Not an Entity to create an Object. This should be a feature");
+            throw new Exception("Not an EntityService to create an Object. This should be a feature");
         }
     }
 

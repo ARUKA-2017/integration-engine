@@ -12,19 +12,19 @@ public class ComparisonEntityInstance {
     public Integer count;
 
 
-    public ComparisonEntityInstance(){
+    public ComparisonEntityInstance() {
 
     }
 
-    public ComparisonEntityInstance(OntModel m, Individual entityOrFeatureInstance){
+    public ComparisonEntityInstance(OntModel m, Individual entityOrFeatureInstance) {
 
-        if(entityOrFeatureInstance.getOntClass().getLocalName().equals("Entity")){
-            Entity ent = new Entity(m,entityOrFeatureInstance);
+        if (entityOrFeatureInstance.getOntClass().getLocalName().equals("Entity")) {
+            Entity ent = new Entity(m, entityOrFeatureInstance);
             this.name = ent.getName();
             this.id = ent.getHash();
 
-        }else{
-            Feature f = new Feature(m,entityOrFeatureInstance);
+        } else {
+            Feature f = new Feature(m, entityOrFeatureInstance);
             this.name = f.getEntityName();
             this.id = f.getEntityHash();
         }

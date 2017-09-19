@@ -41,7 +41,7 @@ public class JsonMapTest {
         OntologyWriter.writeOntology(m,fileResourceManager.getFilePath("ontology/demo_test_map_ontology_json.owl"));
 
         System.out.println("Done");
-        // set entity Class
+
 
 
 
