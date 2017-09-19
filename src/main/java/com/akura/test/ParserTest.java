@@ -1,6 +1,7 @@
 package com.akura.test;
 
 
+import com.akura.parser.models.Ontology;
 import com.akura.parser.service.EntityService;
 import com.akura.parser.service.ValidatorService;
 import com.akura.utility.FileResourceManager;
@@ -32,8 +33,8 @@ public class ParserTest {
         // validate the format
         if(ValidatorService.validateJSON(json)){
 
-            OntModel m = ModelFactory.createOntologyModel();
-            EntityService entityService = new EntityService(ValidatorService.getEntities(json) , m);
+            new EntityService(ValidatorService.getEntities(json));
+//            Ontology.saveOntologyFile();
 
         }else{
             // todo make this more generic later on

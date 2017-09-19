@@ -3,7 +3,7 @@ package com.akura.parser.service;
 
 import com.akura.parser.config.Config;
 import com.akura.parser.models.Entity;
-import org.apache.jena.ontology.OntModel;
+
 
 import java.util.ArrayList;
 import java.util.Map;
@@ -12,12 +12,10 @@ import java.util.Set;
 public class EntityService {
 
     public Map entityList;
-    public  OntModel m;
 
-    public EntityService(Map entities, OntModel m){
+    public EntityService(Map entities){
 
         entityList = entities;
-        this.m = m;
         Entity ent = new Entity(null);
         this.generateEntitiesFromObject(this.entityList, null, ent.name);
     }
