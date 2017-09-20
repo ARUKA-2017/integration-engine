@@ -6,10 +6,18 @@
     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
     xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
   <owl:Class rdf:about="urn:absolute:www.akura.com/class#ROOTCLASS"/>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#LANGUAGES">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#ROOTCLASS"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#AGE">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#ROOTCLASS"/>
+  </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#NAME">
     <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#ROOTCLASS"/>
   </owl:DatatypeProperty>
-  <j.1:ROOTCLASS rdf:about="urn:absolute:www.akura.com/class#--5cf6f446-af8a-4b79-82c0-ad066edd6c1brootClass">
-    <j.0:NAME>lol</j.0:NAME>
+  <j.1:ROOTCLASS rdf:about="urn:absolute:www.akura.com/class#--dd841028-b8f3-43c6-aed8-c35d826d6d27rootClass">
+    <j.0:AGE>25.0</j.0:AGE>
+    <j.0:NAME>rishanthan</j.0:NAME>
+    <j.0:LANGUAGES>sinhala</j.0:LANGUAGES>
   </j.1:ROOTCLASS>
 </rdf:RDF>

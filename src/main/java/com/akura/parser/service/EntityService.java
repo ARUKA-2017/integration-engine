@@ -30,7 +30,8 @@ public class EntityService {
         for(Object key : keys){
 
             // simple type key value or complex time
-            if(_entityList.get(key.toString()) != null && resolveType(_entityList.get(key.toString()), ent , key.toString())) {
+            if(_entityList.get(key.toString()) != null && resolveType(_entityList.get(key.toString()),
+                    ent , key.toString(),false)) {
                 ent.addSimpleType(key.toString(),_entityList.get(key.toString()));
             }
         }
@@ -48,12 +49,13 @@ public class EntityService {
     public void generateEntitiesFromArray(ArrayList _entityList, Entity ent, String key){
 
         for(Object obj : _entityList){
-            resolveType(obj, ent, key);
+
+            resolveType(obj, ent, key, true);
         }
     }
 
 
-    public Boolean resolveType(Object obj, Entity ent ,String key){
+    public Boolean resolveType(Object obj, Entity ent ,String key , boolean comesFromArray){
 
         if( obj.getClass().getName() == Config.arrayListClass){
 
@@ -66,7 +68,9 @@ public class EntityService {
             return false;
 
         }else{
-
+            if(comesFromArray){
+                ent.addSimpleType(key,obj.toString());
+            }
             return true;
         }
     }
