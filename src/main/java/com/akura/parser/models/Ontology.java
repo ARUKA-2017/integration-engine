@@ -6,6 +6,7 @@ import com.akura.utility.OntologyReader;
 import com.akura.utility.OntologyWriter;
 import org.apache.jena.ontology.*;
 import org.apache.jena.rdf.model.ModelFactory;
+import org.apache.jena.rdf.model.Resource;
 import org.apache.jena.util.iterator.ExtendedIterator;
 
 import java.util.ArrayList;
@@ -13,7 +14,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 import static com.akura.utility.OntologyWriter.fileResourceManager;
-
+import org.apache.jena.datatypes.xsd.XSDDatatype;
 
 public class Ontology {
 
@@ -32,7 +33,6 @@ public class Ontology {
 
     public static void saveOntologyFile() {
 
-        System.out.println(Ontology.getOntologyInstance());
         OntologyWriter.writeOntology(Ontology.getOntologyInstance(), "test-1.owl");
     }
 
@@ -97,18 +97,21 @@ public class Ontology {
 
         // set simple properties
         for (Object key : literalProperties.keySet()) {
-            OntProperty property = Ontology.getOntologyInstance().createDatatypeProperty(Config.ONTOLOGY_URI + key.toString().toLowerCase());
-//            property.addDomain(clazz);
-//            property.addRange(Ontology.getOntologyInstance().getOntResource(com.akura.parser.config.Config.RDF_STRING));
+            OntProperty property = Ontology.getOntologyInstance().createDatatypeProperty(Config.ONTOLOGY_PROP_URI + key.toString().toUpperCase());
+            property.addDomain(clazz);
+//            Ontology.getOntologyInstance().getResource();
+//
+//                    XSDDatatype i = XSDDatatype.XSDstring;
+//            property.addRange( XSDDatatype.XSDstring);
             classRegistry.get(clazz.getURI()).add(property);
         }
 //
 //        // set complex properties
         for (Object key : complexProperties.keySet()) {
-            OntProperty property = Ontology.getOntologyInstance().createDatatypeProperty(Config.ONTOLOGY_URI + key.toString().toLowerCase());
-//            property.addDomain(clazz);
-//            ArrayList<Entity> arr = (ArrayList) complexProperties.get(key.toString());
-//            property.addRange(Ontology.getOntologyInstance().getOntResource(arr.get(0).classURI));
+            OntProperty property = Ontology.getOntologyInstance().createObjectProperty(Config.ONTOLOGY_PROP_URI + key.toString().toUpperCase());
+            property.addDomain(clazz);
+            ArrayList<Entity> arr = (ArrayList) complexProperties.get(key.toString());
+            property.addRange(Ontology.getOntologyInstance().getOntClass(arr.get(0).classURI));
             classRegistry.get(clazz.getURI()).add(property);
         }
 
@@ -123,13 +126,13 @@ public class Ontology {
         while (propertyIter.hasNext()) {
             OntProperty property = propertyIter.next();
 
-            if (property != null && property.getLocalName().toLowerCase() == propertyName.toLowerCase()) {
+            if (property != null && property.getLocalName().toUpperCase() == propertyName.toUpperCase()) {
                 selectedProperty = property;
             }
         }
 
         if (selectedProperty == null) {
-            selectedProperty = Ontology.getOntologyInstance().createDatatypeProperty(Config.ONTOLOGY_URI + propertyName.toLowerCase());
+            selectedProperty = Ontology.getOntologyInstance().createDatatypeProperty(Config.ONTOLOGY_PROP_URI  + propertyName.toUpperCase());
         }
         return selectedProperty;
     }

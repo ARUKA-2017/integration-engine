@@ -1,44 +1,69 @@
 <rdf:RDF
     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:j.0="urn:absolute:www.akura.com/property#"
     xmlns:owl="http://www.w3.org/2002/07/owl#"
-    xmlns:j.0="urn:absolute:www.akura.com#"
+    xmlns:j.1="urn:absolute:www.akura.com/class#"
     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
     xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
-  <owl:Class rdf:about="urn:absolute:www.akura.com#ITEMS"/>
-  <owl:Class rdf:about="urn:absolute:www.akura.com#PROPERTY"/>
-  <owl:Class rdf:about="urn:absolute:www.akura.com#REVIEW_INFO"/>
-  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com#user_name"/>
-  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com#comment"/>
-  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com#property"/>
-  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com#key"/>
-  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com#id"/>
-  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com#base_score"/>
-  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com#rating"/>
-  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com#value"/>
-  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com#name"/>
-  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com#email"/>
-  <j.0:REVIEW_INFO rdf:about="urn:absolute:www.akura.com#--6bbb6a8f-c07b-4646-83f9-46c4d53c5db0review_info">
-    <j.0:property>
-      <j.0:PROPERTY rdf:about="urn:absolute:www.akura.com#--105c4ddb-7604-4873-a267-6ae59170cf1bproperty">
-        <j.0:key>property</j.0:key>
-        <j.0:value>property</j.0:value>
-      </j.0:PROPERTY>
-    </j.0:property>
-    <j.0:email>review_info</j.0:email>
-    <j.0:id>review_info</j.0:id>
-    <j.0:comment>review_info</j.0:comment>
-    <j.0:rating>review_info</j.0:rating>
-    <j.0:user_name>review_info</j.0:user_name>
-  </j.0:REVIEW_INFO>
-  <j.0:ITEMS rdf:about="urn:absolute:www.akura.com#--9c006438-cea3-4da4-83b7-6cf407d575c7items">
-    <j.0:property>
-      <j.0:PROPERTY rdf:about="urn:absolute:www.akura.com#--7f2c3e2b-d700-405c-9c2d-12da942405d1property">
-        <j.0:key>property</j.0:key>
-        <j.0:value>property</j.0:value>
-      </j.0:PROPERTY>
-    </j.0:property>
-    <j.0:id>items</j.0:id>
-    <j.0:name>items</j.0:name>
-    <j.0:base_score>items</j.0:base_score>
-  </j.0:ITEMS>
+  <owl:Class rdf:about="urn:absolute:www.akura.com/class#ITEMS"/>
+  <owl:Class rdf:about="urn:absolute:www.akura.com/class#REVIEW_INFO"/>
+  <owl:Class rdf:about="urn:absolute:www.akura.com/class#PROPERTY"/>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#KEY">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#PROPERTY"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROPERTY">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#REVIEW_INFO"/>
+    <rdfs:range rdf:resource="urn:absolute:www.akura.com/class#PROPERTY"/>
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#ITEMS"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#COMMENT">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#REVIEW_INFO"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#BASE_SCORE">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#ITEMS"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#EMAIL">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#REVIEW_INFO"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#USER_NAME">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#REVIEW_INFO"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#ID">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#REVIEW_INFO"/>
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#ITEMS"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#RATING">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#REVIEW_INFO"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#VALUE">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#PROPERTY"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#NAME">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#ITEMS"/>
+  </owl:DatatypeProperty>
+  <j.1:REVIEW_INFO rdf:about="urn:absolute:www.akura.com/class#--c75b5e54-c8f3-435f-b8c7-d9feb4aba4a0review_info">
+    <j.0:PROPERTY>
+      <j.1:PROPERTY rdf:about="urn:absolute:www.akura.com/class#--318157ce-931e-4270-8476-96c675fb942eproperty">
+        <j.0:KEY>review_info_key</j.0:KEY>
+        <j.0:VALUE>review_info_value</j.0:VALUE>
+      </j.1:PROPERTY>
+    </j.0:PROPERTY>
+    <j.0:EMAIL>rishanthakumar@gmail.com</j.0:EMAIL>
+    <j.0:ID>112121212121</j.0:ID>
+    <j.0:COMMENT>iPhone6s is better than</j.0:COMMENT>
+    <j.0:RATING>0.7</j.0:RATING>
+    <j.0:USER_NAME>rishanthan</j.0:USER_NAME>
+  </j.1:REVIEW_INFO>
+  <j.1:ITEMS rdf:about="urn:absolute:www.akura.com/class#--4bb28b32-4047-4e39-82f0-db1a9bee99d2items">
+    <j.0:PROPERTY>
+      <j.1:PROPERTY rdf:about="urn:absolute:www.akura.com/class#--3a739e23-318e-4ee0-9358-9daae26bbf86property">
+        <j.0:KEY>weight</j.0:KEY>
+        <j.0:VALUE>20g</j.0:VALUE>
+      </j.1:PROPERTY>
+    </j.0:PROPERTY>
+    <j.0:ID>11111111111111</j.0:ID>
+    <j.0:NAME>iPhone7</j.0:NAME>
+    <j.0:BASE_SCORE>0.8</j.0:BASE_SCORE>
+  </j.1:ITEMS>
 </rdf:RDF>

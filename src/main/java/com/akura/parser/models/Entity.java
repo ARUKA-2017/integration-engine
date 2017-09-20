@@ -4,6 +4,7 @@ import com.akura.parser.config.Config;
 import org.apache.jena.ontology.Individual;
 import org.apache.jena.ontology.OntClass;
 import org.apache.jena.ontology.OntModel;
+import org.apache.jena.rdf.model.Resource;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -50,23 +51,27 @@ public class Entity {
             classURI = ont.getClassName(name, simpleTypes, complexTypes);
 
             OntClass clazz = Ontology.getOntologyInstance().getOntClass(classURI);
-
             instance = clazz.createIndividual(Config.ONTOLOGY_URI + "--" + this.namespace.toString() + name);
+
 
             // simple types
             for (Object key : simpleTypes.keySet()) {
-                instance.addProperty(ont.getProperty(key.toString()), this.name);
+               instance.addLiteral(ont.getProperty(key.toString()), simpleTypes.get(key.toString()).toString());
+
             }
+
 
             // complex types
             for (Object key : complexTypes.keySet()) {
 
-                ArrayList<Entity> entities = complexTypes.get(key.toString());
 
+                ArrayList<Entity> entities = complexTypes.get(key.toString());
                 for (Entity ent : entities) {
+
                     instance.addProperty(ont.getProperty(key.toString()), ent.instance);
                 }
             }
+
 
         }
 
