@@ -18,6 +18,7 @@ import static com.akura.utility.OntologyWriter.fileResourceManager;
 public class Ontology {
 
     public static OntModel m = null;
+
     public HashMap<String, ArrayList<OntProperty>> classRegistry;
 
     public static OntModel getOntologyInstance() {
@@ -32,7 +33,7 @@ public class Ontology {
     public static void saveOntologyFile() {
 
         System.out.println(Ontology.getOntologyInstance());
-        OntologyWriter.writeOntology(Ontology.getOntologyInstance(), fileResourceManager.getFilePath("parser/test-1.owl"));
+        OntologyWriter.writeOntology(Ontology.getOntologyInstance(), "test-1.owl");
     }
 
     public Ontology() {
