@@ -5,37 +5,11 @@
     xmlns:j.1="urn:absolute:www.akura.com/class#"
     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
     xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
-  <owl:Class rdf:about="urn:absolute:www.akura.com/class#ITEMS"/>
-  <owl:Class rdf:about="urn:absolute:www.akura.com/class#PROPERTY"/>
-  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#KEY">
-    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#PROPERTY"/>
-  </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROPERTY">
-    <rdfs:range rdf:resource="urn:absolute:www.akura.com/class#PROPERTY"/>
-    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#ITEMS"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-  </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#BASE_SCORE">
-    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#ITEMS"/>
-  </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#ID">
-    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#ITEMS"/>
-  </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#VALUE">
-    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#PROPERTY"/>
-  </owl:DatatypeProperty>
+  <owl:Class rdf:about="urn:absolute:www.akura.com/class#ROOTCLASS"/>
   <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#NAME">
-    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#ITEMS"/>
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#ROOTCLASS"/>
   </owl:DatatypeProperty>
-  <j.1:ITEMS rdf:about="urn:absolute:www.akura.com/class#--e744203e-7f0f-4f1d-897f-ce0324428d6citems">
-    <j.0:PROPERTY>
-      <j.1:PROPERTY rdf:about="urn:absolute:www.akura.com/class#--997ed03e-0803-464d-88f1-979d17e76684property">
-        <j.0:KEY>weight</j.0:KEY>
-        <j.0:VALUE>20g</j.0:VALUE>
-      </j.1:PROPERTY>
-    </j.0:PROPERTY>
-    <j.0:ID>11111111111111</j.0:ID>
-    <j.0:NAME>iPhone7</j.0:NAME>
-    <j.0:BASE_SCORE>0.8</j.0:BASE_SCORE>
-  </j.1:ITEMS>
+  <j.1:ROOTCLASS rdf:about="urn:absolute:www.akura.com/class#--5cf6f446-af8a-4b79-82c0-ad066edd6c1brootClass">
+    <j.0:NAME>lol</j.0:NAME>
+  </j.1:ROOTCLASS>
 </rdf:RDF>

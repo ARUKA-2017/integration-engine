@@ -16,8 +16,8 @@ public class EntityService {
     public EntityService(Map entities){
 
         entityList = entities;
-        Entity ent = new Entity(null);
-        this.generateEntitiesFromObject(this.entityList, null, ent.name);
+        Entity ent = new Entity("rootClass");
+        this.generateEntitiesFromObject(this.entityList, ent, ent.name);
     }
 
 
