@@ -17,6 +17,7 @@ public class Entity {
     public Map simpleTypes;
     public String name;
     public HashMap<String, ArrayList<Entity>> complexTypes;
+    public HashMap<String, ArrayList<String>> simpleComplexTypes;
     public String classURI;
     public Individual instance;
     public UUID namespace = UUID.randomUUID();
@@ -25,6 +26,7 @@ public class Entity {
     public Entity(String _key) {
         simpleTypes = new HashMap();
         complexTypes = new HashMap<>();
+        simpleComplexTypes = new HashMap<>();
         name = _key;
     }
 
@@ -39,6 +41,18 @@ public class Entity {
         }
     }
 
+    public void addSimpleComplexType(String key, String val) {
+
+        if (simpleComplexTypes.get(key) != null) {
+            simpleComplexTypes.get(key).add(val);
+        } else {
+            ArrayList arr = new ArrayList();
+            arr.add(val);
+            simpleComplexTypes.put(key, arr);
+        }
+    }
+
+
 
     public void addSimpleType(String key, Object obj) {
         simpleTypes.put(key, obj);
@@ -48,7 +62,7 @@ public class Entity {
     public void saveToOntology() {
         if (name != null) {
             Ontology ont = new Ontology();
-            classURI = ont.getClassName(name, simpleTypes, complexTypes);
+            classURI = ont.getClassName(name, simpleTypes, complexTypes, simpleComplexTypes);
 
             OntClass clazz = Ontology.getOntologyInstance().getOntClass(classURI);
             instance = clazz.createIndividual(Config.ONTOLOGY_URI + "--" + this.namespace.toString() + name);
@@ -57,20 +71,24 @@ public class Entity {
             // simple types
             for (Object key : simpleTypes.keySet()) {
                instance.addLiteral(ont.getProperty(key.toString()), simpleTypes.get(key.toString()).toString());
-
             }
 
 
             // complex types
             for (Object key : complexTypes.keySet()) {
-
-
                 ArrayList<Entity> entities = complexTypes.get(key.toString());
                 for (Entity ent : entities) {
-
                     instance.addProperty(ont.getProperty(key.toString()), ent.instance);
                 }
             }
+
+            for (Object key : simpleComplexTypes.keySet()) {
+                ArrayList<String> values = simpleComplexTypes.get(key.toString());
+                for (String val : values) {
+                    instance.addLiteral(ont.getProperty(key.toString()),val);
+                }
+            }
+
 
 
         }

@@ -69,13 +69,13 @@ public class Ontology {
     }
 
 
-    public String getClassName(String entityName, Map literalProperties, Map complexProperties) {
+    public String getClassName(String entityName, Map literalProperties, Map complexProperties , Map simpleComplexProperties) {
 
         String className = null;
 
         for (Object key : classRegistry.keySet()) {
             if (isTwoArrayListsWithSameValues(classRegistry.get(key.toString()),
-                    this.mergeMaps(literalProperties, complexProperties))) {
+                    this.mergeMaps(literalProperties, complexProperties, simpleComplexProperties))) {
                 className = key.toString();
             }
         }
@@ -83,13 +83,13 @@ public class Ontology {
         if (className != null) {
             return className;
         } else {
-            className = createNewClass(entityName, literalProperties, complexProperties).getURI();
+            className = createNewClass(entityName, literalProperties, complexProperties, simpleComplexProperties).getURI();
         }
 
         return className;
     }
 
-    public OntClass createNewClass(String className, Map literalProperties, Map complexProperties) {
+    public OntClass createNewClass(String className, Map literalProperties, Map complexProperties , Map simpleComplexProperties) {
 
         OntClass clazz = Ontology.getOntologyInstance().createClass(Config.ONTOLOGY_URI + className.toUpperCase());
         classRegistry.put(clazz.getURI(), new ArrayList());
@@ -99,14 +99,16 @@ public class Ontology {
         for (Object key : literalProperties.keySet()) {
             OntProperty property = Ontology.getOntologyInstance().createDatatypeProperty(Config.ONTOLOGY_PROP_URI + key.toString().toUpperCase());
             property.addDomain(clazz);
-//            Ontology.getOntologyInstance().getResource();
-//
-//                    XSDDatatype i = XSDDatatype.XSDstring;
-//            property.addRange( XSDDatatype.XSDstring);
             classRegistry.get(clazz.getURI()).add(property);
         }
-//
-//        // set complex properties
+
+        for (Object key : simpleComplexProperties.keySet()) {
+            OntProperty property = Ontology.getOntologyInstance().createDatatypeProperty(Config.ONTOLOGY_PROP_URI + key.toString().toUpperCase());
+            property.addDomain(clazz);
+            classRegistry.get(clazz.getURI()).add(property);
+        }
+
+      // set complex properties
         for (Object key : complexProperties.keySet()) {
             OntProperty property = Ontology.getOntologyInstance().createObjectProperty(Config.ONTOLOGY_PROP_URI + key.toString().toUpperCase());
             property.addDomain(clazz);
@@ -138,7 +140,7 @@ public class Ontology {
     }
 
 
-    public ArrayList mergeMaps(Map literalProperties, Map complexProperties) {
+    public ArrayList mergeMaps(Map literalProperties, Map complexProperties , Map simpleComplexProperties) {
         ArrayList arr = new ArrayList();
 
         for (Object key : literalProperties.keySet()) {
@@ -148,6 +150,11 @@ public class Ontology {
         for (Object key : complexProperties.keySet()) {
             arr.add(key.toString());
         }
+
+        for (Object key : simpleComplexProperties.keySet()) {
+            arr.add(key.toString());
+        }
+
 
         return arr;
     }
@@ -159,11 +166,6 @@ public class Ontology {
 
         if ((list1 == null && list2 != null) || (list1 != null && list2 == null))
             return false;
-
-//        if(list1.size()!=list2.size())
-//            return false;
-
-
         for (Object itemList2 : list2) {
             boolean bool = false;
             for (OntProperty itemList1 : list1) {

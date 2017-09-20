@@ -15,9 +15,13 @@
   <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#NAME">
     <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#ROOTCLASS"/>
   </owl:DatatypeProperty>
-  <j.1:ROOTCLASS rdf:about="urn:absolute:www.akura.com/class#--dd841028-b8f3-43c6-aed8-c35d826d6d27rootClass">
+  <j.1:ROOTCLASS rdf:about="urn:absolute:www.akura.com/class#--a171d3c7-7424-4b77-958d-b3c64b9a1dbbrootClass">
+    <j.0:LANGUAGES>1.0</j.0:LANGUAGES>
+    <j.0:LANGUAGES>1.2</j.0:LANGUAGES>
+    <j.0:LANGUAGES>sinhala</j.0:LANGUAGES>
+    <j.0:LANGUAGES>tamil</j.0:LANGUAGES>
+    <j.0:LANGUAGES>english</j.0:LANGUAGES>
     <j.0:AGE>25.0</j.0:AGE>
     <j.0:NAME>rishanthan</j.0:NAME>
-    <j.0:LANGUAGES>sinhala</j.0:LANGUAGES>
   </j.1:ROOTCLASS>
 </rdf:RDF>

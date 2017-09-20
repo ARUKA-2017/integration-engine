@@ -32,10 +32,10 @@
       "IRI-based" : "ROOTCLASS"
     },
     "individuals" : [ {
-      "iri" : "urn:absolute:www.akura.com/class#--dd841028-b8f3-43c6-aed8-c35d826d6d27rootClass",
+      "iri" : "urn:absolute:www.akura.com/class#--a171d3c7-7424-4b77-958d-b3c64b9a1dbbrootClass",
       "baseIri" : "urn:absolute:www.akura.com/class",
       "labels" : {
-        "IRI-based" : "--dd841028-b8f3-43c6-aed8-c35d826d6d27rootClass"
+        "IRI-based" : "--a171d3c7-7424-4b77-958d-b3c64b9a1dbbrootClass"
       }
     } ],
     "attributes" : [ "external" ],

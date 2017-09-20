@@ -69,7 +69,7 @@ public class EntityService {
 
         }else{
             if(comesFromArray){
-                ent.addSimpleType(key,obj.toString());
+                ent.addSimpleComplexType(key,obj.toString());
             }
             return true;
         }

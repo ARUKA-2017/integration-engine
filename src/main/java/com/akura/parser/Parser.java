@@ -17,7 +17,6 @@ public class Parser {
     public static void parseFromJsonString(String json){
 
         Gson gson = new Gson();
-        System.out.println(gson.toJson(json));
         Map jsonObj = gson.fromJson( json , (Type) Object.class);
         new EntityService(jsonObj);
         Ontology.saveOntologyFile();
