@@ -3,9 +3,6 @@
 
 <head>
     <meta charset="utf-8" />
-    <meta http-equiv='cache-control' content='no-cache'>
-    <meta http-equiv='expires' content='0'>
-    <meta http-equiv='pragma' content='no-cache'>
     <meta name="author" content="Vincent Link, Steffen Lohmann, Eduard Marbach, Stefan Negru, Vitalis Wiens" />
     <meta name="keywords" content="webvowl, vowl, visual notation, web ontology language, owl, rdf, ontology visualization, ontologies, semantic web" />
     <meta name="description" content="WebVOWL - Web-based Visualization of Ontologies" />
@@ -15,20 +12,24 @@
     <link rel="stylesheet" type="text/css" href="css/webvowl.css" />
     <link rel="stylesheet" type="text/css" href="css/webvowl.app.css" />
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
-    <title>WebVOWL</title>	
+    <title>WebVOWL</title>
 </head>
 
 <body>
+
     <main>
+
         <section id="canvasArea">
             <div id="browserCheck" class="hidden">
                 WebVOWL does not work properly in Internet Explorer and Microsoft Edge. Please use another browser, such as
-                <a href="https://www.mozilla.org/de/firefox/">Mozilla Firefox</a> or
+                <a href="http://www.mozilla.org/firefox/">Mozilla Firefox</a> or
                 <a href="https://www.google.com/chrome/">Google Chrome</a>, to run WebVOWL.
                 <label id="killWarning">Hide warning</label>
             </div>
             <div id="logo">
-                <h2>WebVOWL <br/><span>1.0.4</span></h2>
+
+                <h2>WebVOWL <br/><span>1.0.5</span></h2>
+
             </div>
             <div id="loading-info">
                 <div id="loading-error" class="hidden">
@@ -46,6 +47,8 @@
                     </div>
                 </div>
             </div>
+
+
             <div id="graph"></div>
         </section>
         <aside id="detailsArea">
@@ -116,7 +119,7 @@
                         <li id="credits" class="option">WebVOWL Developers:<br/> Vincent Link, Steffen Lohmann, Eduard Marbach, Stefan Negru, Vitalis Wiens
                         </li>
 
-                        <li><a href="http://vowl.visualdataweb.org/webvowl.html#releases" target="_blank">Version: 1.0.4<br/>(release history)</a></li>
+                        <li><a href="http://vowl.visualdataweb.org/webvowl.html#releases" target="_blank">Version: 1.0.5<br/>(release history)</a></li>
 
                         <li><a href="http://purl.org/vowl/" target="_blank">VOWL Specification &raquo;</a></li>
                     </ul>
@@ -125,6 +128,8 @@
                 <li id="resetOption"><a id="reset-button" href="#" type="reset">Reset</a></li>
                 <li id="moduleOption"><a href="#">Modes</a>
                     <ul class="toolTipMenu module">
+                        <!--<li class="toggleOption" id="helicopterZoom"></li>-->
+                        <!--<li class="toggleOption" id="grassHopperZoom"></li>-->
                         <li class="toggleOption" id="dynamicLabelWidth"></li>
                         <li class="toggleOption" id="pickAndPinOption"></li>
                         <li class="toggleOption" id="nodeScalingOption"></li>
@@ -185,11 +190,9 @@
                     <ul class="searchMenuEntry" id="searchEntryContainer">
                     </ul>
                 </li>
-                <li id="li_right" style="float:left">
-                    <a href="#" id="RightButton"></a>
-                </li>
-                <li id="li_left" style="float:left">
-                    <a href="#" id="LeftButton"></a>
+                <li id="li_right" style="float:left"><a href="#" id="RightButton"></a></li>
+                <li id="li_left" style="float:left"><a href="#" id="LeftButton"></a></li>
+
                 </li>
             </ul>
         </nav>
@@ -198,7 +201,24 @@
     <script src="js/webvowl.js"></script>
     <script src="js/webvowl.app.js"></script>
     <script>
-        window.onload = webvowl.app().initialize;
+
+            loadScript("js/d3.min.js");
+            loadScript("js/webvowl.js");
+            loadScript("js/webvowl.app.js");
+
+        // setTimeout(function(){
+
+        // });
+
+          window.onload = webvowl.app().initialize;
+
+
+        function loadScript(str){
+           var script;
+            script = document.createElement('script');
+            script.src = str+"?v="+Date.now();
+
+        }
     </script>
 </body>
 
