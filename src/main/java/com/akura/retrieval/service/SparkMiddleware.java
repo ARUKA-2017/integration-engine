@@ -27,7 +27,7 @@ public class SparkMiddleware {
             response.header("Access-Control-Request-Method", methods);
             response.header("Access-Control-Allow-Headers", headers);
             // Note: this may or may not be necessary in your particular application
-            response.type("application/json");
+//            response.type("application/json");
         });
     }
 }

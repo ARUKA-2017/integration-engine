@@ -1,0 +1,66 @@
+extends layout
+
+
+block content
+
+    h1  Welcome to JSON 2 OWL Converter
+
+    h5 Insert the JSON file here
+
+    br
+    div.row
+        div.col-md-6
+
+            div.form-group
+                div.col-md-12
+                    textarea#json(class="form-control input-sm" , rows="20")
+
+                div(class="col-md-4 col-md-offset-8")
+                    br
+                    button(class="btn btn-block btn-primary", onclick="convert()") Convert
+
+
+        div.col-md-6
+            iframe(src="http://localhost:8080", id="iframe",class="col-md-12", style="height:60%" , hidden="true")
+
+block javascript
+
+    script.
+
+        var iframeHref = "http://localhost:8080";
+        function convert(){
+            var json = $("#json").val();
+
+            try{
+                json = JSON.parse(json);
+            } catch(e){
+                alert("INVALID JSON");
+                return false;
+            }
+
+            $.ajax({
+                url:"/generate-vowl",
+                type:"POST",
+                data: JSON.stringify(json),
+                success:function(res){
+                    console.log(res);
+                    reload();
+                },
+                error: function(err){
+                    console.log(err);
+                }
+
+            });
+
+
+
+
+
+        }
+
+        function reload(){
+            var iframe = document.getElementById('iframe');
+            iframe.removeAttribute("hidden");
+            iframe.src = iframeHref+"?name="+Date.now();
+        }
+

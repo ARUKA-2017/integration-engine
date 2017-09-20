@@ -1,0 +1,337 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.2-SNAPSHOT), http://vowl.visualdataweb.org",
+  "header" : {
+    "baseIris" : [ "urn:absolute:www.akura.com/class", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema", "urn:absolute:www.akura.com/property" ],
+    "iri" : "No IRI set"
+  },
+  "namespace" : [ ],
+  "metrics" : {
+    "classCount" : 3,
+    "objectPropertyCount" : 1,
+    "datatypePropertyCount" : 10,
+    "individualCount" : 4
+  },
+  "class" : [ {
+    "id" : "2",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "4",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "5",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "8",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "12",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "13",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "14",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "17",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "20",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "19",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "7",
+    "type" : "owl:Class"
+  }, {
+    "id" : "11",
+    "type" : "owl:Class"
+  }, {
+    "id" : "16",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "24",
+    "type" : "owl:Class"
+  }, {
+    "id" : "10",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "2",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "4",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "5",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "8",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "12",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "13",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "14",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "17",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "20",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "19",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "urn:absolute:www.akura.com/class#REVIEW_INFO",
+    "baseIri" : "urn:absolute:www.akura.com/class",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "REVIEW_INFO"
+    },
+    "individuals" : [ {
+      "iri" : "urn:absolute:www.akura.com/class#--c7b8b97b-07b7-4b08-953d-4d62aa9da007review_info",
+      "baseIri" : "urn:absolute:www.akura.com/class",
+      "labels" : {
+        "IRI-based" : "--c7b8b97b-07b7-4b08-953d-4d62aa9da007review_info"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "1"
+  }, {
+    "iri" : "urn:absolute:www.akura.com/class#ITEMS",
+    "baseIri" : "urn:absolute:www.akura.com/class",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ITEMS"
+    },
+    "individuals" : [ {
+      "iri" : "urn:absolute:www.akura.com/class#--2db4a282-b789-4ede-a8a4-98f04e956f7citems",
+      "baseIri" : "urn:absolute:www.akura.com/class",
+      "labels" : {
+        "IRI-based" : "--2db4a282-b789-4ede-a8a4-98f04e956f7citems"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "7"
+  }, {
+    "iri" : "urn:absolute:www.akura.com/class#PROPERTY",
+    "baseIri" : "urn:absolute:www.akura.com/class",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PROPERTY"
+    },
+    "individuals" : [ {
+      "iri" : "urn:absolute:www.akura.com/class#--94e8c075-f7f5-4153-855f-f44515bcc360property",
+      "baseIri" : "urn:absolute:www.akura.com/class",
+      "labels" : {
+        "IRI-based" : "--94e8c075-f7f5-4153-855f-f44515bcc360property"
+      }
+    }, {
+      "iri" : "urn:absolute:www.akura.com/class#--3bc96a8f-9a99-489b-809f-9bb89cbd1ff7property",
+      "baseIri" : "urn:absolute:www.akura.com/class",
+      "labels" : {
+        "IRI-based" : "--3bc96a8f-9a99-489b-809f-9bb89cbd1ff7property"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "11"
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "16",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "instances" : 0,
+    "union" : [ "1", "7" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "24"
+  }, {
+    "instances" : 0,
+    "union" : [ "1", "7" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "10"
+  } ],
+  "property" : [ {
+    "id" : "0",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "3",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "6",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "9",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "15",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "18",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "21",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "22",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "23",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "25",
+    "type" : "owl:datatypeProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "urn:absolute:www.akura.com/property#USER_NAME",
+    "baseIri" : "urn:absolute:www.akura.com/property",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "USER_NAME"
+    },
+    "domain" : "1",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "0"
+  }, {
+    "iri" : "urn:absolute:www.akura.com/property#RATING",
+    "baseIri" : "urn:absolute:www.akura.com/property",
+    "range" : "4",
+    "label" : {
+      "IRI-based" : "RATING"
+    },
+    "domain" : "1",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "3"
+  }, {
+    "iri" : "urn:absolute:www.akura.com/property#NAME",
+    "baseIri" : "urn:absolute:www.akura.com/property",
+    "range" : "8",
+    "label" : {
+      "IRI-based" : "NAME"
+    },
+    "domain" : "7",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "6"
+  }, {
+    "iri" : "urn:absolute:www.akura.com/property#PROPERTY",
+    "baseIri" : "urn:absolute:www.akura.com/property",
+    "range" : "11",
+    "label" : {
+      "IRI-based" : "PROPERTY"
+    },
+    "domain" : "10",
+    "attributes" : [ "object", "external" ],
+    "id" : "9"
+  }, {
+    "iri" : "urn:absolute:www.akura.com/property#VALUE",
+    "baseIri" : "urn:absolute:www.akura.com/property",
+    "range" : "16",
+    "label" : {
+      "IRI-based" : "VALUE"
+    },
+    "domain" : "11",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "15"
+  }, {
+    "iri" : "urn:absolute:www.akura.com/property#KEY",
+    "baseIri" : "urn:absolute:www.akura.com/property",
+    "range" : "19",
+    "label" : {
+      "IRI-based" : "KEY"
+    },
+    "domain" : "11",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "18"
+  }, {
+    "iri" : "urn:absolute:www.akura.com/property#COMMENT",
+    "baseIri" : "urn:absolute:www.akura.com/property",
+    "range" : "20",
+    "label" : {
+      "IRI-based" : "COMMENT"
+    },
+    "domain" : "1",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "21"
+  }, {
+    "iri" : "urn:absolute:www.akura.com/property#BASE_SCORE",
+    "baseIri" : "urn:absolute:www.akura.com/property",
+    "range" : "5",
+    "label" : {
+      "IRI-based" : "BASE_SCORE"
+    },
+    "domain" : "7",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "22"
+  }, {
+    "iri" : "urn:absolute:www.akura.com/property#EMAIL",
+    "baseIri" : "urn:absolute:www.akura.com/property",
+    "range" : "14",
+    "label" : {
+      "IRI-based" : "EMAIL"
+    },
+    "domain" : "1",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "23"
+  }, {
+    "iri" : "urn:absolute:www.akura.com/property#ID",
+    "baseIri" : "urn:absolute:www.akura.com/property",
+    "range" : "17",
+    "label" : {
+      "IRI-based" : "ID"
+    },
+    "domain" : "24",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "25"
+  } ]
+}

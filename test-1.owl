@@ -42,9 +42,9 @@
   <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#NAME">
     <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#ITEMS"/>
   </owl:DatatypeProperty>
-  <j.1:REVIEW_INFO rdf:about="urn:absolute:www.akura.com/class#--c75b5e54-c8f3-435f-b8c7-d9feb4aba4a0review_info">
+  <j.1:REVIEW_INFO rdf:about="urn:absolute:www.akura.com/class#--286560b5-f027-4353-93ad-2de038cd626dreview_info">
     <j.0:PROPERTY>
-      <j.1:PROPERTY rdf:about="urn:absolute:www.akura.com/class#--318157ce-931e-4270-8476-96c675fb942eproperty">
+      <j.1:PROPERTY rdf:about="urn:absolute:www.akura.com/class#--d0ffd614-f4dc-481f-9897-39be6fb17078property">
         <j.0:KEY>review_info_key</j.0:KEY>
         <j.0:VALUE>review_info_value</j.0:VALUE>
       </j.1:PROPERTY>
@@ -55,9 +55,9 @@
     <j.0:RATING>0.7</j.0:RATING>
     <j.0:USER_NAME>rishanthan</j.0:USER_NAME>
   </j.1:REVIEW_INFO>
-  <j.1:ITEMS rdf:about="urn:absolute:www.akura.com/class#--4bb28b32-4047-4e39-82f0-db1a9bee99d2items">
+  <j.1:ITEMS rdf:about="urn:absolute:www.akura.com/class#--78f62d13-aa83-4d0b-99bc-984a9103e01citems">
     <j.0:PROPERTY>
-      <j.1:PROPERTY rdf:about="urn:absolute:www.akura.com/class#--3a739e23-318e-4ee0-9358-9daae26bbf86property">
+      <j.1:PROPERTY rdf:about="urn:absolute:www.akura.com/class#--6e40d986-6e34-4f7a-9235-c5f57989db48property">
         <j.0:KEY>weight</j.0:KEY>
         <j.0:VALUE>20g</j.0:VALUE>
       </j.1:PROPERTY>

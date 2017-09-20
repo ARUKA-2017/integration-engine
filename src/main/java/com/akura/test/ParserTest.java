@@ -4,6 +4,7 @@ package com.akura.test;
 import com.akura.parser.models.Ontology;
 import com.akura.parser.service.EntityService;
 import com.akura.parser.service.ValidatorService;
+import com.akura.parser.vowl.VowlConverter;
 import com.akura.utility.FileResourceManager;
 import com.google.gson.Gson;
 import org.apache.jena.ontology.OntModel;
@@ -41,6 +42,11 @@ public class ParserTest {
             System.out.println("ERROR: Invalid JSON TYPE");
         }
 
+        System.out.println("Working Directory = " +
+                System.getProperty("user.dir"));
+
+        VowlConverter obj = new VowlConverter();
+        obj.convert();
 
         /**
          *
