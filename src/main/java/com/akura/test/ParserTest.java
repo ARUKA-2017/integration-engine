@@ -31,18 +31,15 @@ public class ParserTest {
 
 
         // validate the format
-        if(ValidatorService.validateJSON(json)){
+        if (ValidatorService.validateJSON(json)) {
 
             new EntityService(ValidatorService.getEntities(json));
-//            Ontology.saveOntologyFile();
+            Ontology.saveOntologyFile();
 
-        }else{
+        } else {
             // todo make this more generic later on
             System.out.println("ERROR: Invalid JSON TYPE");
         }
-
-
-
 
 
         /**

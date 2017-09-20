@@ -48,8 +48,8 @@ public class Entity {
         if (name != null) {
             Ontology ont = new Ontology();
             classURI = ont.getClassName(name, simpleTypes, complexTypes);
-            OntModel m = Ontology.getOntologyInstance();
-            OntClass clazz = m.getOntClass(classURI);
+
+            OntClass clazz = Ontology.getOntologyInstance().getOntClass(classURI);
 
             instance = clazz.createIndividual(Config.ONTOLOGY_URI + "--" + this.namespace.toString() + name);
 

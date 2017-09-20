@@ -30,6 +30,8 @@ public class Ontology {
     }
 
     public static void saveOntologyFile() {
+
+        System.out.println(Ontology.getOntologyInstance());
         OntologyWriter.writeOntology(Ontology.getOntologyInstance(), fileResourceManager.getFilePath("parser/test-1.owl"));
     }
 
@@ -90,7 +92,6 @@ public class Ontology {
 
         OntClass clazz = Ontology.getOntologyInstance().createClass(Config.ONTOLOGY_URI + className.toUpperCase());
         classRegistry.put(clazz.getURI(), new ArrayList());
-
 
 
         // set simple properties
