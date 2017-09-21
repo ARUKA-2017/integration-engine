@@ -1,12 +1,13 @@
 version: '3'
 services:
-  platformer-november-prod-ci:
-    container_name: platformer-november-prod-ci
+  akura-integration-engine:
+    container_name: akura-integration-engine
     build:
       context: .
       dockerfile: Dockerfile
     ports:
-      - 80:80
+      - 8000:80
+    tty: true
     volumes:
       - .:/usr/share/nginx/html/
       - ./nginx.conf/:/etc/nginx/conf.d/
