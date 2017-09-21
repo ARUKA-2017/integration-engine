@@ -26,7 +26,7 @@ ENV PATH $PATH:$MAVEN_HOME/bin
 
 #RUN apt-get install oracle-java8-installer -y --allow-unauthenticated
 
-#
+# mvn exec:java -Dexec.mainClass="com.akura.App" -d
 #ENV VOWL_DIR "/usr/share/nginx/html/"
 #ENV NGINX_CONF_DIR "/etc/nginx/conf.d"
 

@@ -21,7 +21,7 @@ block content
 
 
         div.col-md-6
-            iframe(src="http://localhost:8080", id="iframe",class="col-md-12", style="height:60%;padding:0cm" , hidden="true")
+            iframe(src="http://35.198.251.53", id="iframe",class="col-md-12", style="height:60%;padding:0cm" , hidden="true")
 
 block javascript
 
@@ -67,6 +67,6 @@ block javascript
             var prot  = window.location.protocol;
             var iframe = document.getElementById('iframe');
             iframe.removeAttribute("hidden");
-            iframe.src = prot+loc+"?name="+Date.now();
+            iframe.src = "http://35.198.251.53?name="+Date.now();
         }
 
