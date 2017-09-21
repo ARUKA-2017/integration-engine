@@ -59,8 +59,14 @@ block javascript
         }
 
         function reload(){
+            var loc = window.location.hostname;
+            if(loc=="localhost"){
+                loc="localhost:8080";
+            }
+
+            var prot  = window.location.protocol;
             var iframe = document.getElementById('iframe');
             iframe.removeAttribute("hidden");
-            iframe.src = iframeHref+"?name="+Date.now();
+            iframe.src = prot+loc+"?name="+Date.now();
         }
 
