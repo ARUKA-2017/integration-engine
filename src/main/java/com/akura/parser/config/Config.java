@@ -10,6 +10,6 @@ public class Config {
     public static String stringClass = "java.lang.String";
 
     public static String RDF_STRING="http://www.w3.org/2001/XMLSchema#string";
-    public static final String ONTOLOGY_URI = "urn:absolute:www.akura.com/class#";
-    public static final String ONTOLOGY_PROP_URI = "urn:absolute:www.akura.com/property#";
+    public static final String ONTOLOGY_URI = "urn:absolute:www.akura.com/class#CLASS-";
+    public static final String ONTOLOGY_PROP_URI = "urn:absolute:www.akura.com/property#PROP-";
 }
