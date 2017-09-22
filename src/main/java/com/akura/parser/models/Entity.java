@@ -65,7 +65,7 @@ public class Entity {
             classURI = ont.getClassName(name, simpleTypes, complexTypes, simpleComplexTypes);
 
             OntClass clazz = Ontology.getOntologyInstance().getOntClass(classURI);
-            instance = clazz.createIndividual(Config.ONTOLOGY_URI + "--" + this.namespace.toString() + name);
+            instance = clazz.createIndividual(Config.ONTOLOGY_URI + "--" + this.namespace.toString() + name.replace("#",""));
 
 
             // simple types

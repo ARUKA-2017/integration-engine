@@ -137,10 +137,10 @@
       "IRI-based" : "CLASS-CLASSNAME2"
     },
     "individuals" : [ {
-      "iri" : "urn:absolute:www.akura.com/class#CLASS--2bca5f2f-df97-412c-afd1-b0f18ef35b85className2",
+      "iri" : "urn:absolute:www.akura.com/class#CLASS--79f47993-4e9c-4593-bfe0-4e458be839b2className2",
       "baseIri" : "urn:absolute:www.akura.com/class",
       "labels" : {
-        "IRI-based" : "CLASS--2bca5f2f-df97-412c-afd1-b0f18ef35b85className2"
+        "IRI-based" : "CLASS--79f47993-4e9c-4593-bfe0-4e458be839b2className2"
       }
     } ],
     "attributes" : [ "external" ],
@@ -206,10 +206,10 @@
       "IRI-based" : "CLASS-ROOTCLASS"
     },
     "individuals" : [ {
-      "iri" : "urn:absolute:www.akura.com/class#CLASS--ca1f047a-3105-4004-87f6-54519f2996abrootClass",
+      "iri" : "urn:absolute:www.akura.com/class#CLASS--a5aaa51a-a104-4ffc-aa78-7947c5b72bf2rootClass",
       "baseIri" : "urn:absolute:www.akura.com/class",
       "labels" : {
-        "IRI-based" : "CLASS--ca1f047a-3105-4004-87f6-54519f2996abrootClass"
+        "IRI-based" : "CLASS--a5aaa51a-a104-4ffc-aa78-7947c5b72bf2rootClass"
       }
     } ],
     "attributes" : [ "external" ],
@@ -222,10 +222,10 @@
       "IRI-based" : "CLASS-MEDICATIONSCLASSES"
     },
     "individuals" : [ {
-      "iri" : "urn:absolute:www.akura.com/class#CLASS--1b306e1f-8441-4dad-aea8-3a0aa9289a97medicationsClasses",
+      "iri" : "urn:absolute:www.akura.com/class#CLASS--0e92e8a0-a407-4bff-9395-91974ad0dfd2medicationsClasses",
       "baseIri" : "urn:absolute:www.akura.com/class",
       "labels" : {
-        "IRI-based" : "CLASS--1b306e1f-8441-4dad-aea8-3a0aa9289a97medicationsClasses"
+        "IRI-based" : "CLASS--0e92e8a0-a407-4bff-9395-91974ad0dfd2medicationsClasses"
       }
     } ],
     "attributes" : [ "external" ],
@@ -308,16 +308,16 @@
       "IRI-based" : "CLASS-ASSOCIATEDDRUG"
     },
     "individuals" : [ {
-      "iri" : "urn:absolute:www.akura.com/class#CLASS--0f4ac4be-aa1a-4006-8342-c88e09f029aeassociatedDrug",
+      "iri" : "urn:absolute:www.akura.com/class#CLASS--ec03ee0c-e542-461c-ba4d-0cd591357e50associatedDrug",
       "baseIri" : "urn:absolute:www.akura.com/class",
       "labels" : {
-        "IRI-based" : "CLASS--0f4ac4be-aa1a-4006-8342-c88e09f029aeassociatedDrug"
+        "IRI-based" : "CLASS--ec03ee0c-e542-461c-ba4d-0cd591357e50associatedDrug"
       }
     }, {
-      "iri" : "urn:absolute:www.akura.com/class#CLASS--78a8fe5c-846e-44f5-a166-f0941ed33822associatedDrug",
+      "iri" : "urn:absolute:www.akura.com/class#CLASS--3bab2471-caa2-4127-b843-7104fe3f0da8associatedDrug",
       "baseIri" : "urn:absolute:www.akura.com/class",
       "labels" : {
-        "IRI-based" : "CLASS--78a8fe5c-846e-44f5-a166-f0941ed33822associatedDrug"
+        "IRI-based" : "CLASS--3bab2471-caa2-4127-b843-7104fe3f0da8associatedDrug"
       }
     } ],
     "attributes" : [ "external" ],
@@ -330,10 +330,10 @@
       "IRI-based" : "CLASS-PROBLEMS"
     },
     "individuals" : [ {
-      "iri" : "urn:absolute:www.akura.com/class#CLASS--d97bd6d3-1a16-4611-9d4c-c6874807ea01problems",
+      "iri" : "urn:absolute:www.akura.com/class#CLASS--7a7a060c-f546-4b2b-b7be-402bc72a8a25problems",
       "baseIri" : "urn:absolute:www.akura.com/class",
       "labels" : {
-        "IRI-based" : "CLASS--d97bd6d3-1a16-4611-9d4c-c6874807ea01problems"
+        "IRI-based" : "CLASS--7a7a060c-f546-4b2b-b7be-402bc72a8a25problems"
       }
     } ],
     "attributes" : [ "external" ],
@@ -402,16 +402,16 @@
       "IRI-based" : "CLASS-ASSOCIATEDDRUG-2"
     },
     "individuals" : [ {
-      "iri" : "urn:absolute:www.akura.com/class#CLASS--c3eec271-e34d-48f0-9ec5-2e8b715edbf8associatedDrug-2",
+      "iri" : "urn:absolute:www.akura.com/class#CLASS--221ad4b8-1577-4aa9-9ae3-46214072e58aassociatedDrug-2",
       "baseIri" : "urn:absolute:www.akura.com/class",
       "labels" : {
-        "IRI-based" : "CLASS--c3eec271-e34d-48f0-9ec5-2e8b715edbf8associatedDrug-2"
+        "IRI-based" : "CLASS--221ad4b8-1577-4aa9-9ae3-46214072e58aassociatedDrug-2"
       }
     }, {
-      "iri" : "urn:absolute:www.akura.com/class#CLASS--a2d5e3d2-6a3a-41c3-a755-d41ab613c38cassociatedDrug-2",
+      "iri" : "urn:absolute:www.akura.com/class#CLASS--ec8e3f87-1c1b-4663-b76b-3d487a2bcbb0associatedDrug-2",
       "baseIri" : "urn:absolute:www.akura.com/class",
       "labels" : {
-        "IRI-based" : "CLASS--a2d5e3d2-6a3a-41c3-a755-d41ab613c38cassociatedDrug-2"
+        "IRI-based" : "CLASS--ec8e3f87-1c1b-4663-b76b-3d487a2bcbb0associatedDrug-2"
       }
     } ],
     "attributes" : [ "external" ],
@@ -438,16 +438,16 @@
       "IRI-based" : "CLASS-DIABETES"
     },
     "individuals" : [ {
-      "iri" : "urn:absolute:www.akura.com/class#CLASS--352b643c-c920-4928-a5e7-745949b6d63cDiabetes",
+      "iri" : "urn:absolute:www.akura.com/class#CLASS--689bc493-6c39-42e0-b9f4-57866d7e09fcAsthma",
       "baseIri" : "urn:absolute:www.akura.com/class",
       "labels" : {
-        "IRI-based" : "CLASS--352b643c-c920-4928-a5e7-745949b6d63cDiabetes"
+        "IRI-based" : "CLASS--689bc493-6c39-42e0-b9f4-57866d7e09fcAsthma"
       }
     }, {
-      "iri" : "urn:absolute:www.akura.com/class#CLASS--881885ff-723b-437e-8fe2-ef4097e06db9Asthma",
+      "iri" : "urn:absolute:www.akura.com/class#CLASS--d78a42e9-a3a5-4a8b-b08a-f3f5d95b8873Diabetes",
       "baseIri" : "urn:absolute:www.akura.com/class",
       "labels" : {
-        "IRI-based" : "CLASS--881885ff-723b-437e-8fe2-ef4097e06db9Asthma"
+        "IRI-based" : "CLASS--d78a42e9-a3a5-4a8b-b08a-f3f5d95b8873Diabetes"
       }
     } ],
     "attributes" : [ "external" ],
@@ -460,10 +460,10 @@
       "IRI-based" : "CLASS-CLASSNAME"
     },
     "individuals" : [ {
-      "iri" : "urn:absolute:www.akura.com/class#CLASS--c15f5ddf-28c5-419b-8015-adc603bd42beclassName",
+      "iri" : "urn:absolute:www.akura.com/class#CLASS--5a608288-cba9-4628-9d80-25d3c91351acclassName",
       "baseIri" : "urn:absolute:www.akura.com/class",
       "labels" : {
-        "IRI-based" : "CLASS--c15f5ddf-28c5-419b-8015-adc603bd42beclassName"
+        "IRI-based" : "CLASS--5a608288-cba9-4628-9d80-25d3c91351acclassName"
       }
     } ],
     "attributes" : [ "external" ],
@@ -476,10 +476,10 @@
       "IRI-based" : "CLASS-MEDICATIONS"
     },
     "individuals" : [ {
-      "iri" : "urn:absolute:www.akura.com/class#CLASS--d01dca33-51dd-40e4-ae1a-97158ded2fc7medications",
+      "iri" : "urn:absolute:www.akura.com/class#CLASS--8e54693c-b73e-478b-9704-950d11372105medications",
       "baseIri" : "urn:absolute:www.akura.com/class",
       "labels" : {
-        "IRI-based" : "CLASS--d01dca33-51dd-40e4-ae1a-97158ded2fc7medications"
+        "IRI-based" : "CLASS--8e54693c-b73e-478b-9704-950d11372105medications"
       }
     } ],
     "attributes" : [ "external" ],
@@ -492,10 +492,10 @@
       "IRI-based" : "CLASS-LABS"
     },
     "individuals" : [ {
-      "iri" : "urn:absolute:www.akura.com/class#CLASS--35f57323-0c1a-4bbd-8937-6d533207eef5labs",
+      "iri" : "urn:absolute:www.akura.com/class#CLASS--67a22bd0-ccad-4632-93e5-ea7bbb94d331labs",
       "baseIri" : "urn:absolute:www.akura.com/class",
       "labels" : {
-        "IRI-based" : "CLASS--35f57323-0c1a-4bbd-8937-6d533207eef5labs"
+        "IRI-based" : "CLASS--67a22bd0-ccad-4632-93e5-ea7bbb94d331labs"
       }
     } ],
     "attributes" : [ "external" ],
