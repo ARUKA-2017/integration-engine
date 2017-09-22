@@ -6,76 +6,97 @@
   },
   "namespace" : [ ],
   "metrics" : {
-    "classCount" : 3,
-    "objectPropertyCount" : 2,
-    "datatypePropertyCount" : 24,
-    "individualCount" : 25
+    "classCount" : 10,
+    "objectPropertyCount" : 10,
+    "datatypePropertyCount" : 14,
+    "individualCount" : 13
   },
   "class" : [ {
-    "id" : "11",
-    "type" : "rdfs:Literal"
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "6",
+    "type" : "owl:Class"
   }, {
     "id" : "12",
-    "type" : "rdfs:Literal"
+    "type" : "owl:Class"
   }, {
     "id" : "13",
     "type" : "owl:Class"
   }, {
-    "id" : "14",
-    "type" : "rdfs:Literal"
-  }, {
     "id" : "15",
-    "type" : "rdfs:Literal"
-  }, {
-    "id" : "16",
-    "type" : "rdfs:Literal"
-  }, {
-    "id" : "17",
-    "type" : "rdfs:Literal"
-  }, {
-    "id" : "18",
     "type" : "owl:Class"
   }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "18",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "20",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "21",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "22",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "10",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "23",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "24",
+    "type" : "owl:Thing"
+  }, {
     "id" : "25",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "5",
     "type" : "rdfs:Literal"
   }, {
     "id" : "26",
     "type" : "rdfs:Literal"
   }, {
     "id" : "27",
-    "type" : "owl:Thing"
-  }, {
-    "id" : "22",
-    "type" : "rdfs:Literal"
-  }, {
-    "id" : "20",
-    "type" : "rdfs:Literal"
-  }, {
-    "id" : "24",
     "type" : "rdfs:Literal"
   }, {
     "id" : "28",
-    "type" : "rdfs:Literal"
+    "type" : "owl:Thing"
+  }, {
+    "id" : "29",
+    "type" : "owl:Thing"
   }, {
     "id" : "30",
-    "type" : "rdfs:Literal"
+    "type" : "owl:Thing"
   }, {
     "id" : "31",
     "type" : "rdfs:Literal"
   }, {
-    "id" : "32",
+    "id" : "8",
+    "type" : "owl:Class"
+  }, {
+    "id" : "11",
+    "type" : "owl:Class"
+  }, {
+    "id" : "34",
     "type" : "rdfs:Literal"
   }, {
-    "id" : "6",
-    "type" : "owl:Class"
+    "id" : "35",
+    "type" : "owl:Thing"
   }, {
     "id" : "36",
     "type" : "rdfs:Literal"
   }, {
-    "id" : "4",
-    "type" : "rdfs:Literal"
-  }, {
     "id" : "37",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "38",
     "type" : "rdfs:Literal"
   }, {
     "id" : "39",
@@ -87,67 +108,95 @@
     "id" : "41",
     "type" : "rdfs:Literal"
   }, {
-    "id" : "8",
+    "id" : "7",
+    "type" : "owl:Class"
+  }, {
+    "id" : "42",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "43",
     "type" : "rdfs:Literal"
   }, {
-    "id" : "10",
-    "type" : "rdfs:Literal"
+    "id" : "17",
+    "type" : "owl:Class"
   }, {
-    "id" : "2",
-    "type" : "rdfs:Literal"
+    "id" : "14",
+    "type" : "owl:Class"
   }, {
-    "id" : "34",
-    "type" : "rdfs:Literal"
+    "id" : "48",
+    "type" : "owl:Class"
   }, {
-    "id" : "1",
+    "id" : "46",
     "type" : "owl:Class"
   } ],
   "classAttribute" : [ {
-    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "id" : "11",
+    "iri" : "urn:absolute:www.akura.com/class#CLASS-CLASSNAME2",
+    "baseIri" : "urn:absolute:www.akura.com/class",
+    "instances" : 0,
     "label" : {
-      "IRI-based" : "Literal",
-      "undefined" : "Literal"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "id" : "12",
-    "label" : {
-      "IRI-based" : "Literal",
-      "undefined" : "Literal"
-    }
+      "IRI-based" : "CLASS-CLASSNAME2"
+    },
+    "individuals" : [ {
+      "iri" : "urn:absolute:www.akura.com/class#CLASS--2bca5f2f-df97-412c-afd1-b0f18ef35b85className2",
+      "baseIri" : "urn:absolute:www.akura.com/class",
+      "labels" : {
+        "IRI-based" : "CLASS--2bca5f2f-df97-412c-afd1-b0f18ef35b85className2"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "2"
   }, {
     "instances" : 0,
-    "union" : [ "6", "1" ],
+    "union" : [ "7", "8" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "6"
+  }, {
+    "instances" : 0,
+    "union" : [ "7", "8" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "12"
+  }, {
+    "instances" : 0,
+    "union" : [ "2", "14" ],
     "attributes" : [ "union", "anonymous" ],
     "id" : "13"
   }, {
+    "instances" : 0,
+    "union" : [ "14", "2" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "15"
+  }, {
+    "instances" : 0,
+    "union" : [ "7", "8" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "4"
+  }, {
     "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "id" : "14",
+    "id" : "18",
     "label" : {
       "IRI-based" : "Literal",
       "undefined" : "Literal"
     }
   }, {
     "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "id" : "15",
+    "id" : "20",
     "label" : {
       "IRI-based" : "Literal",
       "undefined" : "Literal"
     }
   }, {
     "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "id" : "16",
+    "id" : "21",
     "label" : {
       "IRI-based" : "Literal",
       "undefined" : "Literal"
     }
   }, {
-    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "id" : "17",
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "22",
     "label" : {
-      "IRI-based" : "Literal",
-      "undefined" : "Literal"
+      "undefined" : "Thing"
     }
   }, {
     "iri" : "urn:absolute:www.akura.com/class#CLASS-ROOTCLASS",
@@ -157,17 +206,54 @@
       "IRI-based" : "CLASS-ROOTCLASS"
     },
     "individuals" : [ {
-      "iri" : "urn:absolute:www.akura.com/class#CLASS---31307242-58f9-4d7f-a8ee-9f71b509b160rootClass",
+      "iri" : "urn:absolute:www.akura.com/class#CLASS--ca1f047a-3105-4004-87f6-54519f2996abrootClass",
       "baseIri" : "urn:absolute:www.akura.com/class",
       "labels" : {
-        "IRI-based" : "CLASS---31307242-58f9-4d7f-a8ee-9f71b509b160rootClass"
+        "IRI-based" : "CLASS--ca1f047a-3105-4004-87f6-54519f2996abrootClass"
       }
     } ],
     "attributes" : [ "external" ],
-    "id" : "18"
+    "id" : "10"
+  }, {
+    "iri" : "urn:absolute:www.akura.com/class#CLASS-MEDICATIONSCLASSES",
+    "baseIri" : "urn:absolute:www.akura.com/class",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CLASS-MEDICATIONSCLASSES"
+    },
+    "individuals" : [ {
+      "iri" : "urn:absolute:www.akura.com/class#CLASS--1b306e1f-8441-4dad-aea8-3a0aa9289a97medicationsClasses",
+      "baseIri" : "urn:absolute:www.akura.com/class",
+      "labels" : {
+        "IRI-based" : "CLASS--1b306e1f-8441-4dad-aea8-3a0aa9289a97medicationsClasses"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "1"
   }, {
     "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "23",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "24",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
     "id" : "25",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "5",
     "label" : {
       "IRI-based" : "Literal",
       "undefined" : "Literal"
@@ -180,46 +266,32 @@
       "undefined" : "Literal"
     }
   }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "27",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
     "iri" : "http://www.w3.org/2002/07/owl#Thing",
     "baseIri" : "http://owl2vowl.de",
-    "id" : "27",
+    "id" : "28",
     "label" : {
       "undefined" : "Thing"
     }
   }, {
-    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "id" : "22",
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "29",
     "label" : {
-      "IRI-based" : "Literal",
-      "undefined" : "Literal"
+      "undefined" : "Thing"
     }
   }, {
-    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "id" : "20",
-    "label" : {
-      "IRI-based" : "Literal",
-      "undefined" : "Literal"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "id" : "24",
-    "label" : {
-      "IRI-based" : "Literal",
-      "undefined" : "Literal"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "id" : "28",
-    "label" : {
-      "IRI-based" : "Literal",
-      "undefined" : "Literal"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
     "id" : "30",
     "label" : {
-      "IRI-based" : "Literal",
-      "undefined" : "Literal"
+      "undefined" : "Thing"
     }
   }, {
     "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
@@ -229,130 +301,57 @@
       "undefined" : "Literal"
     }
   }, {
+    "iri" : "urn:absolute:www.akura.com/class#CLASS-ASSOCIATEDDRUG",
+    "baseIri" : "urn:absolute:www.akura.com/class",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CLASS-ASSOCIATEDDRUG"
+    },
+    "individuals" : [ {
+      "iri" : "urn:absolute:www.akura.com/class#CLASS--0f4ac4be-aa1a-4006-8342-c88e09f029aeassociatedDrug",
+      "baseIri" : "urn:absolute:www.akura.com/class",
+      "labels" : {
+        "IRI-based" : "CLASS--0f4ac4be-aa1a-4006-8342-c88e09f029aeassociatedDrug"
+      }
+    }, {
+      "iri" : "urn:absolute:www.akura.com/class#CLASS--78a8fe5c-846e-44f5-a166-f0941ed33822associatedDrug",
+      "baseIri" : "urn:absolute:www.akura.com/class",
+      "labels" : {
+        "IRI-based" : "CLASS--78a8fe5c-846e-44f5-a166-f0941ed33822associatedDrug"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "8"
+  }, {
+    "iri" : "urn:absolute:www.akura.com/class#CLASS-PROBLEMS",
+    "baseIri" : "urn:absolute:www.akura.com/class",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CLASS-PROBLEMS"
+    },
+    "individuals" : [ {
+      "iri" : "urn:absolute:www.akura.com/class#CLASS--d97bd6d3-1a16-4611-9d4c-c6874807ea01problems",
+      "baseIri" : "urn:absolute:www.akura.com/class",
+      "labels" : {
+        "IRI-based" : "CLASS--d97bd6d3-1a16-4611-9d4c-c6874807ea01problems"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "11"
+  }, {
     "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "id" : "32",
+    "id" : "34",
     "label" : {
       "IRI-based" : "Literal",
       "undefined" : "Literal"
     }
   }, {
-    "iri" : "urn:absolute:www.akura.com/class#CLASS-FRIENDS",
-    "baseIri" : "urn:absolute:www.akura.com/class",
-    "instances" : 0,
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "35",
     "label" : {
-      "IRI-based" : "CLASS-FRIENDS"
-    },
-    "individuals" : [ {
-      "iri" : "urn:absolute:www.akura.com/class#CLASS---f4789bf8-e461-40aa-94ba-12bf487eba4dfriends",
-      "baseIri" : "urn:absolute:www.akura.com/class",
-      "labels" : {
-        "IRI-based" : "CLASS---f4789bf8-e461-40aa-94ba-12bf487eba4dfriends"
-      }
-    }, {
-      "iri" : "urn:absolute:www.akura.com/class#CLASS---9139d906-0005-48ec-b44f-acf0b718eea1friends",
-      "baseIri" : "urn:absolute:www.akura.com/class",
-      "labels" : {
-        "IRI-based" : "CLASS---9139d906-0005-48ec-b44f-acf0b718eea1friends"
-      }
-    }, {
-      "iri" : "urn:absolute:www.akura.com/class#CLASS---742511e7-d3c8-4fbe-a56e-cd87d331bde2friends",
-      "baseIri" : "urn:absolute:www.akura.com/class",
-      "labels" : {
-        "IRI-based" : "CLASS---742511e7-d3c8-4fbe-a56e-cd87d331bde2friends"
-      }
-    }, {
-      "iri" : "urn:absolute:www.akura.com/class#CLASS---5c0c1da3-fbb5-4947-b852-47715c6913fffriends",
-      "baseIri" : "urn:absolute:www.akura.com/class",
-      "labels" : {
-        "IRI-based" : "CLASS---5c0c1da3-fbb5-4947-b852-47715c6913fffriends"
-      }
-    }, {
-      "iri" : "urn:absolute:www.akura.com/class#CLASS---33865318-2991-43bf-92ac-aa2c1672c230friends",
-      "baseIri" : "urn:absolute:www.akura.com/class",
-      "labels" : {
-        "IRI-based" : "CLASS---33865318-2991-43bf-92ac-aa2c1672c230friends"
-      }
-    }, {
-      "iri" : "urn:absolute:www.akura.com/class#CLASS---152b9716-0b7a-42e7-8ed3-cbb4bb194962friends",
-      "baseIri" : "urn:absolute:www.akura.com/class",
-      "labels" : {
-        "IRI-based" : "CLASS---152b9716-0b7a-42e7-8ed3-cbb4bb194962friends"
-      }
-    }, {
-      "iri" : "urn:absolute:www.akura.com/class#CLASS---3162822c-b0a5-4485-b21b-9969eb65df09friends",
-      "baseIri" : "urn:absolute:www.akura.com/class",
-      "labels" : {
-        "IRI-based" : "CLASS---3162822c-b0a5-4485-b21b-9969eb65df09friends"
-      }
-    }, {
-      "iri" : "urn:absolute:www.akura.com/class#CLASS---e001772a-db0b-441c-81ec-b296787145f8friends",
-      "baseIri" : "urn:absolute:www.akura.com/class",
-      "labels" : {
-        "IRI-based" : "CLASS---e001772a-db0b-441c-81ec-b296787145f8friends"
-      }
-    }, {
-      "iri" : "urn:absolute:www.akura.com/class#CLASS---dc0e53c9-edaf-4baf-8197-c26b4ca9df82friends",
-      "baseIri" : "urn:absolute:www.akura.com/class",
-      "labels" : {
-        "IRI-based" : "CLASS---dc0e53c9-edaf-4baf-8197-c26b4ca9df82friends"
-      }
-    }, {
-      "iri" : "urn:absolute:www.akura.com/class#CLASS---bc84a13a-bbc4-4a5e-bf98-22e01b890a5cfriends",
-      "baseIri" : "urn:absolute:www.akura.com/class",
-      "labels" : {
-        "IRI-based" : "CLASS---bc84a13a-bbc4-4a5e-bf98-22e01b890a5cfriends"
-      }
-    }, {
-      "iri" : "urn:absolute:www.akura.com/class#CLASS---adadad83-3725-495b-aeff-8987fbeacb7bfriends",
-      "baseIri" : "urn:absolute:www.akura.com/class",
-      "labels" : {
-        "IRI-based" : "CLASS---adadad83-3725-495b-aeff-8987fbeacb7bfriends"
-      }
-    }, {
-      "iri" : "urn:absolute:www.akura.com/class#CLASS---d2d588f0-fd22-4319-969a-1bf5b78e6991friends",
-      "baseIri" : "urn:absolute:www.akura.com/class",
-      "labels" : {
-        "IRI-based" : "CLASS---d2d588f0-fd22-4319-969a-1bf5b78e6991friends"
-      }
-    }, {
-      "iri" : "urn:absolute:www.akura.com/class#CLASS---e06829a6-bc0f-444b-9b24-c32cb2261ee0friends",
-      "baseIri" : "urn:absolute:www.akura.com/class",
-      "labels" : {
-        "IRI-based" : "CLASS---e06829a6-bc0f-444b-9b24-c32cb2261ee0friends"
-      }
-    }, {
-      "iri" : "urn:absolute:www.akura.com/class#CLASS---96a2e6aa-cd85-444e-b17d-478c110fe142friends",
-      "baseIri" : "urn:absolute:www.akura.com/class",
-      "labels" : {
-        "IRI-based" : "CLASS---96a2e6aa-cd85-444e-b17d-478c110fe142friends"
-      }
-    }, {
-      "iri" : "urn:absolute:www.akura.com/class#CLASS---1382a024-288a-427f-a680-2745503c28f6friends",
-      "baseIri" : "urn:absolute:www.akura.com/class",
-      "labels" : {
-        "IRI-based" : "CLASS---1382a024-288a-427f-a680-2745503c28f6friends"
-      }
-    }, {
-      "iri" : "urn:absolute:www.akura.com/class#CLASS---932dd6c9-69b9-45c4-849e-da11d7fa41defriends",
-      "baseIri" : "urn:absolute:www.akura.com/class",
-      "labels" : {
-        "IRI-based" : "CLASS---932dd6c9-69b9-45c4-849e-da11d7fa41defriends"
-      }
-    }, {
-      "iri" : "urn:absolute:www.akura.com/class#CLASS---97c3ccbb-dd08-42ae-bbb0-01b7a745d868friends",
-      "baseIri" : "urn:absolute:www.akura.com/class",
-      "labels" : {
-        "IRI-based" : "CLASS---97c3ccbb-dd08-42ae-bbb0-01b7a745d868friends"
-      }
-    }, {
-      "iri" : "urn:absolute:www.akura.com/class#CLASS---ca8fcb8a-bcd0-4146-bacb-357aff2ad362friends",
-      "baseIri" : "urn:absolute:www.akura.com/class",
-      "labels" : {
-        "IRI-based" : "CLASS---ca8fcb8a-bcd0-4146-bacb-357aff2ad362friends"
-      }
-    } ],
-    "attributes" : [ "external" ],
-    "id" : "6"
+      "undefined" : "Thing"
+    }
   }, {
     "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
     "id" : "36",
@@ -361,15 +360,15 @@
       "undefined" : "Literal"
     }
   }, {
-    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "id" : "4",
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "37",
     "label" : {
-      "IRI-based" : "Literal",
-      "undefined" : "Literal"
+      "undefined" : "Thing"
     }
   }, {
     "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "id" : "37",
+    "id" : "38",
     "label" : {
       "IRI-based" : "Literal",
       "undefined" : "Literal"
@@ -396,392 +395,294 @@
       "undefined" : "Literal"
     }
   }, {
-    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "id" : "8",
-    "label" : {
-      "IRI-based" : "Literal",
-      "undefined" : "Literal"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "id" : "10",
-    "label" : {
-      "IRI-based" : "Literal",
-      "undefined" : "Literal"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "id" : "2",
-    "label" : {
-      "IRI-based" : "Literal",
-      "undefined" : "Literal"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "id" : "34",
-    "label" : {
-      "IRI-based" : "Literal",
-      "undefined" : "Literal"
-    }
-  }, {
-    "iri" : "urn:absolute:www.akura.com/class#CLASS-ADAS",
+    "iri" : "urn:absolute:www.akura.com/class#CLASS-ASSOCIATEDDRUG-2",
     "baseIri" : "urn:absolute:www.akura.com/class",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "CLASS-ADAS"
+      "IRI-based" : "CLASS-ASSOCIATEDDRUG-2"
     },
     "individuals" : [ {
-      "iri" : "urn:absolute:www.akura.com/class#CLASS---14c201fc-08fd-4e42-922e-5eba81f9b462adas",
+      "iri" : "urn:absolute:www.akura.com/class#CLASS--c3eec271-e34d-48f0-9ec5-2e8b715edbf8associatedDrug-2",
       "baseIri" : "urn:absolute:www.akura.com/class",
       "labels" : {
-        "IRI-based" : "CLASS---14c201fc-08fd-4e42-922e-5eba81f9b462adas"
+        "IRI-based" : "CLASS--c3eec271-e34d-48f0-9ec5-2e8b715edbf8associatedDrug-2"
       }
     }, {
-      "iri" : "urn:absolute:www.akura.com/class#CLASS---ae5ef250-8d9a-4007-99e1-d9e0108d7838adas",
+      "iri" : "urn:absolute:www.akura.com/class#CLASS--a2d5e3d2-6a3a-41c3-a755-d41ab613c38cassociatedDrug-2",
       "baseIri" : "urn:absolute:www.akura.com/class",
       "labels" : {
-        "IRI-based" : "CLASS---ae5ef250-8d9a-4007-99e1-d9e0108d7838adas"
-      }
-    }, {
-      "iri" : "urn:absolute:www.akura.com/class#CLASS---4bdfa9d0-3f56-4448-a84c-c638d15cd7c8adas",
-      "baseIri" : "urn:absolute:www.akura.com/class",
-      "labels" : {
-        "IRI-based" : "CLASS---4bdfa9d0-3f56-4448-a84c-c638d15cd7c8adas"
-      }
-    }, {
-      "iri" : "urn:absolute:www.akura.com/class#CLASS---6117b316-215a-47db-b9c5-0fe5eb7c4929adas",
-      "baseIri" : "urn:absolute:www.akura.com/class",
-      "labels" : {
-        "IRI-based" : "CLASS---6117b316-215a-47db-b9c5-0fe5eb7c4929adas"
-      }
-    }, {
-      "iri" : "urn:absolute:www.akura.com/class#CLASS---8f28e5f5-ae7e-41d3-b0b4-782c0adce524adas",
-      "baseIri" : "urn:absolute:www.akura.com/class",
-      "labels" : {
-        "IRI-based" : "CLASS---8f28e5f5-ae7e-41d3-b0b4-782c0adce524adas"
-      }
-    }, {
-      "iri" : "urn:absolute:www.akura.com/class#CLASS---01a5c18d-4eea-4272-ac59-1dd88cae4762adas",
-      "baseIri" : "urn:absolute:www.akura.com/class",
-      "labels" : {
-        "IRI-based" : "CLASS---01a5c18d-4eea-4272-ac59-1dd88cae4762adas"
+        "IRI-based" : "CLASS--a2d5e3d2-6a3a-41c3-a755-d41ab613c38cassociatedDrug-2"
       }
     } ],
     "attributes" : [ "external" ],
-    "id" : "1"
+    "id" : "7"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "42",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "43",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "urn:absolute:www.akura.com/class#CLASS-DIABETES",
+    "baseIri" : "urn:absolute:www.akura.com/class",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CLASS-DIABETES"
+    },
+    "individuals" : [ {
+      "iri" : "urn:absolute:www.akura.com/class#CLASS--352b643c-c920-4928-a5e7-745949b6d63cDiabetes",
+      "baseIri" : "urn:absolute:www.akura.com/class",
+      "labels" : {
+        "IRI-based" : "CLASS--352b643c-c920-4928-a5e7-745949b6d63cDiabetes"
+      }
+    }, {
+      "iri" : "urn:absolute:www.akura.com/class#CLASS--881885ff-723b-437e-8fe2-ef4097e06db9Asthma",
+      "baseIri" : "urn:absolute:www.akura.com/class",
+      "labels" : {
+        "IRI-based" : "CLASS--881885ff-723b-437e-8fe2-ef4097e06db9Asthma"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "17"
+  }, {
+    "iri" : "urn:absolute:www.akura.com/class#CLASS-CLASSNAME",
+    "baseIri" : "urn:absolute:www.akura.com/class",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CLASS-CLASSNAME"
+    },
+    "individuals" : [ {
+      "iri" : "urn:absolute:www.akura.com/class#CLASS--c15f5ddf-28c5-419b-8015-adc603bd42beclassName",
+      "baseIri" : "urn:absolute:www.akura.com/class",
+      "labels" : {
+        "IRI-based" : "CLASS--c15f5ddf-28c5-419b-8015-adc603bd42beclassName"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "14"
+  }, {
+    "iri" : "urn:absolute:www.akura.com/class#CLASS-MEDICATIONS",
+    "baseIri" : "urn:absolute:www.akura.com/class",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CLASS-MEDICATIONS"
+    },
+    "individuals" : [ {
+      "iri" : "urn:absolute:www.akura.com/class#CLASS--d01dca33-51dd-40e4-ae1a-97158ded2fc7medications",
+      "baseIri" : "urn:absolute:www.akura.com/class",
+      "labels" : {
+        "IRI-based" : "CLASS--d01dca33-51dd-40e4-ae1a-97158ded2fc7medications"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "48"
+  }, {
+    "iri" : "urn:absolute:www.akura.com/class#CLASS-LABS",
+    "baseIri" : "urn:absolute:www.akura.com/class",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CLASS-LABS"
+    },
+    "individuals" : [ {
+      "iri" : "urn:absolute:www.akura.com/class#CLASS--35f57323-0c1a-4bbd-8937-6d533207eef5labs",
+      "baseIri" : "urn:absolute:www.akura.com/class",
+      "labels" : {
+        "IRI-based" : "CLASS--35f57323-0c1a-4bbd-8937-6d533207eef5labs"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "46"
   } ],
   "property" : [ {
     "id" : "0",
-    "type" : "owl:datatypeProperty"
+    "type" : "owl:objectProperty"
   }, {
     "id" : "3",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "5",
+    "id" : "9",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "7",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "9",
-    "type" : "owl:datatypeProperty"
+    "id" : "16",
+    "type" : "owl:objectProperty"
   }, {
     "id" : "19",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "21",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "23",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "29",
-    "type" : "owl:datatypeProperty"
+    "id" : "32",
+    "type" : "owl:objectProperty"
   }, {
     "id" : "33",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "35",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "38",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "42",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "43",
-    "type" : "owl:datatypeProperty"
+    "type" : "owl:objectProperty"
   }, {
     "id" : "44",
-    "type" : "owl:datatypeProperty"
+    "type" : "owl:objectProperty"
   }, {
     "id" : "45",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "46",
-    "type" : "owl:datatypeProperty"
-  }, {
     "id" : "47",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "48",
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "49",
     "type" : "owl:objectProperty"
   }, {
     "id" : "50",
-    "type" : "owl:datatypeProperty"
+    "type" : "owl:objectProperty"
   }, {
     "id" : "51",
-    "type" : "owl:datatypeProperty"
+    "type" : "owl:objectProperty"
   }, {
     "id" : "52",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "53",
-    "type" : "owl:datatypeProperty"
+    "type" : "owl:objectProperty"
   } ],
   "propertyAttribute" : [ {
-    "iri" : "urn:absolute:www.akura.com/property#PROP-PICTURE",
+    "iri" : "urn:absolute:www.akura.com/property#PROP-CLASSNAME2",
     "baseIri" : "urn:absolute:www.akura.com/property",
     "range" : "2",
     "label" : {
-      "IRI-based" : "PROP-PICTURE"
+      "IRI-based" : "PROP-CLASSNAME2"
     },
     "domain" : "1",
-    "attributes" : [ "datatype", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "0"
   }, {
-    "iri" : "urn:absolute:www.akura.com/property#PROP-ABOUT",
+    "iri" : "urn:absolute:www.akura.com/property#PROP-DOSE",
     "baseIri" : "urn:absolute:www.akura.com/property",
-    "range" : "4",
+    "range" : "5",
     "label" : {
-      "IRI-based" : "PROP-ABOUT"
+      "IRI-based" : "PROP-DOSE"
     },
-    "domain" : "1",
+    "domain" : "4",
     "attributes" : [ "datatype", "external" ],
     "id" : "3"
   }, {
-    "iri" : "urn:absolute:www.akura.com/property#PROP-FRIENDS",
-    "baseIri" : "urn:absolute:www.akura.com/property",
-    "range" : "6",
-    "label" : {
-      "IRI-based" : "PROP-FRIENDS"
-    },
-    "domain" : "1",
-    "attributes" : [ "object", "external" ],
-    "id" : "5"
-  }, {
-    "iri" : "urn:absolute:www.akura.com/property#PROP-PHONE",
-    "baseIri" : "urn:absolute:www.akura.com/property",
-    "range" : "8",
-    "label" : {
-      "IRI-based" : "PROP-PHONE"
-    },
-    "domain" : "1",
-    "attributes" : [ "datatype", "external" ],
-    "id" : "7"
-  }, {
-    "iri" : "urn:absolute:www.akura.com/property#PROP-ADDRESS",
-    "baseIri" : "urn:absolute:www.akura.com/property",
-    "range" : "10",
-    "label" : {
-      "IRI-based" : "PROP-ADDRESS"
-    },
-    "domain" : "1",
-    "attributes" : [ "datatype", "external" ],
-    "id" : "9"
-  }, {
-    "iri" : "urn:absolute:www.akura.com/property#PROP-EYECOLOR",
-    "baseIri" : "urn:absolute:www.akura.com/property",
-    "range" : "20",
-    "label" : {
-      "IRI-based" : "PROP-EYECOLOR"
-    },
-    "domain" : "1",
-    "attributes" : [ "datatype", "external" ],
-    "id" : "19"
-  }, {
-    "iri" : "urn:absolute:www.akura.com/property#PROP-INDEX",
-    "baseIri" : "urn:absolute:www.akura.com/property",
-    "range" : "22",
-    "label" : {
-      "IRI-based" : "PROP-INDEX"
-    },
-    "domain" : "1",
-    "attributes" : [ "datatype", "external" ],
-    "id" : "21"
-  }, {
-    "iri" : "urn:absolute:www.akura.com/property#PROP-GREETING",
-    "baseIri" : "urn:absolute:www.akura.com/property",
-    "range" : "24",
-    "label" : {
-      "IRI-based" : "PROP-GREETING"
-    },
-    "domain" : "1",
-    "attributes" : [ "datatype", "external" ],
-    "id" : "23"
-  }, {
-    "iri" : "urn:absolute:www.akura.com/property#PROP-EMAIL",
+    "iri" : "urn:absolute:www.akura.com/property#PROP-PROBLEMS",
     "baseIri" : "urn:absolute:www.akura.com/property",
     "range" : "11",
     "label" : {
-      "IRI-based" : "PROP-EMAIL"
+      "IRI-based" : "PROP-PROBLEMS"
     },
-    "domain" : "1",
-    "attributes" : [ "datatype", "external" ],
-    "id" : "29"
+    "domain" : "10",
+    "attributes" : [ "external", "object" ],
+    "id" : "9"
   }, {
-    "iri" : "urn:absolute:www.akura.com/property#PROP-REGISTERED",
+    "iri" : "urn:absolute:www.akura.com/property#PROP-DIABETES",
     "baseIri" : "urn:absolute:www.akura.com/property",
-    "range" : "34",
+    "range" : "17",
     "label" : {
-      "IRI-based" : "PROP-REGISTERED"
+      "IRI-based" : "PROP-DIABETES"
     },
-    "domain" : "1",
-    "attributes" : [ "datatype", "external" ],
-    "id" : "33"
+    "domain" : "11",
+    "attributes" : [ "external", "object" ],
+    "id" : "16"
   }, {
-    "iri" : "urn:absolute:www.akura.com/property#PROP-ID",
+    "iri" : "urn:absolute:www.akura.com/property#PROP-STRENGTH",
     "baseIri" : "urn:absolute:www.akura.com/property",
-    "range" : "36",
+    "range" : "18",
     "label" : {
-      "IRI-based" : "PROP-ID"
+      "IRI-based" : "PROP-STRENGTH"
     },
     "domain" : "6",
     "attributes" : [ "datatype", "external" ],
-    "id" : "35"
+    "id" : "19"
   }, {
-    "iri" : "urn:absolute:www.akura.com/property#PROP-LONGITUDE",
+    "iri" : "urn:absolute:www.akura.com/property#PROP-ASSOCIATEDDRUG-2",
     "baseIri" : "urn:absolute:www.akura.com/property",
-    "range" : "37",
+    "range" : "7",
     "label" : {
-      "IRI-based" : "PROP-LONGITUDE"
+      "IRI-based" : "PROP-ASSOCIATEDDRUG-2"
+    },
+    "domain" : "13",
+    "attributes" : [ "external", "object" ],
+    "id" : "32"
+  }, {
+    "iri" : "urn:absolute:www.akura.com/property#PROP-CLASSNAME",
+    "baseIri" : "urn:absolute:www.akura.com/property",
+    "range" : "14",
+    "label" : {
+      "IRI-based" : "PROP-CLASSNAME"
     },
     "domain" : "1",
-    "attributes" : [ "datatype", "external" ],
-    "id" : "38"
+    "attributes" : [ "external", "object" ],
+    "id" : "33"
   }, {
-    "iri" : "urn:absolute:www.akura.com/property#PROP-GENDER",
+    "iri" : "urn:absolute:www.akura.com/property#PROP-ASTHMA",
     "baseIri" : "urn:absolute:www.akura.com/property",
-    "range" : "41",
+    "range" : "17",
     "label" : {
-      "IRI-based" : "PROP-GENDER"
+      "IRI-based" : "PROP-ASTHMA"
     },
-    "domain" : "1",
-    "attributes" : [ "datatype", "external" ],
-    "id" : "42"
-  }, {
-    "iri" : "urn:absolute:www.akura.com/property#PROP-_ID",
-    "baseIri" : "urn:absolute:www.akura.com/property",
-    "range" : "30",
-    "label" : {
-      "IRI-based" : "PROP-_ID"
-    },
-    "domain" : "1",
-    "attributes" : [ "datatype", "external" ],
-    "id" : "43"
-  }, {
-    "iri" : "urn:absolute:www.akura.com/property#PROP-AGE",
-    "baseIri" : "urn:absolute:www.akura.com/property",
-    "range" : "32",
-    "label" : {
-      "IRI-based" : "PROP-AGE"
-    },
-    "domain" : "1",
-    "attributes" : [ "datatype", "external" ],
+    "domain" : "11",
+    "attributes" : [ "external", "object" ],
     "id" : "44"
   }, {
-    "iri" : "urn:absolute:www.akura.com/property#PROP-TAGS",
+    "iri" : "urn:absolute:www.akura.com/property#PROP-MISSING_FIELD",
     "baseIri" : "urn:absolute:www.akura.com/property",
-    "range" : "31",
+    "range" : "34",
     "label" : {
-      "IRI-based" : "PROP-TAGS"
+      "IRI-based" : "PROP-MISSING_FIELD"
     },
-    "domain" : "1",
+    "domain" : "46",
     "attributes" : [ "datatype", "external" ],
     "id" : "45"
   }, {
     "iri" : "urn:absolute:www.akura.com/property#PROP-NAME",
     "baseIri" : "urn:absolute:www.akura.com/property",
-    "range" : "28",
+    "range" : "41",
     "label" : {
       "IRI-based" : "PROP-NAME"
     },
-    "domain" : "13",
-    "attributes" : [ "datatype", "external" ],
-    "id" : "46"
-  }, {
-    "iri" : "urn:absolute:www.akura.com/property#PROP-COMPANY",
-    "baseIri" : "urn:absolute:www.akura.com/property",
-    "range" : "26",
-    "label" : {
-      "IRI-based" : "PROP-COMPANY"
-    },
-    "domain" : "1",
+    "domain" : "12",
     "attributes" : [ "datatype", "external" ],
     "id" : "47"
   }, {
-    "iri" : "urn:absolute:www.akura.com/property#PROP-BALANCE",
-    "baseIri" : "urn:absolute:www.akura.com/property",
-    "range" : "25",
-    "label" : {
-      "IRI-based" : "PROP-BALANCE"
-    },
-    "domain" : "1",
-    "attributes" : [ "datatype", "external" ],
-    "id" : "48"
-  }, {
-    "iri" : "urn:absolute:www.akura.com/property#PROP-ADAS",
+    "iri" : "urn:absolute:www.akura.com/property#PROP-MEDICATIONSCLASSES",
     "baseIri" : "urn:absolute:www.akura.com/property",
     "range" : "1",
     "label" : {
-      "IRI-based" : "PROP-ADAS"
+      "IRI-based" : "PROP-MEDICATIONSCLASSES"
     },
-    "domain" : "18",
-    "attributes" : [ "object", "external" ],
+    "domain" : "48",
+    "attributes" : [ "external", "object" ],
     "id" : "49"
   }, {
-    "iri" : "urn:absolute:www.akura.com/property#PROP-LATITUDE",
+    "iri" : "urn:absolute:www.akura.com/property#PROP-LABS",
     "baseIri" : "urn:absolute:www.akura.com/property",
-    "range" : "14",
+    "range" : "46",
     "label" : {
-      "IRI-based" : "PROP-LATITUDE"
+      "IRI-based" : "PROP-LABS"
     },
-    "domain" : "1",
-    "attributes" : [ "datatype", "external" ],
+    "domain" : "17",
+    "attributes" : [ "external", "object" ],
     "id" : "50"
   }, {
-    "iri" : "urn:absolute:www.akura.com/property#PROP-ISACTIVE",
+    "iri" : "urn:absolute:www.akura.com/property#PROP-ASSOCIATEDDRUG",
     "baseIri" : "urn:absolute:www.akura.com/property",
-    "range" : "17",
+    "range" : "8",
     "label" : {
-      "IRI-based" : "PROP-ISACTIVE"
+      "IRI-based" : "PROP-ASSOCIATEDDRUG"
     },
-    "domain" : "1",
-    "attributes" : [ "datatype", "external" ],
+    "domain" : "15",
+    "attributes" : [ "external", "object" ],
     "id" : "51"
   }, {
-    "iri" : "urn:absolute:www.akura.com/property#PROP-GUID",
+    "iri" : "urn:absolute:www.akura.com/property#PROP-MEDICATIONS",
     "baseIri" : "urn:absolute:www.akura.com/property",
-    "range" : "16",
+    "range" : "48",
     "label" : {
-      "IRI-based" : "PROP-GUID"
+      "IRI-based" : "PROP-MEDICATIONS"
     },
-    "domain" : "1",
-    "attributes" : [ "datatype", "external" ],
+    "domain" : "17",
+    "attributes" : [ "external", "object" ],
     "id" : "52"
-  }, {
-    "iri" : "urn:absolute:www.akura.com/property#PROP-FAVORITEFRUIT",
-    "baseIri" : "urn:absolute:www.akura.com/property",
-    "range" : "12",
-    "label" : {
-      "IRI-based" : "PROP-FAVORITEFRUIT"
-    },
-    "domain" : "1",
-    "attributes" : [ "datatype", "external" ],
-    "id" : "53"
   } ]
 }
