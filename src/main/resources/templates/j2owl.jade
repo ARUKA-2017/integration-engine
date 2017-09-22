@@ -3,33 +3,96 @@ extends layout
 
 block content
 
-    h1  Welcome to JSON 2 OWL Converter
-
-    h5 Insert the JSON file here
-
-    br
+    div.row
+        div.title 
+            h4 JSON 2 OWL Converter Tool 
+                small &nbsp; - AKURA Platform sub system created to convert a JSON object to a heirachial ontology. 
+            hr
     div.row
         div.col-md-6
+            div.row
+                div
+                    
+                    div.input-group
+                        label.input-group-btn(style="padding-left:0cm") 
+                            span(class="btn btn-info btn-sm")  Browse
+                                input#inputFile(type="file", style="display:none" , accept="application/json")
+                        p#filename Select a JSON File or Create one below
+                        //- input(type="text", class="form-control", readonly)
 
-            div.form-group
-                div.col-md-12
-                    textarea#json(class="form-control input-sm" , rows="20")
 
-                div(class="col-md-4 col-md-offset-8")
+                div.card
+                    div.card-block 
+
+                        div.row
+                            div.col-md-12(style="height:74%;")
+
+                                //- div#json-wrapper(data-language="javascript", style="height:70%")
+                                div#container(style="height:96%;width:100%;padding-top:3%")
+                
+            
+            
+            div.row
+                div(class="col-md-3 col-md-offset-9", style="padding-right:0cm")
+                   
+                    button#convert(class="btn btn-block btn-sm btn-success ", style="margin-top:10%", onclick="convert()", data-style="expand-right", data-size="s")
+                        span.ladda-label Convert
                     br
-                    button(class="btn btn-block btn-primary", onclick="convert()") Convert
-
-
+                    span#spinnerConvert(style="margin-top:1%")
+        
+        
         div.col-md-6
-            iframe(src="http://35.198.251.53", id="iframe",class="col-md-12", style="height:60%;padding:0cm" , hidden="true")
+             
+            p Resulting Ontology Structure
+            div
+                div.card 
+                    div.card-block
+                        div#notfound(style="padding:2%;height:74%;text-align: center;")
+                           
 
+                            i(class="fa fa-code", style="font-size:950%;color:rgba(0,0,0,0.1);margin-top:20%")
+                            h5(style="color:rgba(0,0,0,0.3)") NO ONTOLOGY LOADED
+
+                        div#iframeWrapper(style="padding:2%;height:74%",  hidden="true") 
+                            iframe(src="http://35.198.251.53", id="iframe",class="col-md-12", style="    border: none;height:100%;padding:0cm")
+
+                div.row
+                    div.col-md-3#download(hidden="true")
+                        a#link(download, class="btn btn-block btn-sm btn-info ", style="margin-top:12%", data-style="expand-right", data-size="s")
+                            span.ladda-label Download
 block javascript
 
+    //- script(src="/codemirror/lib/codemirror.js")
+    //- script(src="/codemirror/addon/mode/loadmode.js")
+    script(src="/js.js")
     script.
 
+        //- var editor = CodeMirror.fromTextArea(document.getElementById("json"), {
+        //-     lineNumbers: true,
+        //-     mode:"application/json"
+        //- });
+
+        //- setTimeout(function(){
+        //-     editor.setOption("mode", "application/json");
+        //- },1000)
+        //- var flask;
+        
+        //- window.onload = function() {
+        //-     flask = new CodeFlask;
+        //-     flask.run('#json-wrapper', { language: 'javascript', lineNumbers: true, rtl:true })
+             
+        //- }
+
+        //- $("#spinnerConvert")
+        //-         .html(spinner);
+
         var iframeHref = "http://localhost:8080";
+        // http://35.198.251.53
+
+
         function convert(){
-            var json = $("#json").val();
+            var json  = window.editor.getValue();
+            console.log(json);
 
             try{
                 json = JSON.parse(json);
@@ -37,17 +100,28 @@ block javascript
                 alert("INVALID JSON");
                 return false;
             }
+            $("#convert").hide();
+            $("#spinnerConvert")
+                .html(spinner);
 
             $.ajax({
                 url:"/generate-vowl",
                 type:"POST",
                 data: JSON.stringify(json),
                 success:function(res){
+                    
+                    document.getElementById("link").setAttribute("href",iframeHref+"/ontologies/"+res);
                     console.log(res);
                     reload();
+                    $("#spinnerConvert")
+                        .html('');
+                    $("#convert").show(); 
                 },
                 error: function(err){
                     console.log(err);
+                        $("#spinnerConvert")
+                        .html(''); 
+                    $("#convert").show();    
                 }
 
             });
@@ -59,14 +133,13 @@ block javascript
         }
 
         function reload(){
-            var loc = window.location.hostname;
-            if(loc=="localhost"){
-                loc="localhost:8080";
-            }
-
-            var prot  = window.location.protocol;
+            document.getElementById("notfound").setAttribute("hidden",true);
             var iframe = document.getElementById('iframe');
+            document.getElementById("iframeWrapper").removeAttribute("hidden");
+         
             iframe.removeAttribute("hidden");
-            iframe.src = "http://35.198.251.53?name="+Date.now();
+            var download = document.getElementById("download");
+            download.removeAttribute("hidden");
+            iframe.src = iframeHref+"?name="+Date.now();
         }
 

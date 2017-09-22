@@ -1,0 +1,9 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:j.0="urn:absolute:www.akura.com/class#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+  <owl:Class rdf:about="urn:absolute:www.akura.com/class#ROOTCLASS"/>
+  <j.0:ROOTCLASS rdf:about="urn:absolute:www.akura.com/class#--e7c95fc3-1e7d-48e8-af8b-07b48b601c08rootClass"/>
+</rdf:RDF>

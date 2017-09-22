@@ -14,7 +14,7 @@ import java.util.Map;
 
 public class Parser {
 
-    public static void parseFromJsonString(String json){
+    public static String parseFromJsonString(String json){
 
         Gson gson = new Gson();
         Map jsonObj = gson.fromJson( json , (Type) Object.class);
@@ -24,7 +24,7 @@ public class Parser {
         Ontology.m = null;
 
         // vowl convert
-        VowlConverter.convert();
+        return VowlConverter.convert();
 
     }
 }

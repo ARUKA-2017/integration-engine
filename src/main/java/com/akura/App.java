@@ -31,8 +31,8 @@ public class App {
 
         get("/search", (req, res) -> gson.toJson(ps.searchProduct(req.queryParams("search"), res, false)));
         post("/generate-vowl", (req,res)->{
-            Parser.parseFromJsonString(req.body());
-            return gson.toJson("{'status':'success'}");
+           String uid =  Parser.parseFromJsonString(req.body());
+            return  uid;
         });
 
         //TODO Get suggestions upon keystroke type endpoint
