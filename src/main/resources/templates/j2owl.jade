@@ -93,12 +93,24 @@ block javascript
 
         function convert(){
             var json  = window.editor.getValue();
-            console.log(json);
+           
 
             try{
                 json = JSON.parse(json);
             } catch(e){
-                alert("INVALID JSON");
+                swal(
+                'Invalid JSON',
+                'Error Parsing the Input',
+                'error'
+                );
+                return false;
+            }
+            if(Array.isArray(json)){
+                swal(
+                'Invalid JSON',
+                'JSON cannot start with an array',
+                'error'
+                );
                 return false;
             }
             $("#convert").hide();

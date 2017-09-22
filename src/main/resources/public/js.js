@@ -32,10 +32,16 @@ function onReaderLoad(event){
     try{
     var obj = JSON.parse(event.target.result);
     window.editor.setValue(event.target.result);
-    console.log(obj);
+   
    
     } catch(e){
-        alert("INVALID JSON FILE");
+        swal(
+            'Invalid JSON',
+            'Error Parsing the file',
+            'error'
+            );
+
+        return false;
     }
     
 }
