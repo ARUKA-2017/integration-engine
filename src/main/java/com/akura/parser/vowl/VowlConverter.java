@@ -30,7 +30,7 @@ public class VowlConverter {
                     "-file " + System.getProperty("user.dir") + "/test-1.owl  " +
                     "-output " + System.getProperty("user.dir") + "/webvowl/data/foaf.json  ";
 
-            source = System.getProperty("user.dir") + "/test-1.owl ";
+            source = System.getProperty("user.dir") + "/test-1.owl";
             target = System.getProperty("user.dir") + "/webvowl/ontologies/"+uuid +".owl";
 
 
