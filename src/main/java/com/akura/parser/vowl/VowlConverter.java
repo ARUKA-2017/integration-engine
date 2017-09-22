@@ -38,7 +38,8 @@ public class VowlConverter {
 
         }
 
-
+        System.out.println("source: "+ source);
+        System.out.println("target: "+target);
         String output = CommandExecutor.executeCommand(domainName);
         System.out.println(output);
 
