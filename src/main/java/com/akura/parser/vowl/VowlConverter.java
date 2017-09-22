@@ -33,7 +33,7 @@ public class VowlConverter {
             source = System.getProperty("user.dir") + "/test-1.owl ";
             target = System.getProperty("user.dir") + "/webvowl/ontologies/"+uuid +".owl";
 
-        
+
         }
 
         System.out.println("source: "+ source);
@@ -42,7 +42,8 @@ public class VowlConverter {
         System.out.println(output);
 
         try {
-            CommandExecutor.copyFileUsingStream( new File(source), new File(target) );
+
+            CommandExecutor.copyFileUsingApacheCommonsIO( new File(source), new File(target) );
         } catch (IOException e) {
             e.printStackTrace();
         }

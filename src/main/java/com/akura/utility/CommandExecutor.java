@@ -1,5 +1,7 @@
 package com.akura.utility;
 
+import org.apache.commons.io.FileUtils;
+
 import java.io.*;
 
 public class CommandExecutor {
@@ -46,5 +48,9 @@ public class CommandExecutor {
             is.close();
             os.close();
         }
+    }
+
+    public static void copyFileUsingApacheCommonsIO(File source, File dest) throws IOException {
+        FileUtils.copyFile(source, dest);
     }
 }
