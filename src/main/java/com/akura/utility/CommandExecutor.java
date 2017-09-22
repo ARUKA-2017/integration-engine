@@ -28,6 +28,10 @@ public class CommandExecutor {
     }
 
     public static void copyFileUsingStream(File source, File dest) throws IOException {
+
+        if(!dest.exists()){
+            dest.createNewFile();
+        }
         InputStream is = null;
         OutputStream os = null;
         try {

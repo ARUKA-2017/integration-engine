@@ -1,11 +1,9 @@
 package com.akura.parser.vowl;
 
 import com.akura.utility.CommandExecutor;
+import org.apache.commons.io.FileUtils;
 
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.IOException;
-import java.io.InputStreamReader;
+import java.io.*;
 import java.util.UUID;
 
 public class VowlConverter {
@@ -35,7 +33,7 @@ public class VowlConverter {
             source = System.getProperty("user.dir") + "/test-1.owl ";
             target = System.getProperty("user.dir") + "/webvowl/ontologies/"+uuid +".owl";
 
-
+        
         }
 
         System.out.println("source: "+ source);
