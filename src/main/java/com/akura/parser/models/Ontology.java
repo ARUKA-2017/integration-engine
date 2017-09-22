@@ -134,7 +134,7 @@ public class Ontology {
         }
 
         if (selectedProperty == null) {
-            selectedProperty = Ontology.getOntologyInstance().createDatatypeProperty(Config.ONTOLOGY_PROP_URI  + propertyName.toUpperCase());
+            selectedProperty = Ontology.getOntologyInstance().createDatatypeProperty(Config.ONTOLOGY_PROP_URI  + propertyName.replace("#","").toUpperCase());
         }
         return selectedProperty;
     }
