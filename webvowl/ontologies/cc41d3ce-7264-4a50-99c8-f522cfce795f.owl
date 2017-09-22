@@ -1,0 +1,2399 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:j.0="urn:absolute:www.akura.com/property#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:j.1="urn:absolute:www.akura.com/class#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:j.2="urn:absolute:www.akura.com/property#PROP-/COMPUTERS &amp; ELECTRONICS/CONSUMER "
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:j.3="urn:absolute:www.akura.com/property#PROP-/INTERNET &amp; TELECOM/MOBILE &amp; WIRELESS/MOBILE "
+    xmlns:j.4="urn:absolute:www.akura.com/property#PROP-/INTERNET &amp; TELECOM/SERVICE ">
+  <owl:Class rdf:about="urn:absolute:www.akura.com/class#CLASS-ROOTCLASS"/>
+  <owl:Class rdf:about="urn:absolute:www.akura.com/class#CLASS-CATEGORYMAP"/>
+  <owl:Class rdf:about="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  <owl:Class rdf:about="urn:absolute:www.akura.com/class#CLASS-_INFO"/>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-196">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-7">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-28">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-172">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-184">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-/INTERNET &amp; TELECOM/MOBILE &amp; WIRELESS/MOBILE PHONES">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-CATEGORYMAP"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-160">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-16">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-129">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-117">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-226">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-238">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-105">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-202">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-214">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-72">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-60">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-96">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-84">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-185">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-29">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-6">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-17">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-197">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-161">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-173">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-270">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-_INFO">
+    <rdfs:range rdf:resource="urn:absolute:www.akura.com/class#CLASS-_INFO"/>
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-ROOTCLASS"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-239">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-118">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-106">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-215">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-97">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-227">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-203">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-61">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-198">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-85">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-73">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-18">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-5">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-194">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-170">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-182">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-248">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-98">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-86">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-127">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-139">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-224">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-115">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-103">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-236">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-200">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-50">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-212">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-74">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-62">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-183">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-195">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-19">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-4">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-171">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-237">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-87">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-128">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-116">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-249">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-75">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-213">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-104">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-99">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-225">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-201">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-63">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-51">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-152">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-164">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-140">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-261">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-3">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-REVIEW">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-_INFO"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-109">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-206">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-218">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-76">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-64">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-88">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-189">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-52">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-165">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-177">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-40">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-141">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-262">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-153">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-250">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-2">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-219">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-207">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-65">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-53">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-89">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-77">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-178">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-41">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-154">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-166">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-174">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-186">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-150">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-271">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-162">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-1">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-119">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-228">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-107">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-204">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-54">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-216">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-42">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-78">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-66">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-187">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-30">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-199">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-163">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-175">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-260">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-151">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-79">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-108">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-217">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-229">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-43">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-31">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-205">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-67">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-55">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-176">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-188">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-120">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-241">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-68">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-DATA">
+    <rdfs:range rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-_INFO"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-32">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-20">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-169">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-56">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-44">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-145">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-266">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-157">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-242">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-121">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-133">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-254">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-230">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-69">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-57">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-21">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-158">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-45">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-33">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-255">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-134">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-146">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-267">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-122">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-231">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-243">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-110">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-130">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-251">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-142">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-263">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-58">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-46">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-90">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-/COMPUTERS &amp; ELECTRONICS/CONSUMER ELECTRONICS">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-CATEGORYMAP"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-208">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-10">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-34">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-22">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-167">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-179">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-143">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-264">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-155">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-240">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-131">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-252">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-47">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-35">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-59">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-91">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-209">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-23">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-11">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-156">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-168">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-132">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-253">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-144">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-265">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-192">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-36">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-24">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-180">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-48">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-92">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-80">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-149">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-246">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-12">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-137">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-258">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-125">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-222">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-113">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-234">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-101">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-210">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-181">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-25">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-13">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-193">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-49">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-37">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-81">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-/INTERNET &amp; TELECOM/SERVICE PROVIDERS">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-CATEGORYMAP"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-138">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-259">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-235">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-126">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-114">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-247">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-211">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-102">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-93">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-223">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-14">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-190">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-38">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-26">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-9">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-70">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-147">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-268">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-159">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-94">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-244">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-135">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-256">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-82">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-123">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-111">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-220">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-232">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-39">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-CATEGORYMAP">
+    <rdfs:range rdf:resource="urn:absolute:www.akura.com/class#CLASS-CATEGORYMAP"/>
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-_INFO"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-27">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-15">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-191">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-8">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-136">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-257">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-148">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-269">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-124">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-233">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-83">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-245">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-71">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-112">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-100">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-221">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-95">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DATA"/>
+  </owl:DatatypeProperty>
+  <j.1:CLASS-ROOTCLASS rdf:about="urn:absolute:www.akura.com/class#CLASS---21b37daf-65a3-47db-b357-5e86e6e62c1arootClass">
+    <j.0:PROP-_INFO>
+      <j.1:CLASS-_INFO rdf:about="urn:absolute:www.akura.com/class#CLASS---ca7804f1-1646-4eda-84fa-f75c2e54a640_info">
+        <j.0:PROP-CATEGORYMAP>
+          <j.1:CLASS-CATEGORYMAP rdf:about="urn:absolute:www.akura.com/class#CLASS---e4639f37-daa5-458b-9b4f-3e06f1c3a80fcategoryMap">
+            <j.2:ELECTRONICS>0.74</j.2:ELECTRONICS>
+            <j.4:PROVIDERS>0.67</j.4:PROVIDERS>
+            <j.3:PHONES>0.68</j.3:PHONES>
+          </j.1:CLASS-CATEGORYMAP>
+        </j.0:PROP-CATEGORYMAP>
+        <j.0:PROP-DATA>
+          <j.1:CLASS-DATA rdf:about="urn:absolute:www.akura.com/class#CLASS---d218b11a-669f-4bfe-9cad-5dbea8155f94data">
+            <j.0:PROP-65>ORGANIZATION</j.0:PROP-65>
+            <j.0:PROP-53>up</j.0:PROP-53>
+            <j.0:PROP-76>this</j.0:PROP-76>
+            <j.0:PROP-133>0.012427464</j.0:PROP-133>
+            <j.0:PROP-89>PUNCT</j.0:PROP-89>
+            <j.0:PROP-143>are</j.0:PROP-143>
+            <j.0:PROP-7>VERB</j.0:PROP-7>
+            <j.0:PROP-55>NOUN</j.0:PROP-55>
+            <j.0:PROP-108>VERB</j.0:PROP-108>
+            <j.0:PROP-9>But</j.0:PROP-9>
+            <j.0:PROP-171>0.0040679686</j.0:PROP-171>
+            <j.0:PROP-46>OTHER</j.0:PROP-46>
+            <j.0:PROP-94>a</j.0:PROP-94>
+            <j.0:PROP-26>actual</j.0:PROP-26>
+            <j.0:PROP-168>PRON</j.0:PROP-168>
+            <j.0:PROP-235>on</j.0:PROP-235>
+            <j.0:PROP-211>phone</j.0:PROP-211>
+            <j.0:PROP-121>PUNCT</j.0:PROP-121>
+            <j.0:PROP-123>was</j.0:PROP-123>
+            <j.0:PROP-44>ADP</j.0:PROP-44>
+            <j.0:PROP-188>simcard</j.0:PROP-188>
+            <j.0:PROP-46>verizon</j.0:PROP-46>
+            <j.0:PROP-66>and</j.0:PROP-66>
+            <j.0:PROP-137>VERB</j.0:PROP-137>
+            <j.0:PROP-238>PRON</j.0:PROP-238>
+            <j.0:PROP-197>simcard</j.0:PROP-197>
+            <j.0:PROP-21>VERB</j.0:PROP-21>
+            <j.0:PROP-217>DET</j.0:PROP-217>
+            <j.0:PROP-77>OTHER</j.0:PROP-77>
+            <j.0:PROP-133>tmobile</j.0:PROP-133>
+            <j.0:PROP-29>DET</j.0:PROP-29>
+            <j.0:PROP-46>0.012297484</j.0:PROP-46>
+            <j.0:PROP-243>-0.1</j.0:PROP-243>
+            <j.0:PROP-169>VERB</j.0:PROP-169>
+            <j.0:PROP-59>said</j.0:PROP-59>
+            <j.0:PROP-227>be</j.0:PROP-227>
+            <j.0:PROP-77>0.009982863</j.0:PROP-77>
+            <j.0:PROP-83>PUNCT</j.0:PROP-83>
+            <j.0:PROP-178>,</j.0:PROP-178>
+            <j.0:PROP-104>have</j.0:PROP-104>
+            <j.0:PROP-177>0.335864</j.0:PROP-177>
+            <j.0:PROP-213>have</j.0:PROP-213>
+            <j.0:PROP-30>0.035027467</j.0:PROP-30>
+            <j.0:PROP-243>0.0</j.0:PROP-243>
+            <j.0:PROP-92>VERB</j.0:PROP-92>
+            <j.0:PROP-106>0.335864</j.0:PROP-106>
+            <j.0:PROP-167>if</j.0:PROP-167>
+            <j.0:PROP-122>It</j.0:PROP-122>
+            <j.0:PROP-130>do</j.0:PROP-130>
+            <j.0:PROP-32>0.019865926</j.0:PROP-32>
+            <j.0:PROP-197>CONSUMER_GOOD</j.0:PROP-197>
+            <j.0:PROP-35>thought</j.0:PROP-35>
+            <j.0:PROP-212>PUNCT</j.0:PROP-212>
+            <j.0:PROP-120>be</j.0:PROP-120>
+            <j.0:PROP-171>0.05200272</j.0:PROP-171>
+            <j.0:PROP-5>-0.1</j.0:PROP-5>
+            <j.0:PROP-189>.</j.0:PROP-189>
+            <j.0:PROP-157>ADP</j.0:PROP-157>
+            <j.0:PROP-162>return</j.0:PROP-162>
+            <j.0:PROP-116>ADP</j.0:PROP-116>
+            <j.0:PROP-112>VERB</j.0:PROP-112>
+            <j.0:PROP-91>it</j.0:PROP-91>
+            <j.0:PROP-133>OTHER</j.0:PROP-133>
+            <j.0:PROP-47>0.015168522</j.0:PROP-47>
+            <j.0:PROP-149>0.0096981665</j.0:PROP-149>
+            <j.0:PROP-188>0.0</j.0:PROP-188>
+            <j.0:PROP-118>actually</j.0:PROP-118>
+            <j.0:PROP-238>I</j.0:PROP-238>
+            <j.0:PROP-211>CONSUMER_GOOD</j.0:PROP-211>
+            <j.0:PROP-106>0.13468277</j.0:PROP-106>
+            <j.0:PROP-44>to</j.0:PROP-44>
+            <j.0:PROP-127>.</j.0:PROP-127>
+            <j.0:PROP-115>PUNCT</j.0:PROP-115>
+            <j.0:PROP-50>and</j.0:PROP-50>
+            <j.0:PROP-149>description</j.0:PROP-149>
+            <j.0:PROP-77>0.11354158</j.0:PROP-77>
+            <j.0:PROP-188>NOUN</j.0:PROP-188>
+            <j.0:PROP-102>if</j.0:PROP-102>
+            <j.0:PROP-114>NOUN</j.0:PROP-114>
+            <j.0:PROP-159>.</j.0:PROP-159>
+            <j.0:PROP-177>0.009982863</j.0:PROP-177>
+            <j.0:PROP-131>n't</j.0:PROP-131>
+            <j.0:PROP-46>ORGANIZATION</j.0:PROP-46>
+            <j.0:PROP-114>Verizon</j.0:PROP-114>
+            <j.0:PROP-229>ADJ</j.0:PROP-229>
+            <j.0:PROP-232>PRON</j.0:PROP-232>
+            <j.0:PROP-192>know</j.0:PROP-192>
+            <j.0:PROP-194>that</j.0:PROP-194>
+            <j.0:PROP-124>not</j.0:PROP-124>
+            <j.0:PROP-241>the</j.0:PROP-241>
+            <j.0:PROP-72>0.0040679686</j.0:PROP-72>
+            <j.0:PROP-105>a</j.0:PROP-105>
+            <j.0:PROP-158>amazon</j.0:PROP-158>
+            <j.0:PROP-177>-0.1</j.0:PROP-177>
+            <j.0:PROP-172>CONJ</j.0:PROP-172>
+            <j.0:PROP-158>0.038496993</j.0:PROP-158>
+            <j.0:PROP-77>0.005410055</j.0:PROP-77>
+            <j.0:PROP-106>NOUN</j.0:PROP-106>
+            <j.0:PROP-81>ADP</j.0:PROP-81>
+            <j.0:PROP-23>NOUN</j.0:PROP-23>
+            <j.0:PROP-47>store</j.0:PROP-47>
+            <j.0:PROP-31>for</j.0:PROP-31>
+            <j.0:PROP-74>PRON</j.0:PROP-74>
+            <j.0:PROP-110>could</j.0:PROP-110>
+            <j.0:PROP-133>0.013690503</j.0:PROP-133>
+            <j.0:PROP-197>simcards</j.0:PROP-197>
+            <j.0:PROP-63>VERB</j.0:PROP-63>
+            <j.0:PROP-17>PUNCT</j.0:PROP-17>
+            <j.0:PROP-204>0.006333682</j.0:PROP-204>
+            <j.0:PROP-106>0.005410055</j.0:PROP-106>
+            <j.0:PROP-55>0.05200272</j.0:PROP-55>
+            <j.0:PROP-94>DET</j.0:PROP-94>
+            <j.0:PROP-48>to</j.0:PROP-48>
+            <j.0:PROP-227>VERB</j.0:PROP-227>
+            <j.0:PROP-5>0.0147979725</j.0:PROP-5>
+            <j.0:PROP-49>activate</j.0:PROP-49>
+            <j.0:PROP-104>had</j.0:PROP-104>
+            <j.0:PROP-239>cant</j.0:PROP-239>
+            <j.0:PROP-176>the</j.0:PROP-176>
+            <j.0:PROP-65>0.0</j.0:PROP-65>
+            <j.0:PROP-201>out</j.0:PROP-201>
+            <j.0:PROP-218>0.00484588</j.0:PROP-218>
+            <j.0:PROP-212>.</j.0:PROP-212>
+            <j.0:PROP-97>0.0</j.0:PROP-97>
+            <j.0:PROP-79>CONJ</j.0:PROP-79>
+            <j.0:PROP-185>requires</j.0:PROP-185>
+            <j.0:PROP-158>0.0</j.0:PROP-158>
+            <j.0:PROP-27>-0.1</j.0:PROP-27>
+            <j.0:PROP-208>ADP</j.0:PROP-208>
+            <j.0:PROP-171>NOUN</j.0:PROP-171>
+            <j.0:PROP-231>0.0149717275</j.0:PROP-231>
+            <j.0:PROP-135>I</j.0:PROP-135>
+            <j.0:PROP-201>PRT</j.0:PROP-201>
+            <j.0:PROP-117>it</j.0:PROP-117>
+            <j.0:PROP-179>VERB</j.0:PROP-179>
+            <j.0:PROP-219>ADP</j.0:PROP-219>
+            <j.0:PROP-189>PUNCT</j.0:PROP-189>
+            <j.0:PROP-77>0.335864</j.0:PROP-77>
+            <j.0:PROP-27>0.13468277</j.0:PROP-27>
+            <j.0:PROP-171>tmobile</j.0:PROP-171>
+            <j.0:PROP-126>case</j.0:PROP-126>
+            <j.0:PROP-41>I</j.0:PROP-41>
+            <j.0:PROP-226>DET</j.0:PROP-226>
+            <j.0:PROP-96>party</j.0:PROP-96>
+            <j.0:PROP-177>0.13468277</j.0:PROP-177>
+            <j.0:PROP-30>NOUN</j.0:PROP-30>
+            <j.0:PROP-72>0.012427464</j.0:PROP-72>
+            <j.0:PROP-32>0.0</j.0:PROP-32>
+            <j.0:PROP-60>PRON</j.0:PROP-60>
+            <j.0:PROP-144>VERB</j.0:PROP-144>
+            <j.0:PROP-161>VERB</j.0:PROP-161>
+            <j.0:PROP-243>phone</j.0:PROP-243>
+            <j.0:PROP-182>VERB</j.0:PROP-182>
+            <j.0:PROP-55>0.019865926</j.0:PROP-55>
+            <j.0:PROP-200>phase</j.0:PROP-200>
+            <j.0:PROP-241>DET</j.0:PROP-241>
+            <j.0:PROP-177>phone</j.0:PROP-177>
+            <j.0:PROP-45>DET</j.0:PROP-45>
+            <j.0:PROP-34>PRON</j.0:PROP-34>
+            <j.0:PROP-55>0.0</j.0:PROP-55>
+            <j.0:PROP-69>be</j.0:PROP-69>
+            <j.0:PROP-228>the</j.0:PROP-228>
+            <j.0:PROP-85>figure</j.0:PROP-85>
+            <j.0:PROP-222>NOUN</j.0:PROP-222>
+            <j.0:PROP-27>0.11354158</j.0:PROP-27>
+            <j.0:PROP-78>VERB</j.0:PROP-78>
+            <j.0:PROP-24>PUNCT</j.0:PROP-24>
+            <j.0:PROP-5>CONSUMER_GOOD</j.0:PROP-5>
+            <j.0:PROP-225>CONJ</j.0:PROP-225>
+            <j.0:PROP-99>ORGANIZATION</j.0:PROP-99>
+            <j.0:PROP-177>NOUN</j.0:PROP-177>
+            <j.0:PROP-126>OTHER</j.0:PROP-126>
+            <j.0:PROP-223>anyway</j.0:PROP-223>
+            <j.0:PROP-142>0.024618378</j.0:PROP-142>
+            <j.0:PROP-206>not</j.0:PROP-206>
+            <j.0:PROP-3>how</j.0:PROP-3>
+            <j.0:PROP-173>want</j.0:PROP-173>
+            <j.0:PROP-97>NOUN</j.0:PROP-97>
+            <j.0:PROP-150>be</j.0:PROP-150>
+            <j.0:PROP-101>know</j.0:PROP-101>
+            <j.0:PROP-151>ADV</j.0:PROP-151>
+            <j.0:PROP-155>ADP</j.0:PROP-155>
+            <j.0:PROP-110>VERB</j.0:PROP-110>
+            <j.0:PROP-219>for</j.0:PROP-219>
+            <j.0:PROP-177>CONSUMER_GOOD</j.0:PROP-177>
+            <j.0:PROP-126>0.0</j.0:PROP-126>
+            <j.0:PROP-161>be</j.0:PROP-161>
+            <j.0:PROP-4>the</j.0:PROP-4>
+            <j.0:PROP-204>NOUN</j.0:PROP-204>
+            <j.0:PROP-10>DET</j.0:PROP-10>
+            <j.0:PROP-5>OTHER</j.0:PROP-5>
+            <j.0:PROP-198>are</j.0:PROP-198>
+            <j.0:PROP-211>0.13468277</j.0:PROP-211>
+            <j.0:PROP-209>my</j.0:PROP-209>
+            <j.0:PROP-133>0.05200272</j.0:PROP-133>
+            <j.0:PROP-150>is</j.0:PROP-150>
+            <j.0:PROP-129>PRON</j.0:PROP-129>
+            <j.0:PROP-207>VERB</j.0:PROP-207>
+            <j.0:PROP-24>.</j.0:PROP-24>
+            <j.0:PROP-236>,</j.0:PROP-236>
+            <j.0:PROP-70>use</j.0:PROP-70>
+            <j.0:PROP-41>PRON</j.0:PROP-41>
+            <j.0:PROP-75>VERB</j.0:PROP-75>
+            <j.0:PROP-211>0.005410055</j.0:PROP-211>
+            <j.0:PROP-16>VERB</j.0:PROP-16>
+            <j.0:PROP-97>seller</j.0:PROP-97>
+            <j.0:PROP-113>on</j.0:PROP-113>
+            <j.0:PROP-239>VERB</j.0:PROP-239>
+            <j.0:PROP-7>is</j.0:PROP-7>
+            <j.0:PROP-211>0.335864</j.0:PROP-211>
+            <j.0:PROP-196>ADJ</j.0:PROP-196>
+            <j.0:PROP-5>phone</j.0:PROP-5>
+            <j.0:PROP-59>say</j.0:PROP-59>
+            <j.0:PROP-160>I</j.0:PROP-160>
+            <j.0:PROP-243>CONSUMER_GOOD</j.0:PROP-243>
+            <j.0:PROP-84>PRON</j.0:PROP-84>
+            <j.0:PROP-1>Not</j.0:PROP-1>
+            <j.0:PROP-75>get</j.0:PROP-75>
+            <j.0:PROP-71>with</j.0:PROP-71>
+            <j.0:PROP-13>receive</j.0:PROP-13>
+            <j.0:PROP-197>0.0077048754</j.0:PROP-197>
+            <j.0:PROP-138>ADV</j.0:PROP-138>
+            <j.0:PROP-218>0.015168522</j.0:PROP-218>
+            <j.0:PROP-185>VERB</j.0:PROP-185>
+            <j.0:PROP-130>VERB</j.0:PROP-130>
+            <j.0:PROP-243>0.335864</j.0:PROP-243>
+            <j.0:PROP-178>PUNCT</j.0:PROP-178>
+            <j.0:PROP-61>VERB</j.0:PROP-61>
+            <j.0:PROP-32>0.05200272</j.0:PROP-32>
+            <j.0:PROP-147>PUNCT</j.0:PROP-147>
+            <j.0:PROP-20>VERB</j.0:PROP-20>
+            <j.0:PROP-106>-0.1</j.0:PROP-106>
+            <j.0:PROP-152>accurate</j.0:PROP-152>
+            <j.0:PROP-90>ADP</j.0:PROP-90>
+            <j.0:PROP-229>only</j.0:PROP-229>
+            <j.0:PROP-27>0.005410055</j.0:PROP-27>
+            <j.0:PROP-55>0.013690503</j.0:PROP-55>
+            <j.0:PROP-121>.</j.0:PROP-121>
+            <j.0:PROP-82>0.038496993</j.0:PROP-82>
+            <j.0:PROP-13>VERB</j.0:PROP-13>
+            <j.0:PROP-162>VERB</j.0:PROP-162>
+            <j.0:PROP-37>be</j.0:PROP-37>
+            <j.0:PROP-64>ADP</j.0:PROP-64>
+            <j.0:PROP-165>Also</j.0:PROP-165>
+            <j.0:PROP-106>0.0</j.0:PROP-106>
+            <j.0:PROP-243>0.13468277</j.0:PROP-243>
+            <j.0:PROP-142>NOUN</j.0:PROP-142>
+            <j.0:PROP-87>be</j.0:PROP-87>
+            <j.0:PROP-144>getting</j.0:PROP-144>
+            <j.0:PROP-28>have</j.0:PROP-28>
+            <j.0:PROP-84>I</j.0:PROP-84>
+            <j.0:PROP-96>NOUN</j.0:PROP-96>
+            <j.0:PROP-145>ADJ</j.0:PROP-145>
+            <j.0:PROP-91>PRON</j.0:PROP-91>
+            <j.0:PROP-211>NOUN</j.0:PROP-211>
+            <j.0:PROP-55>0.012427464</j.0:PROP-55>
+            <j.0:PROP-125>the</j.0:PROP-125>
+            <j.0:PROP-65>NOUN</j.0:PROP-65>
+            <j.0:PROP-15>ADV</j.0:PROP-15>
+            <j.0:PROP-107>that</j.0:PROP-107>
+            <j.0:PROP-72>0.0</j.0:PROP-72>
+            <j.0:PROP-243>0.005410055</j.0:PROP-243>
+            <j.0:PROP-217>the</j.0:PROP-217>
+            <j.0:PROP-106>phone</j.0:PROP-106>
+            <j.0:PROP-133>0.0</j.0:PROP-133>
+            <j.0:PROP-67>VERB</j.0:PROP-67>
+            <j.0:PROP-211>OTHER</j.0:PROP-211>
+            <j.0:PROP-5>0.0</j.0:PROP-5>
+            <j.0:PROP-11>one</j.0:PROP-11>
+            <j.0:PROP-190>PRON</j.0:PROP-190>
+            <j.0:PROP-52>come</j.0:PROP-52>
+            <j.0:PROP-182>know</j.0:PROP-182>
+            <j.0:PROP-111>VERB</j.0:PROP-111>
+            <j.0:PROP-32>OTHER</j.0:PROP-32>
+            <j.0:PROP-236>PUNCT</j.0:PROP-236>
+            <j.0:PROP-218>0.0</j.0:PROP-218>
+            <j.0:PROP-27>0.0147979725</j.0:PROP-27>
+            <j.0:PROP-198>be</j.0:PROP-198>
+            <j.0:PROP-108>say</j.0:PROP-108>
+            <j.0:PROP-165>ADV</j.0:PROP-165>
+            <j.0:PROP-61>was</j.0:PROP-61>
+            <j.0:PROP-95>ADJ</j.0:PROP-95>
+            <j.0:PROP-122>PRON</j.0:PROP-122>
+            <j.0:PROP-176>DET</j.0:PROP-176>
+            <j.0:PROP-132>have</j.0:PROP-132>
+            <j.0:PROP-66>CONJ</j.0:PROP-66>
+            <j.0:PROP-195>DET</j.0:PROP-195>
+            <j.0:PROP-163>DET</j.0:PROP-163>
+            <j.0:PROP-146>0.0</j.0:PROP-146>
+            <j.0:PROP-12>I</j.0:PROP-12>
+            <j.0:PROP-37>VERB</j.0:PROP-37>
+            <j.0:PROP-218>NOUN</j.0:PROP-218>
+            <j.0:PROP-97>0.009867671</j.0:PROP-97>
+            <j.0:PROP-187>NOUN</j.0:PROP-187>
+            <j.0:PROP-243>-0.2</j.0:PROP-243>
+            <j.0:PROP-47>NOUN</j.0:PROP-47>
+            <j.0:PROP-38>good</j.0:PROP-38>
+            <j.0:PROP-14>was</j.0:PROP-14>
+            <j.0:PROP-69>VERB</j.0:PROP-69>
+            <j.0:PROP-220>a</j.0:PROP-220>
+            <j.0:PROP-5>0.005410055</j.0:PROP-5>
+            <j.0:PROP-30>0.0</j.0:PROP-30>
+            <j.0:PROP-85>VERB</j.0:PROP-85>
+            <j.0:PROP-124>ADV</j.0:PROP-124>
+            <j.0:PROP-28>VERB</j.0:PROP-28>
+            <j.0:PROP-203>the</j.0:PROP-203>
+            <j.0:PROP-99>NOUN</j.0:PROP-99>
+            <j.0:PROP-136>would</j.0:PROP-136>
+            <j.0:PROP-38>ADJ</j.0:PROP-38>
+            <j.0:PROP-47>0.00484588</j.0:PROP-47>
+            <j.0:PROP-225>But</j.0:PROP-225>
+            <j.0:PROP-30>labels</j.0:PROP-30>
+            <j.0:PROP-95>3rd</j.0:PROP-95>
+            <j.0:PROP-81>by</j.0:PROP-81>
+            <j.0:PROP-146>tmobilephones</j.0:PROP-146>
+            <j.0:PROP-195>the</j.0:PROP-195>
+            <j.0:PROP-127>PUNCT</j.0:PROP-127>
+            <j.0:PROP-146>tmobilephone</j.0:PROP-146>
+            <j.0:PROP-72>tmobile</j.0:PROP-72>
+            <j.0:PROP-157>by</j.0:PROP-157>
+            <j.0:PROP-51>PRON</j.0:PROP-51>
+            <j.0:PROP-211>0.009982863</j.0:PROP-211>
+            <j.0:PROP-240>use</j.0:PROP-240>
+            <j.0:PROP-243>OTHER</j.0:PROP-243>
+            <j.0:PROP-106>0.009982863</j.0:PROP-106>
+            <j.0:PROP-171>0.013690503</j.0:PROP-171>
+            <j.0:PROP-243>0.009982863</j.0:PROP-243>
+            <j.0:PROP-243>NOUN</j.0:PROP-243>
+            <j.0:PROP-72>OTHER</j.0:PROP-72>
+            <j.0:PROP-23>0.046947762</j.0:PROP-23>
+            <j.0:PROP-177>0.005410055</j.0:PROP-177>
+            <j.0:PROP-177>0.0147979725</j.0:PROP-177>
+            <j.0:PROP-99>0.038496993</j.0:PROP-99>
+            <j.0:PROP-14>VERB</j.0:PROP-14>
+            <j.0:PROP-72>NOUN</j.0:PROP-72>
+            <j.0:PROP-244>PUNCT</j.0:PROP-244>
+            <j.0:PROP-191>didnt</j.0:PROP-191>
+            <j.0:PROP-27>0.009982863</j.0:PROP-27>
+            <j.0:PROP-120>VERB</j.0:PROP-120>
+            <j.0:PROP-123>be</j.0:PROP-123>
+            <j.0:PROP-5>-0.2</j.0:PROP-5>
+            <j.0:PROP-52>came</j.0:PROP-52>
+            <j.0:PROP-214>to</j.0:PROP-214>
+            <j.0:PROP-156>sell</j.0:PROP-156>
+            <j.0:PROP-77>0.0</j.0:PROP-77>
+            <j.0:PROP-146>0.013464537</j.0:PROP-146>
+            <j.0:PROP-162>returning</j.0:PROP-162>
+            <j.0:PROP-138>0.0</j.0:PROP-138>
+            <j.0:PROP-202>and</j.0:PROP-202>
+            <j.0:PROP-231>0.0</j.0:PROP-231>
+            <j.0:PROP-161>am</j.0:PROP-161>
+            <j.0:PROP-222>OTHER</j.0:PROP-222>
+            <j.0:PROP-237>ADP</j.0:PROP-237>
+            <j.0:PROP-106>-0.2</j.0:PROP-106>
+            <j.0:PROP-93>ADV</j.0:PROP-93>
+            <j.0:PROP-190>I</j.0:PROP-190>
+            <j.0:PROP-80>VERB</j.0:PROP-80>
+            <j.0:PROP-155>if</j.0:PROP-155>
+            <j.0:PROP-138>LOCATION</j.0:PROP-138>
+            <j.0:PROP-177>-0.2</j.0:PROP-177>
+            <j.0:PROP-58>They</j.0:PROP-58>
+            <j.0:PROP-198>VERB</j.0:PROP-198>
+            <j.0:PROP-177>OTHER</j.0:PROP-177>
+            <j.0:PROP-12>PRON</j.0:PROP-12>
+            <j.0:PROP-143>VERB</j.0:PROP-143>
+            <j.0:PROP-97>PERSON</j.0:PROP-97>
+            <j.0:PROP-77>-0.2</j.0:PROP-77>
+            <j.0:PROP-106>0.11354158</j.0:PROP-106>
+            <j.0:PROP-237>because</j.0:PROP-237>
+            <j.0:PROP-32>tmobile</j.0:PROP-32>
+            <j.0:PROP-36>I</j.0:PROP-36>
+            <j.0:PROP-65>0.046947762</j.0:PROP-65>
+            <j.0:PROP-100>VERB</j.0:PROP-100>
+            <j.0:PROP-3>ADV</j.0:PROP-3>
+            <j.0:PROP-2>sure</j.0:PROP-2>
+            <j.0:PROP-5>NOUN</j.0:PROP-5>
+            <j.0:PROP-193>either</j.0:PROP-193>
+            <j.0:PROP-211>-0.2</j.0:PROP-211>
+            <j.0:PROP-8>.</j.0:PROP-8>
+            <j.0:PROP-112>use</j.0:PROP-112>
+            <j.0:PROP-183>ADP</j.0:PROP-183>
+            <j.0:PROP-154>ADV</j.0:PROP-154>
+            <j.0:PROP-184>DET</j.0:PROP-184>
+            <j.0:PROP-205>will</j.0:PROP-205>
+            <j.0:PROP-25>DET</j.0:PROP-25>
+            <j.0:PROP-202>CONJ</j.0:PROP-202>
+            <j.0:PROP-147>.</j.0:PROP-147>
+            <j.0:PROP-37>was</j.0:PROP-37>
+            <j.0:PROP-142>PERSON</j.0:PROP-142>
+            <j.0:PROP-175>get</j.0:PROP-175>
+            <j.0:PROP-56>only</j.0:PROP-56>
+            <j.0:PROP-235>ADP</j.0:PROP-235>
+            <j.0:PROP-27>CONSUMER_GOOD</j.0:PROP-27>
+            <j.0:PROP-22>for</j.0:PROP-22>
+            <j.0:PROP-218>LOCATION</j.0:PROP-218>
+            <j.0:PROP-64>for</j.0:PROP-64>
+            <j.0:PROP-196>old</j.0:PROP-196>
+            <j.0:PROP-211>0.0147979725</j.0:PROP-211>
+            <j.0:PROP-65>0.010575253</j.0:PROP-65>
+            <j.0:PROP-60>it</j.0:PROP-60>
+            <j.0:PROP-211>0.11354158</j.0:PROP-211>
+            <j.0:PROP-243>0.0147979725</j.0:PROP-243>
+            <j.0:PROP-28>had</j.0:PROP-28>
+            <j.0:PROP-223>ADV</j.0:PROP-223>
+            <j.0:PROP-204>micro</j.0:PROP-204>
+            <j.0:PROP-115>,</j.0:PROP-115>
+            <j.0:PROP-138>elsewhere</j.0:PROP-138>
+            <j.0:PROP-102>ADP</j.0:PROP-102>
+            <j.0:PROP-42>VERB</j.0:PROP-42>
+            <j.0:PROP-129>you</j.0:PROP-129>
+            <j.0:PROP-230>2</j.0:PROP-230>
+            <j.0:PROP-46>0.046947762</j.0:PROP-46>
+            <j.0:PROP-11>NOUN</j.0:PROP-11>
+            <j.0:PROP-231>thing</j.0:PROP-231>
+            <j.0:PROP-71>ADP</j.0:PROP-71>
+            <j.0:PROP-206>ADV</j.0:PROP-206>
+            <j.0:PROP-107>DET</j.0:PROP-107>
+            <j.0:PROP-175>VERB</j.0:PROP-175>
+            <j.0:PROP-174>PRT</j.0:PROP-174>
+            <j.0:PROP-207>work</j.0:PROP-207>
+            <j.0:PROP-4>DET</j.0:PROP-4>
+            <j.0:PROP-35>VERB</j.0:PROP-35>
+            <j.0:PROP-27>0.335864</j.0:PROP-27>
+            <j.0:PROP-158>NOUN</j.0:PROP-158>
+            <j.0:PROP-46>0.010575253</j.0:PROP-46>
+            <j.0:PROP-215>VERB</j.0:PROP-215>
+            <j.0:PROP-19>ADV</j.0:PROP-19>
+            <j.0:PROP-141>ADJ</j.0:PROP-141>
+            <j.0:PROP-5>0.11354158</j.0:PROP-5>
+            <j.0:PROP-57>.</j.0:PROP-57>
+            <j.0:PROP-142>people</j.0:PROP-142>
+            <j.0:PROP-185>require</j.0:PROP-185>
+            <j.0:PROP-163>this</j.0:PROP-163>
+            <j.0:PROP-85>figured</j.0:PROP-85>
+            <j.0:PROP-119>would</j.0:PROP-119>
+            <j.0:PROP-48>PRT</j.0:PROP-48>
+            <j.0:PROP-54>ADP</j.0:PROP-54>
+            <j.0:PROP-32>0.013690503</j.0:PROP-32>
+            <j.0:PROP-153>.</j.0:PROP-153>
+            <j.0:PROP-171>0.012427464</j.0:PROP-171>
+            <j.0:PROP-148>The</j.0:PROP-148>
+            <j.0:PROP-43>it</j.0:PROP-43>
+            <j.0:PROP-214>PRT</j.0:PROP-214>
+            <j.0:PROP-168>you</j.0:PROP-168>
+            <j.0:PROP-222>simcard</j.0:PROP-222>
+            <j.0:PROP-47>0.0</j.0:PROP-47>
+            <j.0:PROP-174>to</j.0:PROP-174>
+            <j.0:PROP-181>PRON</j.0:PROP-181>
+            <j.0:PROP-6>itself</j.0:PROP-6>
+            <j.0:PROP-125>DET</j.0:PROP-125>
+            <j.0:PROP-62>ADV</j.0:PROP-62>
+            <j.0:PROP-82>amazon</j.0:PROP-82>
+            <j.0:PROP-98>CONJ</j.0:PROP-98>
+            <j.0:PROP-128>ADP</j.0:PROP-128>
+            <j.0:PROP-74>I</j.0:PROP-74>
+            <j.0:PROP-32>0.012427464</j.0:PROP-32>
+            <j.0:PROP-204>-0.9</j.0:PROP-204>
+            <j.0:PROP-55>-0.1</j.0:PROP-55>
+            <j.0:PROP-56>ADV</j.0:PROP-56>
+            <j.0:PROP-82>NOUN</j.0:PROP-82>
+            <j.0:PROP-29>no</j.0:PROP-29>
+            <j.0:PROP-160>PRON</j.0:PROP-160>
+            <j.0:PROP-72>0.019865926</j.0:PROP-72>
+            <j.0:PROP-199>VERB</j.0:PROP-199>
+            <j.0:PROP-222>0.0053129164</j.0:PROP-222>
+            <j.0:PROP-55>0.0040679686</j.0:PROP-55>
+            <j.0:PROP-171>0.0</j.0:PROP-171>
+            <j.0:PROP-82>ORGANIZATION</j.0:PROP-82>
+            <j.0:PROP-138>0.008330962</j.0:PROP-138>
+            <j.0:PROP-30>OTHER</j.0:PROP-30>
+            <j.0:PROP-233>VERB</j.0:PROP-233>
+            <j.0:PROP-197>NOUN</j.0:PROP-197>
+            <j.0:PROP-132>VERB</j.0:PROP-132>
+            <j.0:PROP-77>0.13468277</j.0:PROP-77>
+            <j.0:PROP-188>OTHER</j.0:PROP-188>
+            <j.0:PROP-17>.</j.0:PROP-17>
+            <j.0:PROP-65>0.012297484</j.0:PROP-65>
+            <j.0:PROP-164>PUNCT</j.0:PROP-164>
+            <j.0:PROP-215>take</j.0:PROP-215>
+            <j.0:PROP-101>VERB</j.0:PROP-101>
+            <j.0:PROP-16>unlock</j.0:PROP-16>
+            <j.0:PROP-86>it</j.0:PROP-86>
+            <j.0:PROP-170>VERB</j.0:PROP-170>
+            <j.0:PROP-126>NOUN</j.0:PROP-126>
+            <j.0:PROP-5>0.13468277</j.0:PROP-5>
+            <j.0:PROP-73>PUNCT</j.0:PROP-73>
+            <j.0:PROP-243>0.11354158</j.0:PROP-243>
+            <j.0:PROP-43>PRON</j.0:PROP-43>
+            <j.0:PROP-177>0.0</j.0:PROP-177>
+            <j.0:PROP-126>0.008893934</j.0:PROP-126>
+            <j.0:PROP-226>those</j.0:PROP-226>
+            <j.0:PROP-209>PRON</j.0:PROP-209>
+            <j.0:PROP-27>phone</j.0:PROP-27>
+            <j.0:PROP-14>be</j.0:PROP-14>
+            <j.0:PROP-67>can</j.0:PROP-67>
+            <j.0:PROP-112>used</j.0:PROP-112>
+            <j.0:PROP-58>PRON</j.0:PROP-58>
+            <j.0:PROP-86>PRON</j.0:PROP-86>
+            <j.0:PROP-70>used</j.0:PROP-70>
+            <j.0:PROP-156>sold</j.0:PROP-156>
+            <j.0:PROP-139>ADP</j.0:PROP-139>
+            <j.0:PROP-194>ADP</j.0:PROP-194>
+            <j.0:PROP-32>0.0040679686</j.0:PROP-32>
+            <j.0:PROP-59>VERB</j.0:PROP-59>
+            <j.0:PROP-133>-0.1</j.0:PROP-133>
+            <j.0:PROP-65>OTHER</j.0:PROP-65>
+            <j.0:PROP-222>0.0</j.0:PROP-222>
+            <j.0:PROP-193>CONJ</j.0:PROP-193>
+            <j.0:PROP-18>VERB</j.0:PROP-18>
+            <j.0:PROP-34>I</j.0:PROP-34>
+            <j.0:PROP-106>OTHER</j.0:PROP-106>
+            <j.0:PROP-78>sold</j.0:PROP-78>
+            <j.0:PROP-33>so</j.0:PROP-33>
+            <j.0:PROP-72>0.013690503</j.0:PROP-72>
+            <j.0:PROP-242>actual</j.0:PROP-242>
+            <j.0:PROP-21>use</j.0:PROP-21>
+            <j.0:PROP-1>ADV</j.0:PROP-1>
+            <j.0:PROP-135>PRON</j.0:PROP-135>
+            <j.0:PROP-166>,</j.0:PROP-166>
+            <j.0:PROP-16>unlocked</j.0:PROP-16>
+            <j.0:PROP-204>OTHER</j.0:PROP-204>
+            <j.0:PROP-68>only</j.0:PROP-68>
+            <j.0:PROP-52>VERB</j.0:PROP-52>
+            <j.0:PROP-231>things</j.0:PROP-231>
+            <j.0:PROP-146>CONSUMER_GOOD</j.0:PROP-146>
+            <j.0:PROP-77>NOUN</j.0:PROP-77>
+            <j.0:PROP-179>make</j.0:PROP-179>
+            <j.0:PROP-113>ADP</j.0:PROP-113>
+            <j.0:PROP-133>0.019865926</j.0:PROP-133>
+            <j.0:PROP-46>NOUN</j.0:PROP-46>
+            <j.0:PROP-117>PRON</j.0:PROP-117>
+            <j.0:PROP-90>because</j.0:PROP-90>
+            <j.0:PROP-177>0.11354158</j.0:PROP-177>
+            <j.0:PROP-80>ship</j.0:PROP-80>
+            <j.0:PROP-139>because</j.0:PROP-139>
+            <j.0:PROP-88>ADJ</j.0:PROP-88>
+            <j.0:PROP-42>took</j.0:PROP-42>
+            <j.0:PROP-22>ADP</j.0:PROP-22>
+            <j.0:PROP-149>-0.9</j.0:PROP-149>
+            <j.0:PROP-187>nano</j.0:PROP-187>
+            <j.0:PROP-134>,</j.0:PROP-134>
+            <j.0:PROP-152>ADJ</j.0:PROP-152>
+            <j.0:PROP-45>the</j.0:PROP-45>
+            <j.0:PROP-88>safe</j.0:PROP-88>
+            <j.0:PROP-72>0.05200272</j.0:PROP-72>
+            <j.0:PROP-77>phone</j.0:PROP-77>
+            <j.0:PROP-216>to</j.0:PROP-216>
+            <j.0:PROP-8>PUNCT</j.0:PROP-8>
+            <j.0:PROP-27>-0.2</j.0:PROP-27>
+            <j.0:PROP-55>OTHER</j.0:PROP-55>
+            <j.0:PROP-164>.</j.0:PROP-164>
+            <j.0:PROP-104>VERB</j.0:PROP-104>
+            <j.0:PROP-65>verizon</j.0:PROP-65>
+            <j.0:PROP-9>CONJ</j.0:PROP-9>
+            <j.0:PROP-156>VERB</j.0:PROP-156>
+            <j.0:PROP-180>ADJ</j.0:PROP-180>
+            <j.0:PROP-173>VERB</j.0:PROP-173>
+            <j.0:PROP-2>ADJ</j.0:PROP-2>
+            <j.0:PROP-32>-0.1</j.0:PROP-32>
+            <j.0:PROP-210>ADJ</j.0:PROP-210>
+            <j.0:PROP-216>ADP</j.0:PROP-216>
+            <j.0:PROP-70>VERB</j.0:PROP-70>
+            <j.0:PROP-213>VERB</j.0:PROP-213>
+            <j.0:PROP-40>but</j.0:PROP-40>
+            <j.0:PROP-242>ADJ</j.0:PROP-242>
+            <j.0:PROP-199>being</j.0:PROP-199>
+            <j.0:PROP-234>VERB</j.0:PROP-234>
+            <j.0:PROP-106>0.0147979725</j.0:PROP-106>
+            <j.0:PROP-15>not</j.0:PROP-15>
+            <j.0:PROP-39>,</j.0:PROP-39>
+            <j.0:PROP-99>0.0</j.0:PROP-99>
+            <j.0:PROP-76>DET</j.0:PROP-76>
+            <j.0:PROP-10>the</j.0:PROP-10>
+            <j.0:PROP-150>VERB</j.0:PROP-150>
+            <j.0:PROP-63>unlock</j.0:PROP-63>
+            <j.0:PROP-227>are</j.0:PROP-227>
+            <j.0:PROP-32>NOUN</j.0:PROP-32>
+            <j.0:PROP-57>PUNCT</j.0:PROP-57>
+            <j.0:PROP-149>OTHER</j.0:PROP-149>
+            <j.0:PROP-103>PRON</j.0:PROP-103>
+            <j.0:PROP-218>store</j.0:PROP-218>
+            <j.0:PROP-100>would</j.0:PROP-100>
+            <j.0:PROP-244>.</j.0:PROP-244>
+            <j.0:PROP-77>CONSUMER_GOOD</j.0:PROP-77>
+            <j.0:PROP-153>PUNCT</j.0:PROP-153>
+            <j.0:PROP-131>ADV</j.0:PROP-131>
+            <j.0:PROP-197>-0.1</j.0:PROP-197>
+            <j.0:PROP-133>NOUN</j.0:PROP-133>
+            <j.0:PROP-203>DET</j.0:PROP-203>
+            <j.0:PROP-186>DET</j.0:PROP-186>
+            <j.0:PROP-109>it</j.0:PROP-109>
+            <j.0:PROP-145>only</j.0:PROP-145>
+            <j.0:PROP-80>shipped</j.0:PROP-80>
+            <j.0:PROP-167>ADP</j.0:PROP-167>
+            <j.0:PROP-103>they</j.0:PROP-103>
+            <j.0:PROP-191>VERB</j.0:PROP-191>
+            <j.0:PROP-233>can</j.0:PROP-233>
+            <j.0:PROP-106>CONSUMER_GOOD</j.0:PROP-106>
+            <j.0:PROP-51>it</j.0:PROP-51>
+            <j.0:PROP-142>person</j.0:PROP-142>
+            <j.0:PROP-171>0.019865926</j.0:PROP-171>
+            <j.0:PROP-23>verizon</j.0:PROP-23>
+            <j.0:PROP-63>unlocked</j.0:PROP-63>
+            <j.0:PROP-50>CONJ</j.0:PROP-50>
+            <j.0:PROP-184>this</j.0:PROP-184>
+            <j.0:PROP-137>look</j.0:PROP-137>
+            <j.0:PROP-21>used</j.0:PROP-21>
+            <j.0:PROP-7>be</j.0:PROP-7>
+            <j.0:PROP-140>ADV</j.0:PROP-140>
+            <j.0:PROP-220>DET</j.0:PROP-220>
+            <j.0:PROP-54>for</j.0:PROP-54>
+            <j.0:PROP-188>0.0053129164</j.0:PROP-188>
+            <j.0:PROP-5>0.009982863</j.0:PROP-5>
+            <j.0:PROP-133>0.0040679686</j.0:PROP-133>
+            <j.0:PROP-61>be</j.0:PROP-61>
+            <j.0:PROP-224>PUNCT</j.0:PROP-224>
+            <j.0:PROP-79>and</j.0:PROP-79>
+            <j.0:PROP-87>VERB</j.0:PROP-87>
+            <j.0:PROP-146>NOUN</j.0:PROP-146>
+            <j.0:PROP-142>0.0</j.0:PROP-142>
+            <j.0:PROP-108>said</j.0:PROP-108>
+            <j.0:PROP-39>PUNCT</j.0:PROP-39>
+            <j.0:PROP-82>0.0</j.0:PROP-82>
+            <j.0:PROP-170>have</j.0:PROP-170>
+            <j.0:PROP-23>0.012297484</j.0:PROP-23>
+            <j.0:PROP-78>sell</j.0:PROP-78>
+            <j.0:PROP-118>ADV</j.0:PROP-118>
+            <j.0:PROP-211>0.0</j.0:PROP-211>
+            <j.0:PROP-200>phased</j.0:PROP-200>
+            <j.0:PROP-119>VERB</j.0:PROP-119>
+            <j.0:PROP-13>received</j.0:PROP-13>
+            <j.0:PROP-221>small</j.0:PROP-221>
+            <j.0:PROP-99>amazon</j.0:PROP-99>
+            <j.0:PROP-144>get</j.0:PROP-144>
+            <j.0:PROP-205>VERB</j.0:PROP-205>
+            <j.0:PROP-92>was</j.0:PROP-92>
+            <j.0:PROP-228>DET</j.0:PROP-228>
+            <j.0:PROP-33>ADP</j.0:PROP-33>
+            <j.0:PROP-171>-0.1</j.0:PROP-171>
+            <j.0:PROP-158>ORGANIZATION</j.0:PROP-158>
+            <j.0:PROP-159>PUNCT</j.0:PROP-159>
+            <j.0:PROP-20>be</j.0:PROP-20>
+            <j.0:PROP-213>Had</j.0:PROP-213>
+            <j.0:PROP-134>PUNCT</j.0:PROP-134>
+            <j.0:PROP-25>The</j.0:PROP-25>
+            <j.0:PROP-73>.</j.0:PROP-73>
+            <j.0:PROP-154>Even</j.0:PROP-154>
+            <j.0:PROP-23>0.010575253</j.0:PROP-23>
+            <j.0:PROP-27>OTHER</j.0:PROP-27>
+            <j.0:PROP-23>OTHER</j.0:PROP-23>
+            <j.0:PROP-87>was</j.0:PROP-87>
+            <j.0:PROP-40>CONJ</j.0:PROP-40>
+            <j.0:PROP-148>DET</j.0:PROP-148>
+            <j.0:PROP-136>VERB</j.0:PROP-136>
+            <j.0:PROP-19>not</j.0:PROP-19>
+            <j.0:PROP-98>and</j.0:PROP-98>
+            <j.0:PROP-181>you</j.0:PROP-181>
+            <j.0:PROP-42>take</j.0:PROP-42>
+            <j.0:PROP-26>ADJ</j.0:PROP-26>
+            <j.0:PROP-5>0.335864</j.0:PROP-5>
+            <j.0:PROP-171>OTHER</j.0:PROP-171>
+            <j.0:PROP-221>ADJ</j.0:PROP-221>
+            <j.0:PROP-75>got</j.0:PROP-75>
+            <j.0:PROP-27>NOUN</j.0:PROP-27>
+            <j.0:PROP-77>-0.1</j.0:PROP-77>
+            <j.0:PROP-231>OTHER</j.0:PROP-231>
+            <j.0:PROP-232>i</j.0:PROP-232>
+            <j.0:PROP-53>PRT</j.0:PROP-53>
+            <j.0:PROP-30>label</j.0:PROP-30>
+            <j.0:PROP-224>.</j.0:PROP-224>
+            <j.0:PROP-105>DET</j.0:PROP-105>
+            <j.0:PROP-210>old</j.0:PROP-210>
+            <j.0:PROP-18>Could</j.0:PROP-18>
+            <j.0:PROP-92>be</j.0:PROP-92>
+            <j.0:PROP-141>many</j.0:PROP-141>
+            <j.0:PROP-149>NOUN</j.0:PROP-149>
+            <j.0:PROP-231>NOUN</j.0:PROP-231>
+            <j.0:PROP-230>NUM</j.0:PROP-230>
+            <j.0:PROP-221>smaller</j.0:PROP-221>
+            <j.0:PROP-31>ADP</j.0:PROP-31>
+            <j.0:PROP-240>VERB</j.0:PROP-240>
+            <j.0:PROP-234>comment</j.0:PROP-234>
+            <j.0:PROP-180>sure</j.0:PROP-180>
+            <j.0:PROP-208>from</j.0:PROP-208>
+            <j.0:PROP-6>PRON</j.0:PROP-6>
+            <j.0:PROP-72>-0.1</j.0:PROP-72>
+            <j.0:PROP-35>think</j.0:PROP-35>
+            <j.0:PROP-143>be</j.0:PROP-143>
+            <j.0:PROP-47>LOCATION</j.0:PROP-47>
+            <j.0:PROP-199>be</j.0:PROP-199>
+            <j.0:PROP-128>If</j.0:PROP-128>
+            <j.0:PROP-46>0.0</j.0:PROP-46>
+            <j.0:PROP-111>be</j.0:PROP-111>
+            <j.0:PROP-23>0.0</j.0:PROP-23>
+            <j.0:PROP-23>ORGANIZATION</j.0:PROP-23>
+            <j.0:PROP-27>0.0</j.0:PROP-27>
+            <j.0:PROP-83>.</j.0:PROP-83>
+            <j.0:PROP-200>VERB</j.0:PROP-200>
+            <j.0:PROP-192>VERB</j.0:PROP-192>
+            <j.0:PROP-62>not</j.0:PROP-62>
+            <j.0:PROP-123>VERB</j.0:PROP-123>
+            <j.0:PROP-109>PRON</j.0:PROP-109>
+            <j.0:PROP-140>too</j.0:PROP-140>
+            <j.0:PROP-169>do</j.0:PROP-169>
+            <j.0:PROP-211>-0.1</j.0:PROP-211>
+            <j.0:PROP-186>a</j.0:PROP-186>
+            <j.0:PROP-77>0.0147979725</j.0:PROP-77>
+            <j.0:PROP-68>ADV</j.0:PROP-68>
+            <j.0:PROP-93>not</j.0:PROP-93>
+            <j.0:PROP-172>and</j.0:PROP-172>
+            <j.0:PROP-151>not</j.0:PROP-151>
+            <j.0:PROP-49>VERB</j.0:PROP-49>
+            <j.0:PROP-166>PUNCT</j.0:PROP-166>
+            <j.0:PROP-89>,</j.0:PROP-89>
+            <j.0:PROP-36>PRON</j.0:PROP-36>
+            <j.0:PROP-116>that</j.0:PROP-116>
+            <j.0:PROP-55>tmobile</j.0:PROP-55>
+            <j.0:PROP-183>that</j.0:PROP-183>
+          </j.1:CLASS-DATA>
+        </j.0:PROP-DATA>
+        <j.0:PROP-REVIEW>Not sure how the phone itself is. But the one I received was not unlocked. Could not be used for verizon. The actual phone had no labels for tmobile so I thought I was good, but I took it to the verizon store to activate and it came up for tmobile only. They said it was not unlocked for verizon and can only be used with tmobile. I got this phone sold and shipped by amazon. I figured it was safe, because it was not a 3rd party seller and amazon would know if they had a phone that said it could be used on Verizon, that it actually would be. It was not the case. If you don't have tmobile, I would look elsewhere because too many people are getting only tmobile phones. The description is not accurate. Even if sold by amazon. I am returning this. Also, if you do have tmobile and want to get the phone, make sure you know that this requires a nano sim card. I didnt know either that the old sim cards are being phased out and the micro will not work from my old phone. Had to take to the store for a smaller sim card anyway. But those are the only 2 things i can comment on, because I cant use the actual phone.</j.0:PROP-REVIEW>
+      </j.1:CLASS-_INFO>
+    </j.0:PROP-_INFO>
+    <j.0:PROP-_INFO>
+      <j.1:CLASS-_INFO rdf:about="urn:absolute:www.akura.com/class#CLASS---a8c58aa9-1ef2-4fa2-93be-09927b3d403f_info">
+        <j.0:PROP-CATEGORYMAP>
+          <j.1:CLASS-CATEGORYMAP rdf:about="urn:absolute:www.akura.com/class#CLASS---6d1efa70-8aed-40bf-81c0-befa0e70fbe5categoryMap"/>
+        </j.0:PROP-CATEGORYMAP>
+        <j.0:PROP-DATA>
+          <j.1:CLASS-DATA rdf:about="urn:absolute:www.akura.com/class#CLASS---c43581a7-a897-41e5-b1ec-079dbefe6109data">
+            <j.0:PROP-234>0.0</j.0:PROP-234>
+            <j.0:PROP-121>ADP</j.0:PROP-121>
+            <j.0:PROP-89>0.0</j.0:PROP-89>
+            <j.0:PROP-1>PRON</j.0:PROP-1>
+            <j.0:PROP-99>,</j.0:PROP-99>
+            <j.0:PROP-259>0.002387114</j.0:PROP-259>
+            <j.0:PROP-199>in</j.0:PROP-199>
+            <j.0:PROP-245>number</j.0:PROP-245>
+            <j.0:PROP-97>custom</j.0:PROP-97>
+            <j.0:PROP-63>OTHER</j.0:PROP-63>
+            <j.0:PROP-141>order</j.0:PROP-141>
+            <j.0:PROP-172>NOUN</j.0:PROP-172>
+            <j.0:PROP-25>ship</j.0:PROP-25>
+            <j.0:PROP-61>and</j.0:PROP-61>
+            <j.0:PROP-197>OTHER</j.0:PROP-197>
+            <j.0:PROP-56>0.30346653</j.0:PROP-56>
+            <j.0:PROP-26>CONJ</j.0:PROP-26>
+            <j.0:PROP-219>print</j.0:PROP-219>
+            <j.0:PROP-102>ADP</j.0:PROP-102>
+            <j.0:PROP-146>VERB</j.0:PROP-146>
+            <j.0:PROP-265>ORGANIZATION</j.0:PROP-265>
+            <j.0:PROP-104>-0.5</j.0:PROP-104>
+            <j.0:PROP-93>PUNCT</j.0:PROP-93>
+            <j.0:PROP-268>ADV</j.0:PROP-268>
+            <j.0:PROP-79>PUNCT</j.0:PROP-79>
+            <j.0:PROP-236>0.0</j.0:PROP-236>
+            <j.0:PROP-214>NOUN</j.0:PROP-214>
+            <j.0:PROP-90>with</j.0:PROP-90>
+            <j.0:PROP-76>0.0</j.0:PROP-76>
+            <j.0:PROP-95>can</j.0:PROP-95>
+            <j.0:PROP-102>of</j.0:PROP-102>
+            <j.0:PROP-49>PRON</j.0:PROP-49>
+            <j.0:PROP-176>PRON</j.0:PROP-176>
+            <j.0:PROP-241>ADP</j.0:PROP-241>
+            <j.0:PROP-213>ADP</j.0:PROP-213>
+            <j.0:PROP-120>ADJ</j.0:PROP-120>
+            <j.0:PROP-134>NOUN</j.0:PROP-134>
+            <j.0:PROP-40>sell</j.0:PROP-40>
+            <j.0:PROP-210>did</j.0:PROP-210>
+            <j.0:PROP-228>PRT</j.0:PROP-228>
+            <j.0:PROP-187>0.0</j.0:PROP-187>
+            <j.0:PROP-48>thought</j.0:PROP-48>
+            <j.0:PROP-227>else</j.0:PROP-227>
+            <j.0:PROP-34>at</j.0:PROP-34>
+            <j.0:PROP-215>was</j.0:PROP-215>
+            <j.0:PROP-181>keep</j.0:PROP-181>
+            <j.0:PROP-240>0.0027201646</j.0:PROP-240>
+            <j.0:PROP-240>0.001740801</j.0:PROP-240>
+            <j.0:PROP-105>and</j.0:PROP-105>
+            <j.0:PROP-198>ORGANIZATION</j.0:PROP-198>
+            <j.0:PROP-67>0.03528123</j.0:PROP-67>
+            <j.0:PROP-76>0.005143261</j.0:PROP-76>
+            <j.0:PROP-71>0.009345372</j.0:PROP-71>
+            <j.0:PROP-17>of</j.0:PROP-17>
+            <j.0:PROP-235>ADP</j.0:PROP-235>
+            <j.0:PROP-92>CONSUMER_GOOD</j.0:PROP-92>
+            <j.0:PROP-20>.</j.0:PROP-20>
+            <j.0:PROP-180>NOUN</j.0:PROP-180>
+            <j.0:PROP-85>lets</j.0:PROP-85>
+            <j.0:PROP-36>0.0</j.0:PROP-36>
+            <j.0:PROP-234>0.0036513174</j.0:PROP-234>
+            <j.0:PROP-188>VERB</j.0:PROP-188>
+            <j.0:PROP-8>0.012554089</j.0:PROP-8>
+            <j.0:PROP-174>.</j.0:PROP-174>
+            <j.0:PROP-141>0.0053260755</j.0:PROP-141>
+            <j.0:PROP-43>NOUN</j.0:PROP-43>
+            <j.0:PROP-92>0.031036174</j.0:PROP-92>
+            <j.0:PROP-214>0.2719564</j.0:PROP-214>
+            <j.0:PROP-8>0.30346653</j.0:PROP-8>
+            <j.0:PROP-75>VERB</j.0:PROP-75>
+            <j.0:PROP-64>PUNCT</j.0:PROP-64>
+            <j.0:PROP-225>on</j.0:PROP-225>
+            <j.0:PROP-217>ADP</j.0:PROP-217>
+            <j.0:PROP-98>0.005759218</j.0:PROP-98>
+            <j.0:PROP-39>says</j.0:PROP-39>
+            <j.0:PROP-232>be</j.0:PROP-232>
+            <j.0:PROP-81>VERB</j.0:PROP-81>
+            <j.0:PROP-88>a</j.0:PROP-88>
+            <j.0:PROP-259>0.0</j.0:PROP-259>
+            <j.0:PROP-187>NOUN</j.0:PROP-187>
+            <j.0:PROP-159>PRON</j.0:PROP-159>
+            <j.0:PROP-157>0.016082993</j.0:PROP-157>
+            <j.0:PROP-150>NUM</j.0:PROP-150>
+            <j.0:PROP-215>VERB</j.0:PROP-215>
+            <j.0:PROP-74>you</j.0:PROP-74>
+            <j.0:PROP-15>DET</j.0:PROP-15>
+            <j.0:PROP-56>0.03528123</j.0:PROP-56>
+            <j.0:PROP-101>ADJ</j.0:PROP-101>
+            <j.0:PROP-135>and</j.0:PROP-135>
+            <j.0:PROP-50>would</j.0:PROP-50>
+            <j.0:PROP-64>.</j.0:PROP-64>
+            <j.0:PROP-185>CONSUMER_GOOD</j.0:PROP-185>
+            <j.0:PROP-209>I</j.0:PROP-209>
+            <j.0:PROP-168>OTHER</j.0:PROP-168>
+            <j.0:PROP-193>OTHER</j.0:PROP-193>
+            <j.0:PROP-168>0.0</j.0:PROP-168>
+            <j.0:PROP-60>0.0</j.0:PROP-60>
+            <j.0:PROP-207>NOUN</j.0:PROP-207>
+            <j.0:PROP-161>it</j.0:PROP-161>
+            <j.0:PROP-32>PRON</j.0:PROP-32>
+            <j.0:PROP-229>0.016082993</j.0:PROP-229>
+            <j.0:PROP-10>get</j.0:PROP-10>
+            <j.0:PROP-163>NOUN</j.0:PROP-163>
+            <j.0:PROP-253>.</j.0:PROP-253>
+            <j.0:PROP-24>as</j.0:PROP-24>
+            <j.0:PROP-204>0.0</j.0:PROP-204>
+            <j.0:PROP-246>0.0</j.0:PROP-246>
+            <j.0:PROP-71>0.0</j.0:PROP-71>
+            <j.0:PROP-184>0.2719564</j.0:PROP-184>
+            <j.0:PROP-133>the</j.0:PROP-133>
+            <j.0:PROP-56>0.0021755677</j.0:PROP-56>
+            <j.0:PROP-77>ADP</j.0:PROP-77>
+            <j.0:PROP-73>If</j.0:PROP-73>
+            <j.0:PROP-213>that</j.0:PROP-213>
+            <j.0:PROP-162>PUNCT</j.0:PROP-162>
+            <j.0:PROP-70>unlock</j.0:PROP-70>
+            <j.0:PROP-256>bottom</j.0:PROP-256>
+            <j.0:PROP-47>I</j.0:PROP-47>
+            <j.0:PROP-165>I</j.0:PROP-165>
+            <j.0:PROP-169>and</j.0:PROP-169>
+            <j.0:PROP-62>ADJ</j.0:PROP-62>
+            <j.0:PROP-12>NOUN</j.0:PROP-12>
+            <j.0:PROP-13>NOUN</j.0:PROP-13>
+            <j.0:PROP-71>0.0068424656</j.0:PROP-71>
+            <j.0:PROP-2>was</j.0:PROP-2>
+            <j.0:PROP-172>Tmobile</j.0:PROP-172>
+            <j.0:PROP-57>has</j.0:PROP-57>
+            <j.0:PROP-33>VERB</j.0:PROP-33>
+            <j.0:PROP-185>0.0021755677</j.0:PROP-185>
+            <j.0:PROP-118>ADV</j.0:PROP-118>
+            <j.0:PROP-2>VERB</j.0:PROP-2>
+            <j.0:PROP-128>Edit</j.0:PROP-128>
+            <j.0:PROP-39>say</j.0:PROP-39>
+            <j.0:PROP-157>review</j.0:PROP-157>
+            <j.0:PROP-60>NOUN</j.0:PROP-60>
+            <j.0:PROP-200>ADJ</j.0:PROP-200>
+            <j.0:PROP-16>OTHER</j.0:PROP-16>
+            <j.0:PROP-165>PRON</j.0:PROP-165>
+            <j.0:PROP-56>CONSUMER_GOOD</j.0:PROP-56>
+            <j.0:PROP-271>PUNCT</j.0:PROP-271>
+            <j.0:PROP-18>reviewer</j.0:PROP-18>
+            <j.0:PROP-246>OTHER</j.0:PROP-246>
+            <j.0:PROP-38>PRON</j.0:PROP-38>
+            <j.0:PROP-54>The</j.0:PROP-54>
+            <j.0:PROP-8>version</j.0:PROP-8>
+            <j.0:PROP-266>PUNCT</j.0:PROP-266>
+            <j.0:PROP-14>like</j.0:PROP-14>
+            <j.0:PROP-29>NOUN</j.0:PROP-29>
+            <j.0:PROP-179>why</j.0:PROP-179>
+            <j.0:PROP-262>the</j.0:PROP-262>
+            <j.0:PROP-116>DET</j.0:PROP-116>
+            <j.0:PROP-189>a</j.0:PROP-189>
+            <j.0:PROP-185>0.03528123</j.0:PROP-185>
+            <j.0:PROP-67>NOUN</j.0:PROP-67>
+            <j.0:PROP-180>PERSON</j.0:PROP-180>
+            <j.0:PROP-44>NOUN</j.0:PROP-44>
+            <j.0:PROP-18>0.0</j.0:PROP-18>
+            <j.0:PROP-148>NUM</j.0:PROP-148>
+            <j.0:PROP-236>barcode</j.0:PROP-236>
+            <j.0:PROP-56>0.0</j.0:PROP-56>
+            <j.0:PROP-24>ADP</j.0:PROP-24>
+            <j.0:PROP-194>0.0</j.0:PROP-194>
+            <j.0:PROP-149>to</j.0:PROP-149>
+            <j.0:PROP-224>NOUN</j.0:PROP-224>
+            <j.0:PROP-36>order</j.0:PROP-36>
+            <j.0:PROP-219>0.7</j.0:PROP-219>
+            <j.0:PROP-223>a</j.0:PROP-223>
+            <j.0:PROP-143>but</j.0:PROP-143>
+            <j.0:PROP-137>DET</j.0:PROP-137>
+            <j.0:PROP-255>DET</j.0:PROP-255>
+            <j.0:PROP-2>be</j.0:PROP-2>
+            <j.0:PROP-173>ADV</j.0:PROP-173>
+            <j.0:PROP-167>the</j.0:PROP-167>
+            <j.0:PROP-208>PUNCT</j.0:PROP-208>
+            <j.0:PROP-122>PRON</j.0:PROP-122>
+            <j.0:PROP-26>and</j.0:PROP-26>
+            <j.0:PROP-92>phone</j.0:PROP-92>
+            <j.0:PROP-132>return</j.0:PROP-132>
+            <j.0:PROP-245>NOUN</j.0:PROP-245>
+            <j.0:PROP-206>DET</j.0:PROP-206>
+            <j.0:PROP-140>on</j.0:PROP-140>
+            <j.0:PROP-146>ship</j.0:PROP-146>
+            <j.0:PROP-29>0.01990979</j.0:PROP-29>
+            <j.0:PROP-100>VERB</j.0:PROP-100>
+            <j.0:PROP-189>DET</j.0:PROP-189>
+            <j.0:PROP-84>0.0</j.0:PROP-84>
+            <j.0:PROP-109>0.006418884</j.0:PROP-109>
+            <j.0:PROP-6>DET</j.0:PROP-6>
+            <j.0:PROP-249>the</j.0:PROP-249>
+            <j.0:PROP-234>lot</j.0:PROP-234>
+            <j.0:PROP-3>suppose</j.0:PROP-3>
+            <j.0:PROP-12>0.2719564</j.0:PROP-12>
+            <j.0:PROP-169>CONJ</j.0:PROP-169>
+            <j.0:PROP-210>do</j.0:PROP-210>
+            <j.0:PROP-30>PUNCT</j.0:PROP-30>
+            <j.0:PROP-229>0.0</j.0:PROP-229>
+            <j.0:PROP-144>ADV</j.0:PROP-144>
+            <j.0:PROP-186>PUNCT</j.0:PROP-186>
+            <j.0:PROP-190>0.001740801</j.0:PROP-190>
+            <j.0:PROP-43>Amazon.</j.0:PROP-43>
+            <j.0:PROP-190>NOUN</j.0:PROP-190>
+            <j.0:PROP-87>do</j.0:PROP-87>
+            <j.0:PROP-53>.</j.0:PROP-53>
+            <j.0:PROP-66>US997</j.0:PROP-66>
+            <j.0:PROP-20>PUNCT</j.0:PROP-20>
+            <j.0:PROP-244>model</j.0:PROP-244>
+            <j.0:PROP-9>and</j.0:PROP-9>
+            <j.0:PROP-84>NOUN</j.0:PROP-84>
+            <j.0:PROP-254>ADP</j.0:PROP-254>
+            <j.0:PROP-54>DET</j.0:PROP-54>
+            <j.0:PROP-170>PRON</j.0:PROP-170>
+            <j.0:PROP-131>be</j.0:PROP-131>
+            <j.0:PROP-154>VERB</j.0:PROP-154>
+            <j.0:PROP-124>PRON</j.0:PROP-124>
+            <j.0:PROP-151>week</j.0:PROP-151>
+            <j.0:PROP-84>Bootloader</j.0:PROP-84>
+            <j.0:PROP-256>0.0</j.0:PROP-256>
+            <j.0:PROP-134>0.0</j.0:PROP-134>
+            <j.0:PROP-55>ORGANIZATION</j.0:PROP-55>
+            <j.0:PROP-250>0.2719564</j.0:PROP-250>
+            <j.0:PROP-117>is</j.0:PROP-117>
+            <j.0:PROP-179>ADV</j.0:PROP-179>
+            <j.0:PROP-214>Tmobile</j.0:PROP-214>
+            <j.0:PROP-270>-0.1</j.0:PROP-270>
+            <j.0:PROP-126>ORGANIZATION</j.0:PROP-126>
+            <j.0:PROP-226>0.0</j.0:PROP-226>
+            <j.0:PROP-240>NOUN</j.0:PROP-240>
+            <j.0:PROP-68>has</j.0:PROP-68>
+            <j.0:PROP-7>0.019181628</j.0:PROP-7>
+            <j.0:PROP-259>box</j.0:PROP-259>
+            <j.0:PROP-66>0.0</j.0:PROP-66>
+            <j.0:PROP-94>PRON</j.0:PROP-94>
+            <j.0:PROP-231>DET</j.0:PROP-231>
+            <j.0:PROP-212>know</j.0:PROP-212>
+            <j.0:PROP-261>under</j.0:PROP-261>
+            <j.0:PROP-168>NOUN</j.0:PROP-168>
+            <j.0:PROP-249>DET</j.0:PROP-249>
+            <j.0:PROP-270>NOUN</j.0:PROP-270>
+            <j.0:PROP-39>VERB</j.0:PROP-39>
+            <j.0:PROP-187>PERSON</j.0:PROP-187>
+            <j.0:PROP-139>one</j.0:PROP-139>
+            <j.0:PROP-27>sold</j.0:PROP-27>
+            <j.0:PROP-143>CONJ</j.0:PROP-143>
+            <j.0:PROP-270>Tmobile</j.0:PROP-270>
+            <j.0:PROP-196>the</j.0:PROP-196>
+            <j.0:PROP-201>0.018409383</j.0:PROP-201>
+            <j.0:PROP-201>print</j.0:PROP-201>
+            <j.0:PROP-84>0.0068424656</j.0:PROP-84>
+            <j.0:PROP-223>DET</j.0:PROP-223>
+            <j.0:PROP-65>The</j.0:PROP-65>
+            <j.0:PROP-80>you</j.0:PROP-80>
+            <j.0:PROP-85>let</j.0:PROP-85>
+            <j.0:PROP-7>0.0</j.0:PROP-7>
+            <j.0:PROP-13>0.0021755677</j.0:PROP-13>
+            <j.0:PROP-172>ORGANIZATION</j.0:PROP-172>
+            <j.0:PROP-188>put</j.0:PROP-188>
+            <j.0:PROP-92>0.006418884</j.0:PROP-92>
+            <j.0:PROP-120>useless</j.0:PROP-120>
+            <j.0:PROP-126>NOUN</j.0:PROP-126>
+            <j.0:PROP-92>NOUN</j.0:PROP-92>
+            <j.0:PROP-78>NOUN</j.0:PROP-78>
+            <j.0:PROP-78>CONSUMER_GOOD</j.0:PROP-78>
+            <j.0:PROP-122>me</j.0:PROP-122>
+            <j.0:PROP-88>DET</j.0:PROP-88>
+            <j.0:PROP-226>0.0039461832</j.0:PROP-226>
+            <j.0:PROP-13>version</j.0:PROP-13>
+            <j.0:PROP-29>0.0</j.0:PROP-29>
+            <j.0:PROP-190>0.0</j.0:PROP-190>
+            <j.0:PROP-37>and</j.0:PROP-37>
+            <j.0:PROP-250>NOUN</j.0:PROP-250>
+            <j.0:PROP-8>NOUN</j.0:PROP-8>
+            <j.0:PROP-123>since</j.0:PROP-123>
+            <j.0:PROP-48>think</j.0:PROP-48>
+            <j.0:PROP-149>ADP</j.0:PROP-149>
+            <j.0:PROP-148>two</j.0:PROP-148>
+            <j.0:PROP-58>DET</j.0:PROP-58>
+            <j.0:PROP-166>receive</j.0:PROP-166>
+            <j.0:PROP-15>a</j.0:PROP-15>
+            <j.0:PROP-240>OTHER</j.0:PROP-240>
+            <j.0:PROP-194>overtop</j.0:PROP-194>
+            <j.0:PROP-63>0.0</j.0:PROP-63>
+            <j.0:PROP-211>ADV</j.0:PROP-211>
+            <j.0:PROP-98>-0.1</j.0:PROP-98>
+            <j.0:PROP-256>NOUN</j.0:PROP-256>
+            <j.0:PROP-106>VERB</j.0:PROP-106>
+            <j.0:PROP-147>in</j.0:PROP-147>
+            <j.0:PROP-18>0.05137189</j.0:PROP-18>
+            <j.0:PROP-257>ADP</j.0:PROP-257>
+            <j.0:PROP-236>0.003942701</j.0:PROP-236>
+            <j.0:PROP-181>VERB</j.0:PROP-181>
+            <j.0:PROP-156>DET</j.0:PROP-156>
+            <j.0:PROP-233>a</j.0:PROP-233>
+            <j.0:PROP-224>WORK_OF_ART</j.0:PROP-224>
+            <j.0:PROP-199>ADP</j.0:PROP-199>
+            <j.0:PROP-205>of</j.0:PROP-205>
+            <j.0:PROP-46>CONJ</j.0:PROP-46>
+            <j.0:PROP-111>VERB</j.0:PROP-111>
+            <j.0:PROP-139>NOUN</j.0:PROP-139>
+            <j.0:PROP-66>NUM</j.0:PROP-66>
+            <j.0:PROP-138>new</j.0:PROP-138>
+            <j.0:PROP-36>OTHER</j.0:PROP-36>
+            <j.0:PROP-46>so</j.0:PROP-46>
+            <j.0:PROP-42>PUNCT</j.0:PROP-42>
+            <j.0:PROP-160>VERB</j.0:PROP-160>
+            <j.0:PROP-82>DET</j.0:PROP-82>
+            <j.0:PROP-210>VERB</j.0:PROP-210>
+            <j.0:PROP-83>ADJ</j.0:PROP-83>
+            <j.0:PROP-63>LTEbands</j.0:PROP-63>
+            <j.0:PROP-67>0.012554089</j.0:PROP-67>
+            <j.0:PROP-60>Bootloader</j.0:PROP-60>
+            <j.0:PROP-230>.</j.0:PROP-230>
+            <j.0:PROP-51>be</j.0:PROP-51>
+            <j.0:PROP-170>it</j.0:PROP-170>
+            <j.0:PROP-194>0.0015288461</j.0:PROP-194>
+            <j.0:PROP-261>ADP</j.0:PROP-261>
+            <j.0:PROP-83>unlocked</j.0:PROP-83>
+            <j.0:PROP-18>PERSON</j.0:PROP-18>
+            <j.0:PROP-55>0.2719564</j.0:PROP-55>
+            <j.0:PROP-28>by</j.0:PROP-28>
+            <j.0:PROP-23>VERB</j.0:PROP-23>
+            <j.0:PROP-29>OTHER</j.0:PROP-29>
+            <j.0:PROP-90>ADP</j.0:PROP-90>
+            <j.0:PROP-271>.</j.0:PROP-271>
+            <j.0:PROP-121>to</j.0:PROP-121>
+            <j.0:PROP-44>comLLC</j.0:PROP-44>
+            <j.0:PROP-115>OTHER</j.0:PROP-115>
+            <j.0:PROP-132>returning</j.0:PROP-132>
+            <j.0:PROP-36>0.008601217</j.0:PROP-36>
+            <j.0:PROP-72>PUNCT</j.0:PROP-72>
+            <j.0:PROP-197>0.0015288461</j.0:PROP-197>
+            <j.0:PROP-202>on</j.0:PROP-202>
+            <j.0:PROP-259>OTHER</j.0:PROP-259>
+            <j.0:PROP-58>a</j.0:PROP-58>
+            <j.0:PROP-126>0.0030698949</j.0:PROP-126>
+            <j.0:PROP-141>NOUN</j.0:PROP-141>
+            <j.0:PROP-229>WORK_OF_ART</j.0:PROP-229>
+            <j.0:PROP-78>Android</j.0:PROP-78>
+            <j.0:PROP-220>ADP</j.0:PROP-220>
+            <j.0:PROP-48>VERB</j.0:PROP-48>
+            <j.0:PROP-13>0.0</j.0:PROP-13>
+            <j.0:PROP-103>DET</j.0:PROP-103>
+            <j.0:PROP-184>-0.1</j.0:PROP-184>
+            <j.0:PROP-92>0.0</j.0:PROP-92>
+            <j.0:PROP-52>fine</j.0:PROP-52>
+            <j.0:PROP-197>0.0</j.0:PROP-197>
+            <j.0:PROP-141>0.0</j.0:PROP-141>
+            <j.0:PROP-229>review</j.0:PROP-229>
+            <j.0:PROP-142>,</j.0:PROP-142>
+            <j.0:PROP-156>this</j.0:PROP-156>
+            <j.0:PROP-89>0.0072760354</j.0:PROP-89>
+            <j.0:PROP-197>word</j.0:PROP-197>
+            <j.0:PROP-35>PRON</j.0:PROP-35>
+            <j.0:PROP-10>got</j.0:PROP-10>
+            <j.0:PROP-126>AT&amp;T</j.0:PROP-126>
+            <j.0:PROP-60>0.0068424656</j.0:PROP-60>
+            <j.0:PROP-251>NOUN</j.0:PROP-251>
+            <j.0:PROP-72>.</j.0:PROP-72>
+            <j.0:PROP-221>I</j.0:PROP-221>
+            <j.0:PROP-133>DET</j.0:PROP-133>
+            <j.0:PROP-201>0.7</j.0:PROP-201>
+            <j.0:PROP-237>on</j.0:PROP-237>
+            <j.0:PROP-98>ROMs</j.0:PROP-98>
+            <j.0:PROP-265>0.0</j.0:PROP-265>
+            <j.0:PROP-243>the</j.0:PROP-243>
+            <j.0:PROP-38>it</j.0:PROP-38>
+            <j.0:PROP-59>VERB</j.0:PROP-59>
+            <j.0:PROP-206>the</j.0:PROP-206>
+            <j.0:PROP-94>You</j.0:PROP-94>
+            <j.0:PROP-18>reviewers</j.0:PROP-18>
+            <j.0:PROP-160>receive</j.0:PROP-160>
+            <j.0:PROP-37>CONJ</j.0:PROP-37>
+            <j.0:PROP-153>PRON</j.0:PROP-153>
+            <j.0:PROP-183>DET</j.0:PROP-183>
+            <j.0:PROP-14>ADP</j.0:PROP-14>
+            <j.0:PROP-67>version</j.0:PROP-67>
+            <j.0:PROP-77>about</j.0:PROP-77>
+            <j.0:PROP-134>0.006418884</j.0:PROP-134>
+            <j.0:PROP-1>I</j.0:PROP-1>
+            <j.0:PROP-67>CONSUMER_GOOD</j.0:PROP-67>
+            <j.0:PROP-56>0.012554089</j.0:PROP-56>
+            <j.0:PROP-151>weeks</j.0:PROP-151>
+            <j.0:PROP-224>0.0</j.0:PROP-224>
+            <j.0:PROP-191>ADP</j.0:PROP-191>
+            <j.0:PROP-218>large</j.0:PROP-218>
+            <j.0:PROP-229>OTHER</j.0:PROP-229>
+            <j.0:PROP-55>-0.1</j.0:PROP-55>
+            <j.0:PROP-95>VERB</j.0:PROP-95>
+            <j.0:PROP-233>DET</j.0:PROP-233>
+            <j.0:PROP-115>0.005918711</j.0:PROP-115>
+            <j.0:PROP-155>update</j.0:PROP-155>
+            <j.0:PROP-32>I</j.0:PROP-32>
+            <j.0:PROP-98>rom</j.0:PROP-98>
+            <j.0:PROP-198>Tmobile</j.0:PROP-198>
+            <j.0:PROP-31>CONJ</j.0:PROP-31>
+            <j.0:PROP-71>Bootloader</j.0:PROP-71>
+            <j.0:PROP-198>-0.1</j.0:PROP-198>
+            <j.0:PROP-269>says</j.0:PROP-269>
+            <j.0:PROP-173>again</j.0:PROP-173>
+            <j.0:PROP-111>got</j.0:PROP-111>
+            <j.0:PROP-194>OTHER</j.0:PROP-194>
+            <j.0:PROP-235>of</j.0:PROP-235>
+            <j.0:PROP-167>DET</j.0:PROP-167>
+            <j.0:PROP-117>VERB</j.0:PROP-117>
+            <j.0:PROP-145>PRON</j.0:PROP-145>
+            <j.0:PROP-207>0.0034693955</j.0:PROP-207>
+            <j.0:PROP-91>your</j.0:PROP-91>
+            <j.0:PROP-109>phone</j.0:PROP-109>
+            <j.0:PROP-218>ADJ</j.0:PROP-218>
+            <j.0:PROP-200>large</j.0:PROP-200>
+            <j.0:PROP-56>version</j.0:PROP-56>
+            <j.0:PROP-252>number</j.0:PROP-252>
+            <j.0:PROP-171>VERB</j.0:PROP-171>
+            <j.0:PROP-192>DET</j.0:PROP-192>
+            <j.0:PROP-180>people</j.0:PROP-180>
+            <j.0:PROP-11>DET</j.0:PROP-11>
+            <j.0:PROP-197>NOUN</j.0:PROP-197>
+            <j.0:PROP-137>a</j.0:PROP-137>
+            <j.0:PROP-8>CONSUMER_GOOD</j.0:PROP-8>
+            <j.0:PROP-125>have</j.0:PROP-125>
+            <j.0:PROP-248>VERB</j.0:PROP-248>
+            <j.0:PROP-250>-0.1</j.0:PROP-250>
+            <j.0:PROP-135>CONJ</j.0:PROP-135>
+            <j.0:PROP-3>supposed</j.0:PROP-3>
+            <j.0:PROP-118>even</j.0:PROP-118>
+            <j.0:PROP-27>VERB</j.0:PROP-27>
+            <j.0:PROP-164>PUNCT</j.0:PROP-164>
+            <j.0:PROP-7>NUM</j.0:PROP-7>
+            <j.0:PROP-265>0.0014111991</j.0:PROP-265>
+            <j.0:PROP-115>-0.1</j.0:PROP-115>
+            <j.0:PROP-162>.</j.0:PROP-162>
+            <j.0:PROP-145>it</j.0:PROP-145>
+            <j.0:PROP-19>ADV</j.0:PROP-19>
+            <j.0:PROP-231>There</j.0:PROP-231>
+            <j.0:PROP-222>saw</j.0:PROP-222>
+            <j.0:PROP-52>ADJ</j.0:PROP-52>
+            <j.0:PROP-239>ADJ</j.0:PROP-239>
+            <j.0:PROP-60>0.00643386</j.0:PROP-60>
+            <j.0:PROP-104>OTHER</j.0:PROP-104>
+            <j.0:PROP-182>getting</j.0:PROP-182>
+            <j.0:PROP-180>person</j.0:PROP-180>
+            <j.0:PROP-13>0.30346653</j.0:PROP-13>
+            <j.0:PROP-224>picture</j.0:PROP-224>
+            <j.0:PROP-155>VERB</j.0:PROP-155>
+            <j.0:PROP-193>US997</j.0:PROP-193>
+            <j.0:PROP-62>different</j.0:PROP-62>
+            <j.0:PROP-69>an</j.0:PROP-69>
+            <j.0:PROP-91>PRON</j.0:PROP-91>
+            <j.0:PROP-33>looked</j.0:PROP-33>
+            <j.0:PROP-184>NOUN</j.0:PROP-184>
+            <j.0:PROP-224>0.0034661065</j.0:PROP-224>
+            <j.0:PROP-61>CONJ</j.0:PROP-61>
+            <j.0:PROP-115>0.0059086154</j.0:PROP-115>
+            <j.0:PROP-109>0.031036174</j.0:PROP-109>
+            <j.0:PROP-176>I</j.0:PROP-176>
+            <j.0:PROP-193>0.0</j.0:PROP-193>
+            <j.0:PROP-168>0.0051035453</j.0:PROP-168>
+            <j.0:PROP-3>VERB</j.0:PROP-3>
+            <j.0:PROP-101>rid</j.0:PROP-101>
+            <j.0:PROP-100>get</j.0:PROP-100>
+            <j.0:PROP-89>lot</j.0:PROP-89>
+            <j.0:PROP-161>PRON</j.0:PROP-161>
+            <j.0:PROP-22>ADV</j.0:PROP-22>
+            <j.0:PROP-150>four</j.0:PROP-150>
+            <j.0:PROP-226>NOUN</j.0:PROP-226>
+            <j.0:PROP-112>VERB</j.0:PROP-112>
+            <j.0:PROP-59>lock</j.0:PROP-59>
+            <j.0:PROP-192>the</j.0:PROP-192>
+            <j.0:PROP-80>PRON</j.0:PROP-80>
+            <j.0:PROP-84>PERSON</j.0:PROP-84>
+            <j.0:PROP-151>NOUN</j.0:PROP-151>
+            <j.0:PROP-172>0.2719564</j.0:PROP-172>
+            <j.0:PROP-81>know</j.0:PROP-81>
+            <j.0:PROP-242>with</j.0:PROP-242>
+            <j.0:PROP-67>0.30346653</j.0:PROP-67>
+            <j.0:PROP-93>.</j.0:PROP-93>
+            <j.0:PROP-50>VERB</j.0:PROP-50>
+            <j.0:PROP-247>which</j.0:PROP-247>
+            <j.0:PROP-225>ADP</j.0:PROP-225>
+            <j.0:PROP-60>CONSUMER_GOOD</j.0:PROP-60>
+            <j.0:PROP-163>PERSON</j.0:PROP-163>
+            <j.0:PROP-131>VERB</j.0:PROP-131>
+            <j.0:PROP-59>locked</j.0:PROP-59>
+            <j.0:PROP-180>0.0</j.0:PROP-180>
+            <j.0:PROP-190>OTHER</j.0:PROP-190>
+            <j.0:PROP-193>0.019181628</j.0:PROP-193>
+            <j.0:PROP-18>NOUN</j.0:PROP-18>
+            <j.0:PROP-260>right</j.0:PROP-260>
+            <j.0:PROP-171>'s</j.0:PROP-171>
+            <j.0:PROP-110>I</j.0:PROP-110>
+            <j.0:PROP-23>show</j.0:PROP-23>
+            <j.0:PROP-240>side</j.0:PROP-240>
+            <j.0:PROP-123>ADP</j.0:PROP-123>
+            <j.0:PROP-71>NOUN</j.0:PROP-71>
+            <j.0:PROP-222>see</j.0:PROP-222>
+            <j.0:PROP-85>VERB</j.0:PROP-85>
+            <j.0:PROP-158>ADV</j.0:PROP-158>
+            <j.0:PROP-234>OTHER</j.0:PROP-234>
+            <j.0:PROP-202>ADP</j.0:PROP-202>
+            <j.0:PROP-185>0.012554089</j.0:PROP-185>
+            <j.0:PROP-246>H872</j.0:PROP-246>
+            <j.0:PROP-6>the</j.0:PROP-6>
+            <j.0:PROP-256>0.002387114</j.0:PROP-256>
+            <j.0:PROP-253>PUNCT</j.0:PROP-253>
+            <j.0:PROP-203>the</j.0:PROP-203>
+            <j.0:PROP-96>Install</j.0:PROP-96>
+            <j.0:PROP-136>VERB</j.0:PROP-136>
+            <j.0:PROP-230>PUNCT</j.0:PROP-230>
+            <j.0:PROP-246>0.021801518</j.0:PROP-246>
+            <j.0:PROP-36>0.0053260755</j.0:PROP-36>
+            <j.0:PROP-104>0.005918711</j.0:PROP-104>
+            <j.0:PROP-247>DET</j.0:PROP-247>
+            <j.0:PROP-211>n't</j.0:PROP-211>
+            <j.0:PROP-16>NOUN</j.0:PROP-16>
+            <j.0:PROP-103>the</j.0:PROP-103>
+            <j.0:PROP-35>my</j.0:PROP-35>
+            <j.0:PROP-68>have</j.0:PROP-68>
+            <j.0:PROP-219>0.018409383</j.0:PROP-219>
+            <j.0:PROP-76>anything</j.0:PROP-76>
+            <j.0:PROP-55>NOUN</j.0:PROP-55>
+            <j.0:PROP-84>0.00643386</j.0:PROP-84>
+            <j.0:PROP-92>-0.1</j.0:PROP-92>
+            <j.0:PROP-186>.</j.0:PROP-186>
+            <j.0:PROP-74>PRON</j.0:PROP-74>
+            <j.0:PROP-87>VERB</j.0:PROP-87>
+            <j.0:PROP-241>along</j.0:PROP-241>
+            <j.0:PROP-234>NOUN</j.0:PROP-234>
+            <j.0:PROP-10>VERB</j.0:PROP-10>
+            <j.0:PROP-119>more</j.0:PROP-119>
+            <j.0:PROP-166>received</j.0:PROP-166>
+            <j.0:PROP-159>I</j.0:PROP-159>
+            <j.0:PROP-250>ORGANIZATION</j.0:PROP-250>
+            <j.0:PROP-182>VERB</j.0:PROP-182>
+            <j.0:PROP-238>the</j.0:PROP-238>
+            <j.0:PROP-232>VERB</j.0:PROP-232>
+            <j.0:PROP-89>0.0036513174</j.0:PROP-89>
+            <j.0:PROP-267>it</j.0:PROP-267>
+            <j.0:PROP-114>-0.1</j.0:PROP-114>
+            <j.0:PROP-110>PRON</j.0:PROP-110>
+            <j.0:PROP-182>get</j.0:PROP-182>
+            <j.0:PROP-158>when</j.0:PROP-158>
+            <j.0:PROP-104>-0.1</j.0:PROP-104>
+            <j.0:PROP-129>:</j.0:PROP-129>
+            <j.0:PROP-219>NOUN</j.0:PROP-219>
+            <j.0:PROP-204>OTHER</j.0:PROP-204>
+            <j.0:PROP-28>ADP</j.0:PROP-28>
+            <j.0:PROP-138>ADJ</j.0:PROP-138>
+            <j.0:PROP-42>:</j.0:PROP-42>
+            <j.0:PROP-82>an</j.0:PROP-82>
+            <j.0:PROP-203>DET</j.0:PROP-203>
+            <j.0:PROP-157>WORK_OF_ART</j.0:PROP-157>
+            <j.0:PROP-129>PUNCT</j.0:PROP-129>
+            <j.0:PROP-104>bloatware</j.0:PROP-104>
+            <j.0:PROP-214>ORGANIZATION</j.0:PROP-214>
+            <j.0:PROP-250>Tmobile</j.0:PROP-250>
+            <j.0:PROP-9>CONJ</j.0:PROP-9>
+            <j.0:PROP-193>NUM</j.0:PROP-193>
+            <j.0:PROP-60>PERSON</j.0:PROP-60>
+            <j.0:PROP-236>OTHER</j.0:PROP-236>
+            <j.0:PROP-33>look</j.0:PROP-33>
+            <j.0:PROP-207>device</j.0:PROP-207>
+            <j.0:PROP-119>ADV</j.0:PROP-119>
+            <j.0:PROP-174>PUNCT</j.0:PROP-174>
+            <j.0:PROP-157>OTHER</j.0:PROP-157>
+            <j.0:PROP-76>OTHER</j.0:PROP-76>
+            <j.0:PROP-178>out</j.0:PROP-178>
+            <j.0:PROP-7>US997</j.0:PROP-7>
+            <j.0:PROP-71>PERSON</j.0:PROP-71>
+            <j.0:PROP-84>CONSUMER_GOOD</j.0:PROP-84>
+            <j.0:PROP-134>CONSUMER_GOOD</j.0:PROP-134>
+            <j.0:PROP-130>I</j.0:PROP-130>
+            <j.0:PROP-184>Tmobile</j.0:PROP-184>
+            <j.0:PROP-242>ADP</j.0:PROP-242>
+            <j.0:PROP-21>This</j.0:PROP-21>
+            <j.0:PROP-215>be</j.0:PROP-215>
+            <j.0:PROP-134>-0.1</j.0:PROP-134>
+            <j.0:PROP-104>0.0059086154</j.0:PROP-104>
+            <j.0:PROP-12>Tmobile</j.0:PROP-12>
+            <j.0:PROP-127>PUNCT</j.0:PROP-127>
+            <j.0:PROP-67>0.0</j.0:PROP-67>
+            <j.0:PROP-163>0.0</j.0:PROP-163>
+            <j.0:PROP-111>get</j.0:PROP-111>
+            <j.0:PROP-168>replacement</j.0:PROP-168>
+            <j.0:PROP-16>bunch</j.0:PROP-16>
+            <j.0:PROP-268>also</j.0:PROP-268>
+            <j.0:PROP-175>CONJ</j.0:PROP-175>
+            <j.0:PROP-5>VERB</j.0:PROP-5>
+            <j.0:PROP-222>VERB</j.0:PROP-222>
+            <j.0:PROP-265>LG</j.0:PROP-265>
+            <j.0:PROP-177>figure</j.0:PROP-177>
+            <j.0:PROP-238>DET</j.0:PROP-238>
+            <j.0:PROP-201>OTHER</j.0:PROP-201>
+            <j.0:PROP-194>NOUN</j.0:PROP-194>
+            <j.0:PROP-147>ADP</j.0:PROP-147>
+            <j.0:PROP-240>0.0</j.0:PROP-240>
+            <j.0:PROP-217>in</j.0:PROP-217>
+            <j.0:PROP-248>is</j.0:PROP-248>
+            <j.0:PROP-136>have</j.0:PROP-136>
+            <j.0:PROP-269>say</j.0:PROP-269>
+            <j.0:PROP-209>PRON</j.0:PROP-209>
+            <j.0:PROP-157>NOUN</j.0:PROP-157>
+            <j.0:PROP-104>NOUN</j.0:PROP-104>
+            <j.0:PROP-31>but</j.0:PROP-31>
+            <j.0:PROP-219>OTHER</j.0:PROP-219>
+            <j.0:PROP-204>NOUN</j.0:PROP-204>
+            <j.0:PROP-56>NOUN</j.0:PROP-56>
+            <j.0:PROP-234>0.0072760354</j.0:PROP-234>
+            <j.0:PROP-270>0.2719564</j.0:PROP-270>
+            <j.0:PROP-131>am</j.0:PROP-131>
+            <j.0:PROP-63>lteband</j.0:PROP-63>
+            <j.0:PROP-114>ORGANIZATION</j.0:PROP-114>
+            <j.0:PROP-259>NOUN</j.0:PROP-259>
+            <j.0:PROP-125>VERB</j.0:PROP-125>
+            <j.0:PROP-236>NOUN</j.0:PROP-236>
+            <j.0:PROP-208>.</j.0:PROP-208>
+            <j.0:PROP-266>"</j.0:PROP-266>
+            <j.0:PROP-269>VERB</j.0:PROP-269>
+            <j.0:PROP-187>0.0018323051</j.0:PROP-187>
+            <j.0:PROP-216>there</j.0:PROP-216>
+            <j.0:PROP-204>0.001740801</j.0:PROP-204>
+            <j.0:PROP-30>,</j.0:PROP-30>
+            <j.0:PROP-70>unlocked</j.0:PROP-70>
+            <j.0:PROP-109>CONSUMER_GOOD</j.0:PROP-109>
+            <j.0:PROP-75>know</j.0:PROP-75>
+            <j.0:PROP-236>barcodes</j.0:PROP-236>
+            <j.0:PROP-229>0.004326537</j.0:PROP-229>
+            <j.0:PROP-251>model</j.0:PROP-251>
+            <j.0:PROP-96>VERB</j.0:PROP-96>
+            <j.0:PROP-16>0.04132136</j.0:PROP-16>
+            <j.0:PROP-177>figured</j.0:PROP-177>
+            <j.0:PROP-267>PRON</j.0:PROP-267>
+            <j.0:PROP-262>DET</j.0:PROP-262>
+            <j.0:PROP-185>0.30346653</j.0:PROP-185>
+            <j.0:PROP-258>DET</j.0:PROP-258>
+            <j.0:PROP-207>CONSUMER_GOOD</j.0:PROP-207>
+            <j.0:PROP-175>But</j.0:PROP-175>
+            <j.0:PROP-4>to</j.0:PROP-4>
+            <j.0:PROP-114>NOUN</j.0:PROP-114>
+            <j.0:PROP-134>phone</j.0:PROP-134>
+            <j.0:PROP-40>VERB</j.0:PROP-40>
+            <j.0:PROP-57>have</j.0:PROP-57>
+            <j.0:PROP-16>0.0</j.0:PROP-16>
+            <j.0:PROP-108>DET</j.0:PROP-108>
+            <j.0:PROP-107>.</j.0:PROP-107>
+            <j.0:PROP-265>NOUN</j.0:PROP-265>
+            <j.0:PROP-98>NOUN</j.0:PROP-98>
+            <j.0:PROP-246>NOUN</j.0:PROP-246>
+            <j.0:PROP-8>0.0021755677</j.0:PROP-8>
+            <j.0:PROP-198>0.2719564</j.0:PROP-198>
+            <j.0:PROP-196>DET</j.0:PROP-196>
+            <j.0:PROP-180>0.0012628809</j.0:PROP-180>
+            <j.0:PROP-257>of</j.0:PROP-257>
+            <j.0:PROP-255>the</j.0:PROP-255>
+            <j.0:PROP-40>Sold</j.0:PROP-40>
+            <j.0:PROP-264>PUNCT</j.0:PROP-264>
+            <j.0:PROP-41>by</j.0:PROP-41>
+            <j.0:PROP-45>PUNCT</j.0:PROP-45>
+            <j.0:PROP-51>VERB</j.0:PROP-51>
+            <j.0:PROP-153>I</j.0:PROP-153>
+            <j.0:PROP-198>NOUN</j.0:PROP-198>
+            <j.0:PROP-152>.</j.0:PROP-152>
+            <j.0:PROP-157>0.004326537</j.0:PROP-157>
+            <j.0:PROP-12>ORGANIZATION</j.0:PROP-12>
+            <j.0:PROP-244>NOUN</j.0:PROP-244>
+            <j.0:PROP-97>NOUN</j.0:PROP-97>
+            <j.0:PROP-27>sell</j.0:PROP-27>
+            <j.0:PROP-5>get</j.0:PROP-5>
+            <j.0:PROP-17>ADP</j.0:PROP-17>
+            <j.0:PROP-166>VERB</j.0:PROP-166>
+            <j.0:PROP-190>barcode</j.0:PROP-190>
+            <j.0:PROP-258>the</j.0:PROP-258>
+            <j.0:PROP-12>-0.1</j.0:PROP-12>
+            <j.0:PROP-263>large</j.0:PROP-263>
+            <j.0:PROP-8>0.03528123</j.0:PROP-8>
+            <j.0:PROP-117>be</j.0:PROP-117>
+            <j.0:PROP-163>Edit2</j.0:PROP-163>
+            <j.0:PROP-226>someone</j.0:PROP-226>
+            <j.0:PROP-108>The</j.0:PROP-108>
+            <j.0:PROP-57>VERB</j.0:PROP-57>
+            <j.0:PROP-154>will</j.0:PROP-154>
+            <j.0:PROP-105>CONJ</j.0:PROP-105>
+            <j.0:PROP-84>0.009345372</j.0:PROP-84>
+            <j.0:PROP-115>bloatware</j.0:PROP-115>
+            <j.0:PROP-128>NOUN</j.0:PROP-128>
+            <j.0:PROP-229>NOUN</j.0:PROP-229>
+            <j.0:PROP-126>0.0</j.0:PROP-126>
+            <j.0:PROP-248>be</j.0:PROP-248>
+            <j.0:PROP-127>.</j.0:PROP-127>
+            <j.0:PROP-19>here</j.0:PROP-19>
+            <j.0:PROP-65>DET</j.0:PROP-65>
+            <j.0:PROP-114>0.2719564</j.0:PROP-114>
+            <j.0:PROP-204>side</j.0:PROP-204>
+            <j.0:PROP-45>.</j.0:PROP-45>
+            <j.0:PROP-79>,</j.0:PROP-79>
+            <j.0:PROP-252>NOUN</j.0:PROP-252>
+            <j.0:PROP-107>PUNCT</j.0:PROP-107>
+            <j.0:PROP-114>Tmobile</j.0:PROP-114>
+            <j.0:PROP-109>-0.1</j.0:PROP-109>
+            <j.0:PROP-78>0.0</j.0:PROP-78>
+            <j.0:PROP-254>On</j.0:PROP-254>
+            <j.0:PROP-132>VERB</j.0:PROP-132>
+            <j.0:PROP-146>ships</j.0:PROP-146>
+            <j.0:PROP-13>CONSUMER_GOOD</j.0:PROP-13>
+            <j.0:PROP-86>you</j.0:PROP-86>
+            <j.0:PROP-243>DET</j.0:PROP-243>
+            <j.0:PROP-204>0.0027201646</j.0:PROP-204>
+            <j.0:PROP-134>0.031036174</j.0:PROP-134>
+            <j.0:PROP-185>0.0</j.0:PROP-185>
+            <j.0:PROP-36>NOUN</j.0:PROP-36>
+            <j.0:PROP-172>-0.1</j.0:PROP-172>
+            <j.0:PROP-115>NOUN</j.0:PROP-115>
+            <j.0:PROP-116>which</j.0:PROP-116>
+            <j.0:PROP-212>VERB</j.0:PROP-212>
+            <j.0:PROP-184>ORGANIZATION</j.0:PROP-184>
+            <j.0:PROP-141>OTHER</j.0:PROP-141>
+            <j.0:PROP-78>0.0030420308</j.0:PROP-78>
+            <j.0:PROP-49>I</j.0:PROP-49>
+            <j.0:PROP-55>Tmobile</j.0:PROP-55>
+            <j.0:PROP-21>DET</j.0:PROP-21>
+            <j.0:PROP-115>-0.5</j.0:PROP-115>
+            <j.0:PROP-41>ADP</j.0:PROP-41>
+            <j.0:PROP-226>PERSON</j.0:PROP-226>
+            <j.0:PROP-99>PUNCT</j.0:PROP-99>
+            <j.0:PROP-71>CONSUMER_GOOD</j.0:PROP-71>
+            <j.0:PROP-63>0.0074900407</j.0:PROP-63>
+            <j.0:PROP-106>customize</j.0:PROP-106>
+            <j.0:PROP-256>OTHER</j.0:PROP-256>
+            <j.0:PROP-89>NOUN</j.0:PROP-89>
+            <j.0:PROP-124>I</j.0:PROP-124>
+            <j.0:PROP-163>0.017958522</j.0:PROP-163>
+            <j.0:PROP-23>shows</j.0:PROP-23>
+            <j.0:PROP-73>ADP</j.0:PROP-73>
+            <j.0:PROP-216>ADV</j.0:PROP-216>
+            <j.0:PROP-25>VERB</j.0:PROP-25>
+            <j.0:PROP-141>0.008601217</j.0:PROP-141>
+            <j.0:PROP-201>NOUN</j.0:PROP-201>
+            <j.0:PROP-60>0.009345372</j.0:PROP-60>
+            <j.0:PROP-7>OTHER</j.0:PROP-7>
+            <j.0:PROP-260>ADV</j.0:PROP-260>
+            <j.0:PROP-187>Someone</j.0:PROP-187>
+            <j.0:PROP-4>PRT</j.0:PROP-4>
+            <j.0:PROP-69>DET</j.0:PROP-69>
+            <j.0:PROP-112>will</j.0:PROP-112>
+            <j.0:PROP-264>"</j.0:PROP-264>
+            <j.0:PROP-205>ADP</j.0:PROP-205>
+            <j.0:PROP-130>PRON</j.0:PROP-130>
+            <j.0:PROP-171>be</j.0:PROP-171>
+            <j.0:PROP-227>ADV</j.0:PROP-227>
+            <j.0:PROP-13>0.03528123</j.0:PROP-13>
+            <j.0:PROP-185>version</j.0:PROP-185>
+            <j.0:PROP-89>OTHER</j.0:PROP-89>
+            <j.0:PROP-144>unfortunately</j.0:PROP-144>
+            <j.0:PROP-142>PUNCT</j.0:PROP-142>
+            <j.0:PROP-11>the</j.0:PROP-11>
+            <j.0:PROP-109>NOUN</j.0:PROP-109>
+            <j.0:PROP-109>0.0</j.0:PROP-109>
+            <j.0:PROP-76>NOUN</j.0:PROP-76>
+            <j.0:PROP-237>ADP</j.0:PROP-237>
+            <j.0:PROP-221>PRON</j.0:PROP-221>
+            <j.0:PROP-177>VERB</j.0:PROP-177>
+            <j.0:PROP-8>0.0</j.0:PROP-8>
+            <j.0:PROP-34>ADP</j.0:PROP-34>
+            <j.0:PROP-220>until</j.0:PROP-220>
+            <j.0:PROP-214>-0.1</j.0:PROP-214>
+            <j.0:PROP-53>PUNCT</j.0:PROP-53>
+            <j.0:PROP-63>NOUN</j.0:PROP-63>
+            <j.0:PROP-207>0.0</j.0:PROP-207>
+            <j.0:PROP-195>ADP</j.0:PROP-195>
+            <j.0:PROP-164>:</j.0:PROP-164>
+            <j.0:PROP-66>OTHER</j.0:PROP-66>
+            <j.0:PROP-70>VERB</j.0:PROP-70>
+            <j.0:PROP-140>ADP</j.0:PROP-140>
+            <j.0:PROP-228>'s</j.0:PROP-228>
+            <j.0:PROP-66>0.019181628</j.0:PROP-66>
+            <j.0:PROP-68>VERB</j.0:PROP-68>
+            <j.0:PROP-263>ADJ</j.0:PROP-263>
+            <j.0:PROP-232>are</j.0:PROP-232>
+            <j.0:PROP-178>PRT</j.0:PROP-178>
+            <j.0:PROP-22>currently</j.0:PROP-22>
+            <j.0:PROP-185>NOUN</j.0:PROP-185>
+            <j.0:PROP-67>0.0021755677</j.0:PROP-67>
+            <j.0:PROP-113>have</j.0:PROP-113>
+            <j.0:PROP-25>shipped</j.0:PROP-25>
+            <j.0:PROP-157>0.0</j.0:PROP-157>
+            <j.0:PROP-29>Synergy</j.0:PROP-29>
+            <j.0:PROP-152>PUNCT</j.0:PROP-152>
+            <j.0:PROP-98>OTHER</j.0:PROP-98>
+            <j.0:PROP-13>0.012554089</j.0:PROP-13>
+            <j.0:PROP-47>PRON</j.0:PROP-47>
+            <j.0:PROP-239>other</j.0:PROP-239>
+            <j.0:PROP-195>of</j.0:PROP-195>
+            <j.0:PROP-71>0.00643386</j.0:PROP-71>
+            <j.0:PROP-113>VERB</j.0:PROP-113>
+            <j.0:PROP-191>for</j.0:PROP-191>
+            <j.0:PROP-270>ORGANIZATION</j.0:PROP-270>
+            <j.0:PROP-86>PRON</j.0:PROP-86>
+            <j.0:PROP-183>the</j.0:PROP-183>
+          </j.1:CLASS-DATA>
+        </j.0:PROP-DATA>
+        <j.0:PROP-REVIEW>I was supposed to get the US997 version and got the Tmobile version like a bunch of reviewers here. This currently shows as shipped and sold by Synergy, but I looked at my order and it says Sold by: Amazon.com LLC. so I thought I would be fine. The Tmobile version has a locked Bootloader and different LTE bands. The US997 version has an unlocked Bootloader. If you know anything about Android, you know an unlocked Bootloader lets you do a lot with your phone. You can Install custom ROMs, get rid of the bloatware and customize. The phone I got will have Tmobile bloatware which is even more useless to me since I have AT&amp;T. Edit: I am returning the phone and have a new one on order, but unfortunately it ships in two to four weeks. I will update this review when I receive it. Edit2: I received the replacement and it's Tmobile again. But I figured out why people keep getting the Tmobile version. Someone put a barcode for the US997 overtop of the word Tmobile in large print on the side of the device. I didn't know that Tmobile was there in large print until I saw a picture on someone else's review. There are a lot of barcodes on the other side along with the model number H872 which is the Tmobile model number. On the bottom of the box right under the large "LG" it also says Tmobile.</j.0:PROP-REVIEW>
+      </j.1:CLASS-_INFO>
+    </j.0:PROP-_INFO>
+  </j.1:CLASS-ROOTCLASS>
+</rdf:RDF>
