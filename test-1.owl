@@ -5,383 +5,143 @@
     xmlns:j.1="urn:absolute:www.akura.com/class#"
     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
     xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
-  <owl:Class rdf:about="urn:absolute:www.akura.com/class#CLASS-FRIENDS"/>
+  <owl:Class rdf:about="urn:absolute:www.akura.com/class#CLASS-CLASSNAME"/>
+  <owl:Class rdf:about="urn:absolute:www.akura.com/class#CLASS-CLASSNAME2"/>
+  <owl:Class rdf:about="urn:absolute:www.akura.com/class#CLASS-DIABETES"/>
+  <owl:Class rdf:about="urn:absolute:www.akura.com/class#CLASS-ASSOCIATEDDRUG"/>
+  <owl:Class rdf:about="urn:absolute:www.akura.com/class#CLASS-MEDICATIONS"/>
   <owl:Class rdf:about="urn:absolute:www.akura.com/class#CLASS-ROOTCLASS"/>
-  <owl:Class rdf:about="urn:absolute:www.akura.com/class#CLASS-ADAS"/>
-  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-FRIENDS">
-    <rdfs:range rdf:resource="urn:absolute:www.akura.com/class#CLASS-FRIENDS"/>
-    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-ADAS"/>
+  <owl:Class rdf:about="urn:absolute:www.akura.com/class#CLASS-PROBLEMS"/>
+  <owl:Class rdf:about="urn:absolute:www.akura.com/class#CLASS-MEDICATIONSCLASSES"/>
+  <owl:Class rdf:about="urn:absolute:www.akura.com/class#CLASS-LABS"/>
+  <owl:Class rdf:about="urn:absolute:www.akura.com/class#CLASS-ASSOCIATEDDRUG-2"/>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-ASSOCIATEDDRUG">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-CLASSNAME2"/>
+    <rdfs:range rdf:resource="urn:absolute:www.akura.com/class#CLASS-ASSOCIATEDDRUG"/>
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-CLASSNAME"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-INDEX">
-    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-ADAS"/>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-LABS">
+    <rdfs:range rdf:resource="urn:absolute:www.akura.com/class#CLASS-LABS"/>
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DIABETES"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-BALANCE">
-    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-ADAS"/>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-DOSE">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-ASSOCIATEDDRUG-2"/>
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-ASSOCIATEDDRUG"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-_ID">
-    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-ADAS"/>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-CLASSNAME">
+    <rdfs:range rdf:resource="urn:absolute:www.akura.com/class#CLASS-CLASSNAME"/>
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-MEDICATIONSCLASSES"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-PHONE">
-    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-ADAS"/>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-MEDICATIONSCLASSES">
+    <rdfs:range rdf:resource="urn:absolute:www.akura.com/class#CLASS-MEDICATIONSCLASSES"/>
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-MEDICATIONS"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-FAVORITEFRUIT">
-    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-ADAS"/>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-CLASSNAME2">
+    <rdfs:range rdf:resource="urn:absolute:www.akura.com/class#CLASS-CLASSNAME2"/>
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-MEDICATIONSCLASSES"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-GENDER">
-    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-ADAS"/>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-ASSOCIATEDDRUG-2">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-CLASSNAME2"/>
+    <rdfs:range rdf:resource="urn:absolute:www.akura.com/class#CLASS-ASSOCIATEDDRUG-2"/>
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-CLASSNAME"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-TAGS">
-    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-ADAS"/>
-  </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-LATITUDE">
-    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-ADAS"/>
-  </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-GUID">
-    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-ADAS"/>
-  </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-GREETING">
-    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-ADAS"/>
-  </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-EMAIL">
-    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-ADAS"/>
-  </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-ADDRESS">
-    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-ADAS"/>
-  </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-REGISTERED">
-    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-ADAS"/>
-  </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-ADAS">
-    <rdfs:range rdf:resource="urn:absolute:www.akura.com/class#CLASS-ADAS"/>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-PROBLEMS">
+    <rdfs:range rdf:resource="urn:absolute:www.akura.com/class#CLASS-PROBLEMS"/>
     <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-ROOTCLASS"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-LONGITUDE">
-    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-ADAS"/>
-  </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-PICTURE">
-    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-ADAS"/>
-  </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-ABOUT">
-    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-ADAS"/>
-  </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-AGE">
-    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-ADAS"/>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-MEDICATIONS">
+    <rdfs:range rdf:resource="urn:absolute:www.akura.com/class#CLASS-MEDICATIONS"/>
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-DIABETES"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-NAME">
-    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-ADAS"/>
-    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-FRIENDS"/>
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-ASSOCIATEDDRUG-2"/>
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-ASSOCIATEDDRUG"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-EYECOLOR">
-    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-ADAS"/>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-STRENGTH">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-ASSOCIATEDDRUG-2"/>
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-ASSOCIATEDDRUG"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-ID">
-    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-FRIENDS"/>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-ASTHMA">
+    <rdfs:range rdf:resource="urn:absolute:www.akura.com/class#CLASS-DIABETES"/>
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-PROBLEMS"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-ISACTIVE">
-    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-ADAS"/>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-DIABETES">
+    <rdfs:range rdf:resource="urn:absolute:www.akura.com/class#CLASS-DIABETES"/>
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-PROBLEMS"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-COMPANY">
-    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-ADAS"/>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#PROP-MISSING_FIELD">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#CLASS-LABS"/>
   </owl:DatatypeProperty>
-  <j.1:CLASS-ROOTCLASS rdf:about="urn:absolute:www.akura.com/class#CLASS---31307242-58f9-4d7f-a8ee-9f71b509b160rootClass">
-    <j.0:PROP-ADAS>
-      <j.1:CLASS-ADAS rdf:about="urn:absolute:www.akura.com/class#CLASS---6117b316-215a-47db-b9c5-0fe5eb7c4929adas">
-        <j.0:PROP-TAGS>anim</j.0:PROP-TAGS>
-        <j.0:PROP-REGISTERED>2014-01-16T09:14:28 -06:-30</j.0:PROP-REGISTERED>
-        <j.0:PROP-_ID>59c5398279cdb560b08f1f7f</j.0:PROP-_ID>
-        <j.0:PROP-GUID>6799e231-4f07-4c82-8777-e16a25ad5398</j.0:PROP-GUID>
-        <j.0:PROP-GREETING>Hello, Alba Johnson! You have 9 unread messages.</j.0:PROP-GREETING>
-        <j.0:PROP-LATITUDE>-60.718792</j.0:PROP-LATITUDE>
-        <j.0:PROP-FRIENDS>
-          <j.1:CLASS-FRIENDS rdf:about="urn:absolute:www.akura.com/class#CLASS---e06829a6-bc0f-444b-9b24-c32cb2261ee0friends">
-            <j.0:PROP-ID>1.0</j.0:PROP-ID>
-            <j.0:PROP-NAME>Wilson Frederick</j.0:PROP-NAME>
-          </j.1:CLASS-FRIENDS>
-        </j.0:PROP-FRIENDS>
-        <j.0:PROP-AGE>39.0</j.0:PROP-AGE>
-        <j.0:PROP-LONGITUDE>175.469677</j.0:PROP-LONGITUDE>
-        <j.0:PROP-INDEX>5.0</j.0:PROP-INDEX>
-        <j.0:PROP-TAGS>ut</j.0:PROP-TAGS>
-        <j.0:PROP-TAGS>laboris</j.0:PROP-TAGS>
-        <j.0:PROP-GENDER>female</j.0:PROP-GENDER>
-        <j.0:PROP-NAME>Alba Johnson</j.0:PROP-NAME>
-        <j.0:PROP-TAGS>aliqua</j.0:PROP-TAGS>
-        <j.0:PROP-TAGS>mollit</j.0:PROP-TAGS>
-        <j.0:PROP-FRIENDS>
-          <j.1:CLASS-FRIENDS rdf:about="urn:absolute:www.akura.com/class#CLASS---152b9716-0b7a-42e7-8ed3-cbb4bb194962friends">
-            <j.0:PROP-ID>2.0</j.0:PROP-ID>
-            <j.0:PROP-NAME>Graham Blanchard</j.0:PROP-NAME>
-          </j.1:CLASS-FRIENDS>
-        </j.0:PROP-FRIENDS>
-        <j.0:PROP-COMPANY>FREAKIN</j.0:PROP-COMPANY>
-        <j.0:PROP-PHONE>+1 (912) 511-3496</j.0:PROP-PHONE>
-        <j.0:PROP-ADDRESS>679 College Place, Cumberland, New Mexico, 6083</j.0:PROP-ADDRESS>
-        <j.0:PROP-EYECOLOR>brown</j.0:PROP-EYECOLOR>
-        <j.0:PROP-ABOUT>In velit fugiat sit occaecat deserunt veniam ea eu enim ex nostrud officia laboris dolore. Aute nostrud exercitation nostrud minim Lorem proident labore non consectetur eiusmod do consequat ut. Anim sint sit sint exercitation sit voluptate labore occaecat adipisicing anim anim nostrud. Sunt cupidatat cupidatat eiusmod fugiat. Aliquip mollit ipsum elit deserunt voluptate eu duis pariatur mollit labore.&#xD;
-</j.0:PROP-ABOUT>
-        <j.0:PROP-EMAIL>albajohnson@freakin.com</j.0:PROP-EMAIL>
-        <j.0:PROP-TAGS>veniam</j.0:PROP-TAGS>
-        <j.0:PROP-FAVORITEFRUIT>strawberry</j.0:PROP-FAVORITEFRUIT>
-        <j.0:PROP-BALANCE>$2,840.64</j.0:PROP-BALANCE>
-        <j.0:PROP-PICTURE>http://placehold.it/32x32</j.0:PROP-PICTURE>
-        <j.0:PROP-FRIENDS>
-          <j.1:CLASS-FRIENDS rdf:about="urn:absolute:www.akura.com/class#CLASS---f4789bf8-e461-40aa-94ba-12bf487eba4dfriends">
-            <j.0:PROP-ID>0.0</j.0:PROP-ID>
-            <j.0:PROP-NAME>Enid Juarez</j.0:PROP-NAME>
-          </j.1:CLASS-FRIENDS>
-        </j.0:PROP-FRIENDS>
-        <j.0:PROP-ISACTIVE>true</j.0:PROP-ISACTIVE>
-      </j.1:CLASS-ADAS>
-    </j.0:PROP-ADAS>
-    <j.0:PROP-ADAS>
-      <j.1:CLASS-ADAS rdf:about="urn:absolute:www.akura.com/class#CLASS---ae5ef250-8d9a-4007-99e1-d9e0108d7838adas">
-        <j.0:PROP-ABOUT>Sit ex sunt ad aliquip excepteur non veniam. Incididunt dolore esse velit elit ex ut et labore eu amet voluptate eu. Irure est ex sit Lorem.&#xD;
-</j.0:PROP-ABOUT>
-        <j.0:PROP-GENDER>male</j.0:PROP-GENDER>
-        <j.0:PROP-COMPANY>INSURESYS</j.0:PROP-COMPANY>
-        <j.0:PROP-EMAIL>terrellhale@insuresys.com</j.0:PROP-EMAIL>
-        <j.0:PROP-PHONE>+1 (809) 596-3822</j.0:PROP-PHONE>
-        <j.0:PROP-LATITUDE>-45.262199</j.0:PROP-LATITUDE>
-        <j.0:PROP-TAGS>fugiat</j.0:PROP-TAGS>
-        <j.0:PROP-TAGS>eiusmod</j.0:PROP-TAGS>
-        <j.0:PROP-FAVORITEFRUIT>apple</j.0:PROP-FAVORITEFRUIT>
-        <j.0:PROP-TAGS>ipsum</j.0:PROP-TAGS>
-        <j.0:PROP-TAGS>consectetur</j.0:PROP-TAGS>
-        <j.0:PROP-EYECOLOR>green</j.0:PROP-EYECOLOR>
-        <j.0:PROP-GREETING>Hello, Terrell Hale! You have 1 unread messages.</j.0:PROP-GREETING>
-        <j.0:PROP-GUID>cd164eef-334e-42a1-a18e-430c21f2eb12</j.0:PROP-GUID>
-        <j.0:PROP-PICTURE>http://placehold.it/32x32</j.0:PROP-PICTURE>
-        <j.0:PROP-BALANCE>$3,102.23</j.0:PROP-BALANCE>
-        <j.0:PROP-ADDRESS>914 Seigel Street, Marbury, North Carolina, 1018</j.0:PROP-ADDRESS>
-        <j.0:PROP-FRIENDS>
-          <j.1:CLASS-FRIENDS rdf:about="urn:absolute:www.akura.com/class#CLASS---e001772a-db0b-441c-81ec-b296787145f8friends">
-            <j.0:PROP-ID>2.0</j.0:PROP-ID>
-            <j.0:PROP-NAME>Bonnie Martinez</j.0:PROP-NAME>
-          </j.1:CLASS-FRIENDS>
-        </j.0:PROP-FRIENDS>
-        <j.0:PROP-TAGS>excepteur</j.0:PROP-TAGS>
-        <j.0:PROP-REGISTERED>2016-09-03T06:14:14 -06:-30</j.0:PROP-REGISTERED>
-        <j.0:PROP-LONGITUDE>-41.750382</j.0:PROP-LONGITUDE>
-        <j.0:PROP-TAGS>ad</j.0:PROP-TAGS>
-        <j.0:PROP-FRIENDS>
-          <j.1:CLASS-FRIENDS rdf:about="urn:absolute:www.akura.com/class#CLASS---ca8fcb8a-bcd0-4146-bacb-357aff2ad362friends">
-            <j.0:PROP-ID>0.0</j.0:PROP-ID>
-            <j.0:PROP-NAME>Erica Acevedo</j.0:PROP-NAME>
-          </j.1:CLASS-FRIENDS>
-        </j.0:PROP-FRIENDS>
-        <j.0:PROP-_ID>59c5398248bc221105d424da</j.0:PROP-_ID>
-        <j.0:PROP-INDEX>4.0</j.0:PROP-INDEX>
-        <j.0:PROP-TAGS>aliquip</j.0:PROP-TAGS>
-        <j.0:PROP-AGE>34.0</j.0:PROP-AGE>
-        <j.0:PROP-FRIENDS>
-          <j.1:CLASS-FRIENDS rdf:about="urn:absolute:www.akura.com/class#CLASS---742511e7-d3c8-4fbe-a56e-cd87d331bde2friends">
-            <j.0:PROP-ID>1.0</j.0:PROP-ID>
-            <j.0:PROP-NAME>Wade Bridges</j.0:PROP-NAME>
-          </j.1:CLASS-FRIENDS>
-        </j.0:PROP-FRIENDS>
-        <j.0:PROP-NAME>Terrell Hale</j.0:PROP-NAME>
-        <j.0:PROP-ISACTIVE>true</j.0:PROP-ISACTIVE>
-      </j.1:CLASS-ADAS>
-    </j.0:PROP-ADAS>
-    <j.0:PROP-ADAS>
-      <j.1:CLASS-ADAS rdf:about="urn:absolute:www.akura.com/class#CLASS---4bdfa9d0-3f56-4448-a84c-c638d15cd7c8adas">
-        <j.0:PROP-GUID>da63b6df-f21a-47c5-9e01-b4a202c4538b</j.0:PROP-GUID>
-        <j.0:PROP-TAGS>Lorem</j.0:PROP-TAGS>
-        <j.0:PROP-FAVORITEFRUIT>strawberry</j.0:PROP-FAVORITEFRUIT>
-        <j.0:PROP-PICTURE>http://placehold.it/32x32</j.0:PROP-PICTURE>
-        <j.0:PROP-LATITUDE>-29.258292</j.0:PROP-LATITUDE>
-        <j.0:PROP-ISACTIVE>false</j.0:PROP-ISACTIVE>
-        <j.0:PROP-TAGS>deserunt</j.0:PROP-TAGS>
-        <j.0:PROP-TAGS>aliquip</j.0:PROP-TAGS>
-        <j.0:PROP-BALANCE>$3,851.43</j.0:PROP-BALANCE>
-        <j.0:PROP-EYECOLOR>green</j.0:PROP-EYECOLOR>
-        <j.0:PROP-FRIENDS>
-          <j.1:CLASS-FRIENDS rdf:about="urn:absolute:www.akura.com/class#CLASS---96a2e6aa-cd85-444e-b17d-478c110fe142friends">
-            <j.0:PROP-ID>2.0</j.0:PROP-ID>
-            <j.0:PROP-NAME>Grimes Hernandez</j.0:PROP-NAME>
-          </j.1:CLASS-FRIENDS>
-        </j.0:PROP-FRIENDS>
-        <j.0:PROP-FRIENDS>
-          <j.1:CLASS-FRIENDS rdf:about="urn:absolute:www.akura.com/class#CLASS---adadad83-3725-495b-aeff-8987fbeacb7bfriends">
-            <j.0:PROP-ID>1.0</j.0:PROP-ID>
-            <j.0:PROP-NAME>Kim Parks</j.0:PROP-NAME>
-          </j.1:CLASS-FRIENDS>
-        </j.0:PROP-FRIENDS>
-        <j.0:PROP-ADDRESS>342 Hoyt Street, Zeba, Federated States Of Micronesia, 3253</j.0:PROP-ADDRESS>
-        <j.0:PROP-TAGS>duis</j.0:PROP-TAGS>
-        <j.0:PROP-FRIENDS>
-          <j.1:CLASS-FRIENDS rdf:about="urn:absolute:www.akura.com/class#CLASS---3162822c-b0a5-4485-b21b-9969eb65df09friends">
-            <j.0:PROP-ID>0.0</j.0:PROP-ID>
-            <j.0:PROP-NAME>Alvarez Powers</j.0:PROP-NAME>
-          </j.1:CLASS-FRIENDS>
-        </j.0:PROP-FRIENDS>
-        <j.0:PROP-GENDER>male</j.0:PROP-GENDER>
-        <j.0:PROP-LONGITUDE>150.892638</j.0:PROP-LONGITUDE>
-        <j.0:PROP-GREETING>Hello, Benton Gilmore! You have 5 unread messages.</j.0:PROP-GREETING>
-        <j.0:PROP-ABOUT>Et magna sit deserunt ut nostrud pariatur. Nulla incididunt est dolore veniam consectetur proident pariatur est. Occaecat reprehenderit proident anim eu esse excepteur. Aute nulla labore exercitation ad dolor eu quis. Tempor est excepteur ex consequat minim non. Sint qui officia id cillum est.&#xD;
-</j.0:PROP-ABOUT>
-        <j.0:PROP-PHONE>+1 (995) 478-2896</j.0:PROP-PHONE>
-        <j.0:PROP-TAGS>ipsum</j.0:PROP-TAGS>
-        <j.0:PROP-TAGS>voluptate</j.0:PROP-TAGS>
-        <j.0:PROP-COMPANY>EXTRAGENE</j.0:PROP-COMPANY>
-        <j.0:PROP-AGE>22.0</j.0:PROP-AGE>
-        <j.0:PROP-INDEX>3.0</j.0:PROP-INDEX>
-        <j.0:PROP-EMAIL>bentongilmore@extragene.com</j.0:PROP-EMAIL>
-        <j.0:PROP-_ID>59c53982daf6e5e90018c1fd</j.0:PROP-_ID>
-        <j.0:PROP-REGISTERED>2015-11-10T07:56:13 -06:-30</j.0:PROP-REGISTERED>
-        <j.0:PROP-TAGS>consequat</j.0:PROP-TAGS>
-        <j.0:PROP-NAME>Benton Gilmore</j.0:PROP-NAME>
-      </j.1:CLASS-ADAS>
-    </j.0:PROP-ADAS>
-    <j.0:PROP-ADAS>
-      <j.1:CLASS-ADAS rdf:about="urn:absolute:www.akura.com/class#CLASS---14c201fc-08fd-4e42-922e-5eba81f9b462adas">
-        <j.0:PROP-TAGS>excepteur</j.0:PROP-TAGS>
-        <j.0:PROP-FRIENDS>
-          <j.1:CLASS-FRIENDS rdf:about="urn:absolute:www.akura.com/class#CLASS---5c0c1da3-fbb5-4947-b852-47715c6913fffriends">
-            <j.0:PROP-ID>2.0</j.0:PROP-ID>
-            <j.0:PROP-NAME>Clayton Thompson</j.0:PROP-NAME>
-          </j.1:CLASS-FRIENDS>
-        </j.0:PROP-FRIENDS>
-        <j.0:PROP-BALANCE>$1,438.01</j.0:PROP-BALANCE>
-        <j.0:PROP-LONGITUDE>39.982448</j.0:PROP-LONGITUDE>
-        <j.0:PROP-TAGS>esse</j.0:PROP-TAGS>
-        <j.0:PROP-TAGS>aliquip</j.0:PROP-TAGS>
-        <j.0:PROP-REGISTERED>2015-08-10T06:07:17 -06:-30</j.0:PROP-REGISTERED>
-        <j.0:PROP-NAME>Weaver Watts</j.0:PROP-NAME>
-        <j.0:PROP-GENDER>male</j.0:PROP-GENDER>
-        <j.0:PROP-INDEX>2.0</j.0:PROP-INDEX>
-        <j.0:PROP-PICTURE>http://placehold.it/32x32</j.0:PROP-PICTURE>
-        <j.0:PROP-FRIENDS>
-          <j.1:CLASS-FRIENDS rdf:about="urn:absolute:www.akura.com/class#CLASS---9139d906-0005-48ec-b44f-acf0b718eea1friends">
-            <j.0:PROP-ID>1.0</j.0:PROP-ID>
-            <j.0:PROP-NAME>Good Rosario</j.0:PROP-NAME>
-          </j.1:CLASS-FRIENDS>
-        </j.0:PROP-FRIENDS>
-        <j.0:PROP-TAGS>cupidatat</j.0:PROP-TAGS>
-        <j.0:PROP-LATITUDE>18.385326</j.0:PROP-LATITUDE>
-        <j.0:PROP-ABOUT>Amet proident commodo do est reprehenderit sit incididunt in irure incididunt occaecat et ut. Irure id amet labore quis ullamco consectetur adipisicing eiusmod aute amet et non. Adipisicing dolor anim pariatur velit ad ut. Et officia nisi irure ipsum dolor elit tempor est irure et ad culpa sint minim. Tempor veniam aliqua ex ad magna ad est elit ex dolore esse aliquip. Aliqua dolor cupidatat do adipisicing qui qui aliquip est veniam ea sunt aliqua in quis. Laborum laborum cillum officia pariatur ea reprehenderit aliqua ullamco veniam eu nulla ex esse magna.&#xD;
-</j.0:PROP-ABOUT>
-        <j.0:PROP-GREETING>Hello, Weaver Watts! You have 5 unread messages.</j.0:PROP-GREETING>
-        <j.0:PROP-PHONE>+1 (989) 403-3972</j.0:PROP-PHONE>
-        <j.0:PROP-EYECOLOR>green</j.0:PROP-EYECOLOR>
-        <j.0:PROP-GUID>698eaa21-13ea-4ee8-84d9-dc514b492737</j.0:PROP-GUID>
-        <j.0:PROP-ISACTIVE>true</j.0:PROP-ISACTIVE>
-        <j.0:PROP-FRIENDS>
-          <j.1:CLASS-FRIENDS rdf:about="urn:absolute:www.akura.com/class#CLASS---33865318-2991-43bf-92ac-aa2c1672c230friends">
-            <j.0:PROP-ID>0.0</j.0:PROP-ID>
-            <j.0:PROP-NAME>Cortez Solomon</j.0:PROP-NAME>
-          </j.1:CLASS-FRIENDS>
-        </j.0:PROP-FRIENDS>
-        <j.0:PROP-_ID>59c5398250c88576c2edc246</j.0:PROP-_ID>
-        <j.0:PROP-ADDRESS>149 Frank Court, Crenshaw, Puerto Rico, 9025</j.0:PROP-ADDRESS>
-        <j.0:PROP-EMAIL>weaverwatts@bitrex.com</j.0:PROP-EMAIL>
-        <j.0:PROP-AGE>32.0</j.0:PROP-AGE>
-        <j.0:PROP-TAGS>laboris</j.0:PROP-TAGS>
-        <j.0:PROP-TAGS>ut</j.0:PROP-TAGS>
-        <j.0:PROP-FAVORITEFRUIT>banana</j.0:PROP-FAVORITEFRUIT>
-        <j.0:PROP-COMPANY>BITREX</j.0:PROP-COMPANY>
-        <j.0:PROP-TAGS>labore</j.0:PROP-TAGS>
-      </j.1:CLASS-ADAS>
-    </j.0:PROP-ADAS>
-    <j.0:PROP-ADAS>
-      <j.1:CLASS-ADAS rdf:about="urn:absolute:www.akura.com/class#CLASS---01a5c18d-4eea-4272-ac59-1dd88cae4762adas">
-        <j.0:PROP-TAGS>occaecat</j.0:PROP-TAGS>
-        <j.0:PROP-FRIENDS>
-          <j.1:CLASS-FRIENDS rdf:about="urn:absolute:www.akura.com/class#CLASS---932dd6c9-69b9-45c4-849e-da11d7fa41defriends">
-            <j.0:PROP-ID>0.0</j.0:PROP-ID>
-            <j.0:PROP-NAME>Pitts Medina</j.0:PROP-NAME>
-          </j.1:CLASS-FRIENDS>
-        </j.0:PROP-FRIENDS>
-        <j.0:PROP-FRIENDS>
-          <j.1:CLASS-FRIENDS rdf:about="urn:absolute:www.akura.com/class#CLASS---dc0e53c9-edaf-4baf-8197-c26b4ca9df82friends">
-            <j.0:PROP-ID>1.0</j.0:PROP-ID>
-            <j.0:PROP-NAME>Hicks Rutledge</j.0:PROP-NAME>
-          </j.1:CLASS-FRIENDS>
-        </j.0:PROP-FRIENDS>
-        <j.0:PROP-LONGITUDE>163.099056</j.0:PROP-LONGITUDE>
-        <j.0:PROP-GUID>b7b26b43-8fb5-4bde-8385-c25d6cf23896</j.0:PROP-GUID>
-        <j.0:PROP-LATITUDE>3.598764</j.0:PROP-LATITUDE>
-        <j.0:PROP-TAGS>nisi</j.0:PROP-TAGS>
-        <j.0:PROP-TAGS>amet</j.0:PROP-TAGS>
-        <j.0:PROP-FAVORITEFRUIT>strawberry</j.0:PROP-FAVORITEFRUIT>
-        <j.0:PROP-BALANCE>$3,267.99</j.0:PROP-BALANCE>
-        <j.0:PROP-REGISTERED>2015-01-13T02:37:01 -06:-30</j.0:PROP-REGISTERED>
-        <j.0:PROP-ISACTIVE>true</j.0:PROP-ISACTIVE>
-        <j.0:PROP-_ID>59c53982921af23581e331ab</j.0:PROP-_ID>
-        <j.0:PROP-GREETING>Hello, Janell Eaton! You have 8 unread messages.</j.0:PROP-GREETING>
-        <j.0:PROP-PHONE>+1 (867) 465-2396</j.0:PROP-PHONE>
-        <j.0:PROP-EMAIL>janelleaton@comtours.com</j.0:PROP-EMAIL>
-        <j.0:PROP-PICTURE>http://placehold.it/32x32</j.0:PROP-PICTURE>
-        <j.0:PROP-NAME>Janell Eaton</j.0:PROP-NAME>
-        <j.0:PROP-ABOUT>Magna anim deserunt ea nisi dolore adipisicing pariatur ad velit elit eu. Ullamco aliquip quis Lorem voluptate labore dolore consequat et est. Quis pariatur amet culpa eu irure in quis. Cupidatat nisi cupidatat sit voluptate voluptate cupidatat enim ea nulla qui amet cupidatat id eiusmod.&#xD;
-</j.0:PROP-ABOUT>
-        <j.0:PROP-EYECOLOR>green</j.0:PROP-EYECOLOR>
-        <j.0:PROP-ADDRESS>360 Jefferson Street, Wakulla, Virginia, 2516</j.0:PROP-ADDRESS>
-        <j.0:PROP-GENDER>female</j.0:PROP-GENDER>
-        <j.0:PROP-TAGS>labore</j.0:PROP-TAGS>
-        <j.0:PROP-INDEX>1.0</j.0:PROP-INDEX>
-        <j.0:PROP-FRIENDS>
-          <j.1:CLASS-FRIENDS rdf:about="urn:absolute:www.akura.com/class#CLASS---bc84a13a-bbc4-4a5e-bf98-22e01b890a5cfriends">
-            <j.0:PROP-ID>2.0</j.0:PROP-ID>
-            <j.0:PROP-NAME>Barber Barber</j.0:PROP-NAME>
-          </j.1:CLASS-FRIENDS>
-        </j.0:PROP-FRIENDS>
-        <j.0:PROP-AGE>37.0</j.0:PROP-AGE>
-        <j.0:PROP-TAGS>et</j.0:PROP-TAGS>
-        <j.0:PROP-TAGS>cillum</j.0:PROP-TAGS>
-        <j.0:PROP-COMPANY>COMTOURS</j.0:PROP-COMPANY>
-      </j.1:CLASS-ADAS>
-    </j.0:PROP-ADAS>
-    <j.0:PROP-ADAS>
-      <j.1:CLASS-ADAS rdf:about="urn:absolute:www.akura.com/class#CLASS---8f28e5f5-ae7e-41d3-b0b4-782c0adce524adas">
-        <j.0:PROP-BALANCE>$3,232.29</j.0:PROP-BALANCE>
-        <j.0:PROP-GENDER>female</j.0:PROP-GENDER>
-        <j.0:PROP-TAGS>minim</j.0:PROP-TAGS>
-        <j.0:PROP-FRIENDS>
-          <j.1:CLASS-FRIENDS rdf:about="urn:absolute:www.akura.com/class#CLASS---97c3ccbb-dd08-42ae-bbb0-01b7a745d868friends">
-            <j.0:PROP-ID>1.0</j.0:PROP-ID>
-            <j.0:PROP-NAME>Jewel Bartlett</j.0:PROP-NAME>
-          </j.1:CLASS-FRIENDS>
-        </j.0:PROP-FRIENDS>
-        <j.0:PROP-INDEX>0.0</j.0:PROP-INDEX>
-        <j.0:PROP-TAGS>consectetur</j.0:PROP-TAGS>
-        <j.0:PROP-PHONE>+1 (973) 495-3751</j.0:PROP-PHONE>
-        <j.0:PROP-FAVORITEFRUIT>banana</j.0:PROP-FAVORITEFRUIT>
-        <j.0:PROP-LONGITUDE>-11.58433</j.0:PROP-LONGITUDE>
-        <j.0:PROP-REGISTERED>2017-07-27T11:03:16 -06:-30</j.0:PROP-REGISTERED>
-        <j.0:PROP-FRIENDS>
-          <j.1:CLASS-FRIENDS rdf:about="urn:absolute:www.akura.com/class#CLASS---d2d588f0-fd22-4319-969a-1bf5b78e6991friends">
-            <j.0:PROP-ID>2.0</j.0:PROP-ID>
-            <j.0:PROP-NAME>Dixie Carver</j.0:PROP-NAME>
-          </j.1:CLASS-FRIENDS>
-        </j.0:PROP-FRIENDS>
-        <j.0:PROP-AGE>39.0</j.0:PROP-AGE>
-        <j.0:PROP-LATITUDE>65.163701</j.0:PROP-LATITUDE>
-        <j.0:PROP-COMPANY>ENDIPIN</j.0:PROP-COMPANY>
-        <j.0:PROP-EYECOLOR>blue</j.0:PROP-EYECOLOR>
-        <j.0:PROP-_ID>59c53982a17c86389e254e32</j.0:PROP-_ID>
-        <j.0:PROP-NAME>Krista Robles</j.0:PROP-NAME>
-        <j.0:PROP-GUID>9ea3c172-31de-4127-8bbf-b159739dc42b</j.0:PROP-GUID>
-        <j.0:PROP-EMAIL>kristarobles@endipin.com</j.0:PROP-EMAIL>
-        <j.0:PROP-FRIENDS>
-          <j.1:CLASS-FRIENDS rdf:about="urn:absolute:www.akura.com/class#CLASS---1382a024-288a-427f-a680-2745503c28f6friends">
-            <j.0:PROP-ID>0.0</j.0:PROP-ID>
-            <j.0:PROP-NAME>Dominguez Merritt</j.0:PROP-NAME>
-          </j.1:CLASS-FRIENDS>
-        </j.0:PROP-FRIENDS>
-        <j.0:PROP-TAGS>laborum</j.0:PROP-TAGS>
-        <j.0:PROP-ABOUT>Eu reprehenderit tempor veniam laborum eu sit est ad veniam elit. Dolore nisi minim non adipisicing nostrud culpa est aliqua est dolore velit nulla eiusmod exercitation. Cupidatat irure minim cupidatat cupidatat nulla sit laborum ullamco incididunt sit amet magna. Eiusmod aliquip tempor et fugiat laborum laborum sunt dolore culpa veniam. Labore sint dolor pariatur aliqua consequat Lorem magna do nulla ex elit et eu.&#xD;
-</j.0:PROP-ABOUT>
-        <j.0:PROP-TAGS>tempor</j.0:PROP-TAGS>
-        <j.0:PROP-ISACTIVE>false</j.0:PROP-ISACTIVE>
-        <j.0:PROP-ADDRESS>681 Church Lane, Moraida, American Samoa, 9566</j.0:PROP-ADDRESS>
-        <j.0:PROP-TAGS>cupidatat</j.0:PROP-TAGS>
-        <j.0:PROP-GREETING>Hello, Krista Robles! You have 2 unread messages.</j.0:PROP-GREETING>
-        <j.0:PROP-PICTURE>http://placehold.it/32x32</j.0:PROP-PICTURE>
-        <j.0:PROP-TAGS>dolore</j.0:PROP-TAGS>
-      </j.1:CLASS-ADAS>
-    </j.0:PROP-ADAS>
+  <j.1:CLASS-ROOTCLASS rdf:about="urn:absolute:www.akura.com/class#CLASS--ca1f047a-3105-4004-87f6-54519f2996abrootClass">
+    <j.0:PROP-PROBLEMS>
+      <j.1:CLASS-PROBLEMS rdf:about="urn:absolute:www.akura.com/class#CLASS--d97bd6d3-1a16-4611-9d4c-c6874807ea01problems">
+        <j.0:PROP-ASTHMA>
+          <j.1:CLASS-DIABETES rdf:about="urn:absolute:www.akura.com/class#CLASS--881885ff-723b-437e-8fe2-ef4097e06db9Asthma"/>
+        </j.0:PROP-ASTHMA>
+        <j.0:PROP-DIABETES>
+          <j.1:CLASS-DIABETES rdf:about="urn:absolute:www.akura.com/class#CLASS--352b643c-c920-4928-a5e7-745949b6d63cDiabetes">
+            <j.0:PROP-MEDICATIONS>
+              <j.1:CLASS-MEDICATIONS rdf:about="urn:absolute:www.akura.com/class#CLASS--d01dca33-51dd-40e4-ae1a-97158ded2fc7medications">
+                <j.0:PROP-MEDICATIONSCLASSES>
+                  <j.1:CLASS-MEDICATIONSCLASSES rdf:about="urn:absolute:www.akura.com/class#CLASS--1b306e1f-8441-4dad-aea8-3a0aa9289a97medicationsClasses">
+                    <j.0:PROP-CLASSNAME>
+                      <j.1:CLASS-CLASSNAME rdf:about="urn:absolute:www.akura.com/class#CLASS--c15f5ddf-28c5-419b-8015-adc603bd42beclassName">
+                        <j.0:PROP-ASSOCIATEDDRUG-2>
+                          <j.1:CLASS-ASSOCIATEDDRUG-2 rdf:about="urn:absolute:www.akura.com/class#CLASS--c3eec271-e34d-48f0-9ec5-2e8b715edbf8associatedDrug-2">
+                            <j.0:PROP-NAME>somethingElse</j.0:PROP-NAME>
+                            <j.0:PROP-STRENGTH>500 mg</j.0:PROP-STRENGTH>
+                            <j.0:PROP-DOSE></j.0:PROP-DOSE>
+                          </j.1:CLASS-ASSOCIATEDDRUG-2>
+                        </j.0:PROP-ASSOCIATEDDRUG-2>
+                        <j.0:PROP-ASSOCIATEDDRUG>
+                          <j.1:CLASS-ASSOCIATEDDRUG rdf:about="urn:absolute:www.akura.com/class#CLASS--78a8fe5c-846e-44f5-a166-f0941ed33822associatedDrug">
+                            <j.0:PROP-NAME>asprin</j.0:PROP-NAME>
+                            <j.0:PROP-STRENGTH>500 mg</j.0:PROP-STRENGTH>
+                            <j.0:PROP-DOSE></j.0:PROP-DOSE>
+                          </j.1:CLASS-ASSOCIATEDDRUG>
+                        </j.0:PROP-ASSOCIATEDDRUG>
+                      </j.1:CLASS-CLASSNAME>
+                    </j.0:PROP-CLASSNAME>
+                    <j.0:PROP-CLASSNAME2>
+                      <j.1:CLASS-CLASSNAME2 rdf:about="urn:absolute:www.akura.com/class#CLASS--2bca5f2f-df97-412c-afd1-b0f18ef35b85className2">
+                        <j.0:PROP-ASSOCIATEDDRUG-2>
+                          <j.1:CLASS-ASSOCIATEDDRUG-2 rdf:about="urn:absolute:www.akura.com/class#CLASS--a2d5e3d2-6a3a-41c3-a755-d41ab613c38cassociatedDrug-2">
+                            <j.0:PROP-NAME>somethingElse</j.0:PROP-NAME>
+                            <j.0:PROP-STRENGTH>500 mg</j.0:PROP-STRENGTH>
+                            <j.0:PROP-DOSE></j.0:PROP-DOSE>
+                          </j.1:CLASS-ASSOCIATEDDRUG-2>
+                        </j.0:PROP-ASSOCIATEDDRUG-2>
+                        <j.0:PROP-ASSOCIATEDDRUG>
+                          <j.1:CLASS-ASSOCIATEDDRUG rdf:about="urn:absolute:www.akura.com/class#CLASS--0f4ac4be-aa1a-4006-8342-c88e09f029aeassociatedDrug">
+                            <j.0:PROP-NAME>asprin</j.0:PROP-NAME>
+                            <j.0:PROP-STRENGTH>500 mg</j.0:PROP-STRENGTH>
+                            <j.0:PROP-DOSE></j.0:PROP-DOSE>
+                          </j.1:CLASS-ASSOCIATEDDRUG>
+                        </j.0:PROP-ASSOCIATEDDRUG>
+                      </j.1:CLASS-CLASSNAME2>
+                    </j.0:PROP-CLASSNAME2>
+                  </j.1:CLASS-MEDICATIONSCLASSES>
+                </j.0:PROP-MEDICATIONSCLASSES>
+              </j.1:CLASS-MEDICATIONS>
+            </j.0:PROP-MEDICATIONS>
+            <j.0:PROP-LABS>
+              <j.1:CLASS-LABS rdf:about="urn:absolute:www.akura.com/class#CLASS--35f57323-0c1a-4bbd-8937-6d533207eef5labs">
+                <j.0:PROP-MISSING_FIELD>missing_value</j.0:PROP-MISSING_FIELD>
+              </j.1:CLASS-LABS>
+            </j.0:PROP-LABS>
+          </j.1:CLASS-DIABETES>
+        </j.0:PROP-DIABETES>
+      </j.1:CLASS-PROBLEMS>
+    </j.0:PROP-PROBLEMS>
   </j.1:CLASS-ROOTCLASS>
 </rdf:RDF>

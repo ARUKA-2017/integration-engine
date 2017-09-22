@@ -91,26 +91,26 @@ public class Ontology {
 
     public OntClass createNewClass(String className, Map literalProperties, Map complexProperties , Map simpleComplexProperties) {
 
-        OntClass clazz = Ontology.getOntologyInstance().createClass(Config.ONTOLOGY_URI + className.toUpperCase());
+        OntClass clazz = Ontology.getOntologyInstance().createClass(Config.ONTOLOGY_URI + className.replace("#","-").toUpperCase());
         classRegistry.put(clazz.getURI(), new ArrayList());
 
 
         // set simple properties
         for (Object key : literalProperties.keySet()) {
-            OntProperty property = Ontology.getOntologyInstance().createDatatypeProperty(Config.ONTOLOGY_PROP_URI + key.toString().toUpperCase());
+            OntProperty property = Ontology.getOntologyInstance().createDatatypeProperty(Config.ONTOLOGY_PROP_URI + key.toString().replace("#","-").toUpperCase());
             property.addDomain(clazz);
             classRegistry.get(clazz.getURI()).add(property);
         }
 
         for (Object key : simpleComplexProperties.keySet()) {
-            OntProperty property = Ontology.getOntologyInstance().createDatatypeProperty(Config.ONTOLOGY_PROP_URI + key.toString().toUpperCase());
+            OntProperty property = Ontology.getOntologyInstance().createDatatypeProperty(Config.ONTOLOGY_PROP_URI + key.toString().replace("#","-").toUpperCase());
             property.addDomain(clazz);
             classRegistry.get(clazz.getURI()).add(property);
         }
 
       // set complex properties
         for (Object key : complexProperties.keySet()) {
-            OntProperty property = Ontology.getOntologyInstance().createObjectProperty(Config.ONTOLOGY_PROP_URI + key.toString().toUpperCase());
+            OntProperty property = Ontology.getOntologyInstance().createObjectProperty(Config.ONTOLOGY_PROP_URI + key.toString().replace("#","-").toUpperCase());
             property.addDomain(clazz);
             ArrayList<Entity> arr = (ArrayList) complexProperties.get(key.toString());
             property.addRange(Ontology.getOntologyInstance().getOntClass(arr.get(0).classURI));
@@ -134,7 +134,7 @@ public class Ontology {
         }
 
         if (selectedProperty == null) {
-            selectedProperty = Ontology.getOntologyInstance().createDatatypeProperty(Config.ONTOLOGY_PROP_URI  + propertyName.toUpperCase());
+            selectedProperty = Ontology.getOntologyInstance().createDatatypeProperty(Config.ONTOLOGY_PROP_URI  + propertyName.replace("#","-").toUpperCase());
         }
         return selectedProperty;
     }
