@@ -34,8 +34,8 @@ public class ParserTest {
         // validate the format
         if (ValidatorService.validateJSON(json)) {
 
-            new EntityService(ValidatorService.getEntities(json));
-            Ontology.saveOntologyFile();
+           EntityService ent =  new EntityService(ValidatorService.getEntities(json));
+           ent.saveOntology();
 
         } else {
             // todo make this more generic later on
