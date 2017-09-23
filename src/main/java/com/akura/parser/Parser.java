@@ -18,10 +18,9 @@ public class Parser {
 
         Gson gson = new Gson();
         Map jsonObj = gson.fromJson( json , (Type) Object.class);
-        new EntityService(jsonObj);
-        Ontology.saveOntologyFile();
-        // todo make this non static
-        Ontology.m = null;
+        EntityService ent = new EntityService(jsonObj);
+        ent.saveOntology();
+
 
         // vowl convert
         return VowlConverter.convert();

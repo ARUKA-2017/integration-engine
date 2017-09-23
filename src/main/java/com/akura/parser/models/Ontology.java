@@ -22,27 +22,20 @@ public class Ontology {
 
     public HashMap<String, ArrayList<OntProperty>> classRegistry;
 
-    public static OntModel getOntologyInstance() {
-        if (m != null) {
-            return m;
-        } else {
-            m = ModelFactory.createOntologyModel(OntModelSpec.OWL_MEM);
-            return m;
-        }
+
+
+    public static void saveOntologyFile(OntModel m) {
+        OntologyWriter.writeOntology(m, "test-1.owl");
     }
 
-    public static void saveOntologyFile() {
-
-        OntologyWriter.writeOntology(Ontology.getOntologyInstance(), "test-1.owl");
-    }
-
-    public Ontology() {
+    public Ontology(OntModel m) {
+        this.m = m;
         classRegistry = new HashMap<>();
         this.populateClasses();
     }
 
     public Map populateClasses() {
-        ExtendedIterator<OntClass> classIter = Ontology.getOntologyInstance().listClasses();
+        ExtendedIterator<OntClass> classIter = this.m.listClasses();
 
         while (classIter.hasNext()) {
             OntClass clazz = classIter.next();
@@ -91,29 +84,29 @@ public class Ontology {
 
     public OntClass createNewClass(String className, Map literalProperties, Map complexProperties , Map simpleComplexProperties) {
 
-        OntClass clazz = Ontology.getOntologyInstance().createClass(Config.ONTOLOGY_URI + className.replace("#","").toUpperCase());
+        OntClass clazz = this.m.createClass(Config.ONTOLOGY_URI + className.replace("#","").toUpperCase());
         classRegistry.put(clazz.getURI(), new ArrayList());
 
 
         // set simple properties
         for (Object key : literalProperties.keySet()) {
-            OntProperty property = Ontology.getOntologyInstance().createDatatypeProperty(Config.ONTOLOGY_PROP_URI + key.toString().replace("#","").toUpperCase());
+            OntProperty property = this.m.createDatatypeProperty(Config.ONTOLOGY_PROP_URI + key.toString().replace("#","").toUpperCase());
             property.addDomain(clazz);
             classRegistry.get(clazz.getURI()).add(property);
         }
 
         for (Object key : simpleComplexProperties.keySet()) {
-            OntProperty property = Ontology.getOntologyInstance().createDatatypeProperty(Config.ONTOLOGY_PROP_URI + key.toString().replace("#","").toUpperCase());
+            OntProperty property = this.m.createDatatypeProperty(Config.ONTOLOGY_PROP_URI + key.toString().replace("#","").toUpperCase());
             property.addDomain(clazz);
             classRegistry.get(clazz.getURI()).add(property);
         }
 
       // set complex properties
         for (Object key : complexProperties.keySet()) {
-            OntProperty property = Ontology.getOntologyInstance().createObjectProperty(Config.ONTOLOGY_PROP_URI + key.toString().replace("#","").toUpperCase());
+            OntProperty property = this.m.createObjectProperty(Config.ONTOLOGY_PROP_URI + key.toString().replace("#","").toUpperCase());
             property.addDomain(clazz);
             ArrayList<Entity> arr = (ArrayList) complexProperties.get(key.toString());
-            property.addRange(Ontology.getOntologyInstance().getOntClass(arr.get(0).classURI));
+            property.addRange(this.m.getOntClass(arr.get(0).classURI));
             classRegistry.get(clazz.getURI()).add(property);
         }
 
@@ -124,7 +117,7 @@ public class Ontology {
     public OntProperty getProperty(String propertyName) {
         OntProperty selectedProperty = null;
 
-        ExtendedIterator<? extends OntProperty> propertyIter = Ontology.getOntologyInstance().listAllOntProperties();
+        ExtendedIterator<? extends OntProperty> propertyIter = Ontology.this.m.listAllOntProperties();
         while (propertyIter.hasNext()) {
             OntProperty property = propertyIter.next();
 
@@ -134,7 +127,7 @@ public class Ontology {
         }
 
         if (selectedProperty == null) {
-            selectedProperty = Ontology.getOntologyInstance().createDatatypeProperty(Config.ONTOLOGY_PROP_URI  + propertyName.replace("#","").toUpperCase());
+            selectedProperty = this.m.createDatatypeProperty(Config.ONTOLOGY_PROP_URI  + propertyName.replace("#","").toUpperCase());
         }
         return selectedProperty;
     }
@@ -159,16 +152,16 @@ public class Ontology {
         return arr;
     }
 
-    public boolean isTwoArrayListsWithSameValues(ArrayList<OntProperty> list1, ArrayList<Object> list2) {
+    public boolean isTwoArrayListsWithSameValues(ArrayList<OntProperty> classProperties, ArrayList<Object> targetProperties) {
 
-        if (list1 == null && list2 == null)
+        if (classProperties == null && targetProperties == null)
             return true;
 
-        if ((list1 == null && list2 != null) || (list1 != null && list2 == null))
+        if ((classProperties == null && targetProperties != null) || (classProperties != null && targetProperties == null))
             return false;
-        for (Object itemList2 : list2) {
+        for (Object itemList2 : targetProperties) {
             boolean bool = false;
-            for (OntProperty itemList1 : list1) {
+            for (OntProperty itemList1 : classProperties) {
                 if (itemList1.getLocalName().toLowerCase() == itemList2.toString().toLowerCase())
                     bool = true;
             }

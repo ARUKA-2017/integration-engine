@@ -3,6 +3,10 @@ package com.akura.parser.service;
 
 import com.akura.parser.config.Config;
 import com.akura.parser.models.Entity;
+import com.akura.parser.models.Ontology;
+import org.apache.jena.ontology.OntModel;
+import org.apache.jena.ontology.OntModelSpec;
+import org.apache.jena.rdf.model.ModelFactory;
 
 
 import java.util.ArrayList;
@@ -12,11 +16,12 @@ import java.util.Set;
 public class EntityService {
 
     public Map entityList;
+    public OntModel m;
 
     public EntityService(Map entities){
-
+        m = ModelFactory.createOntologyModel(OntModelSpec.OWL_MEM);
         entityList = entities;
-        Entity ent = new Entity("rootClass");
+        Entity ent = new Entity("rootClass", m);
         this.generateEntitiesFromObject(this.entityList, ent, ent.name);
     }
 
@@ -25,7 +30,7 @@ public class EntityService {
 
         Set keys = _entityList.keySet();
 
-        Entity ent = new Entity(_key);
+        Entity ent = new Entity(_key, m);
 
         for(Object key : keys){
 
@@ -73,6 +78,11 @@ public class EntityService {
             }
             return true;
         }
+    }
+
+
+    public void saveOntology(){
+        Ontology.saveOntologyFile(this.m);
     }
 
 }
