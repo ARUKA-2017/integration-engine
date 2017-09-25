@@ -20,33 +20,36 @@ public class ParserTest {
 
     public static void main(String[] args) {
 
-        FileResourceManager fileResourceManager = new FileResourceManager();
-        Gson gson = new Gson();
-        Map json = null;
-        try {
-            json = gson.fromJson((Reader) new FileReader(fileResourceManager.getFilePath("parse-test.json")), (Type) Object.class);
-
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        }
 
 
-        // validate the format
-        if (ValidatorService.validateJSON(json)) {
 
-           EntityService ent =  new EntityService(ValidatorService.getEntities(json));
-           ent.saveOntology();
-
-        } else {
-            // todo make this more generic later on
-            System.out.println("ERROR: Invalid JSON TYPE");
-        }
-
-        System.out.println("Working Directory = " +
-                System.getProperty("user.dir"));
-
-        VowlConverter obj = new VowlConverter();
-        obj.convert();
+//        FileResourceManager fileResourceManager = new FileResourceManager();
+//        Gson gson = new Gson();
+//        Map json = null;
+//        try {
+//            json = gson.fromJson((Reader) new FileReader(fileResourceManager.getFilePath("parse-test.json")), (Type) Object.class);
+//
+//        } catch (FileNotFoundException e) {
+//            e.printStackTrace();
+//        }
+//
+//
+//        // validate the format
+//        if (ValidatorService.validateJSON(json)) {
+//
+//           EntityService ent =  new EntityService(ValidatorService.getEntities(json));
+//           ent.saveOntology();
+//
+//        } else {
+//            // todo make this more generic later on
+//            System.out.println("ERROR: Invalid JSON TYPE");
+//        }
+//
+//        System.out.println("Working Directory = " +
+//                System.getProperty("user.dir"));
+//
+//        VowlConverter obj = new VowlConverter();
+//        obj.convert();
 
         /**
          *
