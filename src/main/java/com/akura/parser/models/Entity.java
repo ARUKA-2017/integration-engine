@@ -1,14 +1,14 @@
 package com.akura.parser.models;
 
 import com.akura.parser.config.Config;
+import com.akura.utility.HashGeneratorClass;
 import org.apache.jena.ontology.Individual;
 import org.apache.jena.ontology.OntClass;
 import org.apache.jena.ontology.OntModel;
+import org.apache.jena.ontology.OntProperty;
+import org.apache.jena.util.iterator.ExtendedIterator;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.UUID;
+import java.util.*;
 
 
 public class Entity {
@@ -17,29 +17,40 @@ public class Entity {
     public String name;
     public HashMap<String, ArrayList<Entity>> complexTypes;
     public HashMap<String, ArrayList<String>> simpleComplexTypes;
+    public HashMap<String,Boolean>  complexTypesPureSatatus;
     public String classURI;
     public Individual instance;
     public UUID namespace = UUID.randomUUID();
     public OntModel m;
 
 
+
     public Entity(String _key, OntModel m) {
         this.m = m;
+
         simpleTypes = new HashMap();
         complexTypes = new HashMap<>();
         simpleComplexTypes = new HashMap<>();
+        complexTypesPureSatatus = new HashMap<>();
+
         name = _key;
     }
 
     public void addComplexType(String key, Entity ent) {
 
-        if (complexTypes.get(key) != null) {
-            complexTypes.get(key).add(ent);
-        } else {
-            ArrayList arr = new ArrayList();
-            arr.add(ent);
-            complexTypes.put(key, arr);
-        }
+        // NOTE: keyname is used instead of key to identify common classes with seperate key names. To revert back just replace keyname with key
+        String keyName = this.m.getOntClass(ent.classURI).getLocalName();
+
+            if (complexTypes.get(keyName) != null) {
+                complexTypes.get(keyName).add(ent);
+
+            } else {
+                ArrayList arr = new ArrayList();
+                arr.add(ent);
+
+                complexTypes.put(keyName, arr);
+
+            }
     }
 
     public void addSimpleComplexType(String key, String val) {
@@ -56,6 +67,7 @@ public class Entity {
 
 
     public void addSimpleType(String key, Object obj) {
+
         simpleTypes.put(key, obj);
     }
 
@@ -63,15 +75,18 @@ public class Entity {
     public void saveToOntology() {
         if (name != null) {
             Ontology ont = new Ontology(this.m);
+            System.out.println("NAME: "+name);
+
             classURI = ont.getClassName(name, simpleTypes, complexTypes, simpleComplexTypes);
 
+            System.out.println(classURI);
             OntClass clazz = this.m.getOntClass(classURI);
             instance = clazz.createIndividual(Config.ONTOLOGY_URI + "--" + this.namespace.toString() + name.replace("#",""));
 
 
             // simple types
             for (Object key : simpleTypes.keySet()) {
-               instance.addLiteral(ont.getProperty(key.toString()), simpleTypes.get(key.toString()).toString());
+                instance.addLiteral(ont.getProperty(key.toString()), simpleTypes.get(key.toString()).toString());
             }
 
 
@@ -92,6 +107,30 @@ public class Entity {
 
         }
     }
+
+
+    public void changeClassName(String newName){
+
+        name = newName;
+        if(instance != null){
+            instance.remove();
+            instance = null;
+        }
+
+        if(classURI != null) {
+            OntClass clazz = this.m.getOntClass(classURI);
+
+            if (clazz != null) {
+                clazz.remove();
+            }
+            classURI = null;
+
+        }
+
+    }
+
+
+
 
 
 }

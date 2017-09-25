@@ -4,6 +4,7 @@ package com.akura.parser.service;
 import com.akura.parser.config.Config;
 import com.akura.parser.models.Entity;
 import com.akura.parser.models.Ontology;
+import org.apache.jena.ontology.OntClass;
 import org.apache.jena.ontology.OntModel;
 import org.apache.jena.ontology.OntModelSpec;
 import org.apache.jena.rdf.model.ModelFactory;
@@ -12,16 +13,18 @@ import org.apache.jena.rdf.model.ModelFactory;
 import java.util.ArrayList;
 import java.util.Map;
 import java.util.Set;
+import java.util.UUID;
 
 public class EntityService {
 
     public Map entityList;
     public OntModel m;
+    public UUID uuid= UUID.randomUUID();
 
     public EntityService(Map entities){
         m = ModelFactory.createOntologyModel(OntModelSpec.OWL_MEM);
         entityList = entities;
-        Entity ent = new Entity("rootClass", m);
+        Entity ent = new Entity(Config.ROOTCLASSNAME + uuid.toString(), m);
         this.generateEntitiesFromObject(this.entityList, ent, ent.name);
     }
 
@@ -41,13 +44,37 @@ public class EntityService {
             }
         }
 
-        if(_ent != null) {
-            _ent.addComplexType(_key, ent);
-        }
-
         // here ent processes should be over. This is the ideal time to save ent
-        ent.saveToOntology();
+        if(ent.simpleTypes.isEmpty() && ent.simpleComplexTypes.isEmpty()
+                &&  ent.complexTypes.size() == 1  &&   ent.complexTypes.get(ent.complexTypes.keySet().iterator().next()).size() > 1 && _ent != null
+                && !ent.name.equals(Config.ROOTCLASSNAME + uuid.toString())){
 
+            for (Object key : ent.complexTypes.keySet()) {
+                ArrayList<Entity> entities = ent.complexTypes.get(key.toString());
+
+                for (Entity childEnt : entities) {
+
+                    if(childEnt.classURI !=null){
+
+                        //todo this function has issues
+//                        childEnt.changeClassName(ent.name);
+
+                        _ent.addComplexType(ent.name, childEnt);
+                    }
+
+                }
+
+            }
+
+
+        }else {
+            ent.saveToOntology();
+
+            if (_ent != null) {
+                _ent.addComplexType(_key, ent);
+            }
+
+        }
     }
 
 
