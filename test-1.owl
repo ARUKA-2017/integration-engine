@@ -1,9 +1,123 @@
 <rdf:RDF
     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:j.0="urn:absolute:www.akura.com/property#"
     xmlns:owl="http://www.w3.org/2002/07/owl#"
-    xmlns:j.0="urn:absolute:www.akura.com/class#"
+    xmlns:j.1="urn:absolute:www.akura.com/class#"
     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
     xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
-  <owl:Class rdf:about="urn:absolute:www.akura.com/class#C-ROOTCLASS-4CE945FC-D554-40AC-9769-533D4D2867F6"/>
-  <j.0:C-ROOTCLASS-4CE945FC-D554-40AC-9769-533D4D2867F6 rdf:about="urn:absolute:www.akura.com/class#C---6bb1ba10-f5d0-431d-9fd3-8c54dd0c77fdROOTCLASS-4ce945fc-d554-40ac-9769-533d4d2867f6"/>
+  <owl:Class rdf:about="urn:absolute:www.akura.com/class#C-ROOTCLASS-E7F46F99-B15B-457E-A3C5-997841345332"/>
+  <owl:Class rdf:about="urn:absolute:www.akura.com/class#C-SUB-59c1aa2f-16d7-403d-89bc-a69eb8a18894ENTITIES">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="urn:absolute:www.akura.com/class#C-REVIEW_INFO"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="urn:absolute:www.akura.com/class#C-PROPERTY"/>
+  <owl:ObjectProperty rdf:about="urn:absolute:www.akura.com/property#HAS-C-SUB-59C1AA2F-16D7-403D-89BC-A69EB8A18894ENTITIES">
+    <rdfs:range rdf:resource="urn:absolute:www.akura.com/class#C-SUB-59c1aa2f-16d7-403d-89bc-a69eb8a18894ENTITIES"/>
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#C-ROOTCLASS-E7F46F99-B15B-457E-A3C5-997841345332"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="urn:absolute:www.akura.com/property#HAS-C-REVIEW_INFO">
+    <rdfs:range rdf:resource="urn:absolute:www.akura.com/class#C-REVIEW_INFO"/>
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#C-ROOTCLASS-E7F46F99-B15B-457E-A3C5-997841345332"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="urn:absolute:www.akura.com/property#HAS-C-PROPERTY">
+    <rdfs:range rdf:resource="urn:absolute:www.akura.com/class#C-PROPERTY"/>
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#C-REVIEW_INFO"/>
+  </owl:ObjectProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#HAS-COMMENT">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#C-REVIEW_INFO"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#HAS-USER_NAME">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#C-REVIEW_INFO"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#HAS-KEY">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#C-PROPERTY"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#HAS-NAME">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#C-SUB-59c1aa2f-16d7-403d-89bc-a69eb8a18894ENTITIES"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#HAS-BASE_SCORE">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#C-SUB-59c1aa2f-16d7-403d-89bc-a69eb8a18894ENTITIES"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#HAS-EMAIL">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#C-REVIEW_INFO"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#HAS-VALUE">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#C-PROPERTY"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#HAS-ID">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#C-REVIEW_INFO"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="urn:absolute:www.akura.com/property#HAS-RATING">
+    <rdfs:domain rdf:resource="urn:absolute:www.akura.com/class#C-REVIEW_INFO"/>
+  </owl:DatatypeProperty>
+  <j.1:C-ROOTCLASS-E7F46F99-B15B-457E-A3C5-997841345332 rdf:about="urn:absolute:www.akura.com/class#C---b0c4c48a-6735-4db8-9326-f81016fc2268ROOTCLASS-e7f46f99-b15b-457e-a3c5-997841345332">
+    <j.0:HAS-C-REVIEW_INFO>
+      <j.1:C-REVIEW_INFO rdf:about="urn:absolute:www.akura.com/class#C---4f560d5e-e468-4aeb-8f4c-8d46e4d870d1entities">
+        <j.0:HAS-C-PROPERTY>
+          <j.1:C-PROPERTY rdf:about="urn:absolute:www.akura.com/class#C---2584ca93-4d45-423f-9f64-28be093c7c1eproperty">
+            <j.0:HAS-KEY>weight</j.0:HAS-KEY>
+            <j.0:HAS-VALUE>20g</j.0:HAS-VALUE>
+          </j.1:C-PROPERTY>
+        </j.0:HAS-C-PROPERTY>
+        <j.0:HAS-ID>11111111111111</j.0:HAS-ID>
+        <j.0:HAS-NAME>iPhone7</j.0:HAS-NAME>
+        <j.0:HAS-BASE_SCORE>0.8</j.0:HAS-BASE_SCORE>
+      </j.1:C-REVIEW_INFO>
+    </j.0:HAS-C-REVIEW_INFO>
+    <j.0:HAS-C-REVIEW_INFO>
+      <j.1:C-REVIEW_INFO rdf:about="urn:absolute:www.akura.com/class#C---ee8f6658-ef88-41aa-8f75-8f74dd1628a9review_info">
+        <j.0:HAS-C-PROPERTY>
+          <j.1:C-PROPERTY rdf:about="urn:absolute:www.akura.com/class#C---5cd73545-5e77-4f1f-b4f5-84acca06bd91property">
+            <j.0:HAS-KEY>review_info_key</j.0:HAS-KEY>
+            <j.0:HAS-VALUE>review_info_value</j.0:HAS-VALUE>
+          </j.1:C-PROPERTY>
+        </j.0:HAS-C-PROPERTY>
+        <j.0:HAS-EMAIL>rishanthakumar@gmail.com</j.0:HAS-EMAIL>
+        <j.0:HAS-ID>112121212121</j.0:HAS-ID>
+        <j.0:HAS-COMMENT>iPhone6s is better than</j.0:HAS-COMMENT>
+        <j.0:HAS-RATING>0.7</j.0:HAS-RATING>
+        <j.0:HAS-USER_NAME>rishanthan</j.0:HAS-USER_NAME>
+      </j.1:C-REVIEW_INFO>
+    </j.0:HAS-C-REVIEW_INFO>
+    <j.0:HAS-C-SUB-59C1AA2F-16D7-403D-89BC-A69EB8A18894ENTITIES>
+      <j.1:C-SUB-59c1aa2f-16d7-403d-89bc-a69eb8a18894ENTITIES rdf:about="urn:absolute:www.akura.com/class#C---2a4c70b7-63ba-401e-b256-f7e251ef284aentities">
+        <j.0:HAS-C-PROPERTY>
+          <j.1:C-PROPERTY rdf:about="urn:absolute:www.akura.com/class#C---00179f15-0027-43f2-9d53-6056ca758208property">
+            <j.0:HAS-KEY>back camera</j.0:HAS-KEY>
+            <j.0:HAS-VALUE>13MPX</j.0:HAS-VALUE>
+          </j.1:C-PROPERTY>
+        </j.0:HAS-C-PROPERTY>
+        <j.0:HAS-ID>75656565555</j.0:HAS-ID>
+        <j.0:HAS-NAME>Camera</j.0:HAS-NAME>
+        <j.0:HAS-BASE_SCORE>0.9</j.0:HAS-BASE_SCORE>
+      </j.1:C-SUB-59c1aa2f-16d7-403d-89bc-a69eb8a18894ENTITIES>
+    </j.0:HAS-C-SUB-59C1AA2F-16D7-403D-89BC-A69EB8A18894ENTITIES>
+    <j.0:HAS-C-SUB-59C1AA2F-16D7-403D-89BC-A69EB8A18894ENTITIES>
+      <j.1:C-SUB-59c1aa2f-16d7-403d-89bc-a69eb8a18894ENTITIES rdf:about="urn:absolute:www.akura.com/class#C---c1277e93-6e79-47ec-beb6-287db8c7de26entities">
+        <j.0:HAS-C-PROPERTY>
+          <j.1:C-PROPERTY rdf:about="urn:absolute:www.akura.com/class#C---0d030891-551c-4605-9258-9905b1a1b49cproperty">
+            <j.0:HAS-KEY>front camera</j.0:HAS-KEY>
+            <j.0:HAS-VALUE>13MPX</j.0:HAS-VALUE>
+          </j.1:C-PROPERTY>
+        </j.0:HAS-C-PROPERTY>
+        <j.0:HAS-ID>3333333333333</j.0:HAS-ID>
+        <j.0:HAS-NAME>Camera</j.0:HAS-NAME>
+        <j.0:HAS-BASE_SCORE>0.6</j.0:HAS-BASE_SCORE>
+      </j.1:C-SUB-59c1aa2f-16d7-403d-89bc-a69eb8a18894ENTITIES>
+    </j.0:HAS-C-SUB-59C1AA2F-16D7-403D-89BC-A69EB8A18894ENTITIES>
+    <j.0:HAS-C-SUB-59C1AA2F-16D7-403D-89BC-A69EB8A18894ENTITIES>
+      <j.1:C-SUB-59c1aa2f-16d7-403d-89bc-a69eb8a18894ENTITIES rdf:about="urn:absolute:www.akura.com/class#C---6e949f4d-1957-4f2d-841b-873683497fd6entities">
+        <j.0:HAS-C-PROPERTY>
+          <j.1:C-PROPERTY rdf:about="urn:absolute:www.akura.com/class#C---807adb03-9220-43ec-b137-ca1e3dc8773eproperty">
+            <j.0:HAS-KEY>weight</j.0:HAS-KEY>
+            <j.0:HAS-VALUE>10g</j.0:HAS-VALUE>
+          </j.1:C-PROPERTY>
+        </j.0:HAS-C-PROPERTY>
+        <j.0:HAS-ID>222222222222222</j.0:HAS-ID>
+        <j.0:HAS-NAME>Samsung Galaxy S5</j.0:HAS-NAME>
+        <j.0:HAS-BASE_SCORE>0.7</j.0:HAS-BASE_SCORE>
+      </j.1:C-SUB-59c1aa2f-16d7-403d-89bc-a69eb8a18894ENTITIES>
+    </j.0:HAS-C-SUB-59C1AA2F-16D7-403D-89BC-A69EB8A18894ENTITIES>
+  </j.1:C-ROOTCLASS-E7F46F99-B15B-457E-A3C5-997841345332>
 </rdf:RDF>

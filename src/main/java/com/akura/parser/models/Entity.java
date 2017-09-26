@@ -75,11 +75,11 @@ public class Entity {
     public void saveToOntology() {
         if (name != null) {
             Ontology ont = new Ontology(this.m);
-            System.out.println("NAME: "+name);
+
 
             classURI = ont.getClassName(name, simpleTypes, complexTypes, simpleComplexTypes);
 
-            System.out.println(classURI);
+
             OntClass clazz = this.m.getOntClass(classURI);
             instance = clazz.createIndividual(Config.ONTOLOGY_URI + "--" + this.namespace.toString() + name.replace("#",""));
 
