@@ -2550,6 +2550,7 @@
     <www:Count rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
     >1</www:Count>
   </www:Comparison>
+
   <www:Entity rdf:about="http://www.akura.com#ENTITY--151910940">
     <www:SubEntity>
       <www:Feature rdf:about="http://www.akura.com#ENTITY--151910940-FEATURE--2139658407">
@@ -22040,6 +22041,7 @@
     <www:Count rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
     >1</www:Count>
   </www:Comparison>
+
   <www:Comparison rdf:about="http://www.akura.com#COMPARISON-ENTITY-2014703405-FEATURE-1844472480-ENTITY-1801434394-FEATURE-1844472480">
     <www:Bad>
       <www:Feature rdf:about="http://www.akura.com#ENTITY-1801434394-FEATURE-1844472480">

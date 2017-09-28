@@ -12,6 +12,8 @@ public class SingleResponse implements IRetrievalResponse {
     public ComparisonResponse comparisons;
     public PropertyResponse[] properties;
     public FeatureResponse[] features;
+    public String[] pros;
+    public String[] cons;
 
     public SingleResponse(OntModel m, String search, boolean isHash) {
 
@@ -30,6 +32,8 @@ public class SingleResponse implements IRetrievalResponse {
             this.features = entity.getFeatures();
             this.properties = entity.getProperties();
             this.comparisons = entity.getComparisons();
+            this.pros = entity.getPros();
+            this.cons = entity.getCons();
 
         } else {
             // TODO: Search from name string
