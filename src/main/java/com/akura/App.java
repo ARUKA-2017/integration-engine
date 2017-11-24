@@ -42,6 +42,7 @@ public class App {
         post("/update-ontology", (req, res) -> gson.toJson(mp.map(req.body(), res)));
         post("/update-ontology-adaptor", (req, res) -> gson.toJson(mp.useAdaptor(req.body(), res)));
 
+//        get("/test", (req, res) -> mp.mongoLoader(res));
 
 
 

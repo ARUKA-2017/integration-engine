@@ -50,9 +50,11 @@ public class AdaptorService {
         jEnt.name = ent.text;
         jEnt.id = ent.id;
         jEnt.property = new JsonProperty[]{};
+        // todo: get details down from mongodb as well
 
 
         this.target.entities.add(jEnt);
+
     }
     public void setRelationships() {
         setMainEntity();
@@ -90,6 +92,10 @@ public class AdaptorService {
         featureRelationship.domain = this.source.reviewId;
         featureRelationship.range = this.source.specificationDto.mainEntity.id;
         this.target.relationships.add(featureRelationship);
+    }
+
+    public void setBetterThan(){
+        // todo:
     }
 
     public void addMissingEntity(Entity feature) {

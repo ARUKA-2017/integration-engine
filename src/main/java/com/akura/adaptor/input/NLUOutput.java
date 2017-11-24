@@ -1,6 +1,7 @@
 package com.akura.adaptor.input;
 
 import java.util.ArrayList;
+import java.util.UUID;
 
 public class NLUOutput {
 
@@ -11,6 +12,7 @@ public class NLUOutput {
     public Specification specificationDto;
 
     public void replaceIdentifiers() {
+        setIdentifiers();
         this.specificationDto.mainEntity.id = findIdFromFinalEntityTaggedList(this.specificationDto.mainEntity.text);
 
         ArrayList<Entity> relativeEntityList = new ArrayList<>();
@@ -41,7 +43,8 @@ public class NLUOutput {
     public String findIdFromFinalEntityTaggedList(String name) {
         String id = "";
         for (Entity ent : finalEntityTaggedList) {
-            if (ent.text == name) {
+
+            if ( ent.text.equals(name)) {
                 id = ent.id;
             }
         }
@@ -51,12 +54,23 @@ public class NLUOutput {
     public Entity findEntityFromFinalEntityTaggedList(String name) {
         Entity entity = null;
         for (Entity ent : finalEntityTaggedList) {
-            if (ent.text == name) {
+            if ( ent.text.equals(name)) {
                 entity = ent;
             }
         }
 
         return entity;
+
+    }
+
+    public void setIdentifiers(){
+        for (int i = 0; i < finalEntityTaggedList.size(); i++) {
+            Entity ent =  finalEntityTaggedList.get(i);
+            ent.id = UUID.randomUUID() + "";
+
+            finalEntityTaggedList.set(i,ent);
+        }
+
 
     }
 }
