@@ -106625,3 +106625,3158 @@ INFO	2017-09-27 21:11:12,119	1996011	root	[qtp1407539299-21]	Mapping Completed
 INFO	2017-09-27 21:11:12,120	1996012	root	[qtp1407539299-21]	Merging Ontology....
 INFO	2017-09-27 21:11:12,361	1996253	root	[qtp1407539299-21]	Merge Successful. Saving Changes...
 INFO	2017-09-27 21:11:12,774	1996666	root	[qtp1407539299-21]	Changes Saved
+INFO	2017-11-24 15:18:01,827	0	root	[qtp854609946-22]	Mapping Request from HTTP via the Adaptor
+INFO	2017-11-24 15:18:01,839	12	root	[qtp854609946-22]	Invalid JSON. There was a parse error. Please check the format again
+INFO	2017-11-24 15:18:46,053	44226	root	[qtp854609946-17]	Mapping Request from HTTP via the Adaptor
+INFO	2017-11-24 15:18:46,057	44230	root	[qtp854609946-17]	Invalid JSON. There was a parse error. Please check the format again
+INFO	2017-11-24 15:19:27,001	0	root	[qtp1455841581-20]	Mapping Request from HTTP via the Adaptor
+INFO	2017-11-24 15:19:27,009	8	root	[qtp1455841581-20]	Invalid JSON. There was a parse error. Please check the format again
+INFO	2017-11-24 15:19:59,882	0	root	[qtp469532206-21]	Mapping Request from HTTP via the Adaptor
+INFO	2017-11-24 15:19:59,892	10	root	[qtp469532206-21]	Invalid JSON. There was a parse error. Please check the format again
+INFO	2017-11-24 15:20:07,360	7478	root	[qtp469532206-22]	Mapping Request from HTTP via the Adaptor
+INFO	2017-11-24 15:20:07,369	7487	root	[qtp469532206-22]	Invalid JSON. There was a parse error. Please check the format again
+INFO	2017-11-24 15:20:32,805	0	root	[qtp587726922-20]	Mapping Request from HTTP via the Adaptor
+INFO	2017-11-24 15:20:32,813	8	root	[qtp587726922-20]	Invalid JSON. There was a parse error. Please check the format again
+INFO	2017-11-24 15:21:15,472	0	root	[qtp1505966511-16]	Mapping Request from HTTP via the Adaptor
+INFO	2017-11-24 15:21:15,483	11	root	[qtp1505966511-16]	Invalid JSON. There was a parse error. Please check the format again
+INFO	2017-11-24 15:22:01,468	45996	root	[qtp1505966511-22]	Mapping Request from HTTP via the Adaptor
+INFO	2017-11-24 15:22:01,476	46004	root	[qtp1505966511-22]	Invalid JSON. There was a parse error. Please check the format again
+INFO	2017-11-24 15:23:30,544	0	root	[qtp1505966511-21]	Mapping Request from HTTP via the Adaptor
+INFO	2017-11-24 15:26:43,413	0	root	[qtp594328691-20]	Mapping Request from HTTP via the Adaptor
+INFO	2017-11-24 15:27:28,060	0	root	[qtp594328691-21]	Mapping Request from HTTP via the Adaptor
+INFO	2017-11-24 15:28:34,063	0	root	[qtp594328691-20]	Mapping Request from HTTP via the Adaptor
+INFO	2017-11-24 15:29:18,480	0	root	[qtp1244854817-20]	Mapping Request from HTTP via the Adaptor
+INFO	2017-11-24 15:30:08,158	0	root	[qtp469532206-21]	Mapping Request from HTTP via the Adaptor
+INFO	2017-11-24 15:32:28,163	0	root	[qtp1455841581-21]	Mapping Request from HTTP via the Adaptor
+INFO	2017-11-24 15:32:28,189	26	root	[qtp1455841581-21]	Data : {
+	"data":[
+  {
+    "reviewId": "111223412",
+    "review": " Earlier today, Apple unveiled two iPhone 6 models at its Special Event in Flint Center, Cupertino. The first device, the iPhone 6 comes with a 4.7-inch display and the second, the iPhone 6 Plus, comes with a 5.5-inch display. The iPhone 6 Plus has a 5.5-inch Retina HD display, with a pixel density of 401ppi and a resolution of 1920 x 1080 pixels. But there’s a lot more to the iPhone 6 Plus than just its screen. Here’s the full spec sheet of the iPhone 6 Plus.",
+    "reviewRating": 0.0,
+    "categoryMap": {
+      "Internet \u0026 Telecom": 0.97
+    },
+    "syntaxTagList": [
+      {
+        "text": "Earlier",
+        "pos": "ADV",
+        "lemma": "Earlier"
+      },
+      {
+        "text": "today",
+        "pos": "NOUN",
+        "lemma": "today"
+      },
+      {
+        "text": ",",
+        "pos": "PUNCT",
+        "lemma": ","
+      },
+      {
+        "text": "Apple",
+        "pos": "NOUN",
+        "lemma": "Apple"
+      },
+      {
+        "text": "unveiled",
+        "pos": "VERB",
+        "lemma": "unveil"
+      },
+      {
+        "text": "two",
+        "pos": "NUM",
+        "lemma": "two"
+      },
+      {
+        "text": "iPhone",
+        "pos": "NOUN",
+        "lemma": "iPhone"
+      },
+      {
+        "text": "6",
+        "pos": "NUM",
+        "lemma": "6"
+      },
+      {
+        "text": "models",
+        "pos": "NOUN",
+        "lemma": "model"
+      },
+      {
+        "text": "at",
+        "pos": "ADP",
+        "lemma": "at"
+      },
+      {
+        "text": "its",
+        "pos": "PRON",
+        "lemma": "its"
+      },
+      {
+        "text": "Special",
+        "pos": "ADJ",
+        "lemma": "Special"
+      },
+      {
+        "text": "Event",
+        "pos": "NOUN",
+        "lemma": "Event"
+      },
+      {
+        "text": "in",
+        "pos": "ADP",
+        "lemma": "in"
+      },
+      {
+        "text": "Flint",
+        "pos": "NOUN",
+        "lemma": "Flint"
+      },
+      {
+        "text": "Center",
+        "pos": "NOUN",
+        "lemma": "Center"
+      },
+      {
+        "text": ",",
+        "pos": "PUNCT",
+        "lemma": ","
+      },
+      {
+        "text": "Cupertino",
+        "pos": "NOUN",
+        "lemma": "Cupertino"
+      },
+      {
+        "text": ".",
+        "pos": "PUNCT",
+        "lemma": "."
+      },
+      {
+        "text": "The",
+        "pos": "DET",
+        "lemma": "The"
+      },
+      {
+        "text": "first",
+        "pos": "ADJ",
+        "lemma": "first"
+      },
+      {
+        "text": "device",
+        "pos": "NOUN",
+        "lemma": "device"
+      },
+      {
+        "text": ",",
+        "pos": "PUNCT",
+        "lemma": ","
+      },
+      {
+        "text": "the",
+        "pos": "DET",
+        "lemma": "the"
+      },
+      {
+        "text": "iPhone",
+        "pos": "NOUN",
+        "lemma": "iPhone"
+      },
+      {
+        "text": "6",
+        "pos": "NUM",
+        "lemma": "6"
+      },
+      {
+        "text": "comes",
+        "pos": "VERB",
+        "lemma": "come"
+      },
+      {
+        "text": "with",
+        "pos": "ADP",
+        "lemma": "with"
+      },
+      {
+        "text": "a",
+        "pos": "DET",
+        "lemma": "a"
+      },
+      {
+        "text": "4.7",
+        "pos": "NUM",
+        "lemma": "4.7"
+      },
+      {
+        "text": "-",
+        "pos": "PUNCT",
+        "lemma": "-"
+      },
+      {
+        "text": "inch",
+        "pos": "NOUN",
+        "lemma": "inch"
+      },
+      {
+        "text": "display",
+        "pos": "NOUN",
+        "lemma": "display"
+      },
+      {
+        "text": "and",
+        "pos": "CONJ",
+        "lemma": "and"
+      },
+      {
+        "text": "the",
+        "pos": "DET",
+        "lemma": "the"
+      },
+      {
+        "text": "second",
+        "pos": "ADJ",
+        "lemma": "second"
+      },
+      {
+        "text": ",",
+        "pos": "PUNCT",
+        "lemma": ","
+      },
+      {
+        "text": "the",
+        "pos": "DET",
+        "lemma": "the"
+      },
+      {
+        "text": "iPhone",
+        "pos": "NOUN",
+        "lemma": "iPhone"
+      },
+      {
+        "text": "6",
+        "pos": "NUM",
+        "lemma": "6"
+      },
+      {
+        "text": "Plus",
+        "pos": "NOUN",
+        "lemma": "Plus"
+      },
+      {
+        "text": ",",
+        "pos": "PUNCT",
+        "lemma": ","
+      },
+      {
+        "text": "comes",
+        "pos": "VERB",
+        "lemma": "come"
+      },
+      {
+        "text": "with",
+        "pos": "ADP",
+        "lemma": "with"
+      },
+      {
+        "text": "a",
+        "pos": "DET",
+        "lemma": "a"
+      },
+      {
+        "text": "5.5",
+        "pos": "NUM",
+        "lemma": "5.5"
+      },
+      {
+        "text": "-",
+        "pos": "PUNCT",
+        "lemma": "-"
+      },
+      {
+        "text": "inch",
+        "pos": "NOUN",
+        "lemma": "inch"
+      },
+      {
+        "text": "display",
+        "pos": "NOUN",
+        "lemma": "display"
+      },
+      {
+        "text": ".",
+        "pos": "PUNCT",
+        "lemma": "."
+      },
+      {
+        "text": "The",
+        "pos": "DET",
+        "lemma": "The"
+      },
+      {
+        "text": "iPhone",
+        "pos": "NOUN",
+        "lemma": "iPhone"
+      },
+      {
+        "text": "6",
+        "pos": "NUM",
+        "lemma": "6"
+      },
+      {
+        "text": "Plus",
+        "pos": "NOUN",
+        "lemma": "Plus"
+      },
+      {
+        "text": "has",
+        "pos": "VERB",
+        "lemma": "have"
+      },
+      {
+        "text": "a",
+        "pos": "DET",
+        "lemma": "a"
+      },
+      {
+        "text": "5.5",
+        "pos": "NUM",
+        "lemma": "5.5"
+      },
+      {
+        "text": "-",
+        "pos": "PUNCT",
+        "lemma": "-"
+      },
+      {
+        "text": "inch",
+        "pos": "NOUN",
+        "lemma": "inch"
+      },
+      {
+        "text": "Retina",
+        "pos": "NOUN",
+        "lemma": "Retina"
+      },
+      {
+        "text": "HD",
+        "pos": "NOUN",
+        "lemma": "HD"
+      },
+      {
+        "text": "display",
+        "pos": "NOUN",
+        "lemma": "display"
+      },
+      {
+        "text": ",",
+        "pos": "PUNCT",
+        "lemma": ","
+      },
+      {
+        "text": "with",
+        "pos": "ADP",
+        "lemma": "with"
+      },
+      {
+        "text": "a",
+        "pos": "DET",
+        "lemma": "a"
+      },
+      {
+        "text": "pixel",
+        "pos": "NOUN",
+        "lemma": "pixel"
+      },
+      {
+        "text": "density",
+        "pos": "NOUN",
+        "lemma": "density"
+      },
+      {
+        "text": "of",
+        "pos": "ADP",
+        "lemma": "of"
+      },
+      {
+        "text": "401ppi",
+        "pos": "NOUN",
+        "lemma": "401ppi"
+      },
+      {
+        "text": "and",
+        "pos": "CONJ",
+        "lemma": "and"
+      },
+      {
+        "text": "a",
+        "pos": "DET",
+        "lemma": "a"
+      },
+      {
+        "text": "resolution",
+        "pos": "NOUN",
+        "lemma": "resolution"
+      },
+      {
+        "text": "of",
+        "pos": "ADP",
+        "lemma": "of"
+      },
+      {
+        "text": "1920",
+        "pos": "NUM",
+        "lemma": "1920"
+      },
+      {
+        "text": "x",
+        "pos": "X",
+        "lemma": "x"
+      },
+      {
+        "text": "1080",
+        "pos": "NUM",
+        "lemma": "1080"
+      },
+      {
+        "text": "pixels",
+        "pos": "NOUN",
+        "lemma": "pixel"
+      },
+      {
+        "text": ".",
+        "pos": "PUNCT",
+        "lemma": "."
+      },
+      {
+        "text": "But",
+        "pos": "CONJ",
+        "lemma": "But"
+      },
+      {
+        "text": "there",
+        "pos": "DET",
+        "lemma": "there"
+      },
+      {
+        "text": "’s",
+        "pos": "VERB",
+        "lemma": "be"
+      },
+      {
+        "text": "a",
+        "pos": "DET",
+        "lemma": "a"
+      },
+      {
+        "text": "lot",
+        "pos": "NOUN",
+        "lemma": "lot"
+      },
+      {
+        "text": "more",
+        "pos": "ADJ",
+        "lemma": "more"
+      },
+      {
+        "text": "to",
+        "pos": "ADP",
+        "lemma": "to"
+      },
+      {
+        "text": "the",
+        "pos": "DET",
+        "lemma": "the"
+      },
+      {
+        "text": "iPhone",
+        "pos": "NOUN",
+        "lemma": "iPhone"
+      },
+      {
+        "text": "6",
+        "pos": "NUM",
+        "lemma": "6"
+      },
+      {
+        "text": "Plus",
+        "pos": "NOUN",
+        "lemma": "Plus"
+      },
+      {
+        "text": "than",
+        "pos": "ADP",
+        "lemma": "than"
+      },
+      {
+        "text": "just",
+        "pos": "ADV",
+        "lemma": "just"
+      },
+      {
+        "text": "its",
+        "pos": "PRON",
+        "lemma": "its"
+      },
+      {
+        "text": "screen",
+        "pos": "NOUN",
+        "lemma": "screen"
+      },
+      {
+        "text": ".",
+        "pos": "PUNCT",
+        "lemma": "."
+      },
+      {
+        "text": "Here",
+        "pos": "ADV",
+        "lemma": "Here"
+      },
+      {
+        "text": "’s",
+        "pos": "VERB",
+        "lemma": "be"
+      },
+      {
+        "text": "the",
+        "pos": "DET",
+        "lemma": "the"
+      },
+      {
+        "text": "full",
+        "pos": "ADJ",
+        "lemma": "full"
+      },
+      {
+        "text": "spec",
+        "pos": "NOUN",
+        "lemma": "spec"
+      },
+      {
+        "text": "sheet",
+        "pos": "NOUN",
+        "lemma": "sheet"
+      },
+      {
+        "text": "of",
+        "pos": "ADP",
+        "lemma": "of"
+      },
+      {
+        "text": "the",
+        "pos": "DET",
+        "lemma": "the"
+      },
+      {
+        "text": "iPhone",
+        "pos": "NOUN",
+        "lemma": "iPhone"
+      },
+      {
+        "text": "6",
+        "pos": "NUM",
+        "lemma": "6"
+      },
+      {
+        "text": "Plus",
+        "pos": "NOUN",
+        "lemma": "Plus"
+      },
+      {
+        "text": ".",
+        "pos": "PUNCT",
+        "lemma": "."
+      }
+    ],
+    "finalEntityTaggedList": [
+      {
+        "text": "resolution",
+        "sentiment": 0.0,
+        "salience": 0.004501291,
+        "category": "OTHER",
+        "nounCombination": "resolution",
+        "nounCombinationCategory": "parameter"
+      },
+      {
+        "text": "Retina",
+        "sentiment": 0.0,
+        "salience": 0.008119276,
+        "category": "OTHER",
+        "nounCombination": "Retina",
+        "nounCombinationCategory": "tissue"
+      },
+      {
+        "text": "spec sheet",
+        "sentiment": 0.0,
+        "salience": 0.008205842,
+        "category": "OTHER",
+        "nounCombination": "spec sheet",
+        "nounCombinationCategory": "product documentation"
+      },
+      {
+        "text": "screen",
+        "sentiment": 0.0,
+        "salience": 0.010198647,
+        "category": "OTHER",
+        "nounCombination": "screen",
+        "nounCombinationCategory": "equipment"
+      },
+      {
+        "text": "lot",
+        "sentiment": 0.0,
+        "salience": 0.010198647,
+        "category": "OTHER",
+        "nounCombination": "lot",
+        "nounCombinationCategory": "information"
+      },
+      {
+        "text": "pixel density",
+        "sentiment": 0.0,
+        "salience": 0.013677699,
+        "category": "OTHER",
+        "nounCombination": "pixel density",
+        "nounCombinationCategory": "feature"
+      },
+      {
+        "text": "display",
+        "sentiment": 0.0,
+        "salience": 0.018272791,
+        "category": "OTHER",
+        "nounCombination": "display",
+        "nounCombinationCategory": "output device"
+      },
+      {
+        "text": "second",
+        "sentiment": 0.0,
+        "salience": 0.020044157,
+        "category": "OTHER",
+        "nounCombination": "",
+        "nounCombinationCategory": ""
+      },
+      {
+        "text": "Cupertino",
+        "sentiment": 0.0,
+        "salience": 0.027528176,
+        "category": "LOCATION",
+        "nounCombination": "Cupertino",
+        "nounCombinationCategory": "city"
+      },
+      {
+        "text": "Flint Center",
+        "sentiment": 0.0,
+        "salience": 0.027528176,
+        "category": "LOCATION",
+        "nounCombination": "Flint Center",
+        "nounCombinationCategory": "Not Found"
+      },
+      {
+        "text": "device",
+        "sentiment": 0.0,
+        "salience": 0.029542668,
+        "category": "CONSUMER_GOOD",
+        "nounCombination": "device",
+        "nounCombinationCategory": "resource"
+      },
+      {
+        "text": "Special Event",
+        "sentiment": 0.0,
+        "salience": 0.07042599,
+        "category": "EVENT",
+        "nounCombination": "",
+        "nounCombinationCategory": ""
+      },
+      {
+        "text": "models",
+        "sentiment": 0.0,
+        "salience": 0.115826026,
+        "category": "CONSUMER_GOOD",
+        "nounCombination": "models",
+        "nounCombinationCategory": "information"
+      },
+      {
+        "text": "iPhone 6",
+        "sentiment": 0.0,
+        "salience": 0.1345489,
+        "category": "CONSUMER_GOOD",
+        "nounCombination": "",
+        "nounCombinationCategory": ""
+      },
+      {
+        "text": "iPhone 6 Plus",
+        "sentiment": 0.0,
+        "salience": 0.14595602,
+        "category": "ORGANIZATION",
+        "nounCombination": "",
+        "nounCombinationCategory": ""
+      },
+      {
+        "text": "Apple",
+        "sentiment": 0.0,
+        "salience": 0.31323022,
+        "category": "ORGANIZATION",
+        "nounCombination": "Apple",
+        "nounCombinationCategory": "fruit"
+      }
+    ],
+    "specificationDto": {
+      "mainEntity": {
+        "text": "iPhone 6 Plus",
+        "sentiment": 0.0,
+        "salience": 0.14595602,
+        "category": "ORGANIZATION",
+        "nounCombination": "",
+        "nounCombinationCategory": ""
+      },
+      "relativeEntityList": [
+        {
+          "text": "iPhone 6",
+          "sentiment": 0.0,
+          "salience": 0.1345489,
+          "category": "CONSUMER_GOOD",
+          "nounCombination": "",
+          "nounCombinationCategory": ""
+        },
+        {
+          "text": "iPhone 6 Plus",
+          "sentiment": 0.0,
+          "salience": 0.14595602,
+          "category": "ORGANIZATION",
+          "nounCombination": "",
+          "nounCombinationCategory": ""
+        }
+      ],
+      "featureMap": {
+        "display": "output device",
+        "pixel density": "feature"
+      },
+      "specRelationshipDtoList": [
+        {
+          "finalEntityTagDto": {
+            "text": "iPhone 6",
+            "sentiment": 0.0,
+            "salience": 0.1345489,
+            "category": "CONSUMER_GOOD",
+            "nounCombination": "",
+            "nounCombinationCategory": ""
+          },
+          "relationship": "comes with a",
+          "featureMap": {
+            "display": "output device"
+          }
+        },
+        {
+          "finalEntityTagDto": {
+            "text": "iPhone 6",
+            "sentiment": 0.0,
+            "salience": 0.1345489,
+            "category": "CONSUMER_GOOD",
+            "nounCombination": "",
+            "nounCombinationCategory": ""
+          },
+          "relationship": "has a",
+          "featureMap": {
+            "display": "output device"
+          }
+        },
+        {
+          "finalEntityTagDto": {
+            "text": "iPhone 6 Plus",
+            "sentiment": 0.0,
+            "salience": 0.14595602,
+            "category": "ORGANIZATION",
+            "nounCombination": "",
+            "nounCombinationCategory": ""
+          },
+          "relationship": "has a",
+          "featureMap": {
+            "display": "output device"
+          }
+        },
+        {
+          "finalEntityTagDto": {
+            "text": "iPhone 6",
+            "sentiment": 0.0,
+            "salience": 0.1345489,
+            "category": "CONSUMER_GOOD",
+            "nounCombination": "",
+            "nounCombinationCategory": ""
+          },
+          "relationship": "has a",
+          "featureMap": {
+            "pixel density": "feature"
+          }
+        },
+        {
+          "finalEntityTagDto": {
+            "text": "iPhone 6 Plus",
+            "sentiment": 0.0,
+            "salience": 0.14595602,
+            "category": "ORGANIZATION",
+            "nounCombination": "",
+            "nounCombinationCategory": ""
+          },
+          "relationship": "has a",
+          "featureMap": {
+            "pixel density": "feature"
+          }
+        }
+      ]
+    }
+  }
+]
+}
+INFO	2017-11-24 15:32:28,190	27	root	[qtp1455841581-21]	Mapping Completed
+INFO	2017-11-24 15:32:28,191	28	root	[qtp1455841581-21]	Merging Ontology....
+INFO	2017-11-24 15:32:28,204	41	root	[qtp1455841581-21]	Ontology already merged. Aborted at processReviewClassInstances without saving
+INFO	2017-11-24 15:32:28,205	42	root	[qtp1455841581-21]	Ontology was already merged. Duplicate Data Instance
+INFO	2017-11-24 15:36:31,872	0	root	[qtp587726922-21]	Mapping Request from HTTP via the Adaptor
+INFO	2017-11-24 15:36:31,906	34	root	[qtp587726922-21]	Data : {
+	"data":[
+  {
+    "reviewId": "111223412",
+    "review": " Earlier today, Apple unveiled two iPhone 6 models at its Special Event in Flint Center, Cupertino. The first device, the iPhone 6 comes with a 4.7-inch display and the second, the iPhone 6 Plus, comes with a 5.5-inch display. The iPhone 6 Plus has a 5.5-inch Retina HD display, with a pixel density of 401ppi and a resolution of 1920 x 1080 pixels. But there’s a lot more to the iPhone 6 Plus than just its screen. Here’s the full spec sheet of the iPhone 6 Plus. hahahhaaha",
+    "reviewRating": 0.0,
+    "categoryMap": {
+      "Internet \u0026 Telecom": 0.97
+    },
+    "syntaxTagList": [
+      {
+        "text": "Earlier",
+        "pos": "ADV",
+        "lemma": "Earlier"
+      },
+      {
+        "text": "today",
+        "pos": "NOUN",
+        "lemma": "today"
+      },
+      {
+        "text": ",",
+        "pos": "PUNCT",
+        "lemma": ","
+      },
+      {
+        "text": "Apple",
+        "pos": "NOUN",
+        "lemma": "Apple"
+      },
+      {
+        "text": "unveiled",
+        "pos": "VERB",
+        "lemma": "unveil"
+      },
+      {
+        "text": "two",
+        "pos": "NUM",
+        "lemma": "two"
+      },
+      {
+        "text": "iPhone",
+        "pos": "NOUN",
+        "lemma": "iPhone"
+      },
+      {
+        "text": "6",
+        "pos": "NUM",
+        "lemma": "6"
+      },
+      {
+        "text": "models",
+        "pos": "NOUN",
+        "lemma": "model"
+      },
+      {
+        "text": "at",
+        "pos": "ADP",
+        "lemma": "at"
+      },
+      {
+        "text": "its",
+        "pos": "PRON",
+        "lemma": "its"
+      },
+      {
+        "text": "Special",
+        "pos": "ADJ",
+        "lemma": "Special"
+      },
+      {
+        "text": "Event",
+        "pos": "NOUN",
+        "lemma": "Event"
+      },
+      {
+        "text": "in",
+        "pos": "ADP",
+        "lemma": "in"
+      },
+      {
+        "text": "Flint",
+        "pos": "NOUN",
+        "lemma": "Flint"
+      },
+      {
+        "text": "Center",
+        "pos": "NOUN",
+        "lemma": "Center"
+      },
+      {
+        "text": ",",
+        "pos": "PUNCT",
+        "lemma": ","
+      },
+      {
+        "text": "Cupertino",
+        "pos": "NOUN",
+        "lemma": "Cupertino"
+      },
+      {
+        "text": ".",
+        "pos": "PUNCT",
+        "lemma": "."
+      },
+      {
+        "text": "The",
+        "pos": "DET",
+        "lemma": "The"
+      },
+      {
+        "text": "first",
+        "pos": "ADJ",
+        "lemma": "first"
+      },
+      {
+        "text": "device",
+        "pos": "NOUN",
+        "lemma": "device"
+      },
+      {
+        "text": ",",
+        "pos": "PUNCT",
+        "lemma": ","
+      },
+      {
+        "text": "the",
+        "pos": "DET",
+        "lemma": "the"
+      },
+      {
+        "text": "iPhone",
+        "pos": "NOUN",
+        "lemma": "iPhone"
+      },
+      {
+        "text": "6",
+        "pos": "NUM",
+        "lemma": "6"
+      },
+      {
+        "text": "comes",
+        "pos": "VERB",
+        "lemma": "come"
+      },
+      {
+        "text": "with",
+        "pos": "ADP",
+        "lemma": "with"
+      },
+      {
+        "text": "a",
+        "pos": "DET",
+        "lemma": "a"
+      },
+      {
+        "text": "4.7",
+        "pos": "NUM",
+        "lemma": "4.7"
+      },
+      {
+        "text": "-",
+        "pos": "PUNCT",
+        "lemma": "-"
+      },
+      {
+        "text": "inch",
+        "pos": "NOUN",
+        "lemma": "inch"
+      },
+      {
+        "text": "display",
+        "pos": "NOUN",
+        "lemma": "display"
+      },
+      {
+        "text": "and",
+        "pos": "CONJ",
+        "lemma": "and"
+      },
+      {
+        "text": "the",
+        "pos": "DET",
+        "lemma": "the"
+      },
+      {
+        "text": "second",
+        "pos": "ADJ",
+        "lemma": "second"
+      },
+      {
+        "text": ",",
+        "pos": "PUNCT",
+        "lemma": ","
+      },
+      {
+        "text": "the",
+        "pos": "DET",
+        "lemma": "the"
+      },
+      {
+        "text": "iPhone",
+        "pos": "NOUN",
+        "lemma": "iPhone"
+      },
+      {
+        "text": "6",
+        "pos": "NUM",
+        "lemma": "6"
+      },
+      {
+        "text": "Plus",
+        "pos": "NOUN",
+        "lemma": "Plus"
+      },
+      {
+        "text": ",",
+        "pos": "PUNCT",
+        "lemma": ","
+      },
+      {
+        "text": "comes",
+        "pos": "VERB",
+        "lemma": "come"
+      },
+      {
+        "text": "with",
+        "pos": "ADP",
+        "lemma": "with"
+      },
+      {
+        "text": "a",
+        "pos": "DET",
+        "lemma": "a"
+      },
+      {
+        "text": "5.5",
+        "pos": "NUM",
+        "lemma": "5.5"
+      },
+      {
+        "text": "-",
+        "pos": "PUNCT",
+        "lemma": "-"
+      },
+      {
+        "text": "inch",
+        "pos": "NOUN",
+        "lemma": "inch"
+      },
+      {
+        "text": "display",
+        "pos": "NOUN",
+        "lemma": "display"
+      },
+      {
+        "text": ".",
+        "pos": "PUNCT",
+        "lemma": "."
+      },
+      {
+        "text": "The",
+        "pos": "DET",
+        "lemma": "The"
+      },
+      {
+        "text": "iPhone",
+        "pos": "NOUN",
+        "lemma": "iPhone"
+      },
+      {
+        "text": "6",
+        "pos": "NUM",
+        "lemma": "6"
+      },
+      {
+        "text": "Plus",
+        "pos": "NOUN",
+        "lemma": "Plus"
+      },
+      {
+        "text": "has",
+        "pos": "VERB",
+        "lemma": "have"
+      },
+      {
+        "text": "a",
+        "pos": "DET",
+        "lemma": "a"
+      },
+      {
+        "text": "5.5",
+        "pos": "NUM",
+        "lemma": "5.5"
+      },
+      {
+        "text": "-",
+        "pos": "PUNCT",
+        "lemma": "-"
+      },
+      {
+        "text": "inch",
+        "pos": "NOUN",
+        "lemma": "inch"
+      },
+      {
+        "text": "Retina",
+        "pos": "NOUN",
+        "lemma": "Retina"
+      },
+      {
+        "text": "HD",
+        "pos": "NOUN",
+        "lemma": "HD"
+      },
+      {
+        "text": "display",
+        "pos": "NOUN",
+        "lemma": "display"
+      },
+      {
+        "text": ",",
+        "pos": "PUNCT",
+        "lemma": ","
+      },
+      {
+        "text": "with",
+        "pos": "ADP",
+        "lemma": "with"
+      },
+      {
+        "text": "a",
+        "pos": "DET",
+        "lemma": "a"
+      },
+      {
+        "text": "pixel",
+        "pos": "NOUN",
+        "lemma": "pixel"
+      },
+      {
+        "text": "density",
+        "pos": "NOUN",
+        "lemma": "density"
+      },
+      {
+        "text": "of",
+        "pos": "ADP",
+        "lemma": "of"
+      },
+      {
+        "text": "401ppi",
+        "pos": "NOUN",
+        "lemma": "401ppi"
+      },
+      {
+        "text": "and",
+        "pos": "CONJ",
+        "lemma": "and"
+      },
+      {
+        "text": "a",
+        "pos": "DET",
+        "lemma": "a"
+      },
+      {
+        "text": "resolution",
+        "pos": "NOUN",
+        "lemma": "resolution"
+      },
+      {
+        "text": "of",
+        "pos": "ADP",
+        "lemma": "of"
+      },
+      {
+        "text": "1920",
+        "pos": "NUM",
+        "lemma": "1920"
+      },
+      {
+        "text": "x",
+        "pos": "X",
+        "lemma": "x"
+      },
+      {
+        "text": "1080",
+        "pos": "NUM",
+        "lemma": "1080"
+      },
+      {
+        "text": "pixels",
+        "pos": "NOUN",
+        "lemma": "pixel"
+      },
+      {
+        "text": ".",
+        "pos": "PUNCT",
+        "lemma": "."
+      },
+      {
+        "text": "But",
+        "pos": "CONJ",
+        "lemma": "But"
+      },
+      {
+        "text": "there",
+        "pos": "DET",
+        "lemma": "there"
+      },
+      {
+        "text": "’s",
+        "pos": "VERB",
+        "lemma": "be"
+      },
+      {
+        "text": "a",
+        "pos": "DET",
+        "lemma": "a"
+      },
+      {
+        "text": "lot",
+        "pos": "NOUN",
+        "lemma": "lot"
+      },
+      {
+        "text": "more",
+        "pos": "ADJ",
+        "lemma": "more"
+      },
+      {
+        "text": "to",
+        "pos": "ADP",
+        "lemma": "to"
+      },
+      {
+        "text": "the",
+        "pos": "DET",
+        "lemma": "the"
+      },
+      {
+        "text": "iPhone",
+        "pos": "NOUN",
+        "lemma": "iPhone"
+      },
+      {
+        "text": "6",
+        "pos": "NUM",
+        "lemma": "6"
+      },
+      {
+        "text": "Plus",
+        "pos": "NOUN",
+        "lemma": "Plus"
+      },
+      {
+        "text": "than",
+        "pos": "ADP",
+        "lemma": "than"
+      },
+      {
+        "text": "just",
+        "pos": "ADV",
+        "lemma": "just"
+      },
+      {
+        "text": "its",
+        "pos": "PRON",
+        "lemma": "its"
+      },
+      {
+        "text": "screen",
+        "pos": "NOUN",
+        "lemma": "screen"
+      },
+      {
+        "text": ".",
+        "pos": "PUNCT",
+        "lemma": "."
+      },
+      {
+        "text": "Here",
+        "pos": "ADV",
+        "lemma": "Here"
+      },
+      {
+        "text": "’s",
+        "pos": "VERB",
+        "lemma": "be"
+      },
+      {
+        "text": "the",
+        "pos": "DET",
+        "lemma": "the"
+      },
+      {
+        "text": "full",
+        "pos": "ADJ",
+        "lemma": "full"
+      },
+      {
+        "text": "spec",
+        "pos": "NOUN",
+        "lemma": "spec"
+      },
+      {
+        "text": "sheet",
+        "pos": "NOUN",
+        "lemma": "sheet"
+      },
+      {
+        "text": "of",
+        "pos": "ADP",
+        "lemma": "of"
+      },
+      {
+        "text": "the",
+        "pos": "DET",
+        "lemma": "the"
+      },
+      {
+        "text": "iPhone",
+        "pos": "NOUN",
+        "lemma": "iPhone"
+      },
+      {
+        "text": "6",
+        "pos": "NUM",
+        "lemma": "6"
+      },
+      {
+        "text": "Plus",
+        "pos": "NOUN",
+        "lemma": "Plus"
+      },
+      {
+        "text": ".",
+        "pos": "PUNCT",
+        "lemma": "."
+      }
+    ],
+    "finalEntityTaggedList": [
+      {
+        "text": "resolution",
+        "sentiment": 0.0,
+        "salience": 0.004501291,
+        "category": "OTHER",
+        "nounCombination": "resolution",
+        "nounCombinationCategory": "parameter"
+      },
+      {
+        "text": "Retina",
+        "sentiment": 0.0,
+        "salience": 0.008119276,
+        "category": "OTHER",
+        "nounCombination": "Retina",
+        "nounCombinationCategory": "tissue"
+      },
+      {
+        "text": "spec sheet",
+        "sentiment": 0.0,
+        "salience": 0.008205842,
+        "category": "OTHER",
+        "nounCombination": "spec sheet",
+        "nounCombinationCategory": "product documentation"
+      },
+      {
+        "text": "screen",
+        "sentiment": 0.0,
+        "salience": 0.010198647,
+        "category": "OTHER",
+        "nounCombination": "screen",
+        "nounCombinationCategory": "equipment"
+      },
+      {
+        "text": "lot",
+        "sentiment": 0.0,
+        "salience": 0.010198647,
+        "category": "OTHER",
+        "nounCombination": "lot",
+        "nounCombinationCategory": "information"
+      },
+      {
+        "text": "pixel density",
+        "sentiment": 0.0,
+        "salience": 0.013677699,
+        "category": "OTHER",
+        "nounCombination": "pixel density",
+        "nounCombinationCategory": "feature"
+      },
+      {
+        "text": "display",
+        "sentiment": 0.0,
+        "salience": 0.018272791,
+        "category": "OTHER",
+        "nounCombination": "display",
+        "nounCombinationCategory": "output device"
+      },
+      {
+        "text": "second",
+        "sentiment": 0.0,
+        "salience": 0.020044157,
+        "category": "OTHER",
+        "nounCombination": "",
+        "nounCombinationCategory": ""
+      },
+      {
+        "text": "Cupertino",
+        "sentiment": 0.0,
+        "salience": 0.027528176,
+        "category": "LOCATION",
+        "nounCombination": "Cupertino",
+        "nounCombinationCategory": "city"
+      },
+      {
+        "text": "Flint Center",
+        "sentiment": 0.0,
+        "salience": 0.027528176,
+        "category": "LOCATION",
+        "nounCombination": "Flint Center",
+        "nounCombinationCategory": "Not Found"
+      },
+      {
+        "text": "device",
+        "sentiment": 0.0,
+        "salience": 0.029542668,
+        "category": "CONSUMER_GOOD",
+        "nounCombination": "device",
+        "nounCombinationCategory": "resource"
+      },
+      {
+        "text": "Special Event",
+        "sentiment": 0.0,
+        "salience": 0.07042599,
+        "category": "EVENT",
+        "nounCombination": "",
+        "nounCombinationCategory": ""
+      },
+      {
+        "text": "models",
+        "sentiment": 0.0,
+        "salience": 0.115826026,
+        "category": "CONSUMER_GOOD",
+        "nounCombination": "models",
+        "nounCombinationCategory": "information"
+      },
+      {
+        "text": "iPhone 6",
+        "sentiment": 0.0,
+        "salience": 0.1345489,
+        "category": "CONSUMER_GOOD",
+        "nounCombination": "",
+        "nounCombinationCategory": ""
+      },
+      {
+        "text": "iPhone 6 Plus",
+        "sentiment": 0.0,
+        "salience": 0.14595602,
+        "category": "ORGANIZATION",
+        "nounCombination": "",
+        "nounCombinationCategory": ""
+      },
+      {
+        "text": "Apple",
+        "sentiment": 0.0,
+        "salience": 0.31323022,
+        "category": "ORGANIZATION",
+        "nounCombination": "Apple",
+        "nounCombinationCategory": "fruit"
+      }
+    ],
+    "specificationDto": {
+      "mainEntity": {
+        "text": "iPhone 6 Plus",
+        "sentiment": 0.0,
+        "salience": 0.14595602,
+        "category": "ORGANIZATION",
+        "nounCombination": "",
+        "nounCombinationCategory": ""
+      },
+      "relativeEntityList": [
+        {
+          "text": "iPhone 6",
+          "sentiment": 0.0,
+          "salience": 0.1345489,
+          "category": "CONSUMER_GOOD",
+          "nounCombination": "",
+          "nounCombinationCategory": ""
+        },
+        {
+          "text": "iPhone 6 Plus",
+          "sentiment": 0.0,
+          "salience": 0.14595602,
+          "category": "ORGANIZATION",
+          "nounCombination": "",
+          "nounCombinationCategory": ""
+        }
+      ],
+      "featureMap": {
+        "display": "output device",
+        "pixel density": "feature"
+      },
+      "specRelationshipDtoList": [
+        {
+          "finalEntityTagDto": {
+            "text": "iPhone 6",
+            "sentiment": 0.0,
+            "salience": 0.1345489,
+            "category": "CONSUMER_GOOD",
+            "nounCombination": "",
+            "nounCombinationCategory": ""
+          },
+          "relationship": "comes with a",
+          "featureMap": {
+            "display": "output device"
+          }
+        },
+        {
+          "finalEntityTagDto": {
+            "text": "iPhone 6",
+            "sentiment": 0.0,
+            "salience": 0.1345489,
+            "category": "CONSUMER_GOOD",
+            "nounCombination": "",
+            "nounCombinationCategory": ""
+          },
+          "relationship": "has a",
+          "featureMap": {
+            "display": "output device"
+          }
+        },
+        {
+          "finalEntityTagDto": {
+            "text": "iPhone 6 Plus",
+            "sentiment": 0.0,
+            "salience": 0.14595602,
+            "category": "ORGANIZATION",
+            "nounCombination": "",
+            "nounCombinationCategory": ""
+          },
+          "relationship": "has a",
+          "featureMap": {
+            "display": "output device"
+          }
+        },
+        {
+          "finalEntityTagDto": {
+            "text": "iPhone 6",
+            "sentiment": 0.0,
+            "salience": 0.1345489,
+            "category": "CONSUMER_GOOD",
+            "nounCombination": "",
+            "nounCombinationCategory": ""
+          },
+          "relationship": "has a",
+          "featureMap": {
+            "pixel density": "feature"
+          }
+        },
+        {
+          "finalEntityTagDto": {
+            "text": "iPhone 6 Plus",
+            "sentiment": 0.0,
+            "salience": 0.14595602,
+            "category": "ORGANIZATION",
+            "nounCombination": "",
+            "nounCombinationCategory": ""
+          },
+          "relationship": "has a",
+          "featureMap": {
+            "pixel density": "feature"
+          }
+        }
+      ]
+    }
+  }
+]
+}
+INFO	2017-11-24 15:36:31,911	39	root	[qtp587726922-21]	Mapping Completed
+INFO	2017-11-24 15:36:31,913	41	root	[qtp587726922-21]	Merging Ontology....
+INFO	2017-11-24 15:36:31,926	54	root	[qtp587726922-21]	Ontology already merged. Aborted at processReviewClassInstances without saving
+INFO	2017-11-24 15:36:31,926	54	root	[qtp587726922-21]	Ontology was already merged. Duplicate Data Instance
+INFO	2017-11-24 15:37:04,659	0	root	[qtp799073724-20]	Mapping Request from HTTP via the Adaptor
+INFO	2017-11-24 15:37:04,680	21	root	[qtp799073724-20]	Data : {
+	"data":[
+  {
+    "reviewId": "111223412",
+    "review": " Earlier today, Apple unveiled two iPhone 6 models at its Special Event in Flint Center, Cupertino. The first device, the iPhone 6 comes with a 4.7-inch display and the second, the iPhone 6 Plus, comes with a 5.5-inch display. The iPhone 6 Plus has a 5.5-inch Retina HD display, with a pixel density of 401ppi and a resolution of 1920 x 1080 pixels. But there’s a lot more to the iPhone 6 Plus than just its screen. Here’s the full spec sheet of the iPhone 6 Plus. 1111hahahhaaha",
+    "reviewRating": 0.0,
+    "categoryMap": {
+      "Internet \u0026 Telecom": 0.97
+    },
+    "syntaxTagList": [
+      {
+        "text": "Earlier",
+        "pos": "ADV",
+        "lemma": "Earlier"
+      },
+      {
+        "text": "today",
+        "pos": "NOUN",
+        "lemma": "today"
+      },
+      {
+        "text": ",",
+        "pos": "PUNCT",
+        "lemma": ","
+      },
+      {
+        "text": "Apple",
+        "pos": "NOUN",
+        "lemma": "Apple"
+      },
+      {
+        "text": "unveiled",
+        "pos": "VERB",
+        "lemma": "unveil"
+      },
+      {
+        "text": "two",
+        "pos": "NUM",
+        "lemma": "two"
+      },
+      {
+        "text": "iPhone",
+        "pos": "NOUN",
+        "lemma": "iPhone"
+      },
+      {
+        "text": "6",
+        "pos": "NUM",
+        "lemma": "6"
+      },
+      {
+        "text": "models",
+        "pos": "NOUN",
+        "lemma": "model"
+      },
+      {
+        "text": "at",
+        "pos": "ADP",
+        "lemma": "at"
+      },
+      {
+        "text": "its",
+        "pos": "PRON",
+        "lemma": "its"
+      },
+      {
+        "text": "Special",
+        "pos": "ADJ",
+        "lemma": "Special"
+      },
+      {
+        "text": "Event",
+        "pos": "NOUN",
+        "lemma": "Event"
+      },
+      {
+        "text": "in",
+        "pos": "ADP",
+        "lemma": "in"
+      },
+      {
+        "text": "Flint",
+        "pos": "NOUN",
+        "lemma": "Flint"
+      },
+      {
+        "text": "Center",
+        "pos": "NOUN",
+        "lemma": "Center"
+      },
+      {
+        "text": ",",
+        "pos": "PUNCT",
+        "lemma": ","
+      },
+      {
+        "text": "Cupertino",
+        "pos": "NOUN",
+        "lemma": "Cupertino"
+      },
+      {
+        "text": ".",
+        "pos": "PUNCT",
+        "lemma": "."
+      },
+      {
+        "text": "The",
+        "pos": "DET",
+        "lemma": "The"
+      },
+      {
+        "text": "first",
+        "pos": "ADJ",
+        "lemma": "first"
+      },
+      {
+        "text": "device",
+        "pos": "NOUN",
+        "lemma": "device"
+      },
+      {
+        "text": ",",
+        "pos": "PUNCT",
+        "lemma": ","
+      },
+      {
+        "text": "the",
+        "pos": "DET",
+        "lemma": "the"
+      },
+      {
+        "text": "iPhone",
+        "pos": "NOUN",
+        "lemma": "iPhone"
+      },
+      {
+        "text": "6",
+        "pos": "NUM",
+        "lemma": "6"
+      },
+      {
+        "text": "comes",
+        "pos": "VERB",
+        "lemma": "come"
+      },
+      {
+        "text": "with",
+        "pos": "ADP",
+        "lemma": "with"
+      },
+      {
+        "text": "a",
+        "pos": "DET",
+        "lemma": "a"
+      },
+      {
+        "text": "4.7",
+        "pos": "NUM",
+        "lemma": "4.7"
+      },
+      {
+        "text": "-",
+        "pos": "PUNCT",
+        "lemma": "-"
+      },
+      {
+        "text": "inch",
+        "pos": "NOUN",
+        "lemma": "inch"
+      },
+      {
+        "text": "display",
+        "pos": "NOUN",
+        "lemma": "display"
+      },
+      {
+        "text": "and",
+        "pos": "CONJ",
+        "lemma": "and"
+      },
+      {
+        "text": "the",
+        "pos": "DET",
+        "lemma": "the"
+      },
+      {
+        "text": "second",
+        "pos": "ADJ",
+        "lemma": "second"
+      },
+      {
+        "text": ",",
+        "pos": "PUNCT",
+        "lemma": ","
+      },
+      {
+        "text": "the",
+        "pos": "DET",
+        "lemma": "the"
+      },
+      {
+        "text": "iPhone",
+        "pos": "NOUN",
+        "lemma": "iPhone"
+      },
+      {
+        "text": "6",
+        "pos": "NUM",
+        "lemma": "6"
+      },
+      {
+        "text": "Plus",
+        "pos": "NOUN",
+        "lemma": "Plus"
+      },
+      {
+        "text": ",",
+        "pos": "PUNCT",
+        "lemma": ","
+      },
+      {
+        "text": "comes",
+        "pos": "VERB",
+        "lemma": "come"
+      },
+      {
+        "text": "with",
+        "pos": "ADP",
+        "lemma": "with"
+      },
+      {
+        "text": "a",
+        "pos": "DET",
+        "lemma": "a"
+      },
+      {
+        "text": "5.5",
+        "pos": "NUM",
+        "lemma": "5.5"
+      },
+      {
+        "text": "-",
+        "pos": "PUNCT",
+        "lemma": "-"
+      },
+      {
+        "text": "inch",
+        "pos": "NOUN",
+        "lemma": "inch"
+      },
+      {
+        "text": "display",
+        "pos": "NOUN",
+        "lemma": "display"
+      },
+      {
+        "text": ".",
+        "pos": "PUNCT",
+        "lemma": "."
+      },
+      {
+        "text": "The",
+        "pos": "DET",
+        "lemma": "The"
+      },
+      {
+        "text": "iPhone",
+        "pos": "NOUN",
+        "lemma": "iPhone"
+      },
+      {
+        "text": "6",
+        "pos": "NUM",
+        "lemma": "6"
+      },
+      {
+        "text": "Plus",
+        "pos": "NOUN",
+        "lemma": "Plus"
+      },
+      {
+        "text": "has",
+        "pos": "VERB",
+        "lemma": "have"
+      },
+      {
+        "text": "a",
+        "pos": "DET",
+        "lemma": "a"
+      },
+      {
+        "text": "5.5",
+        "pos": "NUM",
+        "lemma": "5.5"
+      },
+      {
+        "text": "-",
+        "pos": "PUNCT",
+        "lemma": "-"
+      },
+      {
+        "text": "inch",
+        "pos": "NOUN",
+        "lemma": "inch"
+      },
+      {
+        "text": "Retina",
+        "pos": "NOUN",
+        "lemma": "Retina"
+      },
+      {
+        "text": "HD",
+        "pos": "NOUN",
+        "lemma": "HD"
+      },
+      {
+        "text": "display",
+        "pos": "NOUN",
+        "lemma": "display"
+      },
+      {
+        "text": ",",
+        "pos": "PUNCT",
+        "lemma": ","
+      },
+      {
+        "text": "with",
+        "pos": "ADP",
+        "lemma": "with"
+      },
+      {
+        "text": "a",
+        "pos": "DET",
+        "lemma": "a"
+      },
+      {
+        "text": "pixel",
+        "pos": "NOUN",
+        "lemma": "pixel"
+      },
+      {
+        "text": "density",
+        "pos": "NOUN",
+        "lemma": "density"
+      },
+      {
+        "text": "of",
+        "pos": "ADP",
+        "lemma": "of"
+      },
+      {
+        "text": "401ppi",
+        "pos": "NOUN",
+        "lemma": "401ppi"
+      },
+      {
+        "text": "and",
+        "pos": "CONJ",
+        "lemma": "and"
+      },
+      {
+        "text": "a",
+        "pos": "DET",
+        "lemma": "a"
+      },
+      {
+        "text": "resolution",
+        "pos": "NOUN",
+        "lemma": "resolution"
+      },
+      {
+        "text": "of",
+        "pos": "ADP",
+        "lemma": "of"
+      },
+      {
+        "text": "1920",
+        "pos": "NUM",
+        "lemma": "1920"
+      },
+      {
+        "text": "x",
+        "pos": "X",
+        "lemma": "x"
+      },
+      {
+        "text": "1080",
+        "pos": "NUM",
+        "lemma": "1080"
+      },
+      {
+        "text": "pixels",
+        "pos": "NOUN",
+        "lemma": "pixel"
+      },
+      {
+        "text": ".",
+        "pos": "PUNCT",
+        "lemma": "."
+      },
+      {
+        "text": "But",
+        "pos": "CONJ",
+        "lemma": "But"
+      },
+      {
+        "text": "there",
+        "pos": "DET",
+        "lemma": "there"
+      },
+      {
+        "text": "’s",
+        "pos": "VERB",
+        "lemma": "be"
+      },
+      {
+        "text": "a",
+        "pos": "DET",
+        "lemma": "a"
+      },
+      {
+        "text": "lot",
+        "pos": "NOUN",
+        "lemma": "lot"
+      },
+      {
+        "text": "more",
+        "pos": "ADJ",
+        "lemma": "more"
+      },
+      {
+        "text": "to",
+        "pos": "ADP",
+        "lemma": "to"
+      },
+      {
+        "text": "the",
+        "pos": "DET",
+        "lemma": "the"
+      },
+      {
+        "text": "iPhone",
+        "pos": "NOUN",
+        "lemma": "iPhone"
+      },
+      {
+        "text": "6",
+        "pos": "NUM",
+        "lemma": "6"
+      },
+      {
+        "text": "Plus",
+        "pos": "NOUN",
+        "lemma": "Plus"
+      },
+      {
+        "text": "than",
+        "pos": "ADP",
+        "lemma": "than"
+      },
+      {
+        "text": "just",
+        "pos": "ADV",
+        "lemma": "just"
+      },
+      {
+        "text": "its",
+        "pos": "PRON",
+        "lemma": "its"
+      },
+      {
+        "text": "screen",
+        "pos": "NOUN",
+        "lemma": "screen"
+      },
+      {
+        "text": ".",
+        "pos": "PUNCT",
+        "lemma": "."
+      },
+      {
+        "text": "Here",
+        "pos": "ADV",
+        "lemma": "Here"
+      },
+      {
+        "text": "’s",
+        "pos": "VERB",
+        "lemma": "be"
+      },
+      {
+        "text": "the",
+        "pos": "DET",
+        "lemma": "the"
+      },
+      {
+        "text": "full",
+        "pos": "ADJ",
+        "lemma": "full"
+      },
+      {
+        "text": "spec",
+        "pos": "NOUN",
+        "lemma": "spec"
+      },
+      {
+        "text": "sheet",
+        "pos": "NOUN",
+        "lemma": "sheet"
+      },
+      {
+        "text": "of",
+        "pos": "ADP",
+        "lemma": "of"
+      },
+      {
+        "text": "the",
+        "pos": "DET",
+        "lemma": "the"
+      },
+      {
+        "text": "iPhone",
+        "pos": "NOUN",
+        "lemma": "iPhone"
+      },
+      {
+        "text": "6",
+        "pos": "NUM",
+        "lemma": "6"
+      },
+      {
+        "text": "Plus",
+        "pos": "NOUN",
+        "lemma": "Plus"
+      },
+      {
+        "text": ".",
+        "pos": "PUNCT",
+        "lemma": "."
+      }
+    ],
+    "finalEntityTaggedList": [
+      {
+        "text": "resolution",
+        "sentiment": 0.0,
+        "salience": 0.004501291,
+        "category": "OTHER",
+        "nounCombination": "resolution",
+        "nounCombinationCategory": "parameter"
+      },
+      {
+        "text": "Retina",
+        "sentiment": 0.0,
+        "salience": 0.008119276,
+        "category": "OTHER",
+        "nounCombination": "Retina",
+        "nounCombinationCategory": "tissue"
+      },
+      {
+        "text": "spec sheet",
+        "sentiment": 0.0,
+        "salience": 0.008205842,
+        "category": "OTHER",
+        "nounCombination": "spec sheet",
+        "nounCombinationCategory": "product documentation"
+      },
+      {
+        "text": "screen",
+        "sentiment": 0.0,
+        "salience": 0.010198647,
+        "category": "OTHER",
+        "nounCombination": "screen",
+        "nounCombinationCategory": "equipment"
+      },
+      {
+        "text": "lot",
+        "sentiment": 0.0,
+        "salience": 0.010198647,
+        "category": "OTHER",
+        "nounCombination": "lot",
+        "nounCombinationCategory": "information"
+      },
+      {
+        "text": "pixel density",
+        "sentiment": 0.0,
+        "salience": 0.013677699,
+        "category": "OTHER",
+        "nounCombination": "pixel density",
+        "nounCombinationCategory": "feature"
+      },
+      {
+        "text": "display",
+        "sentiment": 0.0,
+        "salience": 0.018272791,
+        "category": "OTHER",
+        "nounCombination": "display",
+        "nounCombinationCategory": "output device"
+      },
+      {
+        "text": "second",
+        "sentiment": 0.0,
+        "salience": 0.020044157,
+        "category": "OTHER",
+        "nounCombination": "",
+        "nounCombinationCategory": ""
+      },
+      {
+        "text": "Cupertino",
+        "sentiment": 0.0,
+        "salience": 0.027528176,
+        "category": "LOCATION",
+        "nounCombination": "Cupertino",
+        "nounCombinationCategory": "city"
+      },
+      {
+        "text": "Flint Center",
+        "sentiment": 0.0,
+        "salience": 0.027528176,
+        "category": "LOCATION",
+        "nounCombination": "Flint Center",
+        "nounCombinationCategory": "Not Found"
+      },
+      {
+        "text": "device",
+        "sentiment": 0.0,
+        "salience": 0.029542668,
+        "category": "CONSUMER_GOOD",
+        "nounCombination": "device",
+        "nounCombinationCategory": "resource"
+      },
+      {
+        "text": "Special Event",
+        "sentiment": 0.0,
+        "salience": 0.07042599,
+        "category": "EVENT",
+        "nounCombination": "",
+        "nounCombinationCategory": ""
+      },
+      {
+        "text": "models",
+        "sentiment": 0.0,
+        "salience": 0.115826026,
+        "category": "CONSUMER_GOOD",
+        "nounCombination": "models",
+        "nounCombinationCategory": "information"
+      },
+      {
+        "text": "iPhone 6",
+        "sentiment": 0.0,
+        "salience": 0.1345489,
+        "category": "CONSUMER_GOOD",
+        "nounCombination": "",
+        "nounCombinationCategory": ""
+      },
+      {
+        "text": "iPhone 6 Plus",
+        "sentiment": 0.0,
+        "salience": 0.14595602,
+        "category": "ORGANIZATION",
+        "nounCombination": "",
+        "nounCombinationCategory": ""
+      },
+      {
+        "text": "Apple",
+        "sentiment": 0.0,
+        "salience": 0.31323022,
+        "category": "ORGANIZATION",
+        "nounCombination": "Apple",
+        "nounCombinationCategory": "fruit"
+      }
+    ],
+    "specificationDto": {
+      "mainEntity": {
+        "text": "iPhone 6 Plus",
+        "sentiment": 0.0,
+        "salience": 0.14595602,
+        "category": "ORGANIZATION",
+        "nounCombination": "",
+        "nounCombinationCategory": ""
+      },
+      "relativeEntityList": [
+        {
+          "text": "iPhone 6",
+          "sentiment": 0.0,
+          "salience": 0.1345489,
+          "category": "CONSUMER_GOOD",
+          "nounCombination": "",
+          "nounCombinationCategory": ""
+        },
+        {
+          "text": "iPhone 6 Plus",
+          "sentiment": 0.0,
+          "salience": 0.14595602,
+          "category": "ORGANIZATION",
+          "nounCombination": "",
+          "nounCombinationCategory": ""
+        }
+      ],
+      "featureMap": {
+        "display": "output device",
+        "pixel density": "feature"
+      },
+      "specRelationshipDtoList": [
+        {
+          "finalEntityTagDto": {
+            "text": "iPhone 6",
+            "sentiment": 0.0,
+            "salience": 0.1345489,
+            "category": "CONSUMER_GOOD",
+            "nounCombination": "",
+            "nounCombinationCategory": ""
+          },
+          "relationship": "comes with a",
+          "featureMap": {
+            "display": "output device"
+          }
+        },
+        {
+          "finalEntityTagDto": {
+            "text": "iPhone 6",
+            "sentiment": 0.0,
+            "salience": 0.1345489,
+            "category": "CONSUMER_GOOD",
+            "nounCombination": "",
+            "nounCombinationCategory": ""
+          },
+          "relationship": "has a",
+          "featureMap": {
+            "display": "output device"
+          }
+        },
+        {
+          "finalEntityTagDto": {
+            "text": "iPhone 6 Plus",
+            "sentiment": 0.0,
+            "salience": 0.14595602,
+            "category": "ORGANIZATION",
+            "nounCombination": "",
+            "nounCombinationCategory": ""
+          },
+          "relationship": "has a",
+          "featureMap": {
+            "display": "output device"
+          }
+        },
+        {
+          "finalEntityTagDto": {
+            "text": "iPhone 6",
+            "sentiment": 0.0,
+            "salience": 0.1345489,
+            "category": "CONSUMER_GOOD",
+            "nounCombination": "",
+            "nounCombinationCategory": ""
+          },
+          "relationship": "has a",
+          "featureMap": {
+            "pixel density": "feature"
+          }
+        },
+        {
+          "finalEntityTagDto": {
+            "text": "iPhone 6 Plus",
+            "sentiment": 0.0,
+            "salience": 0.14595602,
+            "category": "ORGANIZATION",
+            "nounCombination": "",
+            "nounCombinationCategory": ""
+          },
+          "relationship": "has a",
+          "featureMap": {
+            "pixel density": "feature"
+          }
+        }
+      ]
+    }
+  }
+]
+}
+INFO	2017-11-24 15:37:04,686	27	root	[qtp799073724-20]	Mapping Completed
+INFO	2017-11-24 15:37:04,687	28	root	[qtp799073724-20]	Merging Ontology....
+INFO	2017-11-24 15:37:04,697	38	root	[qtp799073724-20]	Ontology already merged. Aborted at processReviewClassInstances without saving
+INFO	2017-11-24 15:37:04,698	39	root	[qtp799073724-20]	Ontology was already merged. Duplicate Data Instance
+INFO	2017-11-24 15:39:26,297	0	root	[qtp1455841581-20]	Mapping Request from HTTP via the Adaptor
+INFO	2017-11-24 15:39:26,328	31	root	[qtp1455841581-20]	Data : {
+	"data":[
+  {
+    "reviewId": "111223412",
+    "review": " Earlier today, Apple unveiled two iPhone 6 models at its Special Event in Flint Center, Cupertino. The first device, the iPhone 6 comes with a 4.7-inch display and the second, the iPhone 6 Plus, comes with a 5.5-inch display. The iPhone 6 Plus has a 5.5-inch Retina HD display, with a pixel density of 401ppi and a resolution of 1920 x 1080 pixels. But there’s a lot more to the iPhone 6 Plus than just its screen. Here’s the full spec sheet of the iPhone 6 Plus. nilesh",
+    "reviewRating": 0.0,
+    "categoryMap": {
+      "Internet \u0026 Telecom": 0.97
+    },
+    "syntaxTagList": [
+      {
+        "text": "Earlier",
+        "pos": "ADV",
+        "lemma": "Earlier"
+      },
+      {
+        "text": "today",
+        "pos": "NOUN",
+        "lemma": "today"
+      },
+      {
+        "text": ",",
+        "pos": "PUNCT",
+        "lemma": ","
+      },
+      {
+        "text": "Apple",
+        "pos": "NOUN",
+        "lemma": "Apple"
+      },
+      {
+        "text": "unveiled",
+        "pos": "VERB",
+        "lemma": "unveil"
+      },
+      {
+        "text": "two",
+        "pos": "NUM",
+        "lemma": "two"
+      },
+      {
+        "text": "iPhone",
+        "pos": "NOUN",
+        "lemma": "iPhone"
+      },
+      {
+        "text": "6",
+        "pos": "NUM",
+        "lemma": "6"
+      },
+      {
+        "text": "models",
+        "pos": "NOUN",
+        "lemma": "model"
+      },
+      {
+        "text": "at",
+        "pos": "ADP",
+        "lemma": "at"
+      },
+      {
+        "text": "its",
+        "pos": "PRON",
+        "lemma": "its"
+      },
+      {
+        "text": "Special",
+        "pos": "ADJ",
+        "lemma": "Special"
+      },
+      {
+        "text": "Event",
+        "pos": "NOUN",
+        "lemma": "Event"
+      },
+      {
+        "text": "in",
+        "pos": "ADP",
+        "lemma": "in"
+      },
+      {
+        "text": "Flint",
+        "pos": "NOUN",
+        "lemma": "Flint"
+      },
+      {
+        "text": "Center",
+        "pos": "NOUN",
+        "lemma": "Center"
+      },
+      {
+        "text": ",",
+        "pos": "PUNCT",
+        "lemma": ","
+      },
+      {
+        "text": "Cupertino",
+        "pos": "NOUN",
+        "lemma": "Cupertino"
+      },
+      {
+        "text": ".",
+        "pos": "PUNCT",
+        "lemma": "."
+      },
+      {
+        "text": "The",
+        "pos": "DET",
+        "lemma": "The"
+      },
+      {
+        "text": "first",
+        "pos": "ADJ",
+        "lemma": "first"
+      },
+      {
+        "text": "device",
+        "pos": "NOUN",
+        "lemma": "device"
+      },
+      {
+        "text": ",",
+        "pos": "PUNCT",
+        "lemma": ","
+      },
+      {
+        "text": "the",
+        "pos": "DET",
+        "lemma": "the"
+      },
+      {
+        "text": "iPhone",
+        "pos": "NOUN",
+        "lemma": "iPhone"
+      },
+      {
+        "text": "6",
+        "pos": "NUM",
+        "lemma": "6"
+      },
+      {
+        "text": "comes",
+        "pos": "VERB",
+        "lemma": "come"
+      },
+      {
+        "text": "with",
+        "pos": "ADP",
+        "lemma": "with"
+      },
+      {
+        "text": "a",
+        "pos": "DET",
+        "lemma": "a"
+      },
+      {
+        "text": "4.7",
+        "pos": "NUM",
+        "lemma": "4.7"
+      },
+      {
+        "text": "-",
+        "pos": "PUNCT",
+        "lemma": "-"
+      },
+      {
+        "text": "inch",
+        "pos": "NOUN",
+        "lemma": "inch"
+      },
+      {
+        "text": "display",
+        "pos": "NOUN",
+        "lemma": "display"
+      },
+      {
+        "text": "and",
+        "pos": "CONJ",
+        "lemma": "and"
+      },
+      {
+        "text": "the",
+        "pos": "DET",
+        "lemma": "the"
+      },
+      {
+        "text": "second",
+        "pos": "ADJ",
+        "lemma": "second"
+      },
+      {
+        "text": ",",
+        "pos": "PUNCT",
+        "lemma": ","
+      },
+      {
+        "text": "the",
+        "pos": "DET",
+        "lemma": "the"
+      },
+      {
+        "text": "iPhone",
+        "pos": "NOUN",
+        "lemma": "iPhone"
+      },
+      {
+        "text": "6",
+        "pos": "NUM",
+        "lemma": "6"
+      },
+      {
+        "text": "Plus",
+        "pos": "NOUN",
+        "lemma": "Plus"
+      },
+      {
+        "text": ",",
+        "pos": "PUNCT",
+        "lemma": ","
+      },
+      {
+        "text": "comes",
+        "pos": "VERB",
+        "lemma": "come"
+      },
+      {
+        "text": "with",
+        "pos": "ADP",
+        "lemma": "with"
+      },
+      {
+        "text": "a",
+        "pos": "DET",
+        "lemma": "a"
+      },
+      {
+        "text": "5.5",
+        "pos": "NUM",
+        "lemma": "5.5"
+      },
+      {
+        "text": "-",
+        "pos": "PUNCT",
+        "lemma": "-"
+      },
+      {
+        "text": "inch",
+        "pos": "NOUN",
+        "lemma": "inch"
+      },
+      {
+        "text": "display",
+        "pos": "NOUN",
+        "lemma": "display"
+      },
+      {
+        "text": ".",
+        "pos": "PUNCT",
+        "lemma": "."
+      },
+      {
+        "text": "The",
+        "pos": "DET",
+        "lemma": "The"
+      },
+      {
+        "text": "iPhone",
+        "pos": "NOUN",
+        "lemma": "iPhone"
+      },
+      {
+        "text": "6",
+        "pos": "NUM",
+        "lemma": "6"
+      },
+      {
+        "text": "Plus",
+        "pos": "NOUN",
+        "lemma": "Plus"
+      },
+      {
+        "text": "has",
+        "pos": "VERB",
+        "lemma": "have"
+      },
+      {
+        "text": "a",
+        "pos": "DET",
+        "lemma": "a"
+      },
+      {
+        "text": "5.5",
+        "pos": "NUM",
+        "lemma": "5.5"
+      },
+      {
+        "text": "-",
+        "pos": "PUNCT",
+        "lemma": "-"
+      },
+      {
+        "text": "inch",
+        "pos": "NOUN",
+        "lemma": "inch"
+      },
+      {
+        "text": "Retina",
+        "pos": "NOUN",
+        "lemma": "Retina"
+      },
+      {
+        "text": "HD",
+        "pos": "NOUN",
+        "lemma": "HD"
+      },
+      {
+        "text": "display",
+        "pos": "NOUN",
+        "lemma": "display"
+      },
+      {
+        "text": ",",
+        "pos": "PUNCT",
+        "lemma": ","
+      },
+      {
+        "text": "with",
+        "pos": "ADP",
+        "lemma": "with"
+      },
+      {
+        "text": "a",
+        "pos": "DET",
+        "lemma": "a"
+      },
+      {
+        "text": "pixel",
+        "pos": "NOUN",
+        "lemma": "pixel"
+      },
+      {
+        "text": "density",
+        "pos": "NOUN",
+        "lemma": "density"
+      },
+      {
+        "text": "of",
+        "pos": "ADP",
+        "lemma": "of"
+      },
+      {
+        "text": "401ppi",
+        "pos": "NOUN",
+        "lemma": "401ppi"
+      },
+      {
+        "text": "and",
+        "pos": "CONJ",
+        "lemma": "and"
+      },
+      {
+        "text": "a",
+        "pos": "DET",
+        "lemma": "a"
+      },
+      {
+        "text": "resolution",
+        "pos": "NOUN",
+        "lemma": "resolution"
+      },
+      {
+        "text": "of",
+        "pos": "ADP",
+        "lemma": "of"
+      },
+      {
+        "text": "1920",
+        "pos": "NUM",
+        "lemma": "1920"
+      },
+      {
+        "text": "x",
+        "pos": "X",
+        "lemma": "x"
+      },
+      {
+        "text": "1080",
+        "pos": "NUM",
+        "lemma": "1080"
+      },
+      {
+        "text": "pixels",
+        "pos": "NOUN",
+        "lemma": "pixel"
+      },
+      {
+        "text": ".",
+        "pos": "PUNCT",
+        "lemma": "."
+      },
+      {
+        "text": "But",
+        "pos": "CONJ",
+        "lemma": "But"
+      },
+      {
+        "text": "there",
+        "pos": "DET",
+        "lemma": "there"
+      },
+      {
+        "text": "’s",
+        "pos": "VERB",
+        "lemma": "be"
+      },
+      {
+        "text": "a",
+        "pos": "DET",
+        "lemma": "a"
+      },
+      {
+        "text": "lot",
+        "pos": "NOUN",
+        "lemma": "lot"
+      },
+      {
+        "text": "more",
+        "pos": "ADJ",
+        "lemma": "more"
+      },
+      {
+        "text": "to",
+        "pos": "ADP",
+        "lemma": "to"
+      },
+      {
+        "text": "the",
+        "pos": "DET",
+        "lemma": "the"
+      },
+      {
+        "text": "iPhone",
+        "pos": "NOUN",
+        "lemma": "iPhone"
+      },
+      {
+        "text": "6",
+        "pos": "NUM",
+        "lemma": "6"
+      },
+      {
+        "text": "Plus",
+        "pos": "NOUN",
+        "lemma": "Plus"
+      },
+      {
+        "text": "than",
+        "pos": "ADP",
+        "lemma": "than"
+      },
+      {
+        "text": "just",
+        "pos": "ADV",
+        "lemma": "just"
+      },
+      {
+        "text": "its",
+        "pos": "PRON",
+        "lemma": "its"
+      },
+      {
+        "text": "screen",
+        "pos": "NOUN",
+        "lemma": "screen"
+      },
+      {
+        "text": ".",
+        "pos": "PUNCT",
+        "lemma": "."
+      },
+      {
+        "text": "Here",
+        "pos": "ADV",
+        "lemma": "Here"
+      },
+      {
+        "text": "’s",
+        "pos": "VERB",
+        "lemma": "be"
+      },
+      {
+        "text": "the",
+        "pos": "DET",
+        "lemma": "the"
+      },
+      {
+        "text": "full",
+        "pos": "ADJ",
+        "lemma": "full"
+      },
+      {
+        "text": "spec",
+        "pos": "NOUN",
+        "lemma": "spec"
+      },
+      {
+        "text": "sheet",
+        "pos": "NOUN",
+        "lemma": "sheet"
+      },
+      {
+        "text": "of",
+        "pos": "ADP",
+        "lemma": "of"
+      },
+      {
+        "text": "the",
+        "pos": "DET",
+        "lemma": "the"
+      },
+      {
+        "text": "iPhone",
+        "pos": "NOUN",
+        "lemma": "iPhone"
+      },
+      {
+        "text": "6",
+        "pos": "NUM",
+        "lemma": "6"
+      },
+      {
+        "text": "Plus",
+        "pos": "NOUN",
+        "lemma": "Plus"
+      },
+      {
+        "text": ".",
+        "pos": "PUNCT",
+        "lemma": "."
+      }
+    ],
+    "finalEntityTaggedList": [
+      {
+        "text": "resolution",
+        "sentiment": 0.0,
+        "salience": 0.004501291,
+        "category": "OTHER",
+        "nounCombination": "resolution",
+        "nounCombinationCategory": "parameter"
+      },
+      {
+        "text": "Retina",
+        "sentiment": 0.0,
+        "salience": 0.008119276,
+        "category": "OTHER",
+        "nounCombination": "Retina",
+        "nounCombinationCategory": "tissue"
+      },
+      {
+        "text": "spec sheet",
+        "sentiment": 0.0,
+        "salience": 0.008205842,
+        "category": "OTHER",
+        "nounCombination": "spec sheet",
+        "nounCombinationCategory": "product documentation"
+      },
+      {
+        "text": "screen",
+        "sentiment": 0.0,
+        "salience": 0.010198647,
+        "category": "OTHER",
+        "nounCombination": "screen",
+        "nounCombinationCategory": "equipment"
+      },
+      {
+        "text": "lot",
+        "sentiment": 0.0,
+        "salience": 0.010198647,
+        "category": "OTHER",
+        "nounCombination": "lot",
+        "nounCombinationCategory": "information"
+      },
+      {
+        "text": "pixel density",
+        "sentiment": 0.0,
+        "salience": 0.013677699,
+        "category": "OTHER",
+        "nounCombination": "pixel density",
+        "nounCombinationCategory": "feature"
+      },
+      {
+        "text": "display",
+        "sentiment": 0.0,
+        "salience": 0.018272791,
+        "category": "OTHER",
+        "nounCombination": "display",
+        "nounCombinationCategory": "output device"
+      },
+      {
+        "text": "second",
+        "sentiment": 0.0,
+        "salience": 0.020044157,
+        "category": "OTHER",
+        "nounCombination": "",
+        "nounCombinationCategory": ""
+      },
+      {
+        "text": "Cupertino",
+        "sentiment": 0.0,
+        "salience": 0.027528176,
+        "category": "LOCATION",
+        "nounCombination": "Cupertino",
+        "nounCombinationCategory": "city"
+      },
+      {
+        "text": "Flint Center",
+        "sentiment": 0.0,
+        "salience": 0.027528176,
+        "category": "LOCATION",
+        "nounCombination": "Flint Center",
+        "nounCombinationCategory": "Not Found"
+      },
+      {
+        "text": "device",
+        "sentiment": 0.0,
+        "salience": 0.029542668,
+        "category": "CONSUMER_GOOD",
+        "nounCombination": "device",
+        "nounCombinationCategory": "resource"
+      },
+      {
+        "text": "Special Event",
+        "sentiment": 0.0,
+        "salience": 0.07042599,
+        "category": "EVENT",
+        "nounCombination": "",
+        "nounCombinationCategory": ""
+      },
+      {
+        "text": "models",
+        "sentiment": 0.0,
+        "salience": 0.115826026,
+        "category": "CONSUMER_GOOD",
+        "nounCombination": "models",
+        "nounCombinationCategory": "information"
+      },
+      {
+        "text": "iPhone 6",
+        "sentiment": 0.0,
+        "salience": 0.1345489,
+        "category": "CONSUMER_GOOD",
+        "nounCombination": "",
+        "nounCombinationCategory": ""
+      },
+      {
+        "text": "iPhone 6 Plus",
+        "sentiment": 0.0,
+        "salience": 0.14595602,
+        "category": "ORGANIZATION",
+        "nounCombination": "",
+        "nounCombinationCategory": ""
+      },
+      {
+        "text": "Apple",
+        "sentiment": 0.0,
+        "salience": 0.31323022,
+        "category": "ORGANIZATION",
+        "nounCombination": "Apple",
+        "nounCombinationCategory": "fruit"
+      }
+    ],
+    "specificationDto": {
+      "mainEntity": {
+        "text": "iPhone 6 Plus",
+        "sentiment": 0.0,
+        "salience": 0.14595602,
+        "category": "ORGANIZATION",
+        "nounCombination": "",
+        "nounCombinationCategory": ""
+      },
+      "relativeEntityList": [
+        {
+          "text": "iPhone 6",
+          "sentiment": 0.0,
+          "salience": 0.1345489,
+          "category": "CONSUMER_GOOD",
+          "nounCombination": "",
+          "nounCombinationCategory": ""
+        },
+        {
+          "text": "iPhone 6 Plus",
+          "sentiment": 0.0,
+          "salience": 0.14595602,
+          "category": "ORGANIZATION",
+          "nounCombination": "",
+          "nounCombinationCategory": ""
+        }
+      ],
+      "featureMap": {
+        "display": "output device",
+        "pixel density": "feature"
+      },
+      "specRelationshipDtoList": [
+        {
+          "finalEntityTagDto": {
+            "text": "iPhone 6",
+            "sentiment": 0.0,
+            "salience": 0.1345489,
+            "category": "CONSUMER_GOOD",
+            "nounCombination": "",
+            "nounCombinationCategory": ""
+          },
+          "relationship": "comes with a",
+          "featureMap": {
+            "display": "output device"
+          }
+        },
+        {
+          "finalEntityTagDto": {
+            "text": "iPhone 6",
+            "sentiment": 0.0,
+            "salience": 0.1345489,
+            "category": "CONSUMER_GOOD",
+            "nounCombination": "",
+            "nounCombinationCategory": ""
+          },
+          "relationship": "has a",
+          "featureMap": {
+            "display": "output device"
+          }
+        },
+        {
+          "finalEntityTagDto": {
+            "text": "iPhone 6 Plus",
+            "sentiment": 0.0,
+            "salience": 0.14595602,
+            "category": "ORGANIZATION",
+            "nounCombination": "",
+            "nounCombinationCategory": ""
+          },
+          "relationship": "has a",
+          "featureMap": {
+            "display": "output device"
+          }
+        },
+        {
+          "finalEntityTagDto": {
+            "text": "iPhone 6",
+            "sentiment": 0.0,
+            "salience": 0.1345489,
+            "category": "CONSUMER_GOOD",
+            "nounCombination": "",
+            "nounCombinationCategory": ""
+          },
+          "relationship": "has a",
+          "featureMap": {
+            "pixel density": "feature"
+          }
+        },
+        {
+          "finalEntityTagDto": {
+            "text": "iPhone 6 Plus",
+            "sentiment": 0.0,
+            "salience": 0.14595602,
+            "category": "ORGANIZATION",
+            "nounCombination": "",
+            "nounCombinationCategory": ""
+          },
+          "relationship": "has a",
+          "featureMap": {
+            "pixel density": "feature"
+          }
+        }
+      ]
+    }
+  }
+]
+}
+INFO	2017-11-24 15:39:26,329	32	root	[qtp1455841581-20]	Mapping Completed
+INFO	2017-11-24 15:39:26,330	33	root	[qtp1455841581-20]	Merging Ontology....
+INFO	2017-11-24 15:39:26,817	520	root	[qtp1455841581-20]	Merge Successful. Saving Changes...
+INFO	2017-11-24 15:39:29,094	2797	root	[qtp1455841581-20]	Changes Saved
+INFO	2017-11-24 15:39:29,100	2803	root	[qtp1455841581-20]	Successfully mapped and merged

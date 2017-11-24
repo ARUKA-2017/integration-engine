@@ -11,6 +11,12 @@ public class JsonResponse {
     public ArrayList<JsonRelationship> relationships;
 
 
+
+    public JsonResponse(){
+        this.review_info = new JsonReviewInfo();
+        this.entities = new ArrayList<>();
+        this.relationships = new ArrayList<>();
+    }
     public void setEntities(OntModel m) {
         for (JsonEntity js : entities) {
             js.setObject(m);
@@ -24,6 +30,7 @@ public class JsonResponse {
     }
 
     public void setReview(OntModel m){
+        System.out.println(this.review_info);
         this.review_info.setObject(m);
     }
 

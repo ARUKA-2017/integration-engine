@@ -1,5 +1,7 @@
 package com.akura.adaptor.input;
 
+import java.util.UUID;
+
 public class Entity {
 
     public String id;
@@ -12,6 +14,6 @@ public class Entity {
 
 
     public Entity(){
-        this.id = System.currentTimeMillis() + this.text.replaceAll(" ","");
+        this.id = UUID.randomUUID() + "";
     }
 }

@@ -29,6 +29,7 @@ public class MappingService {
             JsonResponse jsonResponse = new Gson().fromJson(body, JsonResponse.class);
             jsonResponse.setAll(m);
         } catch (Exception e) {
+            e.printStackTrace();
             log.write("Invalid JSON. There was a parse error. Please check the format again");
             return new ServiceResponse("error", "Invalid JSON. There was a parse error. Please check the format again");
         }
@@ -64,6 +65,7 @@ public class MappingService {
         try {
             nluRequest = new Gson().fromJson(body, NLURequest.class);
         } catch (Exception e) {
+            e.printStackTrace();
             log.write("Invalid JSON. There was a parse error. Please check the format again");
             return new ServiceResponse("error", "Invalid JSON. There was a parse error. Please check the format again");
         }
@@ -74,6 +76,7 @@ public class MappingService {
 
             nlu.replaceIdentifiers();
             AdaptorService adopt = new AdaptorService(nlu);
+            adopt.convert();
             adopt.target.setAll(m);
 
             log.write("Data : " + body);

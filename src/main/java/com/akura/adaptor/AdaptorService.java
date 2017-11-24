@@ -4,6 +4,7 @@ import com.akura.adaptor.input.Entity;
 import com.akura.adaptor.input.NLUOutput;
 import com.akura.adaptor.input.Relationship;
 import com.akura.mapping.models.JsonEntity;
+import com.akura.mapping.models.JsonProperty;
 import com.akura.mapping.models.JsonRelationship;
 import com.akura.mapping.models.JsonResponse;
 
@@ -26,11 +27,12 @@ public class AdaptorService {
     }
 
     public void setReviewInfo() {
+
         target.review_info.id = source.reviewId;
         target.review_info.comment = source.review;
-        target.review_info.email = "";
+        target.review_info.email = "nilesh.jayanandana@yahoo.com";
         target.review_info.rating = source.reviewRating;
-        target.review_info.user_name = "";
+        target.review_info.user_name = "nilesh jayanandana";
     }
 
     public void setJSONEntities() {
@@ -47,11 +49,15 @@ public class AdaptorService {
 
         jEnt.name = ent.text;
         jEnt.id = ent.id;
+        jEnt.property = new JsonProperty[]{};
+
 
         this.target.entities.add(jEnt);
     }
     public void setRelationships() {
+        setMainEntity();
         setFeatures();
+
     }
 
 
@@ -70,12 +76,21 @@ public class AdaptorService {
                     featureRelationship.type = "Feature";
                     featureRelationship.domain = rel.finalEntityTagDto.id;
                     featureRelationship.range = ent.id;
+
+                    this.target.relationships.add(featureRelationship);
                 }
             }
         }
     }
 
 
+    public void setMainEntity(){
+        JsonRelationship featureRelationship = new JsonRelationship();
+        featureRelationship.type = "MainEntity";
+        featureRelationship.domain = this.source.reviewId;
+        featureRelationship.range = this.source.specificationDto.mainEntity.id;
+        this.target.relationships.add(featureRelationship);
+    }
 
     public void addMissingEntity(Entity feature) {
 
