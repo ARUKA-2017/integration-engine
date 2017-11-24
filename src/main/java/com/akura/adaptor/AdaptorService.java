@@ -59,19 +59,23 @@ public class AdaptorService {
     public void setFeatures() {
         for (Relationship rel : this.source.specificationDto.specRelationshipDtoList) {
             // get entities of the hashmap
-            for (Entity ent : rel.featureMap) {
+            for (String name : rel.featureMap.keySet()) {
 
-                // if entity is not there in the entitylist, add it
-                addMissingEntity(ent);
+                Entity ent = this.source.findEntityFromFinalEntityTaggedList(name);
+                if(ent != null) {
+                    // if entity is not there in the entitylist, add it
+                    addMissingEntity(ent);
 
-                JsonRelationship featureRelationship = new JsonRelationship();
-                featureRelationship.type = "Feature";
-                featureRelationship.domain = rel.finalEntityTagDto.id;
-                featureRelationship.range = ent.id;
-
+                    JsonRelationship featureRelationship = new JsonRelationship();
+                    featureRelationship.type = "Feature";
+                    featureRelationship.domain = rel.finalEntityTagDto.id;
+                    featureRelationship.range = ent.id;
+                }
             }
         }
     }
+
+
 
     public void addMissingEntity(Entity feature) {
 

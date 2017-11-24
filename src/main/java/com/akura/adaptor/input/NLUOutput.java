@@ -2,7 +2,7 @@ package com.akura.adaptor.input;
 
 import java.util.ArrayList;
 
-public class NLUOutput{
+public class NLUOutput {
 
     public String reviewId;
     public String review;
@@ -10,11 +10,11 @@ public class NLUOutput{
     public ArrayList<Entity> finalEntityTaggedList;
     public Specification specificationDto;
 
-    public void replaceIdentifiers(){
+    public void replaceIdentifiers() {
         this.specificationDto.mainEntity.id = findIdFromFinalEntityTaggedList(this.specificationDto.mainEntity.text);
 
         ArrayList<Entity> relativeEntityList = new ArrayList<>();
-        for(Entity ent: this.specificationDto.relativeEntityList){
+        for (Entity ent : this.specificationDto.relativeEntityList) {
             ent.id = findIdFromFinalEntityTaggedList(ent.text);
             relativeEntityList.add(ent);
         }
@@ -22,15 +22,15 @@ public class NLUOutput{
 
 
         ArrayList<Relationship> specRelationshipDtoList = new ArrayList<>();
-        for(Relationship rel: this.specificationDto.specRelationshipDtoList){
+        for (Relationship rel : this.specificationDto.specRelationshipDtoList) {
             rel.finalEntityTagDto.id = findIdFromFinalEntityTaggedList(rel.finalEntityTagDto.text);
-
-            ArrayList<Entity> featureMap = new ArrayList<>();
-            for(Entity ent: rel.featureMap){
-                ent.id = findIdFromFinalEntityTaggedList(ent.text);
-                featureMap.add(ent);
-            }
-            rel.featureMap = featureMap;
+//
+//            ArrayList<Entity> featureMap = new ArrayList<>();
+//            for(Entity ent: rel.featureMap){
+//                ent.id = findIdFromFinalEntityTaggedList(ent.text);
+//                featureMap.add(ent);
+//            }
+//            rel.featureMap = featureMap;
             specRelationshipDtoList.add(rel);
         }
         this.specificationDto.specRelationshipDtoList = specRelationshipDtoList;
@@ -38,13 +38,25 @@ public class NLUOutput{
     }
 
 
-    public String findIdFromFinalEntityTaggedList(String name){
+    public String findIdFromFinalEntityTaggedList(String name) {
         String id = "";
-        for(Entity ent: finalEntityTaggedList){
-            if(ent.text == name){
+        for (Entity ent : finalEntityTaggedList) {
+            if (ent.text == name) {
                 id = ent.id;
             }
         }
         return id;
+    }
+
+    public Entity findEntityFromFinalEntityTaggedList(String name) {
+        Entity entity = null;
+        for (Entity ent : finalEntityTaggedList) {
+            if (ent.text == name) {
+                entity = ent;
+            }
+        }
+
+        return entity;
+
     }
 }
