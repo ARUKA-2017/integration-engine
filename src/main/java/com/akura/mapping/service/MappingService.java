@@ -141,7 +141,7 @@ public class MappingService {
         System.out.println("retrieving for "+ name);
         URL url = null;
         try {
-            url = new URL("http://localhost:3000/phone/"+  URLEncoder.encode(name, "UTF-8"));
+            url = new URL("http://35.198.251.53:3002/phone/"+  URLEncoder.encode(name, "UTF-8"));
             HttpURLConnection con = (HttpURLConnection) url.openConnection();
             con.setRequestMethod("GET");
             con.setRequestProperty("Content-Type", "application/json");
