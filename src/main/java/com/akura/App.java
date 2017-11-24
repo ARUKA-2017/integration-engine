@@ -40,6 +40,8 @@ public class App {
         get("/search/:id", (req, res) -> gson.toJson(ps.searchProduct(req.params(":id"), res, true)));
 
         post("/update-ontology", (req, res) -> gson.toJson(mp.map(req.body(), res)));
+        post("/update-ontology-adaptor", (req, res) -> gson.toJson(mp.useAdaptor(req.body(), res)));
+
 
 
 

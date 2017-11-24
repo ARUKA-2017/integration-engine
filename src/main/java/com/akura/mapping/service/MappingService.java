@@ -1,5 +1,7 @@
 package com.akura.mapping.service;
 
+import com.akura.adaptor.AdaptorService;
+import com.akura.adaptor.input.NLUOutput;
 import com.akura.config.Config;
 import com.akura.integration.service.IntegrateService;
 import com.akura.mapping.models.JsonResponse;
@@ -49,6 +51,44 @@ public class MappingService {
             return new ServiceResponse("error", "Ontology was already merged. Duplicate Data Instance");
         }
 
+
+    }
+
+    public ServiceResponse useAdaptor(String body, Response res){
+        log.write("Mapping Request from HTTP via the Adaptor");
+
+        res.type("Application/JSON");
+        OntModel m = OntologyReader.getOntologyModel(Config.OWL_DYNAMIC_EMPTY_FILENAME);
+
+        try {
+            NLUOutput nlu = new Gson().fromJson(body, NLUOutput.class);
+            nlu.replaceIdentifiers();
+            AdaptorService adopt = new AdaptorService(nlu);
+            adopt.target.setAll(m);
+
+            log.write("Data : " + body);
+            log.write("Mapping Completed");
+
+        } catch (Exception e) {
+            log.write("Invalid JSON. There was a parse error. Please check the format again");
+            return new ServiceResponse("error", "Invalid JSON. There was a parse error. Please check the format again");
+        }
+
+
+        //merge ontology
+        IntegrateService integrateService = new IntegrateService(m);
+        Boolean bool = integrateService.integrate();
+
+        if (bool) {
+            //TODO save files sepeartedly
+            OntologyWriter.writeOntology(m, fileResourceManager.getFilePath("ontology/demo_test_map_ontology_json.owl"));
+
+            res.status(200);
+            return new ServiceResponse("success", "Successfully mapped and merged");
+        } else {
+            res.status(500);
+            return new ServiceResponse("error", "Ontology was already merged. Duplicate Data Instance");
+        }
 
     }
 }

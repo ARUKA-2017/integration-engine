@@ -3,10 +3,13 @@ package com.akura.mapping.models;
 
 import org.apache.jena.ontology.OntModel;
 
+import java.util.ArrayList;
+
 public class JsonResponse {
     public JsonReviewInfo review_info;
-    public JsonEntity[] entities;
-    public JsonRelationship[] relationships;
+    public ArrayList<JsonEntity> entities;
+    public ArrayList<JsonRelationship> relationships;
+
 
     public void setEntities(OntModel m) {
         for (JsonEntity js : entities) {
