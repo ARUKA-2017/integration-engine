@@ -49,12 +49,6 @@ public class Entity {
         return ind;
     }
 
-
-    public void searchEntityByString(String name) {
-
-        //TODO
-    }
-
     private void initProperties() {
         name = model.getProperty(Config.URI_NAMESPACE + "Name");
         hashID = model.getProperty(Config.URI_NAMESPACE + "HashID");
