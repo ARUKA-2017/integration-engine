@@ -65,7 +65,7 @@ public class EntityNameResolver {
         URL url = null;
 
         try {
-            url = new URL("http://35.198.251.53:5000/amazon_url/"+  URLEncoder.encode(name, "UTF-8"));
+            url = new URL("http://35.202.18.187:5000/amazon_url/"+  URLEncoder.encode(name, "UTF-8"));
             HttpURLConnection con = (HttpURLConnection) url.openConnection();
             con.setRequestMethod("GET");
             con.setRequestProperty("Content-Type", "application/json");
