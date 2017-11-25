@@ -1,6 +1,7 @@
 package com.akura.test;
 
 
+import com.akura.adaptor.resolver.EntityNameResolver;
 import com.akura.config.Config;
 import com.akura.retrieval.db.DBConnection;
 import com.akura.retrieval.response.SingleResponse;
@@ -21,16 +22,18 @@ public class RetrievalTest {
 //        OntModel m = OntologyReader.getOntologyModel(Config.OWL_FILENAME);
 //        SingleResponse resp = new SingleResponse(m, "Samsung Galaxy S5", false);
 
-        BasicDBObject whereQuery = new BasicDBObject();
-        whereQuery.put("name", new BasicDBObject("$regex", ".*samsung galaxy s5.*")
-                .append("$options", "i"));
+//        BasicDBObject whereQuery = new BasicDBObject();
+//        whereQuery.put("name", new BasicDBObject("$regex", ".*samsung galaxy s5.*")
+//                .append("$options", "i"));
+//
+//
+//        List<String> consList = (ArrayList<String>) DBConnection.Connect().getCollection("phone_pros_and_cons").find(whereQuery).first().get("cons");
+//
+//        for (String con : consList) {
+//            System.out.println(con);
+//        }
 
-
-        List<String> consList = (ArrayList<String>) DBConnection.Connect().getCollection("phone_pros_and_cons").find(whereQuery).first().get("cons");
-
-        for (String con : consList) {
-            System.out.println(con);
-        }
+        EntityNameResolver.dataExtractionResolve("Apple iPhone 7");
 
     }
 }
