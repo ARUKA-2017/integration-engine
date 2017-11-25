@@ -117,13 +117,20 @@ public class EntityNameResolver {
             try {
                 url = new URL("http://35.198.251.53:4568/extract-review?search="+  URLEncoder.encode(name, "UTF-8")
                         +"&url="+ URLEncoder.encode(amazon, "UTF-8") );
+
+
+                System.out.println("start sending extract request");
+
+                System.out.println("http://35.198.251.53:4568/extract-review?search="+  URLEncoder.encode(name, "UTF-8")
+                        +"&url="+ URLEncoder.encode(amazon, "UTF-8"));
                 HttpURLConnection con = (HttpURLConnection) url.openConnection();
                 con.setRequestMethod("GET");
                 con.setRequestProperty("Content-Type", "application/json");
                 String contentType = con.getHeaderField("Content-Type");
-                con.setConnectTimeout(5000);
-                con.setReadTimeout(5000);
+                con.setConnectTimeout(15000);
+                con.setReadTimeout(15000);
 
+                System.out.println("start sending extract request");
                 int status = con.getResponseCode();
                 BufferedReader in = new BufferedReader(
                         new InputStreamReader(con.getInputStream()));
@@ -138,10 +145,11 @@ public class EntityNameResolver {
                 if(status == 200){
 
                     System.out.println("Extraction Success for: " + name);
-                    if(content.toString() != "null") {
+//                    if(content.toString() != "null") {
+                    System.out.println("Starting Mapping");
                         //TODO: check this integration code here
                         mp.useAdaptor(content.toString(), res);
-                    }
+//                    }
 
                 }else{
                     System.out.println("Extraction Failed for: " + name);

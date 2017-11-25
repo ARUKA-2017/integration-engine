@@ -68,7 +68,7 @@ public class MappingService {
         log.write("Mapping Request from HTTP via the Adaptor");
 
         res.type("Application/JSON");
-        HashMap<String,Entity> entityRegistry = new HashMap<>();
+        HashMap<String, Entity> entityRegistry = new HashMap<>();
 
         NLURequest nluRequest = null;
         try {
@@ -86,62 +86,65 @@ public class MappingService {
             nlu.replaceIdentifiers();
             AdaptorService adopt = new AdaptorService(nlu);
             adopt.convert();
-            adopt.target.setAll(m);
+            System.out.println(new Gson().toJson(adopt.target));
+            if (adopt.mainEntityStatus) {
 
-            log.write("Data : " + body);
-            log.write("Mapping Completed");
+                adopt.target.setAll(m);
 
-            //merge ontology
-            IntegrateService integrateService = new IntegrateService(m);
-            Boolean bool = integrateService.integrate();
+                log.write("Data : " + body);
+                log.write("Mapping Completed");
 
-            if (bool) {
-                //TODO save files sepeartedly
-                OntologyWriter.writeOntology(m, fileResourceManager.getFilePath("ontology/demo_test_map_ontology_json.owl"));
+                //merge ontology
+                IntegrateService integrateService = new IntegrateService(m);
+                Boolean bool = integrateService.integrate();
 
-                // add entities to hashmap to use for mongo extraction
-                for(Entity ent: nlu.specificationDto.relativeEntityList){
+                if (bool) {
+                    //TODO save files sepeartedly
+                    OntologyWriter.writeOntology(m, fileResourceManager.getFilePath("ontology/demo_test_map_ontology_json.owl"));
 
-                   if(entityRegistry.get(ent.id) == null){
+                    // add entities to hashmap to use for mongo extraction
+                    for (Entity ent : nlu.specificationDto.relativeEntityList) {
 
-                       entityRegistry.put(ent.id,ent);
-                   }
+                        if (entityRegistry.get(ent.id) == null) {
+
+                            entityRegistry.put(ent.id, ent);
+                        }
+                    }
+                    log.write("Successfully mapped and merged");
+                } else {
+                    System.out.println("Ontology was already merged. Duplicate Data Instance");
+                    log.write("Ontology was already merged. Duplicate Data Instance");
+
                 }
-                log.write("Successfully mapped and merged");
             } else {
-                System.out.println("Ontology was already merged. Duplicate Data Instance");
-                log.write("Ontology was already merged. Duplicate Data Instance");
-
+                System.out.println("Ignoring because Main Entity Not Found!");
             }
         }
 
 
-
         // after everything, insert data in mongodb as well
-        mongoLoader(entityRegistry,res);
-
+        mongoLoader(entityRegistry, res);
 
 
         res.status(200);
         return new ServiceResponse("success", "Successfully mapped and merged");
     }
 
-    public void mongoLoader( HashMap<String,Entity> entityRegistry,Response res){
+    public void mongoLoader(HashMap<String, Entity> entityRegistry, Response res) {
 
         Set keys = entityRegistry.keySet();
-        for(Object key : keys) {
-            mongoLoaderSingleEntity(entityRegistry.get(key.toString()).text,res);
+        for (Object key : keys) {
+            mongoLoaderSingleEntity(entityRegistry.get(key.toString()).text, res);
         }
     }
 
 
+    public void mongoLoaderSingleEntity(String name, Response res) {
 
-    public void mongoLoaderSingleEntity(String name, Response res){
-
-        System.out.println("retrieving for "+ name);
+        System.out.println("retrieving for " + name);
         URL url = null;
         try {
-            url = new URL("http://35.198.251.53:3002/phone/"+  URLEncoder.encode(name, "UTF-8"));
+            url = new URL("http://35.198.251.53:3002/phone/" + URLEncoder.encode(name, "UTF-8"));
             HttpURLConnection con = (HttpURLConnection) url.openConnection();
             con.setRequestMethod("GET");
             con.setRequestProperty("Content-Type", "application/json");
@@ -160,7 +163,7 @@ public class MappingService {
             System.out.println(status);
             System.out.println(content.toString());
             in.close();
-            map(content.toString(),res);
+            map(content.toString(), res);
 
 
         } catch (MalformedURLException e) {

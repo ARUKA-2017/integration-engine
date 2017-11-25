@@ -8,10 +8,12 @@ import com.akura.mapping.models.JsonProperty;
 import com.akura.mapping.models.JsonRelationship;
 import com.akura.mapping.models.JsonResponse;
 
+
 public class AdaptorService {
 
     public NLUOutput source;
     public JsonResponse target;
+    public Boolean mainEntityStatus = false;
 
     public AdaptorService(NLUOutput source) {
 
@@ -85,11 +87,16 @@ public class AdaptorService {
 
 
     public void setMainEntity(){
-        JsonRelationship featureRelationship = new JsonRelationship();
-        featureRelationship.type = "MainEntity";
-        featureRelationship.domain = this.source.reviewId;
-        featureRelationship.range = this.source.specificationDto.mainEntity.id;
-        this.target.relationships.add(featureRelationship);
+        for(Entity ent: this.source.specificationDto.relativeEntityList){
+            if(ent.id.equals(this.source.specificationDto.mainEntity.id)){
+                JsonRelationship featureRelationship = new JsonRelationship();
+                featureRelationship.type = "MainEntity";
+                featureRelationship.domain = this.source.reviewId;
+                featureRelationship.range = this.source.specificationDto.mainEntity.id;
+                this.target.relationships.add(featureRelationship);
+                this.mainEntityStatus = true;
+            }
+        }
     }
 
     public void setBetterThan(){

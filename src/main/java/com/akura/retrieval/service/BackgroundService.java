@@ -57,6 +57,7 @@ public class BackgroundService extends Thread {
                 }
             } catch (Exception e) {
                 System.out.println("Exception : " + e);
+                e.printStackTrace();
             }
         }
     }
