@@ -24,7 +24,7 @@ public class BaseScore {
 
             count++;
         }
-        if(count == 0){
+        if (count == 0) {
             return 0;
         }
         return (total / count);

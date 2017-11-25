@@ -16,11 +16,11 @@ public class Comparison {
 
     private OntModel model;
 
-    Property goodProperty;
-    Property badProperty;
-    Property count;
-    Property name;
-    Property hashID;
+    private Property goodProperty;
+    private Property badProperty;
+    private Property count;
+    private Property name;
+    private Property hashID;
 
     public Individual instance;
 
