@@ -1,0 +1,61 @@
+{
+	"review_info": {
+		"id": "112121212121",
+		"user_name": "rishanthan",
+		"email": "rishanthakumar@gmail.com",
+		"comment": "iPhone6s is better than",
+		"rating": 0.7,
+		"property": [
+			{
+				"key": "review_info_key",
+				"value": "review_info_value"
+			}
+		]
+	},
+	"entities": [
+		{
+			"id": "11111111111111",
+			"name": "iPhone7",
+			"base_score": 0.8,
+			"property": [
+				{
+					"key": "weight",
+					"value": "20g"
+				}
+			]
+		},
+		{
+			"id": "222222222222222",
+			"name": "Samsung Galaxy S5",
+			"base_score": 0.7,
+			"property": [
+				{
+					"key": "weight",
+					"value": "10g"
+				}
+			]
+		},
+		{
+			"id": "3333333333333",
+			"name": "Camera",
+			"base_score": 0.6,
+			"property": [
+				{
+					"key": "front camera",
+					"value": "13MPX"
+				}
+			]
+		},
+		{
+			"id": "75656565555",
+			"name": "Camera",
+			"base_score": 0.9,
+			"property": [
+				{
+					"key": "back camera",
+					"value": "13MPX"
+				}
+			]
+		}
+	]
+}
