@@ -1,5 +1,7 @@
 package com.akura.adaptor.input;
 
+import com.akura.adaptor.resolver.EntityNameResolver;
+
 import java.util.ArrayList;
 import java.util.UUID;
 
@@ -18,6 +20,12 @@ public class NLUOutput {
         ArrayList<Entity> relativeEntityList = new ArrayList<>();
         for (Entity ent : this.specificationDto.relativeEntityList) {
             ent.id = findIdFromFinalEntityTaggedList(ent.text);
+
+            //resolve correct mobile name
+            String name = EntityNameResolver.getMobileName(ent.text);
+            if(name != null) {
+                ent.text = name;
+            }
             relativeEntityList.add(ent);
         }
         this.specificationDto.relativeEntityList = relativeEntityList;
@@ -67,7 +75,6 @@ public class NLUOutput {
         for (int i = 0; i < finalEntityTaggedList.size(); i++) {
             Entity ent =  finalEntityTaggedList.get(i);
             ent.id = UUID.randomUUID() + "";
-
             finalEntityTaggedList.set(i,ent);
         }
 
