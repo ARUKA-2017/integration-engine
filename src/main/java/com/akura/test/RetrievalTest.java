@@ -33,7 +33,7 @@ public class RetrievalTest {
 //            System.out.println(con);
 //        }
 
-        EntityNameResolver.dataExtractionResolve("Apple iPhone 7");
+       // EntityNameResolver.dataExtractionResolve("Apple iPhone 7");
 
     }
 }

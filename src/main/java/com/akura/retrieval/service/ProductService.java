@@ -1,6 +1,7 @@
 package com.akura.retrieval.service;
 
 import com.akura.config.Config;
+import com.akura.mapping.service.MappingService;
 import com.akura.retrieval.response.EntityListResponse;
 import com.akura.retrieval.response.IRetrievalResponse;
 import com.akura.retrieval.response.SingleResponse;
@@ -15,7 +16,7 @@ public class ProductService {
 
     OntModel m = OntologyReader.getOntologyModel(Config.OWL_FILENAME);
 
-    public IRetrievalResponse searchProduct(String search, Response res, boolean isHash) {
+    public IRetrievalResponse searchProduct(String search, Response res, boolean isHash, MappingService mappingService) {
 
         res.type("Application/JSON");
 
@@ -23,7 +24,7 @@ public class ProductService {
             return new SingleResponse(m, search, isHash);
         } else {
 
-            BackgroundService backgroundService = new BackgroundService(search);
+            BackgroundService backgroundService = new BackgroundService(search, mappingService, res);
             backgroundService.start();
 
             return new EntityListResponse(m, search);

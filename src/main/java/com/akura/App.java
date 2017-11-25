@@ -29,7 +29,7 @@ public class App {
         SparkMiddleware.enableCORS("*", "POST, GET, OPTIONS, PUT, DELETE",
                 "Content-Type, x-xsrf-token, content-Type, X-Auth-Token, Origin, Authorization");
 
-        get("/search", (req, res) -> gson.toJson(ps.searchProduct(req.queryParams("search"), res, false)));
+        get("/search", (req, res) -> gson.toJson(ps.searchProduct(req.queryParams("search"), res, false, mp)));
         post("/generate-vowl", (req,res)->{
            String uid =  Parser.parseFromJsonString(req.body());
             return  uid;
@@ -37,7 +37,7 @@ public class App {
 
         //TODO Get suggestions upon keystroke type endpoint
 
-        get("/search/:id", (req, res) -> gson.toJson(ps.searchProduct(req.params(":id"), res, true)));
+        get("/search/:id", (req, res) -> gson.toJson(ps.searchProduct(req.params(":id"), res, true, mp)));
 
         post("/update-ontology", (req, res) -> gson.toJson(mp.map(req.body(), res)));
         post("/update-ontology-adaptor", (req, res) -> gson.toJson(mp.useAdaptor(req.body(), res)));
