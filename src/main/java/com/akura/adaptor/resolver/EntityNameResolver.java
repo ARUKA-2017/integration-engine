@@ -44,10 +44,13 @@ public class EntityNameResolver {
 
 
         } catch (MalformedURLException e) {
+            name = null;
             e.printStackTrace();
         } catch (ProtocolException e) {
+            name = null;
             e.printStackTrace();
         } catch (IOException e) {
+            name = null;
             e.printStackTrace();
         }
 
