@@ -44,14 +44,12 @@ public class AdaptorService {
     public void addJSONEntity(Entity ent) {
 
         JsonEntity jEnt = new JsonEntity();
-        //TODO: this comes empty
-        jEnt.base_score = ent.sentiment;
+        //TODO: salience used instead of sentiment because sentiment comes as zero
+        jEnt.base_score = ent.salience;
 
         jEnt.name = ent.text;
         jEnt.id = ent.id;
         jEnt.property = new JsonProperty[]{};
-        // todo: get details down from mongodb as well
-
 
         this.target.entities.add(jEnt);
 
