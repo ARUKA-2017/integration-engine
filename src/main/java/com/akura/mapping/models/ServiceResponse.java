@@ -1,6 +1,8 @@
 package com.akura.mapping.models;
 
-
+/**
+ * Class representing a ServiceResponse.
+ */
 public class ServiceResponse {
     public String status;
     public String message;

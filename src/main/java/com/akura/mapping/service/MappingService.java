@@ -11,8 +11,11 @@ import com.akura.mapping.models.ServiceResponse;
 import com.akura.utility.Log;
 import com.akura.utility.OntologyReader;
 import com.akura.utility.OntologyWriter;
+
 import com.google.gson.Gson;
+
 import org.apache.jena.ontology.OntModel;
+
 import spark.Response;
 
 import java.io.BufferedReader;
@@ -24,9 +27,19 @@ import java.util.Set;
 
 import static com.akura.utility.OntologyWriter.fileResourceManager;
 
+/**
+ * Class representing a MappingService.
+ */
 public class MappingService {
     Log log = new Log();
 
+    /**
+     * Method used to map ontologies.
+     *
+     * @param body - body of the request containing JSON.
+     * @param res  - response of the request.
+     * @return - ServiceResponse.
+     */
     public ServiceResponse map(String body, Response res) {
 
         log.write("Mapping Request from HTTP");
@@ -60,10 +73,15 @@ public class MappingService {
             res.status(500);
             return new ServiceResponse("error", "Ontology was already merged. Duplicate Data Instance");
         }
-
-
     }
 
+    /**
+     * Method used to map ontlogies using Adapter.
+     *
+     * @param body - body of the request.
+     * @param res  - response of the request.
+     * @return - ServiceResponse.
+     */
     public ServiceResponse useAdaptor(String body, Response res) {
         log.write("Mapping Request from HTTP via the Adaptor");
 
@@ -121,15 +139,19 @@ public class MappingService {
             }
         }
 
-
         // after everything, insert data in mongodb as well
         mongoLoader(entityRegistry, res);
-
 
         res.status(200);
         return new ServiceResponse("success", "Successfully mapped and merged");
     }
 
+    /**
+     * Method used for mongoLoader.
+     *
+     * @param entityRegistry - entity registry.
+     * @param res            - response of the request.
+     */
     public void mongoLoader(HashMap<String, Entity> entityRegistry, Response res) {
 
         Set keys = entityRegistry.keySet();
@@ -138,7 +160,12 @@ public class MappingService {
         }
     }
 
-
+    /**
+     * Method used mongo loader single entity.
+     *
+     * @param name - name of the entity.
+     * @param res  - response of the request.
+     */
     public void mongoLoaderSingleEntity(String name, Response res) {
 
         System.out.println("retrieving for " + name);
@@ -164,7 +191,6 @@ public class MappingService {
             System.out.println(content.toString());
             in.close();
             map(content.toString(), res);
-
 
         } catch (MalformedURLException e) {
             e.printStackTrace();

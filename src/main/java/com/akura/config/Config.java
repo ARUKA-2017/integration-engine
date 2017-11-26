@@ -23,7 +23,5 @@ public class Config {
 
     public static final double STRING_SIMILARITY_THRESHOLD = 0.5;
 
-
-
     public static final String DYNAMIC_ONTOLOGY_URI = "urn:absolute:www.akura.com#";
 }

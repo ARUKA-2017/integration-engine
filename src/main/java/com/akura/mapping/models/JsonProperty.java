@@ -1,20 +1,30 @@
 package com.akura.mapping.models;
 
-
 import com.akura.config.Config;
 import com.akura.integration.models.RelationshipGenerator;
 import com.akura.utility.HashGeneratorClass;
+
 import org.apache.jena.ontology.Individual;
 import org.apache.jena.ontology.ObjectProperty;
 import org.apache.jena.ontology.OntClass;
 import org.apache.jena.ontology.OntModel;
 
+/**
+ * Class representing a JsonProperty.
+ */
 public class JsonProperty {
     public String key;
     public String value;
 
     public Individual instance;
 
+    /**
+     * Method used to set the object.
+     *
+     * @param m          - ontology model.
+     * @param parentHash - hash id of the parent.
+     * @param parent     - parent individual.
+     */
     public void setObject(OntModel m, String parentHash, Individual parent) {
 
         String hash = parentHash + "-" + HashGeneratorClass.generateHashForString(this.key, "PROPERTY");
