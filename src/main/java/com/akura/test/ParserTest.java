@@ -1,12 +1,12 @@
 package com.akura.test;
 
-
 import com.akura.parser.models.Ontology;
 import com.akura.parser.service.EntityService;
 import com.akura.parser.service.ValidatorService;
 import com.akura.parser.vowl.VowlConverter;
 import com.akura.utility.FileResourceManager;
 import com.google.gson.Gson;
+
 import org.apache.jena.ontology.OntModel;
 import org.apache.jena.rdf.model.ModelFactory;
 
@@ -16,12 +16,12 @@ import java.io.Reader;
 import java.lang.reflect.Type;
 import java.util.Map;
 
+/**
+ * Class used to test the parser.
+ */
 public class ParserTest {
 
     public static void main(String[] args) {
-
-
-
 
 //        FileResourceManager fileResourceManager = new FileResourceManager();
 //        Gson gson = new Gson();

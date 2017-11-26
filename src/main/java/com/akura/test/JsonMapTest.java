@@ -1,6 +1,5 @@
 package com.akura.test;
 
-
 import com.akura.config.Config;
 import com.akura.mapping.models.JsonResponse;
 import com.akura.utility.FileResourceManager;
@@ -18,6 +17,9 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 
+/**
+ * Class used to test the JsonMap.
+ */
 public class JsonMapTest {
 
     public static void main(String[] args) {
@@ -38,9 +40,8 @@ public class JsonMapTest {
 
         jsonResponse.setAll(m);
 
-        OntologyWriter.writeOntology(m,fileResourceManager.getFilePath("ontology/demo_test_map_ontology_json.owl"));
+        OntologyWriter.writeOntology(m, fileResourceManager.getFilePath("ontology/demo_test_map_ontology_json.owl"));
 
         System.out.println("Done");
-
     }
 }

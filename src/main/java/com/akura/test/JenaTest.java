@@ -1,6 +1,5 @@
 package com.akura.test;
 
-
 import com.akura.config.Config;
 import com.akura.integration.models.*;
 import com.akura.utility.OntologyReader;
@@ -13,7 +12,9 @@ import org.apache.jena.util.iterator.ExtendedIterator;
 import java.util.HashMap;
 import java.util.Map;
 
-
+/**
+ * Class used to test Jena.
+ */
 public class JenaTest {
 
     public static void main(String[] args) {
@@ -155,7 +156,6 @@ public class JenaTest {
         baseScore2.setScore((float) 0.7);
 
 
-
         // step 9 create new basescore for camera
         BaseScore camScore = new BaseScore(m, review);
         camScore.setScore((float) 0.5);
@@ -174,8 +174,6 @@ public class JenaTest {
 
         // save ontology
         OntologyWriter.writeOntology(m);
-
-
     }
 }
 
