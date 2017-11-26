@@ -21,22 +21,25 @@ public class NLUOutput {
             }
 
             ArrayList<Entity> relativeEntityList = new ArrayList<>();
-            for (Entity ent : this.specificationDto.relativeEntityList) {
-                ent.id = findIdFromFinalEntityTaggedList(ent.text);
+            if( this.specificationDto.relativeEntityList != null) {
+                for (Entity ent : this.specificationDto.relativeEntityList) {
+                    ent.id = findIdFromFinalEntityTaggedList(ent.text);
 
-                //resolve correct mobile name
-                String name = EntityNameResolver.getMobileName(ent.text);
-                if (name != null) {
-                    ent.text = name;
+                    //resolve correct mobile name
+                    String name = EntityNameResolver.getMobileName(ent.text);
+                    if (name != null) {
+                        ent.text = name;
+                    }
+                    relativeEntityList.add(ent);
                 }
-                relativeEntityList.add(ent);
             }
             this.specificationDto.relativeEntityList = relativeEntityList;
 
 
             ArrayList<Relationship> specRelationshipDtoList = new ArrayList<>();
-            for (Relationship rel : this.specificationDto.specRelationshipDtoList) {
-                rel.finalEntityTagDto.id = findIdFromFinalEntityTaggedList(rel.finalEntityTagDto.text);
+            if(this.specificationDto.specRelationshipDtoList != null) {
+                for (Relationship rel : this.specificationDto.specRelationshipDtoList) {
+                    rel.finalEntityTagDto.id = findIdFromFinalEntityTaggedList(rel.finalEntityTagDto.text);
 //
 //            ArrayList<Entity> featureMap = new ArrayList<>();
 //            for(Entity ent: rel.featureMap){
@@ -44,7 +47,8 @@ public class NLUOutput {
 //                featureMap.add(ent);
 //            }
 //            rel.featureMap = featureMap;
-                specRelationshipDtoList.add(rel);
+                    specRelationshipDtoList.add(rel);
+                }
             }
             this.specificationDto.specRelationshipDtoList = specRelationshipDtoList;
         }
