@@ -8,12 +8,15 @@ import com.akura.config.Config;
 import com.akura.integration.service.IntegrateService;
 import com.akura.mapping.models.JsonResponse;
 import com.akura.mapping.models.ServiceResponse;
+import com.akura.retrieval.db.DBConnection;
 import com.akura.utility.Log;
 import com.akura.utility.OntologyReader;
 import com.akura.utility.OntologyWriter;
 
 import com.google.gson.Gson;
 
+import com.mongodb.BasicDBObject;
+import com.mongodb.client.MongoDatabase;
 import org.apache.jena.ontology.OntModel;
 
 import spark.Response;
@@ -168,38 +171,54 @@ public class MappingService {
      */
     public void mongoLoaderSingleEntity(String name, Response res) {
 
-        //TODO: Rishanthan, please check if this name is searched for in the mongoDB search_registry
-        //TODO: if it doesn't exist only allow the rest of this function to execute
-        System.out.println("retrieving for " + name);
-        URL url = null;
-        try {
-            url = new URL("http://35.198.251.53:3002/phone/" + URLEncoder.encode(name, "UTF-8"));
-            HttpURLConnection con = (HttpURLConnection) url.openConnection();
-            con.setRequestMethod("GET");
-            con.setRequestProperty("Content-Type", "application/json");
-            String contentType = con.getHeaderField("Content-Type");
-            con.setConnectTimeout(500000);
-            con.setReadTimeout(500000);
+        MongoDatabase database = new DBConnection().Connect();
 
-            int status = con.getResponseCode();
-            BufferedReader in = new BufferedReader(
-                    new InputStreamReader(con.getInputStream()));
-            String inputLine;
-            StringBuffer content = new StringBuffer();
-            while ((inputLine = in.readLine()) != null) {
-                content.append(inputLine);
+        if (name != null) {
+
+            BasicDBObject whereQuery = new BasicDBObject();
+            whereQuery.put("name", name);
+
+            try {
+                long searchCount = database.getCollection("search_registry").count(whereQuery);
+
+                if (searchCount == 0) {
+
+                    System.out.println("retrieving for " + name);
+                    URL url = null;
+                    try {
+                        url = new URL("http://35.198.251.53:3002/phone/" + URLEncoder.encode(name, "UTF-8"));
+                        HttpURLConnection con = (HttpURLConnection) url.openConnection();
+                        con.setRequestMethod("GET");
+                        con.setRequestProperty("Content-Type", "application/json");
+                        String contentType = con.getHeaderField("Content-Type");
+                        con.setConnectTimeout(5000);
+                        con.setReadTimeout(5000);
+
+                        int status = con.getResponseCode();
+                        BufferedReader in = new BufferedReader(
+                                new InputStreamReader(con.getInputStream()));
+                        String inputLine;
+                        StringBuffer content = new StringBuffer();
+                        while ((inputLine = in.readLine()) != null) {
+                            content.append(inputLine);
+                        }
+                        System.out.println(status);
+                        System.out.println(content.toString());
+                        in.close();
+                        map(content.toString(), res);
+
+                    } catch (MalformedURLException e) {
+                        e.printStackTrace();
+                    } catch (ProtocolException e) {
+                        e.printStackTrace();
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
+                }
+            } catch (Exception e) {
+                System.out.println("Exception : " + e);
+                e.printStackTrace();
             }
-            System.out.println(status);
-            System.out.println(content.toString());
-            in.close();
-            map(content.toString(), res);
-
-        } catch (MalformedURLException e) {
-            e.printStackTrace();
-        } catch (ProtocolException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
         }
     }
 }
