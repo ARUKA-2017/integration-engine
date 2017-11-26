@@ -67,19 +67,21 @@ public class AdaptorService {
     public void setFeatures() {
         for (Relationship rel : this.source.specificationDto.specRelationshipDtoList) {
             // get entities of the hashmap
-            for (String name : rel.featureMap.keySet()) {
+            if(this.source.findEntityFromRelativeTaggedListbyName(rel.finalEntityTagDto.text) != null) {
+                for (String name : rel.featureMap.keySet()) {
 
-                Entity ent = this.source.findEntityFromFinalEntityTaggedList(name);
-                if(ent != null) {
-                    // if entity is not there in the entitylist, add it
-                    addMissingEntity(ent);
+                    Entity ent = this.source.findEntityFromFinalEntityTaggedList(name);
+                    if (ent != null) {
+                        // if entity is not there in the entitylist, add it
+                        addMissingEntity(ent);
 
-                    JsonRelationship featureRelationship = new JsonRelationship();
-                    featureRelationship.type = "Feature";
-                    featureRelationship.domain = rel.finalEntityTagDto.id;
-                    featureRelationship.range = ent.id;
+                        JsonRelationship featureRelationship = new JsonRelationship();
+                        featureRelationship.type = "Feature";
+                        featureRelationship.domain = rel.finalEntityTagDto.id;
+                        featureRelationship.range = ent.id;
 
-                    this.target.relationships.add(featureRelationship);
+                        this.target.relationships.add(featureRelationship);
+                    }
                 }
             }
         }
@@ -104,10 +106,10 @@ public class AdaptorService {
     }
 
     public void addMissingEntity(Entity feature) {
-
+        System.out.println("Adding missing entity "+ feature.text);
         Boolean missing = true;
         for (JsonEntity ent : this.target.entities) {
-            if (ent.id == feature.id) {
+            if (ent.id.equals(feature.id)) {
                 missing = false;
             }
         }

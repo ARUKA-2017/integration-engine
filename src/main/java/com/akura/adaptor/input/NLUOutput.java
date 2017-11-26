@@ -75,6 +75,17 @@ public class NLUOutput {
 
     }
 
+    public Entity findEntityFromRelativeTaggedListbyName(String name) {
+        Entity entity = null;
+        for (Entity ent : specificationDto.relativeEntityList) {
+            if ( ent.text.equals(name)) {
+                entity = ent;
+            }
+        }
+        return entity;
+
+    }
+
     public void setIdentifiers(){
         for (int i = 0; i < finalEntityTaggedList.size(); i++) {
             Entity ent =  finalEntityTaggedList.get(i);

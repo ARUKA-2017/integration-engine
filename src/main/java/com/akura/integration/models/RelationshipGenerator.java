@@ -15,7 +15,7 @@ public class RelationshipGenerator {
         // entity --> range
 
 //        ObjectProperty prop = model.getObjectProperty(OntologyClass.URI_NAMESPACE + relationship);
-
+//
 //        System.out.println("domain "+ domain);
 //        System.out.println("relationship "+ relationship);
 //        System.out.println("range "+ range);
