@@ -2,6 +2,7 @@ package com.akura.retrieval.service;
 
 import com.akura.config.Config;
 import com.akura.mapping.service.MappingService;
+import com.akura.ontology.BaseOntology;
 import com.akura.retrieval.response.EntityListResponse;
 import com.akura.retrieval.response.IRetrievalResponse;
 import com.akura.retrieval.response.SingleResponse;
@@ -17,7 +18,7 @@ import spark.Response;
  */
 public class ProductService {
 
-    OntModel m = OntologyReader.getOntologyModel(Config.OWL_FILENAME);
+    OntModel m = BaseOntology.getInstance();
 
     /**
      * Method used to search the product.

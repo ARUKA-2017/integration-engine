@@ -5,6 +5,7 @@ import com.akura.integration.dynamic.DynamicEntity;
 import com.akura.integration.dynamic.ReviewInfo;
 import com.akura.integration.models.Entity;
 import com.akura.integration.models.Review;
+import com.akura.ontology.BaseOntology;
 import com.akura.utility.Log;
 import com.akura.utility.OntologyReader;
 import com.akura.utility.OntologyWriter;
@@ -25,7 +26,7 @@ public class IntegrateService {
     // TODO insert classifier and determine classes from properties
     // TODO after classification sort the order so that steps are matched
 
-    public static OntModel stat = OntologyReader.getOntologyModel(Config.OWL_FILENAME);
+    public static OntModel stat = BaseOntology.getInstance();
     public OntModel dynamic;
     Review review;
     Log log = new Log();
