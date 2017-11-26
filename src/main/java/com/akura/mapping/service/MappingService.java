@@ -178,8 +178,8 @@ public class MappingService {
             con.setRequestMethod("GET");
             con.setRequestProperty("Content-Type", "application/json");
             String contentType = con.getHeaderField("Content-Type");
-            con.setConnectTimeout(5000);
-            con.setReadTimeout(5000);
+            con.setConnectTimeout(500000);
+            con.setReadTimeout(500000);
 
             int status = con.getResponseCode();
             BufferedReader in = new BufferedReader(
