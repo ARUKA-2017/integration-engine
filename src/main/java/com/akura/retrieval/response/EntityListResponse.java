@@ -3,6 +3,7 @@ package com.akura.retrieval.response;
 import com.akura.config.Config;
 import com.akura.retrieval.models.Entity;
 import com.akura.utility.StringSimilarity;
+
 import org.apache.jena.ontology.Individual;
 import org.apache.jena.ontology.OntClass;
 import org.apache.jena.ontology.OntModel;
@@ -10,6 +11,9 @@ import org.apache.jena.util.iterator.ExtendedIterator;
 
 import java.util.ArrayList;
 
+/**
+ * Class used to represent EntityListResponse.
+ */
 public class EntityListResponse implements IRetrievalResponse {
 
     public EntityInstance[] entityInstanceList;

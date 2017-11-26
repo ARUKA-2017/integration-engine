@@ -1,11 +1,14 @@
 package com.akura.retrieval.response;
 
-
 import com.akura.retrieval.models.Entity;
 import com.akura.retrieval.models.Feature;
+
 import org.apache.jena.ontology.Individual;
 import org.apache.jena.ontology.OntModel;
 
+/**
+ * Class representing a ComparisonEntityInstance.
+ */
 public class ComparisonEntityInstance {
     public String name;
     public String id;

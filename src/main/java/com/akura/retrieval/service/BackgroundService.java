@@ -3,15 +3,21 @@ package com.akura.retrieval.service;
 import com.akura.adaptor.resolver.EntityNameResolver;
 import com.akura.mapping.service.MappingService;
 import com.akura.retrieval.db.DBConnection;
+
 import com.mongodb.BasicDBObject;
 import com.mongodb.client.MongoDatabase;
+
 import org.bson.Document;
+
 import spark.Response;
 
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
+/**
+ * Class representing a BackgroundService.
+ */
 public class BackgroundService extends Thread {
 
     private String searchString;
@@ -24,6 +30,9 @@ public class BackgroundService extends Thread {
         this.response = response;
     }
 
+    /**
+     * Thread run method where call to mongo and data extraction part is handled.
+     */
     public void run() {
 
         MongoDatabase database = new DBConnection().Connect();

@@ -4,7 +4,18 @@ package com.akura.retrieval.service;
 import static spark.Spark.before;
 import static spark.Spark.options;
 
+/**
+ * Class representing SparkMiddleware.
+ */
 public class SparkMiddleware {
+
+    /**
+     * Method used to enable CORS.
+     *
+     * @param origin  - origin.
+     * @param methods - Http methods.
+     * @param headers - Http headers.
+     */
     public static void enableCORS(final String origin, final String methods, final String headers) {
 
         options("/*", (request, response) -> {

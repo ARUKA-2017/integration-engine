@@ -1,13 +1,16 @@
 package com.akura.retrieval.response;
 
-
 import com.akura.retrieval.models.Comparison;
+
 import org.apache.jena.ontology.Individual;
 import org.apache.jena.ontology.OntModel;
 import org.apache.jena.query.*;
 
 import java.util.ArrayList;
 
+/**
+ * Class representing a ComparisonResponse.
+ */
 public class ComparisonResponse {
 
     public ComparisonEntityInstance[] betterThan;
@@ -15,12 +18,16 @@ public class ComparisonResponse {
 
 
     public ComparisonResponse(OntModel m, String hash) {
-
         this.setBetterThan(m, hash);
         this.setWorseThan(m, hash);
     }
 
-
+    /**
+     * Method used to set the better than entities.
+     *
+     * @param m    - Ontology model.
+     * @param hash - hash id of the entity.
+     */
     public void setBetterThan(OntModel m, String hash) {
         ParameterizedSparqlString ps = new ParameterizedSparqlString();
         ps.setCommandText(
@@ -58,7 +65,12 @@ public class ComparisonResponse {
         }
     }
 
-
+    /**
+     * Method used to set the worse than entities.
+     *
+     * @param m    - Ontology model.
+     * @param hash - hash id of the entity.
+     */
     public void setWorseThan(OntModel m, String hash) {
         ParameterizedSparqlString ps = new ParameterizedSparqlString();
         ps.setCommandText(

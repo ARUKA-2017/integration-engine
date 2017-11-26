@@ -12,10 +12,22 @@ import org.apache.jena.ontology.OntModel;
 
 import spark.Response;
 
+/**
+ * Class representing a ProductService.
+ */
 public class ProductService {
 
     OntModel m = OntologyReader.getOntologyModel(Config.OWL_FILENAME);
 
+    /**
+     * Method used to search the product.
+     *
+     * @param search         - search keyword.
+     * @param res            - response of the request.
+     * @param isHash         - is it a hash based entity search.
+     * @param mappingService - instance of Mapping Service.
+     * @return - IRetrievalResponse.
+     */
     public IRetrievalResponse searchProduct(String search, Response res, boolean isHash, MappingService mappingService) {
 
         res.type("Application/JSON");
