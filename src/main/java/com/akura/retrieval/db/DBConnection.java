@@ -8,7 +8,7 @@ import com.mongodb.client.MongoDatabase;
 public class DBConnection {
 
 
-    public static MongoDatabase Connect() {
+    public MongoDatabase Connect() {
 
         MongoClientURI connectionString = new MongoClientURI("mongodb://nilesh:akura@ds147544.mlab.com:47544/akura");
         MongoClient mongoClient = new MongoClient(connectionString);

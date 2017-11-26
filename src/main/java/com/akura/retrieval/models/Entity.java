@@ -119,7 +119,7 @@ public class Entity {
                 .append("$options", "i"));
 
         try {
-            Document doc =  DBConnection.Connect().getCollection("phone_pros_and_cons").find(whereQuery).first();
+            Document doc =  new DBConnection().Connect().getCollection("phone_pros_and_cons").find(whereQuery).first();
             this.pros = (ArrayList<String>) doc.get("pros");
             this.cons = (ArrayList<String>) doc.get("cons");
 

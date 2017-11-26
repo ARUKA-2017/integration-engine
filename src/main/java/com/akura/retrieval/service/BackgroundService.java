@@ -26,7 +26,7 @@ public class BackgroundService extends Thread {
 
     public void run() {
 
-        MongoDatabase database = DBConnection.Connect();
+        MongoDatabase database = new DBConnection().Connect();
 
         String mobileName = EntityNameResolver.getMobileName(searchString);
 
