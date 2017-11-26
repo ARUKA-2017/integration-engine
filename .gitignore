@@ -23,3 +23,5 @@ syslog.log
 webvowl/ontologies/
 *.owl
 webvowl/data
+
+!rev_engine_base_ontology_empty.owl
