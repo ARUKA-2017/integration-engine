@@ -4,7 +4,17 @@ import org.apache.commons.io.FileUtils;
 
 import java.io.*;
 
+/**
+ * Class representing a CommandExecutor.
+ */
 public class CommandExecutor {
+
+    /**
+     * Method used to execute the file reading command.
+     *
+     * @param command - relevant command.
+     * @return - string value.
+     */
     public static String executeCommand(String command) {
 
         StringBuffer output = new StringBuffer();
@@ -17,7 +27,7 @@ public class CommandExecutor {
                     new BufferedReader(new InputStreamReader(p.getInputStream()));
 
             String line = "";
-            while ((line = reader.readLine())!= null) {
+            while ((line = reader.readLine()) != null) {
                 output.append(line + "\n");
             }
 
@@ -26,12 +36,18 @@ public class CommandExecutor {
         }
 
         return output.toString();
-
     }
 
+    /**
+     * Method used to copy file using a stream.
+     *
+     * @param source - source.
+     * @param dest   - destination.
+     * @throws IOException - exception.
+     */
     public static void copyFileUsingStream(File source, File dest) throws IOException {
 
-        if(!dest.exists()){
+        if (!dest.exists()) {
             dest.createNewFile();
         }
         InputStream is = null;
@@ -50,6 +66,13 @@ public class CommandExecutor {
         }
     }
 
+    /**
+     * Method used to copy file using apache commons IO.
+     *
+     * @param source - source.
+     * @param dest   - destination.
+     * @throws IOException - exception.
+     */
     public static void copyFileUsingApacheCommonsIO(File source, File dest) throws IOException {
         FileUtils.copyFile(source, dest);
     }

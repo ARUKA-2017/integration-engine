@@ -11,7 +11,7 @@ public class FileResourceManager {
      * @param fileName - File which is located in the resources folder E.g: <customFolderName>/<fileName>
      * @return - the complete path of the file.
      */
-    public  String getFilePath(String fileName) {
+    public String getFilePath(String fileName) {
         //Get file from resources folder
         ClassLoader classLoader = getClass().getClassLoader();
 
