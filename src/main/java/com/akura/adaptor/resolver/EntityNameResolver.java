@@ -130,6 +130,12 @@ public class EntityNameResolver {
 
         String amazon = urlNameResolve(name).replaceAll("\"", "");
 
+        try{
+           mp.mongoLoaderSingleEntity(name,res);
+        }catch(Exception e){
+            e.printStackTrace();
+        }
+
         if (amazon != null) {
             URL url = null;
 

@@ -168,6 +168,8 @@ public class MappingService {
      */
     public void mongoLoaderSingleEntity(String name, Response res) {
 
+        //TODO: Rishanthan, please check if this name is searched for in the mongoDB search_registry
+        //TODO: if it doesn't exist only allow the rest of this function to execute
         System.out.println("retrieving for " + name);
         URL url = null;
         try {
