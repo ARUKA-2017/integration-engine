@@ -1,29 +1,27 @@
 package com.akura.parser.models;
 
 import com.akura.parser.config.Config;
-import com.akura.utility.HashGeneratorClass;
+
 import org.apache.jena.ontology.Individual;
 import org.apache.jena.ontology.OntClass;
 import org.apache.jena.ontology.OntModel;
-import org.apache.jena.ontology.OntProperty;
-import org.apache.jena.util.iterator.ExtendedIterator;
 
 import java.util.*;
 
-
+/**
+ * Class representing a Entity.
+ */
 public class Entity {
 
     public Map simpleTypes;
     public String name;
     public HashMap<String, ArrayList<Entity>> complexTypes;
     public HashMap<String, ArrayList<String>> simpleComplexTypes;
-    public HashMap<String,Boolean>  complexTypesPureSatatus;
+    public HashMap<String, Boolean> complexTypesPureSatatus;
     public String classURI;
     public Individual instance;
     public UUID namespace = UUID.randomUUID();
     public OntModel m;
-
-
 
     public Entity(String _key, OntModel m) {
         this.m = m;
@@ -36,23 +34,35 @@ public class Entity {
         name = _key;
     }
 
+    /**
+     * Method used to add complex type of objects.
+     *
+     * @param key - key value.
+     * @param ent - entity.
+     */
     public void addComplexType(String key, Entity ent) {
 
         // NOTE: keyname is used instead of key to identify common classes with seperate key names. To revert back just replace keyname with key
         String keyName = this.m.getOntClass(ent.classURI).getLocalName();
 
-            if (complexTypes.get(keyName) != null) {
-                complexTypes.get(keyName).add(ent);
+        if (complexTypes.get(keyName) != null) {
+            complexTypes.get(keyName).add(ent);
 
-            } else {
-                ArrayList arr = new ArrayList();
-                arr.add(ent);
+        } else {
+            ArrayList arr = new ArrayList();
+            arr.add(ent);
 
-                complexTypes.put(keyName, arr);
+            complexTypes.put(keyName, arr);
 
-            }
+        }
     }
 
+    /**
+     * Method used to add simple complex type values.
+     *
+     * @param key - key.
+     * @param val - value.
+     */
     public void addSimpleComplexType(String key, String val) {
 
         if (simpleComplexTypes.get(key) != null) {
@@ -64,24 +74,29 @@ public class Entity {
         }
     }
 
-
-
+    /**
+     * Method used to add simple type.
+     *
+     * @param key - key.
+     * @param obj - object.
+     */
     public void addSimpleType(String key, Object obj) {
-
         simpleTypes.put(key, obj);
     }
 
-
+    /**
+     * Method used to save the ontology.
+     */
     public void saveToOntology() {
         if (name != null) {
             Ontology ont = new Ontology(this.m);
-            System.out.println("NAME: "+name);
+            System.out.println("NAME: " + name);
 
             classURI = ont.getClassName(name, simpleTypes, complexTypes, simpleComplexTypes);
 
             System.out.println(classURI);
             OntClass clazz = this.m.getOntClass(classURI);
-            instance = clazz.createIndividual(Config.ONTOLOGY_URI + "--" + this.namespace.toString() + name.replace("#",""));
+            instance = clazz.createIndividual(Config.ONTOLOGY_URI + "--" + this.namespace.toString() + name.replace("#", ""));
 
 
             // simple types
@@ -101,36 +116,33 @@ public class Entity {
             for (Object key : simpleComplexTypes.keySet()) {
                 ArrayList<String> values = simpleComplexTypes.get(key.toString());
                 for (String val : values) {
-                    instance.addLiteral(ont.getProperty(key.toString()),val);
+                    instance.addLiteral(ont.getProperty(key.toString()), val);
                 }
             }
 
         }
     }
 
-
-    public void changeClassName(String newName){
+    /**
+     * Method used to change the class name.
+     *
+     * @param newName - new name of the class.
+     */
+    public void changeClassName(String newName) {
 
         name = newName;
-        if(instance != null){
+        if (instance != null) {
             instance.remove();
             instance = null;
         }
 
-        if(classURI != null) {
+        if (classURI != null) {
             OntClass clazz = this.m.getOntClass(classURI);
 
             if (clazz != null) {
                 clazz.remove();
             }
             classURI = null;
-
         }
-
     }
-
-
-
-
-
 }
