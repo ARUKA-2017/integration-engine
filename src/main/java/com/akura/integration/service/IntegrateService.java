@@ -1,6 +1,5 @@
 package com.akura.integration.service;
 
-
 import com.akura.config.Config;
 import com.akura.integration.dynamic.DynamicEntity;
 import com.akura.integration.dynamic.ReviewInfo;
@@ -9,6 +8,7 @@ import com.akura.integration.models.Review;
 import com.akura.utility.Log;
 import com.akura.utility.OntologyReader;
 import com.akura.utility.OntologyWriter;
+
 import org.apache.jena.ontology.Individual;
 import org.apache.jena.ontology.OntClass;
 import org.apache.jena.ontology.OntModel;
@@ -17,6 +17,9 @@ import org.apache.jena.util.iterator.ExtendedIterator;
 
 import java.util.ArrayList;
 
+/**
+ * Class representing a IntegrateService.
+ */
 public class IntegrateService {
 
     // TODO insert classifier and determine classes from properties
@@ -31,6 +34,11 @@ public class IntegrateService {
         this.dynamic = dynamic;
     }
 
+    /**
+     * Method used to integrate ontologies.
+     *
+     * @return - boolean value.
+     */
     public Boolean integrate() {
         log.write("Merging Ontology....");
         // first get review class instances
@@ -44,9 +52,14 @@ public class IntegrateService {
 
         // save after everything
         return this.saveModifiedOntology();
-
     }
 
+    /**
+     * Method used to filter individuals.
+     *
+     * @param name - name of the class.
+     * @return - list of individuals.
+     */
     public ArrayList<Individual> classIndividualFilter(String name) {
         ArrayList<Individual> individualList = new ArrayList<>();
         ExtendedIterator<OntClass> classIter = dynamic.listClasses();
@@ -61,13 +74,16 @@ public class IntegrateService {
                     individualList.add(instance);
                 }
             }
-
         }
 
         return individualList;
-
     }
 
+    /**
+     * Method used to process review class instances.
+     *
+     * @return - boolean value.
+     */
     public Boolean processReviewClassInstances() {
         for (Individual instance : this.classIndividualFilter("ReviewInfo")) {
 
@@ -85,11 +101,14 @@ public class IntegrateService {
                 e.printStackTrace();
                 return false;
             }
-
         }
+
         return !review.status;
     }
 
+    /**
+     * Method used to process entity class instances.
+     */
     public void processEntityClassInstances() {
         for (Individual instance : this.classIndividualFilter("Entity")) {
             DynamicEntity entity = new DynamicEntity(dynamic, stat, instance, review);
@@ -105,6 +124,12 @@ public class IntegrateService {
     }
 
     // TODO Write an algortithm to save ontology model concurrently
+
+    /**
+     * Method used to save the modified ontology.
+     *
+     * @return - boolean value.
+     */
     public Boolean saveModifiedOntology() {
 
         if (!review.status) {

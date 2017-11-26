@@ -2,12 +2,16 @@ package com.akura.integration.models;
 
 import com.akura.config.Config;
 import com.akura.utility.HashGeneratorClass;
+
 import org.apache.jena.ontology.Individual;
 import org.apache.jena.ontology.ObjectProperty;
 import org.apache.jena.ontology.OntClass;
 import org.apache.jena.ontology.OntModel;
 import org.apache.jena.rdf.model.Property;
 
+/**
+ * Class representing a Feature,
+ */
 public class Feature {
 
     public static String prefix = "FEATURE";
@@ -15,15 +19,13 @@ public class Feature {
     public Individual instance;
     public OntClass entityClass;
     public String hash;
+    public Boolean status;
 
     private Property name;
     private ObjectProperty featureProperty;
     private ObjectProperty evaluatedBy;
     private Property hashID;
-
     private OntModel model;
-
-    public Boolean status;
 
     public Feature(OntModel m) {
         this.model = m;
@@ -51,7 +53,9 @@ public class Feature {
         }
     }
 
-
+    /**
+     * Method used to initialize the properties.
+     */
     private void initProperties() {
         name = model.getProperty(Config.URI_NAMESPACE + "Name");
         featureProperty = model.getObjectProperty(Config.URI_NAMESPACE + "FeatureProperty");
@@ -60,11 +64,21 @@ public class Feature {
 
     }
 
+    /**
+     * Method used to set the name of the feature.
+     *
+     * @param name - name of the feature.
+     */
     public void setName(String name) {
         this.instance.addProperty(this.name, name);
     }
 
-
+    /**
+     * Method used to set the property of a feature.
+     *
+     * @param key   - key of the property.
+     * @param value - value of the property.
+     */
     public void setProperty(String key, String value) {
 
         PropertyObject prop = new PropertyObject(this.model, key, this.hash);
@@ -77,19 +91,34 @@ public class Feature {
         if (!this.model.listStatements(this.instance, this.featureProperty, prop.instance).hasNext()) {
             RelationshipGenerator.setRelationship(this.featureProperty, this.instance, prop.instance);
         }
-
     }
 
+    /**
+     * Method used to set the base score.
+     *
+     * @param baseScore - base score.
+     */
     public void setBaseScore(Individual baseScore) {
         if (!this.model.listStatements(this.instance, this.evaluatedBy, baseScore).hasNext()) {
             RelationshipGenerator.setRelationship(this.evaluatedBy, this.instance, baseScore);
         }
     }
 
+    /**
+     * Method used to set the hash id of the feature.
+     *
+     * @param hashID - hash id.
+     */
     public void setHashID(String hashID) {
         instance.addProperty(this.hashID, hashID);
     }
 
+    /**
+     * Method used to search feature by hash id.
+     *
+     * @param hash - hash id.
+     * @return - individual instance.
+     */
     public Individual search(String hash) {
         Individual ind = this.model.getIndividual(Config.URI_NAMESPACE + hash);
         return ind;

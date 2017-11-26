@@ -3,8 +3,18 @@ package com.akura.integration.models;
 import org.apache.jena.ontology.Individual;
 import org.apache.jena.ontology.ObjectProperty;
 
+/**
+ * Class representing a RelationshipGenerator.
+ */
 public class RelationshipGenerator {
 
+    /**
+     * Method used to set the relationship.
+     *
+     * @param relationship - relationship property.
+     * @param domain       - domain of the relationship.
+     * @param range        - range of the relationship.
+     */
     public static void setRelationship(
             ObjectProperty relationship,
             Individual domain,
@@ -20,8 +30,6 @@ public class RelationshipGenerator {
 //        System.out.println("relationship "+ relationship);
 //        System.out.println("range "+ range);
 
-        domain.addProperty(relationship,range);
-
-
+        domain.addProperty(relationship, range);
     }
 }

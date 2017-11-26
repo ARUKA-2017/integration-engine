@@ -1,5 +1,7 @@
 package com.akura.integration.dynamic;
+
 import com.akura.integration.models.*;
+
 import org.apache.jena.ontology.Individual;
 import org.apache.jena.ontology.OntClass;
 import org.apache.jena.ontology.OntModel;
@@ -11,17 +13,20 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
 
+/**
+ * Class representing a DynamicEntity.
+ */
 public class DynamicEntity {
 
     private OntModel dynamic;
+
     public static OntModel stat;
+
     public OntClass entityClass;
     public Individual instance;
     public ArrayList<Property> properties;
     public Boolean isEntity;
     public Review review;
-
-    //TODO  refactor this entire class
     public Entity staticEntity;
     public Feature staticFeature;
 
@@ -39,13 +44,23 @@ public class DynamicEntity {
         this.review = review;
     }
 
+    /**
+     * Method used to get the properties of the entity.
+     *
+     * @return - list of properties,
+     */
     public ArrayList<Property> getProperties() {
 
         this.properties = IntegrationHelper.listPropertiesToArrayList(this.instance);
         return this.properties;
     }
 
-
+    /**
+     * Method used to check whether it is a feature.
+     *
+     * @return - boolean value.
+     * @throws Exception - exception.
+     */
     public boolean isFeature() throws Exception {
         this.isEntity = true;
 
@@ -58,7 +73,6 @@ public class DynamicEntity {
                         "<" + this.instance.getURI().toString() + ">" +
                         "}"
         );
-
 
         ps.setLiteral("identifier", this.instance.getURI().toString());
 
@@ -76,7 +90,6 @@ public class DynamicEntity {
                 String name = IntegrationHelper.getLiteralPropertyValue(indProperties, "Name", instance);
                 this.staticEntity = new Entity(this.stat, name);
 
-
             }
         } finally {
             queryExecution.close();
@@ -85,7 +98,13 @@ public class DynamicEntity {
         return !this.isEntity;
     }
 
-
+    /**
+     * Method used to set the static ontology entity instance.
+     *
+     * @param stat - static ontology model.
+     * @return - Entity.
+     * @throws Exception - exception.
+     */
     public Entity setStaticOntoEntityInstance(OntModel stat) throws Exception {
 
         if (this.isEntity) {
@@ -114,19 +133,29 @@ public class DynamicEntity {
         }
     }
 
-
+    /**
+     * Method used to get the entity object.
+     *
+     * @param stat - static ontology model.
+     * @return - entity.
+     * @throws Exception -exception.
+     */
     public Entity getEntityObject(OntModel stat) throws Exception {
         String name = IntegrationHelper.getLiteralPropertyValue(this.properties, "Name", this.instance);
         Entity ent = new Entity(stat, name);
         return ent;
     }
 
-
+    /**
+     * Method used to set features from the entity.
+     *
+     * @param ent - entity.
+     * @throws Exception - exception.
+     */
     public void setFeaturesFromEntity(Entity ent) throws Exception {
 
         ArrayList<Individual> featureEntites = IntegrationHelper
                 .getObjectPropertyList(this.dynamic, this.properties, "SubEntity", this.instance);
-
 
         Iterator<Individual> iterator = featureEntites.iterator();
 
@@ -142,22 +171,23 @@ public class DynamicEntity {
 
             Feature f = ent.setFeature(name, map);
 
-
             // set basescore to feature
             BaseScore score = new BaseScore(ent.model, this.review);
             score.setScore(IntegrationHelper.getLiteralPropertyValueFloat(featureEntity.properties, "BaseScore", featureEntity.instance));
             f.setBaseScore(score.instance);
 
-
             // set comparison to feature
             featureEntity.setComparisonsForFeature(f);
         }
-
-
     }
 
 
-    // get hashmap of dynamic properties in the ontology
+    /**
+     * Method used get hashmap of dynamic properties in the ontology.
+     *
+     * @return - map.
+     * @throws Exception - exception.
+     */
     public Map<String, String> getStaticOntoProperties() throws Exception {
         Map<String, String> map = new HashMap<String, String>();
 
@@ -177,7 +207,13 @@ public class DynamicEntity {
         return map;
     }
 
-
+    /**
+     * Method used to set comparisons for the entity.
+     *
+     * @param ent - entity.
+     * @return - list of individuals.
+     * @throws Exception - exception.
+     */
     public ArrayList<Individual> setComparisonsForEntity(Entity ent) throws Exception {
         ArrayList<Individual> propertyInstaces = IntegrationHelper
                 .getObjectPropertyList(this.dynamic, this.properties, "BetterThan", this.instance);
@@ -198,14 +234,18 @@ public class DynamicEntity {
                     comparisonEntity.hash,
                     ent.instance,
                     comparisonEntity.instance);
-
         }
 
         return propertyInstaces;
-
     }
 
-
+    /**
+     * Method used set comparisons for features.
+     *
+     * @param f - feature.
+     * @return - lsit of individuals.
+     * @throws Exception - exceptions.
+     */
     public ArrayList<Individual> setComparisonsForFeature(Feature f) throws Exception {
         ArrayList<Individual> propertyInstaces = IntegrationHelper
                 .getObjectPropertyList(this.dynamic, this.properties, "BetterThan", this.instance);
@@ -228,11 +268,8 @@ public class DynamicEntity {
                     comparisonFeature.hash,
                     f.instance,
                     comparisonFeature.instance);
-
         }
 
         return propertyInstaces;
-
     }
-
 }
