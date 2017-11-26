@@ -5,6 +5,7 @@ import java.util.ArrayList;
 public class StringSimilarity {
 
     public  static  String[] letterPairs(String str) {
+
         int numPairs = str.length() - 1;
         String[] pairs = new String[numPairs];
 
@@ -35,8 +36,8 @@ public class StringSimilarity {
     }
 
     public static double compareStrings(String str1, String str2) {
-        ArrayList pairs1 = wordLetterPairs(str1.toUpperCase());
-        ArrayList pairs2 = wordLetterPairs(str2.toUpperCase());
+        ArrayList pairs1 = wordLetterPairs(str1.trim().toUpperCase());
+        ArrayList pairs2 = wordLetterPairs(str2.trim().toUpperCase());
 
         int intersection = 0;
         int union = pairs1.size() + pairs2.size();
