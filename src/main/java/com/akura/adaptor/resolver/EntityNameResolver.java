@@ -1,6 +1,7 @@
 package com.akura.adaptor.resolver;
 
 import com.akura.mapping.service.MappingService;
+
 import spark.Response;
 
 import java.io.BufferedReader;
@@ -8,15 +9,24 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.net.*;
 
+/**
+ * Class represernting an EntityNameResolver.
+ */
 public class EntityNameResolver {
 
-    public static String getMobileName(String name){
+    /**
+     * Method used to get the relevant mobile name.
+     *
+     * @param name - search key.
+     * @return - correct mobile name.
+     */
+    public static String getMobileName(String name) {
 
-        System.out.println("EntityNameResolver for "+ name);
+        System.out.println("EntityNameResolver for " + name);
         URL url = null;
 
         try {
-            url = new URL("http://35.198.251.53:3002/phone_name/"+  URLEncoder.encode(name, "UTF-8"));
+            url = new URL("http://35.198.251.53:3002/phone_name/" + URLEncoder.encode(name, "UTF-8"));
             HttpURLConnection con = (HttpURLConnection) url.openConnection();
             con.setRequestMethod("GET");
             con.setRequestProperty("Content-Type", "application/json");
@@ -35,14 +45,12 @@ public class EntityNameResolver {
             System.out.println(status);
             System.out.println(content.toString());
 
-            if(status == 200){
+            if (status == 200) {
                 name = content.toString();
-            }else{
+            } else {
                 name = null;
             }
             in.close();
-
-
 
         } catch (MalformedURLException e) {
             name = null;
@@ -58,14 +66,20 @@ public class EntityNameResolver {
         return name;
     }
 
-    public static String urlNameResolve(String name){
+    /**
+     * Method used to resolve the url for name.
+     *
+     * @param name - name of the entity.
+     * @return - URL.
+     */
+    public static String urlNameResolve(String name) {
 
-        System.out.println("URL Name Resolver for "+ name);
+        System.out.println("URL Name Resolver for " + name);
         String address = null;
         URL url = null;
 
         try {
-            url = new URL("http://35.202.18.187:5000/amazon_url/"+  URLEncoder.encode(name, "UTF-8"));
+            url = new URL("http://35.202.18.187:5000/amazon_url/" + URLEncoder.encode(name, "UTF-8"));
             HttpURLConnection con = (HttpURLConnection) url.openConnection();
             con.setRequestMethod("GET");
             con.setRequestProperty("Content-Type", "application/json");
@@ -84,14 +98,12 @@ public class EntityNameResolver {
             System.out.println(status);
             System.out.println(content.toString());
 
-            if(status == 200){
+            if (status == 200) {
                 address = content.toString();
-            }else{
+            } else {
                 address = null;
             }
             in.close();
-
-
 
         } catch (MalformedURLException e) {
             address = null;
@@ -107,22 +119,28 @@ public class EntityNameResolver {
         return address;
     }
 
-    public static void dataExtractionResolve(String name, Response res, MappingService mp){
+    /**
+     * Method used to extract data and resolve,
+     *
+     * @param name - name of the entity.
+     * @param res  - response of the request.
+     * @param mp   - mapping service.
+     */
+    public static void dataExtractionResolve(String name, Response res, MappingService mp) {
 
-        String amazon = urlNameResolve(name).replaceAll("\"","");
+        String amazon = urlNameResolve(name).replaceAll("\"", "");
 
-        if(amazon != null){
+        if (amazon != null) {
             URL url = null;
 
             try {
-                url = new URL("http://35.198.251.53:4568/extract-review?search="+  URLEncoder.encode(name, "UTF-8")
-                        +"&url="+ URLEncoder.encode(amazon, "UTF-8") );
-
+                url = new URL("http://35.198.251.53:4568/extract-review?search=" + URLEncoder.encode(name, "UTF-8")
+                        + "&url=" + URLEncoder.encode(amazon, "UTF-8"));
 
                 System.out.println("start sending extract request");
 
-                System.out.println("http://35.198.251.53:4568/extract-review?search="+  URLEncoder.encode(name, "UTF-8")
-                        +"&url="+ URLEncoder.encode(amazon, "UTF-8"));
+                System.out.println("http://35.198.251.53:4568/extract-review?search=" + URLEncoder.encode(name, "UTF-8")
+                        + "&url=" + URLEncoder.encode(amazon, "UTF-8"));
                 HttpURLConnection con = (HttpURLConnection) url.openConnection();
                 con.setRequestMethod("GET");
                 con.setRequestProperty("Content-Type", "application/json");
@@ -142,21 +160,19 @@ public class EntityNameResolver {
                 System.out.println(status);
                 System.out.println(content.toString());
 
-                if(status == 200){
+                if (status == 200) {
 
                     System.out.println("Extraction Success for: " + name);
 //                    if(content.toString() != "null") {
                     System.out.println("Starting Mapping");
-                        //TODO: check this integration code here
-                        mp.useAdaptor(content.toString(), res);
+                    //TODO: check this integration code here
+                    mp.useAdaptor(content.toString(), res);
 //                    }
 
-                }else{
+                } else {
                     System.out.println("Extraction Failed for: " + name);
                 }
                 in.close();
-
-
 
             } catch (MalformedURLException e) {
 
@@ -168,7 +184,6 @@ public class EntityNameResolver {
 
                 e.printStackTrace();
             }
-
         }
     }
 }

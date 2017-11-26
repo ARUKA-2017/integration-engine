@@ -2,6 +2,9 @@ package com.akura.adaptor.input;
 
 import java.util.UUID;
 
+/**
+ * Class representing an Entity.
+ */
 public class Entity {
 
     public String id;
@@ -12,8 +15,7 @@ public class Entity {
     public String nounCombination;
     public String nounCombinationCategory;
 
-
-    public Entity(){
+    public Entity() {
         this.id = UUID.randomUUID() + "";
     }
 }

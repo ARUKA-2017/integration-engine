@@ -8,7 +8,9 @@ import com.akura.mapping.models.JsonProperty;
 import com.akura.mapping.models.JsonRelationship;
 import com.akura.mapping.models.JsonResponse;
 
-
+/**
+ * Class representing an AdaptorService.
+ */
 public class AdaptorService {
 
     public NLUOutput source;
@@ -16,18 +18,22 @@ public class AdaptorService {
     public Boolean mainEntityStatus = false;
 
     public AdaptorService(NLUOutput source) {
-
-
         this.source = source;
         target = new JsonResponse();
     }
 
+    /**
+     * Method used to convert the NLU output.
+     */
     public void convert() {
         setReviewInfo();
         setJSONEntities();
         setRelationships();
     }
 
+    /**
+     * Method used set the review info.
+     */
     public void setReviewInfo() {
 
         target.review_info.id = source.reviewId;
@@ -37,12 +43,20 @@ public class AdaptorService {
         target.review_info.user_name = "nilesh jayanandana";
     }
 
+    /**
+     * Method used to the set the JSON entities.
+     */
     public void setJSONEntities() {
         for (Entity ent : this.source.specificationDto.relativeEntityList) {
             addJSONEntity(ent);
         }
     }
 
+    /**
+     * Method used to add JSON entity.
+     *
+     * @param ent - entity.
+     */
     public void addJSONEntity(Entity ent) {
 
         JsonEntity jEnt = new JsonEntity();
@@ -54,20 +68,23 @@ public class AdaptorService {
         jEnt.property = new JsonProperty[]{};
 
         this.target.entities.add(jEnt);
-
     }
+
+    /**
+     * Method used to set the relationship.
+     */
     public void setRelationships() {
         setMainEntity();
         setFeatures();
-
     }
 
-
-
+    /**
+     * Method used to set the features.
+     */
     public void setFeatures() {
         for (Relationship rel : this.source.specificationDto.specRelationshipDtoList) {
             // get entities of the hashmap
-            if(this.source.findEntityFromRelativeTaggedListbyName(rel.finalEntityTagDto.text) != null) {
+            if (this.source.findEntityFromRelativeTaggedListbyName(rel.finalEntityTagDto.text) != null) {
                 for (String name : rel.featureMap.keySet()) {
 
                     Entity ent = this.source.findEntityFromFinalEntityTaggedList(name);
@@ -88,9 +105,12 @@ public class AdaptorService {
     }
 
 
-    public void setMainEntity(){
-        for(Entity ent: this.source.specificationDto.relativeEntityList){
-            if(ent.id.equals(this.source.specificationDto.mainEntity.id)){
+    /**
+     * Method used to set the maing entity.
+     */
+    public void setMainEntity() {
+        for (Entity ent : this.source.specificationDto.relativeEntityList) {
+            if (ent.id.equals(this.source.specificationDto.mainEntity.id)) {
                 JsonRelationship featureRelationship = new JsonRelationship();
                 featureRelationship.type = "MainEntity";
                 featureRelationship.domain = this.source.reviewId;
@@ -101,12 +121,20 @@ public class AdaptorService {
         }
     }
 
-    public void setBetterThan(){
+    /**
+     * Method used to set better than instances.
+     */
+    public void setBetterThan() {
         // todo:
     }
 
+    /**
+     * Method used add the missing entity.
+     *
+     * @param feature - feature entity.
+     */
     public void addMissingEntity(Entity feature) {
-        System.out.println("Adding missing entity "+ feature.text);
+        System.out.println("Adding missing entity " + feature.text);
         Boolean missing = true;
         for (JsonEntity ent : this.target.entities) {
             if (ent.id.equals(feature.id)) {
