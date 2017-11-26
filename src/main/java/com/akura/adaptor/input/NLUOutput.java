@@ -14,28 +14,29 @@ public class NLUOutput {
     public Specification specificationDto;
 
     public void replaceIdentifiers() {
-        setIdentifiers();
-        if(  this.specificationDto.mainEntity != null) {
-            this.specificationDto.mainEntity.id = findIdFromFinalEntityTaggedList(this.specificationDto.mainEntity.text);
-        }
-
-        ArrayList<Entity> relativeEntityList = new ArrayList<>();
-        for (Entity ent : this.specificationDto.relativeEntityList) {
-            ent.id = findIdFromFinalEntityTaggedList(ent.text);
-
-            //resolve correct mobile name
-            String name = EntityNameResolver.getMobileName(ent.text);
-            if(name != null) {
-                ent.text = name;
+        if(this.specificationDto != null) {
+            setIdentifiers();
+            if (this.specificationDto.mainEntity != null) {
+                this.specificationDto.mainEntity.id = findIdFromFinalEntityTaggedList(this.specificationDto.mainEntity.text);
             }
-            relativeEntityList.add(ent);
-        }
-        this.specificationDto.relativeEntityList = relativeEntityList;
+
+            ArrayList<Entity> relativeEntityList = new ArrayList<>();
+            for (Entity ent : this.specificationDto.relativeEntityList) {
+                ent.id = findIdFromFinalEntityTaggedList(ent.text);
+
+                //resolve correct mobile name
+                String name = EntityNameResolver.getMobileName(ent.text);
+                if (name != null) {
+                    ent.text = name;
+                }
+                relativeEntityList.add(ent);
+            }
+            this.specificationDto.relativeEntityList = relativeEntityList;
 
 
-        ArrayList<Relationship> specRelationshipDtoList = new ArrayList<>();
-        for (Relationship rel : this.specificationDto.specRelationshipDtoList) {
-            rel.finalEntityTagDto.id = findIdFromFinalEntityTaggedList(rel.finalEntityTagDto.text);
+            ArrayList<Relationship> specRelationshipDtoList = new ArrayList<>();
+            for (Relationship rel : this.specificationDto.specRelationshipDtoList) {
+                rel.finalEntityTagDto.id = findIdFromFinalEntityTaggedList(rel.finalEntityTagDto.text);
 //
 //            ArrayList<Entity> featureMap = new ArrayList<>();
 //            for(Entity ent: rel.featureMap){
@@ -43,9 +44,10 @@ public class NLUOutput {
 //                featureMap.add(ent);
 //            }
 //            rel.featureMap = featureMap;
-            specRelationshipDtoList.add(rel);
+                specRelationshipDtoList.add(rel);
+            }
+            this.specificationDto.specRelationshipDtoList = specRelationshipDtoList;
         }
-        this.specificationDto.specRelationshipDtoList = specRelationshipDtoList;
 
     }
 
