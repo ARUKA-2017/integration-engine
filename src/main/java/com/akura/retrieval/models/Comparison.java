@@ -2,16 +2,15 @@ package com.akura.retrieval.models;
 
 import com.akura.config.Config;
 import com.akura.retrieval.response.ComparisonEntityInstance;
-import com.akura.retrieval.response.FeatureResponse;
+
 import org.apache.jena.ontology.Individual;
 import org.apache.jena.ontology.OntModel;
-import org.apache.jena.query.*;
 import org.apache.jena.rdf.model.Property;
 import org.apache.jena.rdf.model.StmtIterator;
 
-
-import java.util.ArrayList;
-
+/**
+ * Class representing a Comparison for an entity.
+ */
 public class Comparison {
 
     private OntModel model;
@@ -31,6 +30,11 @@ public class Comparison {
     }
 
 
+    /**
+     * Method to get the good instance of the comparison.
+     *
+     * @return - ComparisonEntityInstance.
+     */
     public ComparisonEntityInstance getGoodInstance() {
         ComparisonEntityInstance compEntity;
 
@@ -49,9 +53,13 @@ public class Comparison {
         }
 
         return compEntity;
-
     }
 
+    /**
+     * Method to get the bad instance of the comparison.
+     *
+     * @return - ComparisonEntityInstance.
+     */
     public ComparisonEntityInstance getBadInstance() {
         ComparisonEntityInstance compEntity;
 
@@ -70,10 +78,18 @@ public class Comparison {
         return compEntity;
     }
 
+    /**
+     * Get the comparison count.
+     *
+     * @return - count.
+     */
     public Integer getCount() {
         return this.instance.getProperty(this.count).getLiteral().getInt();
     }
 
+    /**
+     * Method used to initialize the properties.
+     */
     public void initProperties() {
 
         goodProperty = model.getObjectProperty(Config.URI_NAMESPACE + "Good");
@@ -81,6 +97,5 @@ public class Comparison {
         count = model.getProperty(Config.URI_NAMESPACE + "Count");
         name = model.getProperty(Config.URI_NAMESPACE + "Name");
         hashID = model.getProperty(Config.URI_NAMESPACE + "HashID");
-
     }
 }

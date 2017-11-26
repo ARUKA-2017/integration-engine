@@ -3,6 +3,7 @@ package com.akura.retrieval.models;
 import com.akura.config.Config;
 import com.akura.retrieval.response.ComparisonResponse;
 import com.akura.retrieval.response.PropertyResponse;
+
 import org.apache.jena.ontology.Individual;
 import org.apache.jena.ontology.ObjectProperty;
 import org.apache.jena.ontology.OntModel;
@@ -12,10 +13,14 @@ import org.apache.jena.rdf.model.StmtIterator;
 
 import java.util.ArrayList;
 
+/**
+ * Class representing an Feature.
+ */
 public class Feature {
-    private OntModel model;
+
     public Individual instance;
 
+    private OntModel model;
     private Property name;
     private Property hashID;
     private ObjectProperty featureProperty;
@@ -28,6 +33,9 @@ public class Feature {
         this.initProperties();
     }
 
+    /**
+     * Method used to initialize the properties of the feature.
+     */
     private void initProperties() {
         name = model.getProperty(Config.URI_NAMESPACE + "Name");
         featureProperty = model.getObjectProperty(Config.URI_NAMESPACE + "FeatureProperty");
@@ -36,16 +44,30 @@ public class Feature {
         subEntity = model.getObjectProperty(Config.URI_NAMESPACE + "SubEntity");
     }
 
+    /**
+     * Method used to get the name of the feature.
+     *
+     * @return - feature name.
+     */
     public String getName() {
         return this.instance.getProperty(this.name).getLiteral().toString();
     }
 
+    /**
+     * Method used to get the average score of the feature.
+     *
+     * @return - average base score.
+     */
     public double getAvgBaseScore() {
-
         return BaseScore.getAvgBaseScore(model, this.instance, this.evaluatedBy);
     }
 
 
+    /**
+     * Get the properties of the fearure.
+     *
+     * @return - PropertyResponse.
+     */
     public PropertyResponse[] getProperties() {
         ArrayList<PropertyResponse> propList = new ArrayList<>();
 
@@ -66,18 +88,31 @@ public class Feature {
         return propList.toArray(new PropertyResponse[propList.size()]);
     }
 
+    /**
+     * Method used to get the feature comparisons.
+     *
+     * @return - ComparisonResponse.
+     */
     public ComparisonResponse getComparisons() {
-        ComparisonResponse comp = new ComparisonResponse(this.model,this.getHash());
+        ComparisonResponse comp = new ComparisonResponse(this.model, this.getHash());
         return comp;
     }
 
-
-    public String getHash(){
+    /**
+     * Method used to get the hash id of the feature.
+     *
+     * @return - feature hash id.
+     */
+    public String getHash() {
         return this.instance.getProperty(this.hashID).getLiteral().toString();
     }
 
-    public String getEntityHash(){
-
+    /**
+     * Method used to get the hash id of the entity of the feature.
+     *
+     * @return - entity hash id.
+     */
+    public String getEntityHash() {
         String entityHash = null;
 
         ParameterizedSparqlString ps = new ParameterizedSparqlString();
@@ -99,7 +134,7 @@ public class Feature {
 
             ResultSet resultSet = queryExecution.execSelect();
 
-            if( resultSet.hasNext() ) {
+            if (resultSet.hasNext()) {
                 QuerySolution solution = resultSet.nextSolution();
                 entityHash = solution.get("hashID").toString();
             }
@@ -110,7 +145,12 @@ public class Feature {
         return entityHash;
     }
 
-    public String getEntityName(){
+    /**
+     * Method used to get the name of entity of the feature.
+     *
+     * @return - entity name.
+     */
+    public String getEntityName() {
 
         String entityName = null;
 
@@ -133,7 +173,7 @@ public class Feature {
 
             ResultSet resultSet = queryExecution.execSelect();
 
-            if( resultSet.hasNext() ) {
+            if (resultSet.hasNext()) {
                 QuerySolution solution = resultSet.nextSolution();
                 entityName = solution.get("name").toString();
             }
@@ -143,5 +183,4 @@ public class Feature {
 
         return entityName;
     }
-
 }
