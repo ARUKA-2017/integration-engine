@@ -15,7 +15,9 @@ public class NLUOutput {
 
     public void replaceIdentifiers() {
         setIdentifiers();
-        this.specificationDto.mainEntity.id = findIdFromFinalEntityTaggedList(this.specificationDto.mainEntity.text);
+        if(  this.specificationDto.mainEntity != null) {
+            this.specificationDto.mainEntity.id = findIdFromFinalEntityTaggedList(this.specificationDto.mainEntity.text);
+        }
 
         ArrayList<Entity> relativeEntityList = new ArrayList<>();
         for (Entity ent : this.specificationDto.relativeEntityList) {
