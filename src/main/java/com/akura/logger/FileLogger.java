@@ -8,7 +8,7 @@ public class FileLogger {
 
     public static String DEST_J2OWL = "j2owl";
     public static String DEST_INTEGRATION = "integration";
-    public static String DEST_RETRIEVAL = "integration";
+    public static String DEST_RETRIEVAL = "retrieval";
 
     public static String DEST_ENTIRE_PROCESS_LOG = "System";
 
