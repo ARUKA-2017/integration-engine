@@ -1,8 +1,10 @@
 package com.akura.retrieval.response;
 
+import com.akura.logger.FileLogger;
 import com.akura.retrieval.models.Entity;
 import com.akura.utility.HashGeneratorClass;
 
+import com.google.gson.Gson;
 import org.apache.jena.ontology.OntModel;
 
 /**
@@ -25,6 +27,8 @@ public class SingleResponse implements IRetrievalResponse {
         String hashCode = isHash ? search : HashGeneratorClass.generateHashForString(search, "ENTITY");
         entity.getEntityByHash(hashCode);
         this.InitFromEntity(entity);
+
+        FileLogger.Log(new Gson().toJson(this),FileLogger.TYPE_JSON, FileLogger.DEST_RETRIEVAL);
 
     }
 

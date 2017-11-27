@@ -1,6 +1,7 @@
 package com.akura.retrieval.service;
 
 import com.akura.config.Config;
+import com.akura.logger.FileLogger;
 import com.akura.mapping.service.MappingService;
 import com.akura.ontology.BaseOntology;
 import com.akura.retrieval.response.EntityListResponse;
@@ -31,15 +32,21 @@ public class ProductService {
      */
     public IRetrievalResponse searchProduct(String search, Response res, boolean isHash, MappingService mappingService) {
 
+        FileLogger.Log("Search Request recieved",FileLogger.TYPE_TITLE, FileLogger.DEST_RETRIEVAL);
+        FileLogger.Log(search,FileLogger.TYPE_CONT, FileLogger.DEST_RETRIEVAL);
+
         res.type("Application/JSON");
 
         if (InstanceChecker.isEntityExists(m, search, isHash)) {
+            // logging
             return new SingleResponse(m, search, isHash);
         } else {
+
 
             BackgroundService backgroundService = new BackgroundService(search, mappingService, res);
             backgroundService.start();
 
+            // logging done
             return new EntityListResponse(m, search);
         }
     }

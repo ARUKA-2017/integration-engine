@@ -6,6 +6,7 @@ import com.akura.adaptor.input.NLUOutput;
 import com.akura.adaptor.input.NLURequest;
 import com.akura.config.Config;
 import com.akura.integration.service.IntegrateService;
+import com.akura.logger.FileLogger;
 import com.akura.mapping.models.JsonResponse;
 import com.akura.mapping.models.ServiceResponse;
 import com.akura.retrieval.db.DBConnection;
@@ -46,6 +47,7 @@ public class MappingService {
     public ServiceResponse map(String body, Response res) {
 
         log.write("Mapping Request from HTTP");
+        FileLogger.Log("J2OWL Mapping Process Starting",FileLogger.TYPE_TITLE, FileLogger.DEST_J2OWL);
 
         res.type("Application/JSON");
         OntModel m = OntologyReader.getOntologyModel(Config.OWL_DYNAMIC_EMPTY_FILENAME);
@@ -54,15 +56,20 @@ public class MappingService {
             jsonResponse.setAll(m);
         } catch (Exception e) {
             e.printStackTrace();
-            log.write("Invalid JSON. There was a parse error. Please check the format again");
+            FileLogger.Log("Invalid JSON. There was a parse error",FileLogger.TYPE_CONT, FileLogger.DEST_J2OWL);
             return new ServiceResponse("error", "Invalid JSON. There was a parse error. Please check the format again");
         }
+
+
+        FileLogger.Log(m.toString(),FileLogger.TYPE_JSON, FileLogger.DEST_J2OWL);
+        FileLogger.Log("J2OWL Mapping Completed",FileLogger.TYPE_SUB, FileLogger.DEST_J2OWL);
 
 
         log.write("Data : " + body);
         log.write("Mapping Completed");
 
         //merge ontology
+        FileLogger.Log("Merging the new knowledge base with existing knowledge base",FileLogger.TYPE_TITLE, FileLogger.DEST_INTEGRATION);
         IntegrateService integrateService = new IntegrateService(m);
         Boolean bool = integrateService.integrate();
 
@@ -71,8 +78,10 @@ public class MappingService {
             OntologyWriter.writeOntology(m, fileResourceManager.getFilePath("ontology/demo_test_map_ontology_json.owl"));
 
             res.status(200);
+            FileLogger.Log("Knowledgebase successfully merged",FileLogger.TYPE_SUB, FileLogger.DEST_INTEGRATION);
             return new ServiceResponse("success", "Successfully mapped and merged");
         } else {
+            FileLogger.Log("Knowledgebase was already merged. Duplicate Data Instance",FileLogger.TYPE_SUB, FileLogger.DEST_INTEGRATION);
             res.status(500);
             return new ServiceResponse("error", "Ontology was already merged. Duplicate Data Instance");
         }
@@ -88,6 +97,8 @@ public class MappingService {
     public ServiceResponse useAdaptor(String body, Response res) {
         log.write("Mapping Request from HTTP via the Adaptor");
 
+        FileLogger.Log("Mapping Request from  J2OWL", FileLogger.TYPE_TITLE, FileLogger.DEST_J2OWL);
+
         res.type("Application/JSON");
         HashMap<String, Entity> entityRegistry = new HashMap<>();
 
@@ -96,6 +107,7 @@ public class MappingService {
             nluRequest = new Gson().fromJson(body, NLURequest.class);
         } catch (Exception e) {
             e.printStackTrace();
+            FileLogger.Log("Invalid JSON", FileLogger.TYPE_SUB, FileLogger.DEST_J2OWL);
             log.write("Invalid JSON. There was a parse error. Please check the format again");
             return new ServiceResponse("error", "Invalid JSON. There was a parse error. Please check the format again");
         }
@@ -121,6 +133,8 @@ public class MappingService {
 
                 if (bool) {
                     //TODO save files sepeartedly
+                    FileLogger.Log("Dynamic Ontology Mapped and Processed", FileLogger.TYPE_SUB, FileLogger.DEST_J2OWL);
+                    FileLogger.Log(m.toString(), FileLogger.TYPE_JSON, FileLogger.DEST_J2OWL);
                     OntologyWriter.writeOntology(m, fileResourceManager.getFilePath("ontology/demo_test_map_ontology_json.owl"));
 
                     // add entities to hashmap to use for mongo extraction
@@ -133,11 +147,13 @@ public class MappingService {
                     }
                     log.write("Successfully mapped and merged");
                 } else {
+                    FileLogger.Log("Dynamic Ontology was already merged. Duplicate data instance", FileLogger.TYPE_SUB, FileLogger.DEST_J2OWL);
                     System.out.println("Ontology was already merged. Duplicate Data Instance");
                     log.write("Ontology was already merged. Duplicate Data Instance");
 
                 }
             } else {
+                FileLogger.Log("Ignoring because Main Entity Not Found", FileLogger.TYPE_SUB, FileLogger.DEST_J2OWL);
                 System.out.println("Ignoring because Main Entity Not Found!");
             }
         }
@@ -184,7 +200,9 @@ public class MappingService {
 
                     if (searchCount == 0) {
 
-                        System.out.println("retrieving from datafeeder " + name);
+
+                        FileLogger.Log("Retrieving Data from Node Data Feeder: "+ name,FileLogger.TYPE_SUB, FileLogger.DEST_RETRIEVAL);
+
                         URL url = null;
                         try {
                             url = new URL("http://35.198.251.53:3002/phone/" + URLEncoder.encode(name, "UTF-8"));
@@ -206,6 +224,10 @@ public class MappingService {
                             System.out.println(status);
                             System.out.println(content.toString());
                             in.close();
+                            FileLogger.Log("Data Retrieval Success from Data Feeder for: "+ name,FileLogger.TYPE_SUB, FileLogger.DEST_RETRIEVAL);
+                            FileLogger.Log(content.toString(),FileLogger.TYPE_JSON, FileLogger.DEST_RETRIEVAL);
+
+
                             map(content.toString(), res);
 
                         } catch (MalformedURLException e) {
@@ -215,6 +237,8 @@ public class MappingService {
                         } catch (IOException e) {
                             e.printStackTrace();
                         }
+                    }else{
+                        FileLogger.Log("Data Extraction already requested for: "+ name,FileLogger.TYPE_CONT, FileLogger.DEST_RETRIEVAL);
                     }
                 } catch (Exception e) {
                     System.out.println("Exception : " + e);

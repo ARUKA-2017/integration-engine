@@ -2,6 +2,8 @@ package com.akura.integration.dynamic;
 
 import com.akura.integration.models.*;
 
+import com.akura.logger.FileLogger;
+import com.google.gson.Gson;
 import org.apache.jena.ontology.Individual;
 import org.apache.jena.ontology.OntClass;
 import org.apache.jena.ontology.OntModel;
@@ -42,6 +44,8 @@ public class DynamicEntity {
             e.printStackTrace();
         }
         this.review = review;
+        FileLogger.Log("Dynamic Entity Details",FileLogger.TYPE_SUB, FileLogger.DEST_INTEGRATION);
+        FileLogger.Log(new Gson().toJson(this),FileLogger.TYPE_JSON, FileLogger.DEST_INTEGRATION);
     }
 
     /**
@@ -51,7 +55,10 @@ public class DynamicEntity {
      */
     public ArrayList<Property> getProperties() {
 
+
         this.properties = IntegrationHelper.listPropertiesToArrayList(this.instance);
+        FileLogger.Log("Instance Properties",FileLogger.TYPE_SUB, FileLogger.DEST_INTEGRATION);
+        FileLogger.Log(new Gson().toJson(this.properties),FileLogger.TYPE_JSON, FileLogger.DEST_INTEGRATION);
         return this.properties;
     }
 
@@ -96,6 +103,7 @@ public class DynamicEntity {
         }
 
         return !this.isEntity;
+
     }
 
     /**
@@ -107,12 +115,16 @@ public class DynamicEntity {
      */
     public Entity setStaticOntoEntityInstance(OntModel stat) throws Exception {
 
+        FileLogger.Log("Building an Instance to merge with system knowledge base",FileLogger.TYPE_SUB, FileLogger.DEST_INTEGRATION);
         if (this.isEntity) {
             String name = IntegrationHelper.getLiteralPropertyValue(this.properties, "Name", this.instance);
             Entity ent = new Entity(stat, name);
 
+            FileLogger.Log("Instance: "+ name,FileLogger.TYPE_SUB, FileLogger.DEST_INTEGRATION);
             // set Properties
             Map<String, String> map = this.getStaticOntoProperties();
+            FileLogger.Log("Setting Relationships for: "+ name,FileLogger.TYPE_SUB, FileLogger.DEST_INTEGRATION);
+            FileLogger.Log(new Gson().toJson(map),FileLogger.TYPE_JSON, FileLogger.DEST_INTEGRATION);
             for (Map.Entry<String, String> m : map.entrySet()) {
                 ent.setProperty(m.getKey(), m.getValue());
             }

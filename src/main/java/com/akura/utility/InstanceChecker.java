@@ -1,5 +1,6 @@
 package com.akura.utility;
 
+import com.akura.logger.FileLogger;
 import com.akura.retrieval.models.Entity;
 
 import org.apache.jena.ontology.OntModel;
@@ -23,9 +24,12 @@ public class InstanceChecker {
         String hashCode = isHash ? search : HashGeneratorClass.generateHashForString(search, "ENTITY");
         entity.getEntityByHash(hashCode);
 
+        FileLogger.Log("Checking if the search Entity Exists ",FileLogger.TYPE_TITLE, FileLogger.DEST_RETRIEVAL);
         if (entity.instance != null) {
+            FileLogger.Log("Entity Exists in the knowledge base",FileLogger.TYPE_CONT, FileLogger.DEST_RETRIEVAL);
             return true;
         } else {
+            FileLogger.Log("Entity doesn't exist in the knowledge base",FileLogger.TYPE_CONT, FileLogger.DEST_RETRIEVAL);
             return false;
         }
     }

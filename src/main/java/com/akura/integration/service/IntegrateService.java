@@ -5,11 +5,13 @@ import com.akura.integration.dynamic.DynamicEntity;
 import com.akura.integration.dynamic.ReviewInfo;
 import com.akura.integration.models.Entity;
 import com.akura.integration.models.Review;
+import com.akura.logger.FileLogger;
 import com.akura.ontology.BaseOntology;
 import com.akura.utility.Log;
 import com.akura.utility.OntologyReader;
 import com.akura.utility.OntologyWriter;
 
+import com.google.gson.Gson;
 import org.apache.jena.ontology.Individual;
 import org.apache.jena.ontology.OntClass;
 import org.apache.jena.ontology.OntModel;
@@ -42,6 +44,7 @@ public class IntegrateService {
      */
     public Boolean integrate() {
         log.write("Merging Ontology....");
+        FileLogger.Log("Merging",FileLogger.TYPE_SUB, FileLogger.DEST_INTEGRATION);
         // first get review class instances
         Boolean bool = this.processReviewClassInstances();
         if (!bool) {
@@ -111,15 +114,20 @@ public class IntegrateService {
      * Method used to process entity class instances.
      */
     public void processEntityClassInstances() {
+        FileLogger.Log("Extracting Entity Instance List",FileLogger.TYPE_SUB, FileLogger.DEST_INTEGRATION);
+
         for (Individual instance : this.classIndividualFilter("Entity")) {
             DynamicEntity entity = new DynamicEntity(dynamic, stat, instance, review);
 
             if (entity.isEntity) {
                 try {
+                    FileLogger.Log("Identified Instance as an Entity",FileLogger.TYPE_SUB, FileLogger.DEST_INTEGRATION);
                     Entity ent = entity.setStaticOntoEntityInstance(stat);
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
+            }else{
+                FileLogger.Log("Identified Instance as a Feature",FileLogger.TYPE_SUB, FileLogger.DEST_INTEGRATION);
             }
         }
     }

@@ -1,9 +1,11 @@
 package com.akura.retrieval.response;
 
 import com.akura.config.Config;
+import com.akura.logger.FileLogger;
 import com.akura.retrieval.models.Entity;
 import com.akura.utility.StringSimilarity;
 
+import com.google.gson.Gson;
 import org.apache.jena.ontology.Individual;
 import org.apache.jena.ontology.OntClass;
 import org.apache.jena.ontology.OntModel;
@@ -51,6 +53,10 @@ public class EntityListResponse implements IRetrievalResponse {
             }
         }
 
+        FileLogger.Log("Retrieving  Suggestions",FileLogger.TYPE_TITLE, FileLogger.DEST_RETRIEVAL);
+        FileLogger.Log(new Gson().toJson(this),FileLogger.TYPE_JSON, FileLogger.DEST_RETRIEVAL);
+
         this.entityInstanceList = entityList.toArray(new EntityInstance[entityList.size()]);
+
     }
 }
