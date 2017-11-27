@@ -44,8 +44,8 @@ public class DynamicEntity {
             e.printStackTrace();
         }
         this.review = review;
-        FileLogger.Log("Dynamic Entity Details",FileLogger.TYPE_SUB, FileLogger.DEST_INTEGRATION);
-        FileLogger.Log(new Gson().toJson(this),FileLogger.TYPE_JSON, FileLogger.DEST_INTEGRATION);
+//        FileLogger.Log("Dynamic Entity Details",FileLogger.TYPE_SUB, FileLogger.DEST_INTEGRATION);
+//        FileLogger.Log(new Gson().toJson(this),FileLogger.TYPE_JSON, FileLogger.DEST_INTEGRATION);
     }
 
     /**
