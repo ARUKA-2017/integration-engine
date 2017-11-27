@@ -124,7 +124,7 @@ public class DynamicEntity {
             // set Properties
             Map<String, String> map = this.getStaticOntoProperties();
             FileLogger.Log("Setting Relationships for: "+ name,FileLogger.TYPE_SUB, FileLogger.DEST_INTEGRATION);
-            FileLogger.Log(new Gson().toJson(map),FileLogger.TYPE_JSON, FileLogger.DEST_INTEGRATION);
+//            FileLogger.Log(new Gson().toJson(map),FileLogger.TYPE_JSON, FileLogger.DEST_INTEGRATION);
             for (Map.Entry<String, String> m : map.entrySet()) {
                 ent.setProperty(m.getKey(), m.getValue());
             }

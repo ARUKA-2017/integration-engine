@@ -109,7 +109,7 @@ public class MappingService {
         } catch (Exception e) {
             e.printStackTrace();
             FileLogger.Log("Invalid JSON", FileLogger.TYPE_SUB, FileLogger.DEST_J2OWL);
-            FileLogger.Log(body, FileLogger.TYPE_SUB, FileLogger.DEST_J2OWL);
+//            FileLogger.Log(body, FileLogger.TYPE_JSON, FileLogger.DEST_J2OWL);
             log.write("Invalid JSON. There was a parse error. Please check the format again");
             return new ServiceResponse("error", "Invalid JSON. There was a parse error. Please check the format again");
         }
@@ -122,7 +122,7 @@ public class MappingService {
             AdaptorService adopt = new AdaptorService(nlu);
             adopt.convert();
             System.out.println(new Gson().toJson(adopt.target));
-            FileLogger.Log(new Gson().toJson(adopt.target), FileLogger.TYPE_SUB, FileLogger.DEST_J2OWL);
+            FileLogger.Log(new Gson().toJson(adopt.target), FileLogger.TYPE_JSON, FileLogger.DEST_J2OWL);
             if (adopt.mainEntityStatus) {
 
                 adopt.target.setAll(m);
