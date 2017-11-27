@@ -28,7 +28,7 @@ public class SingleResponse implements IRetrievalResponse {
         entity.getEntityByHash(hashCode);
         this.InitFromEntity(entity);
 
-        FileLogger.Log(new Gson().toJson(this),FileLogger.TYPE_JSON, FileLogger.DEST_RETRIEVAL);
+//        FileLogger.Log(new Gson().toJson(this),FileLogger.TYPE_JSON, FileLogger.DEST_RETRIEVAL);
 
     }
 
