@@ -27,11 +27,11 @@ public class EntityNameResolver {
      */
     public static String getMobileName(String name) {
 
-        FileLogger.Log("Resolving name for: " + name, FileLogger.TYPE_SUB, FileLogger.DEST_RETRIEVAL);
+        FileLogger.Log("Resolving name for: " + name, FileLogger.TYPE_SUB, FileLogger.DEST_INTEGRATION);
 
 
         if (device_registry.get(name) != null) {
-            FileLogger.Log("Resolved: " + device_registry.get(name), FileLogger.TYPE_SUB, FileLogger.DEST_RETRIEVAL);
+            FileLogger.Log("Resolved: " + device_registry.get(name), FileLogger.TYPE_SUB, FileLogger.DEST_INTEGRATION);
             return device_registry.get(name);
         }
 
@@ -60,24 +60,24 @@ public class EntityNameResolver {
 
             if (status == 200) {
                 name = content.toString();
-                FileLogger.Log("Resolved: " + name, FileLogger.TYPE_SUB, FileLogger.DEST_RETRIEVAL);
+                FileLogger.Log("Resolved: " + name, FileLogger.TYPE_SUB, FileLogger.DEST_INTEGRATION);
                 device_registry.put(search, name);
             } else {
-                FileLogger.Log("Resolve Failed for: " + name, FileLogger.TYPE_SUB, FileLogger.DEST_RETRIEVAL);
+                FileLogger.Log("Resolve Failed for: " + name, FileLogger.TYPE_SUB, FileLogger.DEST_INTEGRATION);
                 name = null;
             }
             in.close();
 
         } catch (MalformedURLException e) {
-            FileLogger.Log("Resolve Failed for: " + name, FileLogger.TYPE_SUB, FileLogger.DEST_RETRIEVAL);
+            FileLogger.Log("Resolve Failed for: " + name, FileLogger.TYPE_SUB, FileLogger.DEST_INTEGRATION);
             name = null;
             e.printStackTrace();
         } catch (ProtocolException e) {
-            FileLogger.Log("Resolve Failed for: " + name, FileLogger.TYPE_SUB, FileLogger.DEST_RETRIEVAL);
+            FileLogger.Log("Resolve Failed for: " + name, FileLogger.TYPE_SUB, FileLogger.DEST_INTEGRATION);
             name = null;
             e.printStackTrace();
         } catch (IOException e) {
-            FileLogger.Log("Resolve Failed for: " + name, FileLogger.TYPE_SUB, FileLogger.DEST_RETRIEVAL);
+            FileLogger.Log("Resolve Failed for: " + name, FileLogger.TYPE_SUB, FileLogger.DEST_INTEGRATION);
             name = null;
             e.printStackTrace();
         }
@@ -198,6 +198,7 @@ public class EntityNameResolver {
                     System.out.println("Extraction Success for: " + name);
                     FileLogger.Log("Data Extracton Success from NLU for: " + name, FileLogger.TYPE_SUB, FileLogger.DEST_RETRIEVAL);
                     FileLogger.Log(content.toString(), FileLogger.TYPE_JSON, FileLogger.DEST_RETRIEVAL);
+
 
                     System.out.println("Starting Mapping");
 

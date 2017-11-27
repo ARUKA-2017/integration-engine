@@ -109,6 +109,7 @@ public class MappingService {
         } catch (Exception e) {
             e.printStackTrace();
             FileLogger.Log("Invalid JSON", FileLogger.TYPE_SUB, FileLogger.DEST_J2OWL);
+            FileLogger.Log(body, FileLogger.TYPE_SUB, FileLogger.DEST_J2OWL);
             log.write("Invalid JSON. There was a parse error. Please check the format again");
             return new ServiceResponse("error", "Invalid JSON. There was a parse error. Please check the format again");
         }
@@ -127,6 +128,7 @@ public class MappingService {
 
                 log.write("Data : " + body);
                 log.write("Mapping Completed");
+                FileLogger.Log("Dynamic Ontology Mapped and Processed", FileLogger.TYPE_SUB, FileLogger.DEST_J2OWL);
 
                 //merge ontology
                 IntegrateService integrateService = new IntegrateService(m);
@@ -134,7 +136,7 @@ public class MappingService {
 
                 if (bool) {
                     //TODO save files sepeartedly
-                    FileLogger.Log("Dynamic Ontology Mapped and Processed", FileLogger.TYPE_SUB, FileLogger.DEST_J2OWL);
+                    FileLogger.Log("Dynamic Ontology Successfully Merged", FileLogger.TYPE_SUB, FileLogger.DEST_INTEGRATION);
                     FileLogger.Log(m.toString(), FileLogger.TYPE_JSON, FileLogger.DEST_J2OWL);
                     OntologyWriter.writeOntology(m, fileResourceManager.getFilePath("ontology/demo_test_map_ontology_json.owl"));
 
@@ -148,7 +150,7 @@ public class MappingService {
                     }
                     log.write("Successfully mapped and merged");
                 } else {
-                    FileLogger.Log("Dynamic Ontology was already merged. Duplicate data instance", FileLogger.TYPE_SUB, FileLogger.DEST_J2OWL);
+                    FileLogger.Log("Dynamic Ontology was already merged. Duplicate data instance", FileLogger.TYPE_SUB, FileLogger.DEST_INTEGRATION);
                     System.out.println("Ontology was already merged. Duplicate Data Instance");
                     log.write("Ontology was already merged. Duplicate Data Instance");
 
