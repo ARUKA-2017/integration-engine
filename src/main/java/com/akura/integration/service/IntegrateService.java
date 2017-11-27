@@ -121,15 +121,16 @@ public class IntegrateService {
 
             if (entity.isEntity) {
                 try {
-                    FileLogger.Log("Identified Instance as an Entity",FileLogger.TYPE_SUB, FileLogger.DEST_INTEGRATION);
+//                    FileLogger.Log("Identified Instance as an Entity",FileLogger.TYPE_SUB, FileLogger.DEST_INTEGRATION);
                     Entity ent = entity.setStaticOntoEntityInstance(stat);
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
             }else{
-                FileLogger.Log("Identified Instance as a Feature",FileLogger.TYPE_SUB, FileLogger.DEST_INTEGRATION);
+//                FileLogger.Log("Identified Instance as a Feature",FileLogger.TYPE_SUB, FileLogger.DEST_INTEGRATION);
             }
         }
+        FileLogger.Log("Completed Extracting Entity Instance List",FileLogger.TYPE_SUB, FileLogger.DEST_INTEGRATION);
     }
 
     // TODO Write an algortithm to save ontology model concurrently

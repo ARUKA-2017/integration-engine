@@ -57,7 +57,7 @@ public class DynamicEntity {
 
 
         this.properties = IntegrationHelper.listPropertiesToArrayList(this.instance);
-        FileLogger.Log("Instance Properties",FileLogger.TYPE_SUB, FileLogger.DEST_INTEGRATION);
+//        FileLogger.Log("Instance Properties",FileLogger.TYPE_SUB, FileLogger.DEST_INTEGRATION);
 //        FileLogger.Log(new Gson().toJson(this.properties),FileLogger.TYPE_JSON, FileLogger.DEST_INTEGRATION);
         return this.properties;
     }
