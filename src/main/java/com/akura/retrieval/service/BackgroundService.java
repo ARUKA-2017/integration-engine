@@ -1,6 +1,7 @@
 package com.akura.retrieval.service;
 
 import com.akura.adaptor.resolver.EntityNameResolver;
+import com.akura.logger.FileLogger;
 import com.akura.mapping.service.MappingService;
 import com.akura.retrieval.db.DBConnection;
 
@@ -62,6 +63,7 @@ public class BackgroundService extends Thread {
 
                     database.getCollection("search_registry").insertOne(document);
 
+                    FileLogger.Log("Request finished", FileLogger.TYPE_SUB, FileLogger.DEST_RETRIEVAL);
                     System.out.println("Request finished");
                 }
             } catch (Exception e) {
