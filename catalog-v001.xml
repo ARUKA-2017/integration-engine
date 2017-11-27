@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1511714722874" name="http://www.akura.com" uri="rev_engine_base_ontology.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1511714722874" name="shadowed:http://www.akura.com" uri="src/main/resources/ontology/rev_engine_base_ontology.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1511714722874" name="shadowed:http://www.akura.com" uri="target/classes/ontology/rev_engine_base_ontology.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1511714722874" name="shadowed:urn:absolute:www.akura.com" uri="src/main/resources/ontology/rev_engine_dynamic_ontology.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1511714722874" name="shadowed:urn:absolute:www.akura.com" uri="src/main/resources/ontology/demo_test_map_ontology_json.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1511714722874" name="shadowed:urn:absolute:www.akura.com" uri="src/main/resources/ontology/rev_engine_dynamic_empty_ontology.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1511714722874" name="shadowed:urn:absolute:www.akura.com" uri="target/classes/ontology/rev_engine_dynamic_ontology.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1511714722874" name="shadowed:urn:absolute:www.akura.com" uri="target/classes/ontology/rev_engine_dynamic_empty_ontology.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1511714722874" name="duplicate:urn:absolute:www.akura.com" uri="rev_engine_dynamic_ontology.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1511714722874" name="duplicate:urn:absolute:www.akura.com" uri="demo_test_map_ontology_json.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1511714722874" name="duplicate:urn:absolute:www.akura.com" uri="rev_engine_dynamic_empty_ontology.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1511721987633" name="duplicate:http://www.akura.com" uri="rev_engine_base_ontology_empty.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1511721987633" name="duplicate:http://www.akura.com" uri="rev_engine_base_ontology.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1511721987633" name="shadowed:http://www.akura.com" uri="src/main/resources/ontology/rev_engine_base_ontology.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1511721987633" name="shadowed:http://www.akura.com" uri="target/classes/ontology/rev_engine_base_ontology.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1511721987633" name="shadowed:urn:absolute:www.akura.com" uri="src/main/resources/ontology/rev_engine_dynamic_ontology.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1511721987633" name="shadowed:urn:absolute:www.akura.com" uri="src/main/resources/ontology/demo_test_map_ontology_json.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1511721987633" name="shadowed:urn:absolute:www.akura.com" uri="src/main/resources/ontology/rev_engine_dynamic_empty_ontology.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1511721987633" name="shadowed:urn:absolute:www.akura.com" uri="target/classes/ontology/rev_engine_dynamic_ontology.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1511721987633" name="shadowed:urn:absolute:www.akura.com" uri="target/classes/ontology/rev_engine_dynamic_empty_ontology.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1511721987633" name="duplicate:urn:absolute:www.akura.com" uri="rev_engine_dynamic_ontology.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1511721987633" name="duplicate:urn:absolute:www.akura.com" uri="demo_test_map_ontology_json.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1511721987633" name="duplicate:urn:absolute:www.akura.com" uri="rev_engine_dynamic_empty_ontology.owl"/>
     </group>
 </catalog>

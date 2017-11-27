@@ -151,8 +151,8 @@ public class EntityNameResolver {
                 con.setRequestMethod("GET");
                 con.setRequestProperty("Content-Type", "application/json");
                 String contentType = con.getHeaderField("Content-Type");
-                con.setConnectTimeout(15000);
-                con.setReadTimeout(15000);
+                con.setConnectTimeout(150000);
+                con.setReadTimeout(150000);
 
                 System.out.println("start sending extract request");
                 int status = con.getResponseCode();

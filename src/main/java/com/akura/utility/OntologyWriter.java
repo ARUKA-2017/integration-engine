@@ -29,6 +29,9 @@ public class OntologyWriter {
             m.write(p, fileType);
         } catch (FileNotFoundException e) {
             e.printStackTrace();
+        } catch( java.util.ConcurrentModificationException e){
+            e.printStackTrace();
+            System.out.println("Concurrency issue for saving ontology -->"+ fileName);
         }
     }
 
