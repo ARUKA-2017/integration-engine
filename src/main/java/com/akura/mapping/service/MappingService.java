@@ -122,6 +122,7 @@ public class MappingService {
             AdaptorService adopt = new AdaptorService(nlu);
             adopt.convert();
             System.out.println(new Gson().toJson(adopt.target));
+            FileLogger.Log(new Gson().toJson(adopt.target), FileLogger.TYPE_SUB, FileLogger.DEST_J2OWL);
             if (adopt.mainEntityStatus) {
 
                 adopt.target.setAll(m);
@@ -137,7 +138,7 @@ public class MappingService {
                 if (bool) {
                     //TODO save files sepeartedly
                     FileLogger.Log("Dynamic Ontology Successfully Merged", FileLogger.TYPE_SUB, FileLogger.DEST_INTEGRATION);
-                    FileLogger.Log(m.toString(), FileLogger.TYPE_JSON, FileLogger.DEST_J2OWL);
+//                    FileLogger.Log(m.toString(), FileLogger.TYPE_JSON, FileLogger.DEST_J2OWL);
                     OntologyWriter.writeOntology(m, fileResourceManager.getFilePath("ontology/demo_test_map_ontology_json.owl"));
 
                     // add entities to hashmap to use for mongo extraction
