@@ -53,10 +53,9 @@ public class EntityListResponse implements IRetrievalResponse {
             }
         }
 
-        FileLogger.Log("Retrieving  Suggestions",FileLogger.TYPE_TITLE, FileLogger.DEST_RETRIEVAL);
-        FileLogger.Log(new Gson().toJson(this),FileLogger.TYPE_JSON, FileLogger.DEST_RETRIEVAL);
-
         this.entityInstanceList = entityList.toArray(new EntityInstance[entityList.size()]);
 
+        FileLogger.Log("Retrieving  Suggestions",FileLogger.TYPE_TITLE, FileLogger.DEST_RETRIEVAL);
+        FileLogger.Log(new Gson().toJson(this),FileLogger.TYPE_JSON, FileLogger.DEST_RETRIEVAL);
     }
 }
