@@ -1,5 +1,6 @@
 package com.akura.mapping.models;
 
+import com.akura.logger.FileLogger;
 import org.apache.jena.ontology.OntModel;
 
 import java.util.ArrayList;
@@ -47,6 +48,7 @@ public class JsonResponse {
      */
     public void setReview(OntModel m) {
         System.out.println(this.review_info);
+
         this.review_info.setObject(m);
     }
 
@@ -60,5 +62,6 @@ public class JsonResponse {
         setReview(m);
         setEntities(m);
         setRelationships(m);
+
     }
 }

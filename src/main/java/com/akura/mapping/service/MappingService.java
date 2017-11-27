@@ -54,6 +54,7 @@ public class MappingService {
         try {
             JsonResponse jsonResponse = new Gson().fromJson(body, JsonResponse.class);
             jsonResponse.setAll(m);
+            FileLogger.Log(new Gson().toJson(jsonResponse),FileLogger.TYPE_JSON, FileLogger.DEST_J2OWL);
         } catch (Exception e) {
             e.printStackTrace();
             FileLogger.Log("Invalid JSON. There was a parse error",FileLogger.TYPE_CONT, FileLogger.DEST_J2OWL);
@@ -61,7 +62,7 @@ public class MappingService {
         }
 
 
-        FileLogger.Log(m.toString(),FileLogger.TYPE_JSON, FileLogger.DEST_J2OWL);
+
         FileLogger.Log("J2OWL Mapping Completed",FileLogger.TYPE_SUB, FileLogger.DEST_J2OWL);
 
 
@@ -225,7 +226,9 @@ public class MappingService {
                             System.out.println(content.toString());
                             in.close();
                             FileLogger.Log("Data Retrieval Success from Data Feeder for: "+ name,FileLogger.TYPE_SUB, FileLogger.DEST_RETRIEVAL);
-                            FileLogger.Log(content.toString(),FileLogger.TYPE_JSON, FileLogger.DEST_RETRIEVAL);
+
+                            //TODO: Commented because this line is huge in log
+                            //FileLogger.Log(content.toString(),FileLogger.TYPE_JSON, FileLogger.DEST_RETRIEVAL);
 
 
                             map(content.toString(), res);
