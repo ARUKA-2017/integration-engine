@@ -54,7 +54,7 @@ public class MappingService {
         try {
             JsonResponse jsonResponse = new Gson().fromJson(body, JsonResponse.class);
             jsonResponse.setAll(m);
-            FileLogger.Log(new Gson().toJson(jsonResponse),FileLogger.TYPE_JSON, FileLogger.DEST_J2OWL);
+//            FileLogger.Log(new Gson().toJson(jsonResponse),FileLogger.TYPE_JSON, FileLogger.DEST_J2OWL);
         } catch (Exception e) {
             e.printStackTrace();
             FileLogger.Log("Invalid JSON. There was a parse error",FileLogger.TYPE_CONT, FileLogger.DEST_J2OWL);
