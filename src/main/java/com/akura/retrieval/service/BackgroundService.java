@@ -65,6 +65,8 @@ public class BackgroundService extends Thread {
 
                     FileLogger.Log("Request finished", FileLogger.TYPE_SUB, FileLogger.DEST_RETRIEVAL);
                     System.out.println("Request finished");
+                }else{
+                    FileLogger.Log("Process already run for: "+ mobileName, FileLogger.TYPE_SUB, FileLogger.DEST_RETRIEVAL);
                 }
             } catch (Exception e) {
                 System.out.println("Exception : " + e);
