@@ -1,5 +1,6 @@
 package com.akura.adaptor.resolver;
 
+import com.akura.config.Config;
 import com.akura.logger.FileLogger;
 import com.akura.mapping.service.MappingService;
 
@@ -163,16 +164,16 @@ public class EntityNameResolver {
 
             try {
                 FileLogger.Log("Requesting Data Extraction from NLU Engine", FileLogger.TYPE_TITLE, FileLogger.DEST_RETRIEVAL);
-                FileLogger.Log("http://35.198.251.53:4568/extract-review?search=" + URLEncoder.encode(name, "UTF-8")
+                FileLogger.Log(Config.PROCESSING_ENGINE_URL + "/extract-review?search=" + URLEncoder.encode(name, "UTF-8")
                         + "&url=" + URLEncoder.encode(amazon, "UTF-8"), FileLogger.TYPE_SUB, FileLogger.DEST_RETRIEVAL);
 
 
-                url = new URL("http://35.198.251.53:4568/extract-review?search=" + URLEncoder.encode(name, "UTF-8")
+                url = new URL(Config.PROCESSING_ENGINE_URL + "/extract-review?search=" + URLEncoder.encode(name, "UTF-8")
                         + "&url=" + URLEncoder.encode(amazon, "UTF-8"));
 
                 System.out.println("start sending extract request");
 
-                System.out.println("http://35.198.251.53:4568/extract-review?search=" + URLEncoder.encode(name, "UTF-8")
+                System.out.println(Config.PROCESSING_ENGINE_URL + "/extract-review?search=" + URLEncoder.encode(name, "UTF-8")
                         + "&url=" + URLEncoder.encode(amazon, "UTF-8"));
                 HttpURLConnection con = (HttpURLConnection) url.openConnection();
                 con.setRequestMethod("GET");

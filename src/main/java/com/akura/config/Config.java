@@ -24,4 +24,8 @@ public class Config {
     public static final double STRING_SIMILARITY_THRESHOLD = 0.5;
 
     public static final String DYNAMIC_ONTOLOGY_URI = "urn:absolute:www.akura.com#";
+
+    // public static final String PROCESSING_ENGINE_URL = "http://35.198.251.53:4568";
+
+    public static final String PROCESSING_ENGINE_URL = "http://localhost:4568";
 }
